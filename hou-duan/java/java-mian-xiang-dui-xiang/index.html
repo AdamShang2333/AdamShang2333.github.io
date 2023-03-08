@@ -1,0 +1,1124 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/java/java-mian-xiang-dui-xiang/">
+
+
+
+  <title>
+Java 面向对象 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Java 面向对象
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-22 16:23:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-22T16:23:00+08:00">2022-12-22</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>8.2k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>7 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-p8rw79.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-mdgop9.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm1lwy.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-z8gydv.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28eo16.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-9mx3mw.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/java/java-mian-xiang-dui-xiang/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="面向对象的三大特征"><a class="anchor" href="#面向对象的三大特征">#</a> 面向对象的三大特征</h2>
+<blockquote>
+<p>继承 封装 多态 是面向对象的三大特征<br />
+ --&gt; 都是为了避免重复代码！！</p>
+</blockquote>
+<h2 id="类的概念"><a class="anchor" href="#类的概念">#</a> 类的概念</h2>
+<blockquote>
+<p>类是指具有相同的 特征和行为 的事物的抽象<br />
+ Java 中的类 (class) <strong><span class="spoiler" title="你知道得太多了">类名的首字母一定要大写</span></strong></p>
+</blockquote>
+<h2 id="类和对象"><a class="anchor" href="#类和对象">#</a> 类和对象</h2>
+<blockquote>
+<p>对象 (实例，instance)</p>
+<p><strong>对象是由类创建的一个实例  类是对象的模板</strong><br />
+对象指的是某一个具体的事物<br />
+类指的是一个范围</p>
+</blockquote>
+<h2 id="final-关键字"><a class="anchor" href="#final-关键字">#</a> final 关键字</h2>
+<h3 id="final修饰符可以适用于类-方法-和-变量"><a class="anchor" href="#final修饰符可以适用于类-方法-和-变量">#</a> final 修饰符可以适用于类，方法 和 变量</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类</th>
+<th style="text-align:center">方法</th>
+<th style="text-align:center">变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">final</td>
+<td style="text-align:center">类不能被继承</td>
+<td style="text-align:center">该方法不能被重写</td>
+<td style="text-align:center">初始化之后，值不能被改变</td>
+</tr>
+</tbody>
+</table>
+<pre><code>		final int a = 3;
+        final String url = &quot;localhost: 3306&quot;;
+        // a = 4;报错 a 的值不能被改变
+
+</code></pre>
+<h2 id="类的属性"><a class="anchor" href="#类的属性">#</a> 类的属性</h2>
+<h4 id="基本格式-可见范围-类型-属性名"><a class="anchor" href="#基本格式-可见范围-类型-属性名">#</a> 基本格式：可见范围 类型 属性名</h4>
+<h4 id="可见范围-又称为访问权限"><a class="anchor" href="#可见范围-又称为访问权限">#</a> 可见范围 又称为访问权限</h4>
+<blockquote>
+<p>类的访问权限修饰符:<br />
+1. 私有权限（<strong>private</strong>）  --&gt; <strong>不能修饰类</strong></p>
+<p>private 可以修饰<strong>数据成员</strong>、<strong>构造方法</strong> 及 <strong>方法成员</strong>，不可以修饰类。被他修饰的成员，只能在定义他们的类中使用，在其他类中不能使用；</p>
+</blockquote>
+<blockquote>
+<p>2. 默认权限（<strong>default</strong>）<br />
+<strong>类</strong>、<strong>方法</strong>、<strong>成员</strong>都可以使用默认权限，即不被 private、protected，public 修饰。默认权限同包权限，同包权限下的元素只能在定义它们的类中以及同包的类中被调用；</p>
+<p>3. 受保护权限（<strong>protected</strong>）   --&gt; <strong>不能修饰类</strong></p>
+<p>protected 可以修饰<strong>数据成员</strong>、<strong>构造方法</strong>和<strong>方法成员</strong>，不可以修饰类。被 protected 修饰的成员能在它们的类中以及同包的类中被调用。如果有不同包的类想要调用它们，那这个类必须是他的子类；</p>
+<p>4. 公共权限（<strong>public</strong>）</p>
+<p>public 可以修饰<strong>类</strong>、<strong>数据成员</strong>、<strong>构造方法</strong>及<strong>方法成员</strong>。被 public 修饰的成员，可以在任何一个类中被调用，不管同包或者不同包；</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">范围</th>
+<th style="text-align:center">private</th>
+<th style="text-align:center">default</th>
+<th style="text-align:center">protect</th>
+<th style="text-align:center">public</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">同一类</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">同一包中的类</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">同一包中的类 &amp; 不同包中的子类</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">所有</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">✔️</td>
+</tr>
+</tbody>
+</table>
+<pre><code> 	public String name;
+    public int age;
+
+</code></pre>
+<h4 id="属性的保护private"><a class="anchor" href="#属性的保护private">#</a> 属性的保护 (private)</h4>
+<blockquote>
+<p>将属性可见范围设为 private 后</p>
+<p>需要与 set&amp;&amp; get 方法结合使用才能更改或获取类的属性</p>
+</blockquote>
+<h2 id="类的继承"><a class="anchor" href="#类的继承">#</a> 类的继承</h2>
+<blockquote>
+<p>类有大有小</p>
+<p>在代码中使用继承来描述类之间的关系</p>
+<p>一个类在 java 中只能有一个父类，但是可以有多个子类 (单继承)</p>
+<p>//c++ 为多继承 --&gt; 一个类可以有多个父类</p>
+</blockquote>
+<h4 id="继承内容和注意点"><a class="anchor" href="#继承内容和注意点">#</a> 继承内容和注意点</h4>
+<blockquote>
+<ol>
+<li>子类会继承父类中所有 : <span class="spoiler" title="你知道得太多了">非 private 的属性和方法 不能继承构造方法</span></li>
+<li>!!! 继承时，子类创建对象的时候会自动调用父类的构造方法<br />
+！！<span class="spoiler" title="你知道得太多了"> 继承和构造方法结合使用时:<br />
+a :<br />
+ 父类中要确保有一个空的构造方法<br />
+或者<br />
+ b :<br />
+ 父类构造方法不为空 (有参构造) 时，在子类中要新建一个构造方法<br />
+或者<br />
+ c : 父类中没有构造方法，子类中自动创建一个默认构造方法<br />
+ --&gt;(空的构造方法 super ()  调用超类中的 &quot;不接收参数的构造方法&quot; )<br />
+--&gt; 构造方法不能被继承 (所有的构造方法都不能被继承</span>！)<br />
+ 继承树过深，一层层寻找父类会影响代码执行效率</li>
+</ol>
+</blockquote>
+<h3 id="继承与其他方法的关系"><a class="anchor" href="#继承与其他方法的关系">#</a> 继承与其他方法的关系</h3>
+<h4 id="1继承-对抽象类的方法具体重写和实现依靠子类继承重写方法并创建实例对象"><a class="anchor" href="#1继承-对抽象类的方法具体重写和实现依靠子类继承重写方法并创建实例对象">#</a> 1. 继承 ---&gt; 对抽象类的方法具体重写和实现 (依靠子类继承 &amp; 重写方法并创建实例对象)</h4>
+<h4 id="2继承-多态存在的前提条件"><a class="anchor" href="#2继承-多态存在的前提条件">#</a> 2. 继承 ---&gt; 多态存在的前提条件</h4>
+<h3 id="super关键字"><a class="anchor" href="#super关键字">#</a> super 关键字</h3>
+<blockquote>
+<p>子类能保留父类方法的关键字，重写方法但又需要实现父类方法时使用</p>
+</blockquote>
+<h2 id="类的方法"><a class="anchor" href="#类的方法">#</a> 类的方法</h2>
+<blockquote>
+<p>在方法中可以直接访问自己的属性或者方法<br />
+方法中如果在自己内部调用自己 或者两个方法来回调用 (递归)<br />
+---&gt;  递归一定要有出口 否则会一直执行，类似于死循环<br />
+哪个对象调用这个方法 this 就是谁 --&gt; <span class="exturl" data-url="aHR0cDovL3RoaXMubmFtZQ==">this.name</span> 大多数情况下可以直接简写为 name</p>
+</blockquote>
+<blockquote>
+<p><strong>!! 不能省略简写 this 的状况 :</strong><br />
+ 形参列表中的变量名与该类中的属性名重名</p>
+</blockquote>
+<h4 id="基本格式-可见范围-返回值-方法名-参数"><a class="anchor" href="#基本格式-可见范围-返回值-方法名-参数">#</a> 基本格式：可见范围 返回值 方法名 参数</h4>
+<blockquote>
+<p>可见范围：方法中大多是 public<br />
+public</p>
+</blockquote>
+<blockquote>
+<p>返回值 (return) : 注意返回值类型和方法中 return 的类型要一致<br />
+ void ---&gt; 无需写 return 或者 return;<br />
+ 其他返回值类型与 return 语句后的类型保持一致<br />
+<strong>注：返回值也可是一个对象！！</strong></p>
+<p>参数 :</p>
+<p>一个方法可以没有参数 也可以有很多参数</p>
+</blockquote>
+<pre><code>1. 代码执行到 return 后 ,结束方法体 之后的语句不会被执行!!! 
+2. 一个方法最多只有一个return
+3. 返回多个值的时候,可以:
+	a. 利用数组返回
+	b. 返回一个对象 
+	--&gt; 在方法体中new一个对象 将各种需要返回的值赋值到对象的属性中, 
+		返回整个对象, 获取属性值即可
+	c. 使用系统类 ( Map,List,Set返回)  
+		
+</code></pre>
+<pre><code>    //  可见度  返回值类型 方法名 (参数列表) &#123;
+    //    方法实现
+    //    &#125;
+    
+    public void eat ()&#123;
+        System.out.println( name + &quot;吧唧吧唧 ╮(￣▽￣)╭&quot;);
+        // 可以调用其他已经写好的方法 --&gt; drink();
+        drink();
+        return;
+    &#125;
+
+</code></pre>
+<h3 id="构造方法"><a class="anchor" href="#构造方法">#</a> 构造方法</h3>
+<blockquote>
+<p>类中的特殊方法，相当于在新建对象时进行初始化 (对象必须包含某些属性才能被创建)<br />
+<strong> 在继承的时候</strong> 如果<strong>父类有构造方法</strong>，则 :<br />
+--&gt; 父类追加一个空构造方法<br />
+ -- 或者  在子类创建构造方法</p>
+</blockquote>
+<pre><code>// 构造方法
+    // 1.只影响创建对象的时候 的语法
+    //   --&gt; new 类名( 小括号内必须按顺序填写属性内容 )
+    // 2.在创建对象的同时 给属性赋初始值
+    // 3.构造方法不是必须要写的 根据实际需求来定
+    // 4.每一个类可以有多个构造方法
+    // 5.作为类的创建者 如果觉得这个类的使用必须依赖某个属性
+    //   那么就可以有一个构造方法,方便使用者使用.
+</code></pre>
+<pre><code class="language-//">    // 写name age 的属性值 自动调用只有两个的构造方法
+    // 写name age gender id 的属性值 自动调用有四个的构造方法
+    
+    // 空构造方法
+    public Human()&#123;
+    &#125;
+    // 构造方法也可以被重载
+    public Human(String name) &#123;
+        this.name = name;
+    &#125;
+    public Human(String name, int age) &#123;
+        this.name = name;
+        this.age = age;
+    &#125;
+    public Human(String name, int age, String gender, String id) &#123;
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.id = id;
+    &#125;
+
+</code></pre>
+<h3 id="setget方法"><a class="anchor" href="#setget方法">#</a> set&amp;&amp;get 方法</h3>
+<h3 id="tostring方法"><a class="anchor" href="#tostring方法">#</a> toString 方法</h3>
+<blockquote>
+<p>toString 方法的作用:<br />
+// 在使用输出语句直接打印对象的时候，<br />
+// 会按照该对象的 toString 方法输出内容 --&gt; <strong>不写 toString 输出对象变量时 直接输出对象的地址</strong></p>
+</blockquote>
+<pre><code>@Override
+   public String toString() &#123;
+       return &quot;Human&#123;&quot; +
+               &quot;name='&quot; + name + '\'' +   // \' --&gt; 代表只用一个'字符(字符转义)
+               &quot;, age=&quot; + age +
+               &quot;, gender='&quot; + gender + '\'' +
+               &quot;, id='&quot; + id + '\'' +
+               '&#125;';
+   &#125;
+
+</code></pre>
+<h3 id="方法的重写"><a class="anchor" href="#方法的重写">#</a> 方法的重写</h3>
+<blockquote>
+<ol>
+<li>子类可以重新定义父类的方法</li>
+<li>子类重写方法之后，子类的对象调用该方法就会使用重写后的实现代码</li>
+<li><strong>父类中方法的访问权限修饰符为 private 时，子类无法重写</strong></li>
+<li><strong>定义父类的方法为 public，在子类定义为 private，程序运行时就会报错</strong></li>
+</ol>
+</blockquote>
+<pre><code>@Override // 子类重写父类方法的标志
+    public void sayHi() &#123;
+        System.out.println(&quot;测试子类方法的重写&quot;);
+        // super 关键字 : 在子类方法中调用父类的实现
+        super.sayHi();
+    &#125;
+
+</code></pre>
+<h3 id="方法的重载"><a class="anchor" href="#方法的重载">#</a> 方法的重载</h3>
+<blockquote>
+<p>一个方法可以对应不同的参数<br />
+方法名相同 方法的参数个数不同，或者换参数类型不同，那么这些方法都可以同时存在.<br />
+ 在调用方法时，JVM (java 虚拟机) 会根据填入参数的不同 自动匹配方法<br />
+<strong>构造方法也可以被重载</strong></p>
+</blockquote>
+<pre><code>重载的注意点:
+    // 1. 返回值不会构成重载(重载只和参数有关 和返回值无关!!)
+    // 2. 重载和参数类型有关 和参数名无关
+    // 3. 参数的顺序会在一定程度上影响重载
+    // 4. 方法体内部具体方法实现不同,不会构成方法重载
+    //    --&gt; 系统定义重载时 只关心参数的 类型 数量 和顺序
+    // 5. 可以有不同的返回类型，只要参数列表不同就可以了。
+    // 6. 可以有不同的访问修饰符。 
+</code></pre>
+<pre><code>    // eat()
+    public void eat() &#123;
+        System.out.println(&quot;吃&quot;);
+    &#125;
+
+    // eat(String)
+    public void eat(String thing) &#123;
+        System.out.println(&quot;吃&quot; + thing);
+    &#125;
+
+    // eat(String, int)
+    public void eat(String thing, int number) &#123;
+        System.out.println(&quot;吃&quot; + number + &quot;个&quot; + thing);
+    &#125;
+
+    //eat(int, String)
+    public void eat(String thing, int number)&#123;
+        int c = number+4;
+    &#125;
+
+</code></pre>
+<h3 id="方法重写和重载的区别"><a class="anchor" href="#方法重写和重载的区别">#</a> 方法重写和重载的区别</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">区别</th>
+<th style="text-align:center">重载</th>
+<th style="text-align:center">重写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">定义</td>
+<td style="text-align:center">只要参数列表不同即为重载 (返回值可以不同)</td>
+<td style="text-align:center">方法名 参数 返回值都相同，只重写方法体内部</td>
+</tr>
+<tr>
+<td style="text-align:center">权限</td>
+<td style="text-align:center">对权限没有要求</td>
+<td style="text-align:center">被子类重写的方法不能有更严格的权限</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>范围</strong></td>
+<td style="text-align:center"><strong>发生在同一个类中</strong></td>
+<td style="text-align:center"><strong>发生在继承类中</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="静态方法类方法-toreview"><a class="anchor" href="#静态方法类方法-toreview">#</a> 静态方法 (类方法) --!!ToReview</h2>
+<blockquote>
+<p>类的方法可以分为实例方法 静态方法 抽象方法<br />
+实例方法：实例方法必须在对象实例化之后，通过对象引用来调用<br />
+ ---&gt; 构造方法也属于实例方法<br />
+静态方法：不需要对象实例就可以调用的方法，<strong>也叫做类方法，可以通过类名直接调用</strong><br />
+抽象方法：只能声明不能实现，抽象方法必须被声明在抽象类里</p>
+</blockquote>
+<p>在方法或属性的可见范围 (public 等) 后添加静态方法修饰符 static</p>
+<h4 id="注意点"><a class="anchor" href="#注意点">#</a> 注意点</h4>
+<ol>
+<li>原则上来说 <strong>尽量避免使用对象调用静态方法</strong> --&gt; 静态方法一般是和具体的对象无关</li>
+<li>大多都由类调用静态方法</li>
+<li><strong>静态方法是常见的封装代码的手段</strong></li>
+<li>所有的 对象。静态属性 (调用静态属性) 时 都是在对同一个 static 属性做更改<br />
+　   --&gt;  任何其他实例再调用 static 时 都会变为更改后的属性值</li>
+<li><strong>实例对象无法方法访问静态属性</strong></li>
+<li><strong>静态方法不能访问类的属性和实例方法</strong></li>
+<li><strong>静态方法可以访问其他的静态方法 和 静态属性</strong></li>
+</ol>
+<pre><code>public  class  Person &#123;
+	private String name;
+	
+	// 静态属性  
+	// 实例对象无法访问静态属性
+    public static int time;
+    
+    // 静态方法
+    public static void sayHi()&#123;
+        // 静态方法不能访问类的属性和实例方法 --&gt; 调用name属性会报红
+        // 静态方法可以访问其他的静态方法 和 静态属性
+        System.out.println(&quot;方法测试&quot; + name);
+        // 调用静态方法时 代码显示为斜体
+        test();
+        
+    public static void  test()&#123;
+        // 静态方法可以调用其他静态方法 以及 静态属性
+        System.out.println(&quot;调用了其他静态方法&quot; + time);
+    &#125;
+    
+    public static void main(String[] args) &#123;
+       Person p = new Person(&quot;大壮&quot;, 18);
+    	 // 推荐使用类调用静态方法(实例对象也能调用静态方法,但是一般不会这样做)
+   		 Person.sayHi();
+   		 // 对象调用静态属性 ,对静态属性做更改后 
+   		 // 任何其他对象调用静态属性时,属性值都会为被对象更改后的值
+   		 //     --&gt; 类比只new一个Person对象  实例变量p1将内存地址复制给p2
+   		 //     p2更改对象属性name  p1调用name时也会改变的例子
+         p.getAge();
+     &#125;
+   &#125;
+
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">区别</th>
+<th style="text-align:center">静态方法</th>
+<th style="text-align:center">实例方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">方法调用时 &lt;br&gt; 是否需要对象</td>
+<td style="text-align:center">不创建实例对象也可调用 &lt;br&gt;(实例对象也能调用静态方法)</td>
+<td style="text-align:center">必须创建实例对象才能调用</td>
+</tr>
+<tr>
+<td style="text-align:center">可访问的范围</td>
+<td style="text-align:center">只能访问静态成员 &lt;br&gt;(静态成员变量 &amp; 静态方法)</td>
+<td style="text-align:center">实例对象无法访问静态属性 &lt;br&gt;&lt;del &gt; 可以访问静态或实例成员 &lt; br&gt;(成员和方法)&lt;/del&gt;</td>
+</tr>
+</tbody>
+</table>
+<p>--＞1. 静态方法不能访问实例成员　所以<strong>静态方法中也不能用 this 关键字！！</strong><br />
+　--&gt;  2. public static void main(String[] args)<br />
+　     　　　是典型的静态方法，--&gt; 即使没有创建对象依然可以执行代码</p>
+<h2 id="抽象类"><a class="anchor" href="#抽象类">#</a> 抽象类</h2>
+<blockquote>
+<p>一般来说 抽象类的使用在框架和基础架构中经常见到<br />
+目的是<strong>限制子类的格式</strong> --&gt; <strong>抽象类的子类必须要重写所有父类的抽象方法</strong> 不然会报错<br />
+抽象类本身不会实现具体的方法 (不能实例对象), 更像一个模板</p>
+</blockquote>
+<h3 id="关键字-abstract-抽象的"><a class="anchor" href="#关键字-abstract-抽象的">#</a> 关键字 abstract (抽象的)</h3>
+<h3 id="抽象类的特点"><a class="anchor" href="#抽象类的特点">#</a> 抽象类的特点</h3>
+<ol>
+<li><strong>不能使用抽象类创建实例对象</strong>，只能创建其子类进行使用 <strong>!! 必须创建子类</strong></li>
+<li>抽象类中可以没有抽象方法，但是 有抽象方法的类一定是抽象类<br />
+ --- &gt; <strong>具有抽象方法的类一定要被声明为抽象类</strong></li>
+<li>抽象类的子类 也可以是一个抽象类</li>
+</ol>
+<h3 id="抽象方法的特点"><a class="anchor" href="#抽象方法的特点">#</a> 抽象方法的特点</h3>
+<ol>
+<li>抽象方法只能存在于抽象类之中</li>
+<li><strong>抽象方法一定要被子类实现</strong></li>
+<li><strong>抽象方法</strong>没有方法体 (抽象类不能创建对象来调用抽象方法)<br />
+<strong> 只负责规定方法格式</strong> (只负责定义参数 返回值)</li>
+<li><strong>抽象类的子类必须要重写所有的抽象方法</strong></li>
+</ol>
+<pre><code>// 声明一个抽象类
+public abstract class Animal &#123;
+
+    private String name;
+    private  int age;
+    // 声明一个抽象方法  !! 抽象方法没有具体方法体
+    public abstract void hunt();
+
+</code></pre>
+<h2 id="多态"><a class="anchor" href="#多态">#</a> 多态</h2>
+<h3 id="多态的实现必须依赖继承"><a class="anchor" href="#多态的实现必须依赖继承">#</a> 多态的实现，必须依赖继承</h3>
+<h4 id="多态特点"><a class="anchor" href="#多态特点">#</a> 多态特点:</h4>
+<ol>
+<li>多态必须依赖继承关系 --&gt; 必须要有父类和子类</li>
+<li>父类的变量可以引用子类的对象 (子类的对象可以赋值给父类变量)</li>
+<li>在写代码 (编译) 的时候，<strong> 子类变量 (cat) 只能调用父类 (Animal) 规定的方法</strong></li>
+<li><strong>在实际代码运行时，是使用子类的方法实现.(变量没有改变引用的对象)</strong></li>
+</ol>
+<h4 id="多态的向上转型"><a class="anchor" href="#多态的向上转型">#</a> 多态的向上转型:</h4>
+<p>new 的对象可以定义成范围更大的父类，变量<strong>只能调用父类规定的方法</strong></p>
+<h4 id="instanceof关键字"><a class="anchor" href="#instanceof关键字">#</a> instanceof 关键字</h4>
+<blockquote>
+<p>用于判断运行时对象的真正类型<br />
+多态机制导致了引用变量的声明类型和实际引用对象的类型可能不一致，<br />
+因此引用 instanceof 运算符</p>
+</blockquote>
+<p><strong>A instanceof B</strong><br />
+---&gt; 判断 A 是否为 <strong>B (或者 B 的子类)</strong> 中的一个具体对象</p>
+<p>** 注意 :</p>
+<ol>
+<li>父类不能向下转换为范围更小的子类 **<br />
+---&gt; 类比基本类型的转型 (int 可以转换为 long ; long 转换为 int 会出现精度损失)<br />
+<strong> 2. 虽然调用的是父类的方法，但是！<span class="spoiler" title="你知道得太多了"> 方法的实现还是按照子类自己重写的方法来</span></strong><br />
+ ---&gt;&quot;披着羊皮的狼，还是要吃羊肉&quot;</li>
+</ol>
+<h4 id="多态的转型向上-回转-方法调用"><a class="anchor" href="#多态的转型向上-回转-方法调用">#</a> 多态的转型 (向上 回转) &amp; 方法调用:</h4>
+<pre><code>		// Cat cat = new Cat();
+		// !!!向上转型(变为范围更大的类)
+        Animal cat = new Cat();
+               cat.bark();
+               
+       // 原来是Cat的对象 再转回Cat 没有问题
+       //Animal cat = new Cat();  --&gt; 子类向上转型
+        Cat ani = (Cat) cat; --&gt; 子类转换回原来的类型(强转)
+        
+       //无法将是Animal 对象的 转换成Cat类 ( 变量由大类转换为小类 不可以)
+        Cat ani = (Cat) new Animal();  --&gt; 编译器会报错!!
+	                  
+        //无法使用子类的方法 --&gt; !!!只能使用父类Animal的方法
+        //cat.cathMouse();
+        cat.setName(&quot;加菲猫&quot;);
+</code></pre>
+<h4 id="多态的典型用法-1"><a class="anchor" href="#多态的典型用法-1">#</a> 多态的典型用法 1:</h4>
+<pre><code>    // 在不关心子类实现或子类独特方法的场合,可以使用多态
+    
+    // 将引用不同子类的变量向上转换为父类的类型
+    Animal cat = new Cat();
+    cat.help(); 
+    
+    public static void help(Animal animal)&#123;   
+    	System.out.println(&quot;我帮助了&quot; + animal.getName());
+    	 //!!!实际调用时 ,使用的仍然是子类的.bark()方法
+        animal.bark(); // 输出的是&quot;喵喵喵喵&quot; ,实现cat自己的方法
+    &#125;
+</code></pre>
+<h4 id="多态的典型用法-2"><a class="anchor" href="#多态的典型用法-2">#</a> 多态的典型用法 2:</h4>
+<pre><code>    // 建立一个向上转型的数组 可以将不同类型的子类对象放在一起
+        Animal[] a = new Animal[3];
+        a[0] = cat;
+        a[1] = c1;
+        a[2] = dog;
+        System.out.println(&quot;~~~~~~&quot;);
+        // instanceof 关键字
+        // A instanceof B
+        // 判断A是不是B类(或者其子类)的一个对象
+        for (int i = 0; i &lt; 3; i++) &#123;
+            // 判断a[i]是否是Cat这个类中的一个具体对象
+            if (a[i] instanceof Cat) &#123;
+                Cat t = (Cat) a[i];
+                t.cathMouse();
+            &#125;
+            if (a[i] instanceof Dog) &#123;
+                Dog d = (Dog) a[i];
+                d.chiShi();
+            &#125;
+            a[i].bark();
+        &#125;          
+</code></pre>
+<h2 id="接口"><a class="anchor" href="#接口">#</a> 接口</h2>
+<h3 id="接口概念"><a class="anchor" href="#接口概念">#</a> 接口概念</h3>
+<p>接口可以类比生活中的 USB 接口等，</p>
+<blockquote>
+<p>接口实质是一种极端的特殊抽象类，只有抽象方法<br />
+利用接口可以实现多继承 (继承各种接口)<br />
+ 实现接口的时候<strong>一定要实现接口的所有方法</strong></p>
+</blockquote>
+<pre><code>// 接口的使用 : 
+// 在类后面使用implements关键字 , 后面追加要实现的接口
+// 1. 一个类可以实现无数个接口
+// 2. 在实现接口的同时, 也可以继承别的类 (继承关键字在接口关键字前)
+// 3. 接口的语义可以理解为&quot; 实现,支持&quot; 等
+// 4. !!一个类如果要实现一个接口 需要实现这个接口的所有方法!!
+// 5. 接口可以继承另外的接口 (!!并且可以多继承)
+// 6. !!解耦(!!接口最重要的功能) 
+	 --&gt; 降低父&amp;子类之间的依赖关系 继承层级过多 更改一个类会影响依赖于该类的其他类
+
+</code></pre>
+<h3 id="接口关键字-interface"><a class="anchor" href="#接口关键字-interface">#</a> 接口关键字 interface</h3>
+<pre><code>	// 接口中 所有的方法都是 public abstract
+    //     --&gt; 接口的所有方法都是抽象方法
+    // 所以可以不写public abstract
+public interface HDMI &#123;
+
+    // 传输视频数据
+    void videoData();
+
+    // 传输音频数据
+    void mediaData();
+&#125;
+</code></pre>
+<h3 id="接口关键字-implements"><a class="anchor" href="#接口关键字-implements">#</a> 接口关键字 implements</h3>
+<pre><code>// 继承 MainClass 的同时, 也可实现若干个接口
+public class Computer extends MainClass implements USB, HDMI,USB2&#123;
+    // implements 实现接口
+    public void playGame() &#123;
+        System.out.println(&quot;玩游戏&quot;);
+    &#125;
+
+    // 接口的方法以重写的形式来使用
+    @Override
+    public void charge() &#123;
+        System.out.println(&quot;快充&quot;);
+    &#125;
+
+    @Override
+    public void transferData() &#123;
+        System.out.println(&quot;以300m/s的速度传输小电影&quot;);
+    &#125;
+
+    @Override
+    public void videoData() &#123;
+        System.out.println(&quot;传输4K视频数据&quot;);
+    &#125;
+
+    @Override
+    public void mediaData() &#123;
+        System.out.println(&quot;传输音频&quot;);
+    &#125;
+
+    @Override
+    public void fastTransfer() &#123;
+        System.out.println(&quot;2.0USB传输&quot;);
+    &#125;
+&#125;
+
+</code></pre>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/java/java-mian-xiang-dui-xiang/" class="item leancloud_visitors" data-flag-title="Java 面向对象" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/java/java-mian-xiang-dui-xiang/" title="Java 面向对象">http://adamshang2333.github.io/hou-duan/java/java-mian-xiang-dui-xiang/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-3zzqy3.jpg" title="AOP&amp;静态代理&amp;动态代理">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>AOP&静态代理&动态代理</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/hou-duan/java/java-io/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-wqqqdp.jpg" title="IO相关">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>IO相关</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81"><span class="toc-number">1.</span> <span class="toc-text"> 面向对象的三大特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.</span> <span class="toc-text"> 类的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.</span> <span class="toc-text"> 类和对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#final-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">4.</span> <span class="toc-text"> final 关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#final%E4%BF%AE%E9%A5%B0%E7%AC%A6%E5%8F%AF%E4%BB%A5%E9%80%82%E7%94%A8%E4%BA%8E%E7%B1%BB-%E6%96%B9%E6%B3%95-%E5%92%8C-%E5%8F%98%E9%87%8F"><span class="toc-number">4.1.</span> <span class="toc-text"> final 修饰符可以适用于类，方法 和 变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="toc-number">5.</span> <span class="toc-text"> 类的属性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F-%E5%8F%AF%E8%A7%81%E8%8C%83%E5%9B%B4-%E7%B1%BB%E5%9E%8B-%E5%B1%9E%E6%80%A7%E5%90%8D"><span class="toc-number">5.0.1.</span> <span class="toc-text"> 基本格式：可见范围 类型 属性名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%AF%E8%A7%81%E8%8C%83%E5%9B%B4-%E5%8F%88%E7%A7%B0%E4%B8%BA%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90"><span class="toc-number">5.0.2.</span> <span class="toc-text"> 可见范围 又称为访问权限</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BF%9D%E6%8A%A4private"><span class="toc-number">5.0.3.</span> <span class="toc-text"> 属性的保护 (private)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-number">6.</span> <span class="toc-text"> 类的继承</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E5%86%85%E5%AE%B9%E5%92%8C%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="toc-number">6.0.1.</span> <span class="toc-text"> 继承内容和注意点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%85%B6%E4%BB%96%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">6.1.</span> <span class="toc-text"> 继承与其他方法的关系</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E7%BB%A7%E6%89%BF-%E5%AF%B9%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E6%96%B9%E6%B3%95%E5%85%B7%E4%BD%93%E9%87%8D%E5%86%99%E5%92%8C%E5%AE%9E%E7%8E%B0%E4%BE%9D%E9%9D%A0%E5%AD%90%E7%B1%BB%E7%BB%A7%E6%89%BF%E9%87%8D%E5%86%99%E6%96%B9%E6%B3%95%E5%B9%B6%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BE%8B%E5%AF%B9%E8%B1%A1"><span class="toc-number">6.1.1.</span> <span class="toc-text"> 1. 继承 ---&gt; 对抽象类的方法具体重写和实现 (依靠子类继承 &amp; 重写方法并创建实例对象)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E7%BB%A7%E6%89%BF-%E5%A4%9A%E6%80%81%E5%AD%98%E5%9C%A8%E7%9A%84%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-number">6.1.2.</span> <span class="toc-text"> 2. 继承 ---&gt; 多态存在的前提条件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#super%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">6.2.</span> <span class="toc-text"> super 关键字</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">7.</span> <span class="toc-text"> 类的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F-%E5%8F%AF%E8%A7%81%E8%8C%83%E5%9B%B4-%E8%BF%94%E5%9B%9E%E5%80%BC-%E6%96%B9%E6%B3%95%E5%90%8D-%E5%8F%82%E6%95%B0"><span class="toc-number">7.0.1.</span> <span class="toc-text"> 基本格式：可见范围 返回值 方法名 参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95"><span class="toc-number">7.1.</span> <span class="toc-text"> 构造方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#setget%E6%96%B9%E6%B3%95"><span class="toc-number">7.2.</span> <span class="toc-text"> set&amp;&amp;get 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tostring%E6%96%B9%E6%B3%95"><span class="toc-number">7.3.</span> <span class="toc-text"> toString 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E5%86%99"><span class="toc-number">7.4.</span> <span class="toc-text"> 方法的重写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BD"><span class="toc-number">7.5.</span> <span class="toc-text"> 方法的重载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">7.6.</span> <span class="toc-text"> 方法重写和重载的区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E7%B1%BB%E6%96%B9%E6%B3%95-toreview"><span class="toc-number">8.</span> <span class="toc-text"> 静态方法 (类方法) --!!ToReview</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="toc-number">8.0.1.</span> <span class="toc-text"> 注意点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB"><span class="toc-number">9.</span> <span class="toc-text"> 抽象类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97-abstract-%E6%8A%BD%E8%B1%A1%E7%9A%84"><span class="toc-number">9.1.</span> <span class="toc-text"> 关键字 abstract (抽象的)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">9.2.</span> <span class="toc-text"> 抽象类的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">9.3.</span> <span class="toc-text"> 抽象方法的特点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E6%80%81"><span class="toc-number">10.</span> <span class="toc-text"> 多态</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%BF%85%E9%A1%BB%E4%BE%9D%E8%B5%96%E7%BB%A7%E6%89%BF"><span class="toc-number">10.1.</span> <span class="toc-text"> 多态的实现，必须依赖继承</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%E7%89%B9%E7%82%B9"><span class="toc-number">10.1.1.</span> <span class="toc-text"> 多态特点:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%E7%9A%84%E5%90%91%E4%B8%8A%E8%BD%AC%E5%9E%8B"><span class="toc-number">10.1.2.</span> <span class="toc-text"> 多态的向上转型:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#instanceof%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">10.1.3.</span> <span class="toc-text"> instanceof 关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%E7%9A%84%E8%BD%AC%E5%9E%8B%E5%90%91%E4%B8%8A-%E5%9B%9E%E8%BD%AC-%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8"><span class="toc-number">10.1.4.</span> <span class="toc-text"> 多态的转型 (向上 回转) &amp; 方法调用:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%E7%9A%84%E5%85%B8%E5%9E%8B%E7%94%A8%E6%B3%95-1"><span class="toc-number">10.1.5.</span> <span class="toc-text"> 多态的典型用法 1:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%E7%9A%84%E5%85%B8%E5%9E%8B%E7%94%A8%E6%B3%95-2"><span class="toc-number">10.1.6.</span> <span class="toc-text"> 多态的典型用法 2:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3"><span class="toc-number">11.</span> <span class="toc-text"> 接口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3%E6%A6%82%E5%BF%B5"><span class="toc-number">11.1.</span> <span class="toc-text"> 接口概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3%E5%85%B3%E9%94%AE%E5%AD%97-interface"><span class="toc-number">11.2.</span> <span class="toc-text"> 接口关键字 interface</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3%E5%85%B3%E9%94%AE%E5%AD%97-implements"><span class="toc-number">11.3.</span> <span class="toc-text"> 接口关键字 implements</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/hou-duan/java/java-io/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/duo-xian-cheng-ru-men/" title="多线程入门">多线程入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-ji-chu/" title="数据库基础">数据库基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/ci-cd/maven/" title="Maven">Maven</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/javaweb-ji-chu/" title="JavaWeb基础">JavaWeb基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-xuan-ze-qi/" title="js选择器">js选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" title="css动态效果总结">css动态效果总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/basics/" title="分类于 基础">基础</a>
+</div>
+
+    <span><a href="/hou-duan/java/basics/java-ji-chu/" title="IO基础">IO基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-io/" title="IO相关">IO相关</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/dom-cao-zuo/" title="DOM操作">DOM操作</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/spring-aop-zong-jie/" title="Spring AOP总结">Spring AOP总结</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/java/java-mian-xiang-dui-xiang/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

@@ -1,0 +1,605 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/">
+
+
+
+  <title>
+分布式事务 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">分布式事务
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-03-20 21:00:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-20T21:00:00+08:00">2022-03-20</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>1.5k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>1 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-q6wyer.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-oxkgel.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-vg83ll.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28eo16.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-wqqqdp.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-p8rw79.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>[toc]</p>
+<h1 id="分布式事务"><a class="anchor" href="#分布式事务">#</a> 分布式事务</h1>
+<h2 id="分布式事务的产生"><a class="anchor" href="#分布式事务的产生">#</a> 分布式事务的产生</h2>
+<p>传统的单体架构下，数据库并不会产生分离。对于事务的概念和控制，都是针对数据在同一个数据库下。<br />
+而在微服务的架构下，数据库为了支持高并发，往往都会进行数据的分库分表或者读写分离的设计，这时对于事务的控制，需要以跨数据库为前提进行实现。由此就产生了分布式的事务问题。</p>
+<blockquote>
+<p>产生分布式事务的本质原因，就是数据库的操作是<strong>跨库</strong></p>
+</blockquote>
+<h2 id="分布式事务的解决方案"><a class="anchor" href="#分布式事务的解决方案">#</a> 分布式事务的解决方案</h2>
+<h3 id="两阶段提交tcc"><a class="anchor" href="#两阶段提交tcc">#</a> 两阶段提交（TCC）</h3>
+<p>两阶段提交，需要一个<strong>事务管理器（中间协调者）</strong>：</p>
+<ol>
+<li>若干数据库的 sql 执行结果都提交到事务管理器上（第一阶段 预提交）。在第一阶段，会预先锁定一些数据库的资源，预先校验数据库，缓存等服务是否正常。</li>
+<li>各个数据库执行结果均正常，事务管理器通知数据库提交 sql 操作；<br />
+若有任一数据库操作失败，所有数据库的操作回滚（第二阶段 真正提交 / 回滚）</li>
+</ol>
+<blockquote>
+<p>实际上，分布式事务时不可能做到 100% 的解决，只能尽量提高可靠性</p>
+<blockquote>
+<p>到达事务管理器之前的数据库宕机之类，对整个事务不会产生问题：直接按照失败 rollback;<br />
+ 问题主要是在数据库预提交都成功后</p>
+</blockquote>
+</blockquote>
+<p><strong>提高分布式事务可靠性</strong><br />
+ 1. 事务管理器通知数据库提交时，可能产生通知失败（消息丢失或数据库宕机）。这种情况下，可以对事务管理器添加重试机制<br />
+ 2. 事务管理器在接收和发送事务提交通知时宕机，可以对事务管理器添加 log 日志 在宕机重启后人工介入重新提交</p>
+<h4 id="xajta规范"><a class="anchor" href="#xajta规范">#</a> XA/JTA 规范</h4>
+<h3 id="两阶段提交2pc的实现中间件"><a class="anchor" href="#两阶段提交2pc的实现中间件">#</a> 两阶段提交 2pc 的实现中间件</h3>
+<p><strong>Atomikos</strong><br />
+Atomikos 是一个开源的分布式事务的 2pc 实现中间件，可以比较方便的整合到 spring 当中，实现分布式事务</p>
+<h3 id="微服务架构下的分布式事务"><a class="anchor" href="#微服务架构下的分布式事务">#</a> 微服务架构下的分布式事务</h3>
+<h4 id="tcctry-confirm-cancle-两阶段补偿型方案"><a class="anchor" href="#tcctry-confirm-cancle-两阶段补偿型方案">#</a> TCC（try-confirm-cancle） 两阶段补偿型方案</h4>
+<p>在微服务的背景下，单体应用一般都会拆分成各个服务模块。此时分布式事务不仅跨库，也跨服务。无法使用普通的 2pc 在一个后端服务中， 对多个数据库进行预提交到事务管理器并处理提交的逻辑。</p>
+<p>解决方案：<br />
+与 2pc 的预提交阶段思想一致，为了提高可靠性，尽量的在真正提交之前预先验证和锁定资源会很大程度上提高事务的可靠性。<br />
+所以在微服务架构下，可以将调用的其他服务添加一个 &quot;预提交&quot; 状态的 API。<br />
+例：支付系统的订单服务，调用库存 积分 仓储等其他服务模块</p>
+<p>阶段 1: try （预留资源，中间状态）<br />
+订单服务修改状态为<strong>更新中</strong>，而不是下单成功或失败；<br />
+API 调用其他服务，分别置为 &quot;冻结库存&quot;，&quot;预加积分&quot;，&quot;创建出库单草稿&quot; 等 <strong>预留资源状态</strong>，以表示尝试进行分布式事务 但执行结果不确定的状态<br />
+阶段 2 ： 确认资源（confirm/cancel）<br />
+在第二阶段，订单服务根据其他服务调用的执行反馈，确定是整个事务成功提交，还是对事务进行回滚。因为现在使用微服务架构，所有的操作都需要 RPC 调用完成，这里<strong>需要根据 conform 和 cancel 编写两套 API 到各个子服务</strong>，以支持 TCC 的分布式事务实现。</p>
+<blockquote>
+<p>数据库表结构上，需要在原有的库存字段等基础上，<strong>添加一列 &quot;冻结&quot; 字段</strong>，来表示第一阶段预留资源，分别在成功 / 回滚的逻辑下，结合现有库存字段来完成订单支付成功 / 失败的一系列库存 积分等数据更改。</p>
+</blockquote>
+<blockquote>
+<p>在并发访问量不是很高的情况下 2pc 和 TCC 的性能差异不会很大，甚至 2pc 的速度还可能更快一点（不需要 RPC 调用若干服务）。<br />
+但是访问量比较高的情况下 ，TCC 的性能是要远远优于 2PC 的。因为在高并发情况下，2PC 的方案会对整个数据库 &quot;加锁&quot; 一直占用资源直到事务管理器通知提交或回滚；而 TCC 的方案 在调用其他服务时，实际上在各自的数据库中直接更改并提交了数据。<strong>不会在全局一直占用资源</strong></p>
+</blockquote>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/" class="item leancloud_visitors" data-flag-title="分布式事务" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/" title="分布式事务">http://adamshang2333.github.io/hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/bing-fa-fen-bu-shi/redis-gao-bing-fa-fen-bu-shi-suo/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-73pvk9.jpg" title="Redis高并发分布式锁">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Redis高并发分布式锁</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/hou-duan/java/duo-xian-cheng-ru-men/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-9mm621.jpg" title="多线程入门">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>多线程入门</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1"><span class="toc-number">1.</span> <span class="toc-text"> 分布式事务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="toc-number">1.1.</span> <span class="toc-text"> 分布式事务的产生</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">1.2.</span> <span class="toc-text"> 分布式事务的解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4tcc"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 两阶段提交（TCC）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#xajta%E8%A7%84%E8%8C%83"><span class="toc-number">1.2.1.1.</span> <span class="toc-text"> XA&#x2F;JTA 规范</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A42pc%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%B8%AD%E9%97%B4%E4%BB%B6"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 两阶段提交 2pc 的实现中间件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 微服务架构下的分布式事务</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#tcctry-confirm-cancle-%E4%B8%A4%E9%98%B6%E6%AE%B5%E8%A1%A5%E5%81%BF%E5%9E%8B%E6%96%B9%E6%A1%88"><span class="toc-number">1.2.3.1.</span> <span class="toc-text"> TCC（try-confirm-cancle） 两阶段补偿型方案</span></a></li></ol></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/bing-fa-fen-bu-shi/redis-gao-bing-fa-fen-bu-shi-suo/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/hou-duan/java/duo-xian-cheng-ru-men/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springboot-zhu-jie/" title="Spring Boot注解总结">Spring Boot注解总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/jdbc/" title="JDBC">JDBC</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/" title="分布式事务">分布式事务</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/MQ/" title="分类于 MQ">MQ</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/MQ/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/rocketmq-ru-men/" title="RocketMQ">RocketMQ</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/spring-aop-zong-jie/" title="Spring AOP总结">Spring AOP总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-ji-chu/" title="数据库基础">数据库基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/mybatis/" title="Mybatis">Mybatis</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-han-shu/" title="数据库函数">数据库函数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/ci-cd-jenkins/" title="CI_CD&amp;&amp;Jenkins">CI_CD&&Jenkins</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

@@ -1,0 +1,675 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="K8s,容器化" />
+
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/ci-cd/k8s/">
+
+
+
+  <title>
+Kubernetes - CI/CD - K8s |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Kubernetes
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-03-07 19:23:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-03-07T19:23:00+08:00">2023-03-07</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>3.3k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>3 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-57wx33.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-9mx3mw.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-o33gv7.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-73pvk9.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-6ojgq7.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-57wq75.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/CI-CD-K8s/" itemprop="item" rel="index" title="分类于 CI/CD - K8s"><span itemprop="name">CI/CD - K8s</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/ci-cd/k8s/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="简介"><a class="anchor" href="#简介">#</a> 简介</h1>
+<h2 id="什么是k8s"><a class="anchor" href="#什么是k8s">#</a> 什么是 K8s</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcv">Kubernetes</span> 也称为 K8s，是一个可移植、可扩展的开源平台，用于管理容器化的工作负载和服务，可促进声明式配置和自动化。 Kubernetes 拥有一个庞大且快速增长的生态，其服务、支持和工具的使用范围相当广泛。</p>
+<h2 id="k8s的功能特性"><a class="anchor" href="#k8s的功能特性">#</a> k8s 的功能特性</h2>
+<h4 id="自动化上线和回滚"><a class="anchor" href="#自动化上线和回滚">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQv">自动化上线和回滚</span></h4>
+<p>Kubernetes 会分步骤地将针对应用或其配置的更改上线，同时监视应用程序运行状况以确保你不会同时终止所有实例。如果出现问题，Kubernetes 会为你回滚所作更改。你应该充分利用不断成长的部署方案生态系统。</p>
+<h4 id="服务发现与负载均衡"><a class="anchor" href="#服务发现与负载均衡">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLw==">服务发现与负载均衡</span></h4>
+<p>无需修改你的应用程序去使用陌生的服务发现机制。Kubernetes 为容器提供了自己的 IP 地址和一个 DNS 名称，并且可以在它们之间实现负载均衡。</p>
+<h4 id="自我修复"><a class="anchor" href="#自我修复">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL3JlcGxpY2FzZXQvI3JlcGxpY2F0aW9uY29udHJvbGxlci0lRTUlQTYlODIlRTQlQkQlOTUlRTUlQjclQTUlRTQlQkQlOUM=">自我修复</span></h4>
+<p>重新启动失败的容器，在节点死亡时替换并重新调度容器， 杀死不响应用户定义的健康检查的容器， 并且在它们准备好服务之前不会将它们公布给客户端。</p>
+<h4 id="存储编排"><a class="anchor" href="#存储编排">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc3RvcmFnZS9wZXJzaXN0ZW50LXZvbHVtZXMv">存储编排</span></h4>
+<p>自动挂载所选存储系统，包括本地存储、诸如 <span class="exturl" data-url="aHR0cHM6Ly9hd3MuYW1hem9uLmNvbS9wcm9kdWN0cy9zdG9yYWdlLw==">AWS</span> 或 <span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5nb29nbGUuY29tL3N0b3JhZ2Uv">GCP</span> 之类公有云提供商所提供的存储或者诸如 NFS、iSCSI、Ceph、Cinder 这类网络存储系统。</p>
+<h4 id="secret-和配置管理"><a class="anchor" href="#secret-和配置管理">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvY29uZmlndXJhdGlvbi9zZWNyZXQv">Secret 和配置管理</span></h4>
+<p>部署和更新 Secret 和应用程序的配置而不必重新构建容器镜像， 且不必将软件堆栈配置中的秘密信息暴露出来。</p>
+<h4 id="自动装箱"><a class="anchor" href="#自动装箱">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvY29uZmlndXJhdGlvbi9tYW5hZ2UtcmVzb3VyY2VzLWNvbnRhaW5lcnMv">自动装箱</span></h4>
+<p>根据资源需求和其他限制自动放置容器，同时避免影响可用性。 将关键性的和尽力而为性质的工作负载进行混合放置，以提高资源利用率并节省更多资源。</p>
+<h4 id="批量执行"><a class="anchor" href="#批量执行">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2pvYi8=">批量执行</span></h4>
+<p>除了服务之外，Kubernetes 还可以管理你的批处理和 CI 工作负载，在期望时替换掉失效的容器。</p>
+<h4 id="ipv4ipv6-双协议栈"><a class="anchor" href="#ipv4ipv6-双协议栈">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9kdWFsLXN0YWNrLw==">IPv4/IPv6 双协议栈</span></h4>
+<p>为 Pod 和 Service 分配 IPv4 和 IPv6 地址</p>
+<h4 id="水平扩缩"><a class="anchor" href="#水平扩缩">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvdGFza3MvcnVuLWFwcGxpY2F0aW9uL2hvcml6b250YWwtcG9kLWF1dG9zY2FsZS8=">水平扩缩</span></h4>
+<p>使用一个简单的命令、一个 UI 或基于 CPU 使用情况自动对应用程序进行扩缩。</p>
+<h4 id="为扩展性设计"><a class="anchor" href="#为扩展性设计">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvZXh0ZW5kLWt1YmVybmV0ZXMv">为扩展性设计</span></h4>
+<p>无需更改上游源码即可扩展你的 Kubernetes 集群。</p>
+<h1 id="k8s的集群架构和组件"><a class="anchor" href="#k8s的集群架构和组件">#</a> K8s 的集群架构和组件</h1>
+<h2 id="集群架构"><a class="anchor" href="#集群架构">#</a> 集群架构</h2>
+<p>一个正常运行的 Kubernetes 集群可以从逻辑上分为两个部分：</p>
+<ul>
+<li><strong>Control Plane</strong> (控制平面，可集群)
+<ul>
+<li>负责维护集群的预期状态，例如运行哪个应用以及使用哪个容器镜像</li>
+<li>又可以称为主控节点 / Master 节点</li>
+</ul>
+</li>
+<li><strong>Node 集群</strong> (计算设备）
+<ul>
+<li>负责应用和工作负载的实际运行</li>
+<li>每个 Node 节点都有自己的 Linux 环境，可以是物理机也可以是虚拟机。</li>
+<li>每个节点都运行由若干容器组成的容器集 (docker containers)</li>
+</ul>
+</li>
+</ul>
+<p>K8s 官方架构图:</p>
+<p><img data-src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" alt="" /></p>
+<blockquote>
+<p>从官方架构图中，可以发现在 Control Plane 中，组件是可以有多个实例的</p>
+<blockquote>
+<p>上图中除了 etcd 组件外 其它组件都是以集群形式搭建</p>
+</blockquote>
+</blockquote>
+<p>更详细的架构图如下:</p>
+<p><img data-src="https://img2018.cnblogs.com/blog/856154/201910/856154-20191023003358108-1816205812.png" alt="" /></p>
+<blockquote>
+<p>不难发现，Node 节点中是包含了多个 Pod 的，每一个 Pod 单独运行一个 docker 的 container 组</p>
+</blockquote>
+<h2 id="集群组件"><a class="anchor" href="#集群组件">#</a> 集群组件</h2>
+<h3 id="master组件"><a class="anchor" href="#master组件">#</a> Master 组件</h3>
+<blockquote>
+<p>控制平面组件会为集群做出全局决策，比如资源的调度。 以及检测和响应集群事件，例如当不满足部署的  <code>replicas</code>  字段时， 要启动新的 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv">pod</span>）。</p>
+</blockquote>
+<blockquote>
+<p>控制平面组件可以在集群中的任何节点上运行。 然而，为了简单起见，设置脚本通常会在同一个计算机上启动所有控制平面组件， 并且不会在此计算机上运行用户容器。</p>
+</blockquote>
+<h4 id="1-api-kube-apiserver"><a class="anchor" href="#1-api-kube-apiserver">#</a> 1. api (kube-apiserver)</h4>
+<p>该组件负责公开了 Kubernetes API，负责处理接受请求的工作。 API 服务器是 Kubernetes 控制平面的前端。</p>
+<p>Kubernetes API 服务器的主要实现是 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1hcGlzZXJ2ZXIv">kube-apiserver</span>。  <code>kube-apiserver</code>  设计上考虑了水平扩缩，也就是说，它可通过部署多个实例来进行扩缩。 可以通过运行  <code>kube-apiserver</code>  的多个实例，在这些实例之间平衡流量。</p>
+<blockquote>
+<p>apisever 可以理解为整个 k8s 集群中，Master 节点和 Nodes 通信的桥梁</p>
+</blockquote>
+<h4 id="2-etcd"><a class="anchor" href="#2-etcd">#</a> 2. etcd</h4>
+<p>一致且高可用的 <code>键值存储</code> ，用作 <strong>Kubernetes 所有集群数据的后台数据库。</strong></p>
+<p>如果你的 Kubernetes 集群使用 etcd 作为其后台数据库， 请确保你针对这些数据有一份 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvdGFza3MvYWRtaW5pc3Rlci1jbHVzdGVyL2NvbmZpZ3VyZS11cGdyYWRlLWV0Y2QvI2JhY2tpbmctdXAtYW4tZXRjZC1jbHVzdGVy">备份</span>计划。</p>
+<h4 id="3-kube-scheduler"><a class="anchor" href="#3-kube-scheduler">#</a> 3. kube-scheduler</h4>
+<p><code>kube-scheduler</code>  是 K8s 的<strong>调度器，</strong> 负责监视新创建的、未指定运行<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==">节点（node）</span>的 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv">Pods</span>， 并选择节点来让 Pod 在上面运行。</p>
+<p>调度决策考虑的因素包括单个 Pod 及 Pods 集合的资源需求、软硬件及策略约束、 亲和性及反亲和性规范、数据位置、工作负载间的干扰及最后时限。</p>
+<h4 id="4-c-m-kube-controller-manager"><a class="anchor" href="#4-c-m-kube-controller-manager">#</a> 4. c-m (kube-controller-manager)</h4>
+<p><span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1jb250cm9sbGVyLW1hbmFnZXIv">kube-controller-manager</span> 负责运行<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL2NvbnRyb2xsZXIv"> controller (控制器)</span> 进程。</p>
+<blockquote>
+<p><code>controller</code>  通过 <code>apiserver</code>  监控集群的公共状态，并致力于将当前状态转变为期望的状态.</p>
+<p>Kubernetes 内置一组 <code>controller</code> ，运行在 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1jb250cm9sbGVyLW1hbmFnZXIv">kube-controller-manager</span> 内。 这些内置的控制器提供了重要的核心功能，每个控制器管理集群状态的一个特定方面。</p>
+</blockquote>
+<p>从逻辑上讲， 每个<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL2NvbnRyb2xsZXIv">控制器</span>都是一个单独的进程， 但是为了降低复杂性，它们都被编译到同一个可执行文件，并在同一个进程中运行。</p>
+<p>这些控制器包括：</p>
+<ul>
+<li>节点控制器（Node Controller）：负责在节点出现故障时进行通知和响应</li>
+<li>任务控制器（Job Controller）：监测代表一次性任务的 Job 对象，然后创建 Pods 来运行这些任务直至完成</li>
+<li>端点分片控制器（EndpointSlice controller）：填充端点分片（EndpointSlice）对象（以提供 Service 和 Pod 之间的链接）。</li>
+<li>服务账号控制器（ServiceAccount controller）：为新的命名空间创建默认的服务账号（ServiceAccount）。</li>
+</ul>
+<h4 id="5-c-c-m-cloud-controller-manager"><a class="anchor" href="#5-c-c-m-cloud-controller-manager">#</a> 5. c-c-m (cloud-controller-manager)</h4>
+<p>一个 Kubernetes <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2dsb3NzYXJ5Lz9hbGw9dHJ1ZSN0ZXJtLWNvbnRyb2wtcGxhbmU=">控制平面</span>组件， 嵌入了特定于云平台的控制逻辑。 云控制器管理器（Cloud Controller Manager）允许你将你的集群连接到云提供商的 API 之上， 并将与该云平台交互的组件同与你的集群交互的组件分离开来。</p>
+<p><code>cloud-controller-manager</code>  仅运行特定于云平台的控制器。 因此如果你在自己的环境中运行 Kubernetes，或者在本地计算机中运行学习环境， 所部署的集群不需要有云控制器管理器。</p>
+<p>与  <code>kube-controller-manager</code>  类似， <code>cloud-controller-manager</code>  将若干逻辑上独立的控制回路组合到同一个可执行文件中， 供你以同一进程的方式运行。 你可以对其执行水平扩容（运行不止一个副本）以提升性能或者增强容错能力。</p>
+<p>下面的控制器都包含对云平台驱动的依赖：</p>
+<ul>
+<li>节点控制器（Node Controller）：用于在节点终止响应后检查云提供商以确定节点是否已被删除</li>
+<li>路由控制器（Route Controller）：用于在底层云基础架构中设置路由</li>
+<li>服务控制器（Service Controller）：用于创建、更新和删除云提供商负载均衡器</li>
+</ul>
+<h3 id="node组件"><a class="anchor" href="#node组件">#</a> Node 组件</h3>
+<p>节点组件会在每个节点上运行，负责维护运行的 Pod 并提供 Kubernetes 运行环境。</p>
+<h4 id="1-kubelet"><a class="anchor" href="#1-kubelet">#</a> 1. kubelet<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvY29tcG9uZW50cy8ja3ViZWxldA=="> </span></h4>
+<p><code>kubelet</code>  会在集群中每个<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==">节点（node）</span>上运行。 它保证<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvd2hhdC1pcy1rdWJlcm5ldGVzLyN3aHktY29udGFpbmVycw==">容器（containers）</span>都运行在 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv">Pod</span> 中。</p>
+<p>kubelet 接收一组通过各类机制提供给它的 PodSpecs， 确保这些 PodSpecs 中描述的容器处于运行状态且健康。 kubelet 不会管理不是由 Kubernetes 创建的容器。</p>
+<h4 id="2-kube-proxy"><a class="anchor" href="#2-kube-proxy">#</a> 2. kube-proxy</h4>
+<p><span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1wcm94eS8=">kube-proxy</span> 是集群中每个<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==">节点（node）</span>上所运行的网络代理， 实现 Kubernetes <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLw==">服务（Service）</span> 概念的一部分。</p>
+<p>kube-proxy 维护节点上的一些网络规则， 这些网络规则会允许从集群内部或外部的网络会话与 Pod 进行网络通信。</p>
+<p>如果操作系统提供了可用的数据包过滤层，则 kube-proxy 会通过它来实现网络规则。 否则，kube-proxy 仅做流量转发。</p>
+<h4 id="3-容器运行时container-runtime"><a class="anchor" href="#3-容器运行时container-runtime">#</a> 3. 容器运行时（Container Runtime）</h4>
+<p>容器运行环境是负责运行容器的软件。</p>
+<p>Kubernetes 支持许多容器运行环境，例如 <span class="exturl" data-url="aHR0cHM6Ly9jb250YWluZXJkLmlvL2RvY3Mv">containerd</span>、 <span class="exturl" data-url="aHR0cHM6Ly9jcmktby5pby8jd2hhdC1pcy1jcmktbw==">CRI-O</span> 以及 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2t1YmVybmV0ZXMvY29tbXVuaXR5L2Jsb2IvbWFzdGVyL2NvbnRyaWJ1dG9ycy9kZXZlbC9zaWctbm9kZS9jb250YWluZXItcnVudGltZS1pbnRlcmZhY2UubWQ=">Kubernetes CRI (容器运行环境接口)</span> 的其他任何实现。</p>
+<h2 id="插件addons"><a class="anchor" href="#插件addons">#</a> 插件（Addons）</h2>
+
+      <div class="tags">
+          <a href="/tags/K8s/" rel="tag"><i class="ic i-tag"></i> K8s</a>
+          <a href="/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/" rel="tag"><i class="ic i-tag"></i> 容器化</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/ci-cd/k8s/" class="item leancloud_visitors" data-flag-title="Kubernetes" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/ci-cd/k8s/" title="Kubernetes">http://adamshang2333.github.io/hou-duan/ci-cd/k8s/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/qi-ta/markdown-yu-fa-zong-jie/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-3z9vq3.jpg" title="Markdown语法">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> Markdown</span>
+  <h3>Markdown语法</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-k7wor1.jpg" title="css动态效果总结">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>css动态效果总结</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFk8s"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是 K8s</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#k8s%E7%9A%84%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text"> k8s 的功能特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8A%E7%BA%BF%E5%92%8C%E5%9B%9E%E6%BB%9A"><span class="toc-number">1.2.0.1.</span> <span class="toc-text"> 自动化上线和回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0%E4%B8%8E%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">1.2.0.2.</span> <span class="toc-text"> 服务发现与负载均衡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E6%88%91%E4%BF%AE%E5%A4%8D"><span class="toc-number">1.2.0.3.</span> <span class="toc-text"> 自我修复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%BC%96%E6%8E%92"><span class="toc-number">1.2.0.4.</span> <span class="toc-text"> 存储编排</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#secret-%E5%92%8C%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86"><span class="toc-number">1.2.0.5.</span> <span class="toc-text"> Secret 和配置管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1"><span class="toc-number">1.2.0.6.</span> <span class="toc-text"> 自动装箱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E6%89%A7%E8%A1%8C"><span class="toc-number">1.2.0.7.</span> <span class="toc-text"> 批量执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ipv4ipv6-%E5%8F%8C%E5%8D%8F%E8%AE%AE%E6%A0%88"><span class="toc-number">1.2.0.8.</span> <span class="toc-text"> IPv4&#x2F;IPv6 双协议栈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E6%89%A9%E7%BC%A9"><span class="toc-number">1.2.0.9.</span> <span class="toc-text"> 水平扩缩</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E6%89%A9%E5%B1%95%E6%80%A7%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.0.10.</span> <span class="toc-text"> 为扩展性设计</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#k8s%E7%9A%84%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84%E5%92%8C%E7%BB%84%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> K8s 的集群架构和组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84"><span class="toc-number">2.1.</span> <span class="toc-text"> 集群架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text"> 集群组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#master%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text"> Master 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-api-kube-apiserver"><span class="toc-number">2.2.1.1.</span> <span class="toc-text"> 1. api (kube-apiserver)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-etcd"><span class="toc-number">2.2.1.2.</span> <span class="toc-text"> 2. etcd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-kube-scheduler"><span class="toc-number">2.2.1.3.</span> <span class="toc-text"> 3. kube-scheduler</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-c-m-kube-controller-manager"><span class="toc-number">2.2.1.4.</span> <span class="toc-text"> 4. c-m (kube-controller-manager)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-c-c-m-cloud-controller-manager"><span class="toc-number">2.2.1.5.</span> <span class="toc-text"> 5. c-c-m (cloud-controller-manager)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.2.</span> <span class="toc-text"> Node 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-kubelet"><span class="toc-number">2.2.2.1.</span> <span class="toc-text"> 1. kubelet </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-kube-proxy"><span class="toc-number">2.2.2.2.</span> <span class="toc-text"> 2. kube-proxy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C%E6%97%B6container-runtime"><span class="toc-number">2.2.2.3.</span> <span class="toc-text"> 3. 容器运行时（Container Runtime）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6addons"><span class="toc-number">2.3.</span> <span class="toc-text"> 插件（Addons）</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/hou-duan/ci-cd/k8s/" rel="bookmark" title="Kubernetes">Kubernetes</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/qi-ta/markdown-yu-fa-zong-jie/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/MQ/" title="分类于 MQ">MQ</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/MQ/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/rocketmq-ru-men/" title="RocketMQ">RocketMQ</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-xuan-ze-qi/" title="js选择器">js选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" title="css动态效果总结">css动态效果总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-ji-chu/" title="数据库基础">数据库基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/html-ji-chu/" title="HTML基础">HTML基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/basics/" title="分类于 基础">基础</a>
+</div>
+
+    <span><a href="/hou-duan/java/basics/java-ji-chu/" title="IO基础">IO基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/duo-xian-cheng-ru-men/" title="多线程入门">多线程入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-ji-chu/" title="JS总结">JS总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/mybatis/" title="Mybatis">Mybatis</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/ci-cd/k8s/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

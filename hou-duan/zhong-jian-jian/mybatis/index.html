@@ -1,0 +1,993 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/">
+
+
+
+  <title>
+Mybatis |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Mybatis
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-03-08 19:32:51">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-03-08T19:32:51+08:00">2023-03-08</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>14k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>13 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9gvz5.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-5womy5.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm1lwy.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-9mm621.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-m993om.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-y88q3g.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>[toc]</p>
+<h2 id="重要组成部分"><a class="anchor" href="#重要组成部分">#</a> 重要组成部分</h2>
+<ul>
+<li>
+<p>SqlSessionFactory</p>
+</li>
+<li>
+<p>SqlSession</p>
+</li>
+<li>
+<p>configuration</p>
+</li>
+</ul>
+<h3 id="sqlsessionfactory"><a class="anchor" href="#sqlsessionfactory">#</a> SqlSessionFactory</h3>
+<blockquote>
+<ol>
+<li>是用来创建 SqlSession 对象的 ，而 SqlSession 用来操作数据库的</li>
+<li><strong>SqlSessionFactory 是线程安全的</strong>，它一旦被创建，应该在应用执行期间都存在。在应用运行期间不要重复创建多次，建议使用单例模式。</li>
+<li>SqlSessionFactoryBuilder 则可以从 XML 配置文件或一个预先定制的 Configuration 的实例构建出 SqlSessionFactory 的实例.</li>
+</ol>
+</blockquote>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 定义配置文件的路径</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token class-name">String</span> resource <span class="token operator">=</span> <span class="token string">"org/mybatis/example/mybatis-config.xml"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">// 通过 Mybatis 中的工具类 Resources 获取一个流</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token class-name">InputStream</span> inputStream <span class="token operator">=</span> <span class="token class-name">Resources</span><span class="token punctuation">.</span><span class="token function">getResourceAsStream</span><span class="token punctuation">(</span>resource<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// 实例化一个 SqlSessionFactory</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token class-name">SqlSessionFactory</span> sqlSessionFactory <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SqlSessionFactoryBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span>inputStream<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="sqlsession"><a class="anchor" href="#sqlsession">#</a> SqlSession</h3>
+<blockquote>
+<p>Mybatis 中的核心<br />
+ Mybatis 工作最重要的  java 接口，通过这个接口来执行命令，获取 mapper 以及管理事务<br />
+ sqlSession，顾名思义，就是 sql 的一个会话，<br />
+<strong>在这个会话中发生的事不影响别的会话，如果会话提交，则生效，不提交不生效</strong>。<br />
+　  　---&gt; 即: <mark><strong>如果在事务里，则 Spring 给你的 sqlSession 是一个；<br />
+　　　　否则，每一个 sql 给你一个新的 sqlSession , 且每次都会提交</strong></mark></p>
+</blockquote>
+<h3 id="configuration"><a class="anchor" href="#configuration">#</a> configuration</h3>
+<blockquote>
+<p>用来设置 Mybatis 的各项，配置文件包含了会深深影响 MyBatis 行为的设置和属性信息<br />
+其中，envirments -- datasources &amp; transactionManager ; mappers 都是最基础和重要的</p>
+<pre><code>配置文档的层级结构:
+ configuration（配置）
+</code></pre>
+</blockquote>
+<pre><code>properties（属性）
+settings（设置 !!）
+typeAliases（类型别名 !）
+typeHandlers（类型处理器 !）
+objectFactory（对象工厂）
+plugins（插件）
+environments（环境配置 !!!)
+   environment（环境变量）
+      transactionManager（事务管理器）
+      dataSource（数据源）
+databaseIdProvider（数据库厂商标识）
+mappers（映射器 !!!）
+</code></pre>
+<blockquote>
+<pre><code></code></pre>
+</blockquote>
+<p><strong>配置文件实例</strong></p>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8" ?></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">configuration</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token name">PUBLIC</span> <span class="token string">"-//mybatis.org//DTD Config 3.0//EN"</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token string">"http://mybatis.org/dtd/mybatis-3-config.dtd"</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">&lt;!-- 选择 mybatis 的运行环境 --></span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token comment">&lt;!-- 在该标签下可以创建多个配置，例如开发环境 (localhost) 和生产环境 (部署后)--></span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>environments</span> <span class="token attr-name">default</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>development<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>environment</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>development<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>      <span class="token comment">&lt;!-- 选择事务管理器，默认使用 JDBC 的事务管理器 --></span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transactionManager</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>JDBC<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="13"></td><td><pre>       <span class="token comment">&lt;!-- 配置数据源，实际上就是数据库连接池 --></span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dataSource</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>POOLED<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="15"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>driver<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$&#123;driver&#125;<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$&#123;url&#125;<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$&#123;username&#125;<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="18"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$&#123;password&#125;<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="19"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dataSource</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="20"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>environment</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="21"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>environments</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mappers</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="23"></td><td><pre>  <span class="token comment">&lt;!--mappers 元素则是包含一组映射器（mapper），</pre></td></tr><tr><td data-num="24"></td><td><pre>  这些映射器的 XML 映射文件包含了 SQL 代码和映射定义信息。--></span></pre></td></tr><tr><td data-num="25"></td><td><pre>  <span class="token comment">&lt;!-- 映射器的作用就是将 xml 中的文件和命名空间中对应的接口类做映射  </pre></td></tr><tr><td data-num="26"></td><td><pre>  生成相应的接口实现类 --></span></pre></td></tr><tr><td data-num="27"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">resource</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>BookMapper.xml<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="28"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">resource</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>CategoryMapper.xml<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="29"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">resource</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UserMapper.xml<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="30"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mappers</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="31"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><h2 id="mybatis-xml配置-environmentsmapperdatasourcesetting"><a class="anchor" href="#mybatis-xml配置-environmentsmapperdatasourcesetting">#</a> Mybatis XML 配置  (environments&amp;mapper&amp;datasource&amp;setting)</h2>
+<blockquote>
+<p><strong>注意！！</strong>:<br />
+ 在 Mybatis 的  <code>&lt;configuration&gt; </code>  中配置的其他子标签是有顺序的<br />
+　即: setting --&gt; typeAliases --&gt; typeHandlers --&gt; environments --&gt; mappers<br />
+<mark> 如果不按照顺序，那么会报错 无法创建 SessionFactory</mark></p>
+</blockquote>
+<h3 id="setting-配置"><a class="anchor" href="#setting-配置">#</a> Setting 配置</h3>
+<p>setting 是 MyBatis 中极为重要的调整设置，它们会改变 MyBatis 的运行时行为</p>
+<h4 id="setting-常用配置表格"><a class="anchor" href="#setting-常用配置表格">#</a> Setting 常用配置表格</h4>
+<p>以下是部分设置，标记高亮的是常用设置:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">设置名</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">有效值</th>
+<th style="text-align:left">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cacheEnabled</td>
+<td style="text-align:left">全局地开启或关闭配置文件中的所有映射器已经配置的任何缓存。</td>
+<td style="text-align:left">true / false</td>
+<td style="text-align:left">true</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">lazyLoadingEnabled</td>
+<td style="text-align:left">延迟加载的全局开关。当开启时，所有关联对象都会延迟加载。 特定关联关系中可通过设置 fetchType 属性来覆盖该项的开关状态。</td>
+<td style="text-align:left">true / false</td>
+<td style="text-align:left">false</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong><mark>useGeneratedKeys</mark></strong></td>
+<td style="text-align:left">允许 JDBC 支持自动生成主键，需要驱动支持。 如果设置为 true 则这个设置强制使用自动生成主键，尽管一些驱动不能支持但仍可正常工作（比如 Derby）</td>
+<td style="text-align:left">true / false</td>
+<td style="text-align:left">False</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">autoMappingBehavior</td>
+<td style="text-align:left">指定 MyBatis 应如何自动映射列到字段或属性。 NONE 表示取消自动映射；PARTIAL 只会自动映射没有定义嵌套结果集映射的结果集。 FULL 会自动映射任意复杂的结果集（无论是否嵌套）。</td>
+<td style="text-align:left">NONE, PARTIAL, FULL</td>
+<td style="text-align:left">PARTIAL</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">defaultStatementTimeout</td>
+<td style="text-align:left">设置超时时间，它决定驱动等待数据库响应的秒数。</td>
+<td style="text-align:left">任意正整数</td>
+<td style="text-align:left">未设置 (null)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong><mark>mapUnderscoreToCamelCase</mark></strong></td>
+<td style="text-align:left">是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN 到经典 Java 属性名 aColumn 的类似映射</td>
+<td style="text-align:left">true / false</td>
+<td style="text-align:left">False</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><mark><strong>logImpl</strong></mark></td>
+<td style="text-align:left">指定 MyBatis 所用日志的具体实现，未指定时将自动查找。</td>
+<td style="text-align:left">SLF4J  / LOG4J/LOG4J2 / JDK_LOGGING / COMMONS_LOGGING / STDOUT_LOGGING / NO_LOGGING</td>
+<td style="text-align:left">未设置</td>
+</tr>
+</tbody>
+</table>
+<p><span class="exturl" data-url="aHR0cHM6Ly9teWJhdGlzLm9yZy9teWJhdGlzLTMvemgvY29uZmlndXJhdGlvbi5odG1sI3NldHRpbmdz">完整的 setting 设置链接</span></p>
+<p><strong>setting 的 Demo</strong></p>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>settings</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>        <span class="token comment">&lt;!-- 开启 Mybatis 缓存 (默认开启一级缓存)--></span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token comment">&lt;!--</pre></td></tr><tr><td data-num="4"></td><td><pre>        一级缓存：同一个 sqlSession 才会从缓存中获取数据</pre></td></tr><tr><td data-num="5"></td><td><pre>        二级缓存：不同的 sqlSession 也会从缓存中获取数据</pre></td></tr><tr><td data-num="6"></td><td><pre>        --></span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>setting</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cacheEnabled<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token comment">&lt;!-- 开启下划线形式的列名与小驼峰形式的属性名自动映射；</pre></td></tr><tr><td data-num="9"></td><td><pre>        和在 mapper.xml 中设置 resultMap 属性 autoMapping = true 效果一样 --></span></pre></td></tr><tr><td data-num="10"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>setting</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mapUnderscoreToCamelCase<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token comment">&lt;!-- 指定 MyBatis 所用日志的具体实现，未指定时将自动查找。--></span></pre></td></tr><tr><td data-num="12"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>setting</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>logImpl<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>LOG4J<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>        </pre></td></tr><tr><td data-num="13"></td><td><pre> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>settings</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><h4 id="mybatis数据库缓存"><a class="anchor" href="#mybatis数据库缓存">#</a> Mybatis 数据库缓存</h4>
+<p><strong>关于 Mybatis 数据库的缓存</strong><br />
+缓存的目的 :<br />
+ 避免频繁的与数据库进行交互，尤其是在查询越多、缓存命中率越高的情况下， 使用缓存对性能的提高更明显</p>
+<p>mybatis 也提供了对缓存的支持， 分为一级缓存和二级缓存。<br />
+在默认的情况下， Mybatis 开启一级缓存 (SQLSession 缓存)<br />
+<strong> 一级缓存是对同一个 SqlSession 而言的，二级缓存对不同的 SqlSession 而言。</strong></p>
+<p>一级缓存 (SqlSession 级别):</p>
+<blockquote>
+<p>1   <strong>同一个 SqlSession 对象</strong>，调用同一个 <code>&lt;select&gt;</code>  标签，只有第一次执行 SQL 语句，<br />
+　　第一次的查询结果会缓存到 SQLSession 的缓存区 (内存) 中<br />
+　　---&gt; 所以被查询的实体类要实现序列化的接口以便缓存<br />
+　　<strong>有效范围：同一个 sqlSession 对象</strong><br />
+ 2   缓存的是 Statement 对象 (一个 <code>&lt;select&gt;</code>  对应一个 statement )<br />
+　　<strong>也就是说，即使 SQL 语句一样 有可能也不会走缓存，只看  <code>&lt;select&gt;</code>  标签的 id 值</strong></p>
+</blockquote>
+<p>二级缓存 (SqlSessionFactory 级别):</p>
+<blockquote>
+<p>1  二级缓存和一级缓存使用的是不同的内存空间，<br />
+　<mark>只有在 SQLSession.commit () 或者 sqlSession.close () 的时候，<br />
+　才会从一级缓存放入二级缓存中</mark><br />
+　有效范围：同一个 SqlSessionFactory 中的任一 sqlSession 对象<br />
+ 2  当数据频繁被使用，很少被修改的时候，适合开启二级缓存，<mark><strong> 频繁修改一定不要开二级！！</strong></mark><br />
+　数据被修改的时候，缓存在内存中的数据没有及时同步，会产生 &quot;落后&quot; 的<strong>脏数据</strong><br />
+　那么再次查询时，读取缓存中的数据与数据库中的就会不一致</p>
+</blockquote>
+<p><strong>开启二级缓存的方式</strong></p>
+<ol>
+<li>在 xxxmapper.xml 中添加 <code>&lt;cache readOnly = &quot;true&quot;/&gt;</code></li>
+<li>在 xxxmapper.xml 中添加 <code>&lt;cache/&gt;</code>  ; 并且结果集对应实体类实现序列化接口</li>
+</ol>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cache</span> </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token attr-name">eviction</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>FIFO<span class="token punctuation">"</span></span>  <span class="token attr-name">&lt;!--回收策略为先进先出--</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>flushInterval="60000" <span class="token comment">&lt;!-- 自动刷新时间 60s--></span></pre></td></tr><tr><td data-num="4"></td><td><pre>size="512" <span class="token comment">&lt;!-- 最多缓存 512 个引用对象 --></span></pre></td></tr><tr><td data-num="5"></td><td><pre>readOnly="true"/> <span class="token comment">&lt;!-- 只读 --></span></pre></td></tr></table></figure><h3 id="typealiases-别名配置"><a class="anchor" href="#typealiases-别名配置">#</a> typeAliases (别名) 配置</h3>
+<blockquote>
+<p>为 Java 类型设置一个短的名字。<br />
+它只和 XML 配置有关，存在的意义仅在于用来减少类完全限定名的冗余</p>
+</blockquote>
+<p>常用的有两种配置方式:<br />
+1 精确的指定别名<br />
+ 2 扫描指定包下的所有 bean</p>
+<blockquote>
+<p>在没有注解的情况下，会使用 Bean 的首字母小写的非限定类名来作为它的别名；<br />
+ 若有注解，则别名为其 javaBean 类上的注解值 (@Alias (&quot;author&quot;) )</p>
+</blockquote>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typeAliases</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>        <span class="token comment">&lt;!--xml 映射文件中，将类起一个别名 --></span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token comment">&lt;!-- 为某个包下的所有类都自动设置别名，Mybatis 可以正确的识别出来</pre></td></tr><tr><td data-num="4"></td><td><pre>        默认的别名为类名，与大小写无关</pre></td></tr><tr><td data-num="5"></td><td><pre>        可以两种混用 但是 typeAlias 需要写在 package 前面</pre></td></tr><tr><td data-num="6"></td><td><pre>        --></span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token comment">&lt;!-- 方式一 --></span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typeAlias</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Book<span class="token punctuation">"</span></span> <span class="token attr-name">alias</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>book<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typeAlias</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Permission<span class="token punctuation">"</span></span> <span class="token attr-name">alias</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>permission<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="10"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>typeAlias</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Category<span class="token punctuation">"</span></span> <span class="token attr-name">alias</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>category<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token comment">&lt;!-- 方式二 --></span></pre></td></tr><tr><td data-num="12"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>package</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>typeAliases</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><h3 id="typehandlers类型处理器配置"><a class="anchor" href="#typehandlers类型处理器配置">#</a> typeHandlers (类型处理器) 配置</h3>
+<p>typeHandler 一般在两个地方会用到:</p>
+<ol>
+<li>由 java 向 DB 传入参数时 (java 类型 --&gt;JDBC 类型 )</li>
+<li>将结果集中的 JDBC 数据类型转换成 java 中的对应类型</li>
+</ol>
+<blockquote>
+<p><strong>实例</strong>   设置一个 Money 类的 typeHandler<br />
+java bean</p>
+<pre><code class="language-java"></code></pre>
+</blockquote>
+<p>public class Product &#123;<br />
+private Integer id;<br />
+private String name;<br />
+private String currencyUnit;<br />
+private Money money;<br />
+&#125;<br />
+public class Money &#123;<br />
+private long value;<br />
+&#125;</p>
+<pre><code>&gt;mapper.xml
+&gt;```xml
+&gt;&lt;!--设置好Money类的typeHandler后,可以直接以#&#123;money&#125;的方式传入参数--&gt;
+&gt;&lt;!--没设置的话,只能以#&#123;money.value&#125;的方式传入--&gt;
+&gt;&lt;insert id=&quot;add&quot;&gt;
+        insert into tb_product 
+          values (null,#&#123;name&#125;,#&#123;currencyUnit&#125;,#&#123;money&#125;)
+&lt;/insert&gt;
+&gt;```
+&gt;mybatis-config.xml  
+&gt;&gt;在配置mybatis的xml中设置typeHandler   
+&gt;**注意, 和 typeAliases一样 , package要在 typeHanlder后面**
+&gt;
+&gt;```xml
+&gt;&lt;typeHandlers&gt;
+        &lt;typeHandler handler=&quot;com.lanou.demo.handler.JodaMoneyTypeHandler&quot;/&gt;
+        &lt;!--和配置typeAliases一样,也可以直接扫描包--&gt;
+        &lt;package name=&quot;com.lanou.demo.handler&quot;/&gt;
+&lt;/typeHandlers&gt;
+&gt;```
+&gt;MoneyTypeHandler
+&gt;&gt;继承BaseTypeHandler,重写其中的setxxx和getxxx的方法  
+&gt;&gt;两种方法就是在对应向DB传入参数和取出参数
+&gt;
+&gt;```java
+/**
+ * 继承BaseTypeHandler (TypeHandler的一个子类)
+ * 所填入的泛型,是要处理的类型(java中哪个类型的变量 要对应jdbc中的数据类型)
+ */
+public class MoneyTypeHandler extends BaseTypeHandler &lt;Money&gt;&#123;
+    /**
+     * 设置传入参数时, java中数据类型与jdbc中数据类型的对应关系
+     * JDBJ中设置传入参数的方法:
+     * prepareStatement ps = conn.getPrepareStatement(&quot;insert into xxx values (null,?,?)&quot;)
+     * ps.setString(1,aaa);
+     * ps.setLong(2,bbb);
+     * ****************************************
+     * @param ps prepareStatement sql语句编译预处理对象
+     * @param i 要处理的参数是传入的第几个
+     * @param parameter 要交给类型处理器处理的属性参数
+     * @param jdbcType 对应的jdbc类型
+     * @throws SQLException
+     * 设置好后, 在mapper.xml中使用参数 不用按照#&#123;price.value&#125;的形式来使用参数 可以直接#&#123;price&#125;了
+     */
+    @Override
+    public void setNonNullParameter(PreparedStatement ps, int i, Money parameter, JdbcType jdbcType) throws SQLException &#123;
+        ps.setLong(i,parameter.getValue());
+    &#125;
+    /**
+     * @param columnName 列名(方法中指定了泛型Money的列)
+     * @return 返回对应处理的java类型
+     */
+    @Override
+    public Money getNullableResult(ResultSet rs, String columnName) throws SQLException &#123;
+        long value = rs.getLong(columnName);
+        Money money = new Money();
+        money.setValue(value);
+        return money;
+    &#125;
+    /**
+     * @param columnIndex 第几列(方法中指定了泛型Money的列)
+     * @return 返回对应处理的java类型
+     */
+    @Override
+    public Money getNullableResult(ResultSet rs, int columnIndex) throws SQLException &#123;
+        long value = rs.getLong(columnIndex);
+        Money money = new Money();
+        money.setValue(value);
+        return money;
+    &#125;
+    /**
+     * 在存储过程中使用,与上面的用法基本一致
+     * @param cs 可以看做prepareStatement来使用
+     * @param columnIndex 第几列
+     * @return
+     */
+    @Override
+    public Money getNullableResult(CallableStatement cs, int columnIndex) throws SQLException &#123;
+        long value = cs.getLong(columnIndex);
+        Money money = new Money();
+        money.setValue(value);
+        return money;
+    &#125;
+&#125;
+</code></pre>
+<h3 id="environments环境配置"><a class="anchor" href="#environments环境配置">#</a> environments (环境) 配置</h3>
+<blockquote>
+<p>MyBatis 可以配置成适应多种环境，这种机制有助于将 SQL 映射应用于多种数据库之中， 现实情况下有多种理由需要这么做。<br />
+例如，开发、测试和生产环境需要有不同的配置；<br />
+或者想在具有相同 Schema 的多个生产数据库中 使用相同的 SQL 映射。<br />
+<strong><mark>不过：尽管可以配置多个环境，但每个 SqlSessionFactory 实例只能选择一种环境。</mark></strong></p>
+</blockquote>
+<p>指定加载环境 :</p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">//.build 方法可以接收一个环境参数，如果忽略了环境参数，那么加载 xml 的默认环境</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token class-name">SqlSessionFactory</span> factory <span class="token operator">=</span> </pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">new</span> <span class="token class-name">SqlSessionFactoryBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span>reader<span class="token punctuation">,</span> environment<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token class-name">SqlSessionFactory</span> factory <span class="token operator">=</span> </pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token keyword">new</span> <span class="token class-name">SqlSessionFactoryBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span>reader<span class="token punctuation">,</span> environment<span class="token punctuation">,</span> properties<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>xml 中配置加载环境:</p>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>environments</span> <span class="token attr-name">default</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dev<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>environment</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dev<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>      <span class="token comment">&lt;!-- 选择事务管理器，默认使用 JDBC 的事务管理器 --></span></pre></td></tr><tr><td data-num="4"></td><td><pre>       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transactionManager</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>JDBC<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="5"></td><td><pre>       <span class="token comment">&lt;!-- 配置数据源，实际上就是数据库连接池 --></span></pre></td></tr><tr><td data-num="6"></td><td><pre>       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dataSource</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>POOLED<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="7"></td><td><pre>         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>driver<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.mysql.jdbc.Driver<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="8"></td><td><pre>         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jdbc:mysql://localhost:3306/db_1021<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="10"></td><td><pre>         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>123456<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dataSource</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>environment</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="13"></td><td><pre></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token comment">&lt;!-- 生产环境的配置 --></span></pre></td></tr><tr><td data-num="15"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>environment</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>prop<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="16"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transactionManager</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>JDBC<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="17"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dataSource</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>POOLED<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="18"></td><td><pre>                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>driver<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$&#123;driver&#125;<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="19"></td><td><pre>                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$&#123;url&#125;<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="20"></td><td><pre>                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$&#123;username&#125;<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="21"></td><td><pre>                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$&#123;password&#125;<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="22"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dataSource</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="23"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>environment</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="24"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>environments</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="25"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mappers</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><blockquote>
+<p>注意这里的关键点:</p>
+</blockquote>
+<ol>
+<li>默认使用的环境 ID（比如：default=&quot;development&quot;）。<br />
+<strong>至少要有一个  <code>&lt;environment&gt;</code>  的 id 值与  <code>&lt;environments&gt;</code>  的 default 值匹配</strong></li>
+<li>每个 environment 元素定义的环境 ID（比如：id=&quot;development&quot;）。</li>
+<li>事务管理器的配置（比如：type=&quot;JDBC&quot;）。</li>
+<li>数据源的配置（比如：type=&quot;POOLED&quot;）。</li>
+</ol>
+<p>===</p>
+<p><strong>transactionManager (事务管理器)</strong></p>
+<blockquote>
+<p>MyBatis 中有两种类型的事务管理器（也就是 type=”[JDBC|MANAGED]”）<br />
+JDBC – 这个配置就是直接使用了 JDBC 的提交和回滚设置，它依赖于从数据源得到的连接来管理事务作用域。<br />
+MANAGED – 这个配置几乎没做什么。它从来不提交或回滚一个连接，而是让容器来管理事务的整个生命周期（比如 JEE 应用服务器的上下文）。 默认情况下它会关闭连接</p>
+</blockquote>
+<blockquote>
+<p><code>提示:</code> <br />
+<em><strong> 如果你正在使用 Spring + MyBatis，则没有必要配置事务管理器，<br />
+　因为 Spring 模块会使用自带的管理器来覆盖前面的配置。</strong></em></p>
+</blockquote>
+<p><strong>dataSource type (数据源类型)</strong></p>
+<blockquote>
+<p>许多 MyBatis 的应用程序会按示例中的例子来配置数据源。<br />
+虽然这是可选的，但为了使用延迟加载，数据源是必须配置的.</p>
+</blockquote>
+<p>有三种内建的数据源类型（也就是 type=”[UNPOOLED|POOLED|JNDI]”）：</p>
+<ul>
+<li><strong>UNPOOLED</strong></li>
+</ul>
+<blockquote>
+<p>这个数据源的实现只是每次被请求时打开和关闭连接。<br />
+虽然有点慢，但对于在数据库连接可用性方面没有太高要求的简单应用程序来说，是一个很好的选择。<br />
+不同的数据库在性能方面的表现也是不一样的，对于某些数据库来说，使用连接池并不重要，这个配置就很适合这种情形</p>
+</blockquote>
+<ul>
+<li>
+<p>配置属性 :<br />
+driver – 这是 JDBC 驱动的 Java 类的完全限定名<br />
+（并不是 JDBC 驱动中可能包含的数据源类）。<br />
+url – 这是数据库的 JDBC URL 地址。<br />
+username – 登录数据库的用户名。<br />
+password – 登录数据库的密码。</p>
+</li>
+<li>
+<p><strong>POOLED</strong></p>
+</li>
+</ul>
+<blockquote>
+<p>这种数据源的实现利用 “池” 的概念将 JDBC 连接对象组织起来，<br />
+避免了创建新的连接实例时所必需的初始化和认证时间。<br />
+这是一种使得并发 Web 应用快速响应请求的流行处理方式。</p>
+</blockquote>
+<ul>
+<li><strong>JNDI</strong></li>
+</ul>
+<blockquote>
+<p>这个数据源的实现是为了能在如 EJB 或应用服务器这类容器中使用，<br />
+容器可以集中或在外部配置数据源，然后放置一个 JNDI 上下文的引用。<br />
+这种数据源配置只需要两个属性 : initial_context , data_source</p>
+</blockquote>
+<p><strong>mappers (映射器)</strong></p>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mappers</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>        <span class="token comment">&lt;!-- 根据接口类来找同名的 xml 文件 (xml 文件和接口类要放在同一个包下面才会生效！！)--></span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token comment">&lt;!-- 在 resources 中 建立多级目录的时候，需要使用 / 而不是 "."</pre></td></tr><tr><td data-num="4"></td><td><pre>         ==> "." 创建的文件夹只有一个，名字是 com.lanou.demo --></span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">&lt;!--        &lt;mapper class="com.lanou.demo.mapper.BookMapper"/>--></span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">&lt;!--        &lt;mapper resource="BookMapper.xml"/>--></span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">&lt;!--        &lt;mapper resource="CategoryMapper.xml"/>--></span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">&lt;!--        &lt;mapper resource="UserMapper.xml"/>--></span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token comment">&lt;!-- 扫描包下面的所有 xml 映射文件 --></span></pre></td></tr><tr><td data-num="10"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>package</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.demo.mapper<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mappers</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><h2 id="xml映射xxxmapperxml"><a class="anchor" href="#xml映射xxxmapperxml">#</a> XML 映射 (XXXMapper.xml)</h2>
+<p>最常见和使用的就是 xml 形式的结果集映射，也可以做注解形式的配置<br />
+但是 sql 语句过长和复杂的时候，代码的可读性会下降</p>
+<ul>
+<li>注解形式，在方法上面使用 @select/@insert 注解就行，value 值填入 sql 语句</li>
+<li>XML 形式，使用 select /insert/update /delete/resultMap 标签来完成映射</li>
+</ul>
+<p><strong>xml 映射文件结构</strong></p>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8" ?></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">mapper</span>   </pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token name">PUBLIC</span> <span class="token string">"-//mybatis.org//DTD Mapper 3.0//EN"</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">&lt;!-- 一个接口类对应一个 mapper--></span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">&lt;!-- 具体对应哪个接口类的实现，通过 namespace 来指明 --></span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">namespace</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.demo.mapper.BookMapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">&lt;!--select 是最常用的标签，resultType 和 resultMap 是做结果集映射的 --></span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token comment">&lt;!--</pre></td></tr><tr><td data-num="11"></td><td><pre>    id: 与接口类的方法名一致；</pre></td></tr><tr><td data-num="12"></td><td><pre>    resultType: 指明结果集映射的实体对象</pre></td></tr><tr><td data-num="13"></td><td><pre>    resultMap: 是最复杂也是最强大的元素，用来描述如何从数据库结果集中来加载对象。</pre></td></tr><tr><td data-num="14"></td><td><pre>    --></span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>findOne<span class="token punctuation">"</span></span> <span class="token attr-name">resultType</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Book<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="16"></td><td><pre>       ...</pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="18"></td><td><pre>    </pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resultMap</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>findWithCategory<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Book<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="20"></td><td><pre>      ...</pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>resultMap</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>findWithCategory<span class="token punctuation">"</span></span> <span class="token attr-name">resultMap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>findWithCategory<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="23"></td><td><pre>      ...</pre></td></tr><tr><td data-num="24"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="25"></td><td><pre>    </pre></td></tr><tr><td data-num="26"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>insert</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>addOne<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="27"></td><td><pre>        ...</pre></td></tr><tr><td data-num="28"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>insert</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="29"></td><td><pre>    </pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>delete</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>del<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="31"></td><td><pre>       ...</pre></td></tr><tr><td data-num="32"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>delete</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="33"></td><td><pre></pre></td></tr><tr><td data-num="34"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>update</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>update<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="35"></td><td><pre>       ...</pre></td></tr><tr><td data-num="36"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>update</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="37"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mapper</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><p><strong>xml 映射文件中的配置</strong></p>
+<ul>
+<li>主键返回 (insert 和 update)</li>
+</ul>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">&lt;!--  useGeneratedKeys 是否使用生成的主键；</pre></td></tr><tr><td data-num="2"></td><td><pre>      keyColumn 主键在表中的列名；</pre></td></tr><tr><td data-num="3"></td><td><pre>      keyProperty 主键在属性中对应的属性名 --></span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">&lt;!-- 在方法中调用 addOne 方法之后，会将传入的参数重新赋值 把自增的主键补全 --></span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>insert</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>addOne<span class="token punctuation">"</span></span> <span class="token attr-name">useGeneratedKeys</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span></pre></td></tr><tr><td data-num="6"></td><td><pre>     <span class="token attr-name">keyColumn</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span> <span class="token attr-name">keyProperty</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="7"></td><td><pre>        insert into tb_book (name, id, author,category_id)</pre></td></tr><tr><td data-num="8"></td><td><pre>        values (#&#123;name&#125;, null, #&#123;author&#125;,#&#123;categoryId&#125;)</pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>insert</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><ul>
+<li>缓存刷新 (使用默认值即可，不用配置)</li>
+</ul>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">&lt;!--flushCache="true" 增删改中默认为 true 查询默认为 false ;</pre></td></tr><tr><td data-num="2"></td><td><pre>    设置为 true , 会在增删改的时候 清空所有的缓存内容 --></span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>update</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>update<span class="token punctuation">"</span></span> <span class="token attr-name">flushCache</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>        update tb_book</pre></td></tr><tr><td data-num="5"></td><td><pre>        set name   = #&#123;name&#125;,</pre></td></tr><tr><td data-num="6"></td><td><pre>            author = #&#123;author&#125;</pre></td></tr><tr><td data-num="7"></td><td><pre>        where id = #&#123;id&#125;</pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>update</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><hr />
+<p><strong>复杂结果映射</strong><br />
+常见的结果映射可能会出现非基本数据类型，<br />
+ 比如会有某个属性是引用的其他类:   <code>private Address address;</code> <br />
+ 或者某个属性是一个集合 (具有泛型):  <code>private List&lt;Role&gt; roles;</code></p>
+<p>结果集要映射的实体类:</p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">private</span> <span class="token class-name">Integer</span> id<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">private</span> <span class="token class-name">String</span> username<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">private</span> <span class="token class-name">String</span> password<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token comment">// 引用类型</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">private</span> <span class="token class-name">Address</span> address<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">// 引用的集合类型</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token keyword">private</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Role</span><span class="token punctuation">></span></span> roles<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>这种时候，需要使用  <code>&lt;resultMap&gt;</code>  来做高级映射 :<br />
+ 对于一对一或者一对多，使用  <code>&lt;association&gt;</code> <br />
+ 对于多对多，使用  <code>&lt;collection&gt;</code></p>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resultMap</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>findOneDetailsWithAddress<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.User<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>uid<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>association</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>address<span class="token punctuation">"</span></span> <span class="token attr-name">javaType</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Address<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="6"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>address<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>address<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>association</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>collection</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>roles<span class="token punctuation">"</span></span> <span class="token attr-name">ofType</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Role<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rid<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="10"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rcode<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>code<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rname<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="12"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>collection</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>permissions<span class="token punctuation">"</span></span> <span class="token attr-name">ofType</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Permission<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="13"></td><td><pre>                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pid<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="14"></td><td><pre>                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pname<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="15"></td><td><pre>                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>purl<span class="token punctuation">"</span></span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="16"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>collection</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>collection</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>resultMap</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><h2 id="动态sql"><a class="anchor" href="#动态sql">#</a> 动态 SQL</h2>
+<p>实例 :</p>
+<pre><code>// 根据条件进行动态查询
+    // 可以根据书名/作者来进行查询, 条件的数量是不确定的
+
+    /**
+     * 无条件时: select * from tb_book
+     * 有书名时: select * from tb_book where name like %书名%;
+     * 有作者时: select * from tb_book where author like %作者%;
+     * 有书名和作者时: select * from tb_book
+                      where name like %作者% and author like %作者%;
+     */
+    List&lt;Book&gt; findByCondition(Book book);
+</code></pre>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>findByCondition<span class="token punctuation">"</span></span> <span class="token attr-name">resultType</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.pojo.Book<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>        select * from tb_book</pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>where</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token comment">&lt;!-- 如果里面有标签，拼接上 where--></span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token comment">&lt;!-- 接口方法参数对象中的属性名 --></span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">&lt;!-- 直接传入的直接写属性，引用类型的属性用 A.B 的方法写属性名 --></span></pre></td></tr><tr><td data-num="8"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>if</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name != null and name.trim().length()>0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>                name like concat ('%',#&#123;name&#125;,'%')</pre></td></tr><tr><td data-num="10"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>if</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>if</span> <span class="token attr-name">test</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>author != null<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="12"></td><td><pre>                and author like #&#123;author&#125;</pre></td></tr><tr><td data-num="13"></td><td><pre>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>if</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>where</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><h4 id="where-标签"><a class="anchor" href="#where-标签">#</a>  <code>&lt;where&gt;</code>  标签</h4>
+<p>自动去除第一个 and , 如果 where 内没有内容 自身会被清除</p>
+<h4 id="if-标签"><a class="anchor" href="#if-标签">#</a>  <code>&lt;if&gt;</code>  标签</h4>
+<p>做判断用，符合条件的才会执行  <code>&lt;if&gt; &lt;/if&gt;</code>  中包裹的 sql 语句<br />
+<mark><strong>注意 :</strong></mark></p>
+<blockquote>
+<ol>
+<li>if 中的 test =&quot; &quot; 使用的是 OGNL 表达式进行的判断<br />
+　　----&gt; 可以直接写传入参数的 Key 或者传入对象的属性名 不需要添加任何特殊符号<br />
+　　即：不要像 mybatis 中那样，使用 #{ } 或者 $</li>
+<li>test 中要使用 <strong>and</strong> 和 <strong>or</strong>  , 不要使用 &amp;&amp; , ||</li>
+</ol>
+</blockquote>
+<h4 id="choose-when-otherwise标签"><a class="anchor" href="#choose-when-otherwise标签">#</a>  <code> &lt;choose&gt;</code>  , <code>&lt;when&gt;</code>  ,  <code>&lt;otherwise&gt;</code>  标签</h4>
+<p>只要有一个标签中的内容成立，下面其他的 sql 语句都不会被执行</p>
+<pre><code>&lt;choose&gt;
+    &lt;where test = &quot; &quot;&gt;
+    &lt;/where&gt;
+    &lt;where test = &quot; &quot;&gt;
+    &lt;/where&gt;
+&lt;/choose&gt;
+</code></pre>
+<h4 id="set标签"><a class="anchor" href="#set标签">#</a>  <code>&lt;set&gt;</code>  标签</h4>
+<p>常常用在修改中<br />
+作用：去掉最后一个 &quot;,&quot; 如果 set 中没有内容 自身会被清除<br />
+<mark><strong>注意 :</strong></mark></p>
+<blockquote>
+<ol>
+<li>set 标签在进行修改的时候，<br />
+<strong> 如果里面包含的内容为空 sql 语法会不合规 导致报错</strong><br />
+<strong>修改中没有 set 从句，属于 sql 的语法错误！！</strong><br />
+　解决：set 中添加一个固定值，保证不为空 :</li>
+</ol>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre>update user </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>set</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">&lt;!-- 添加一条绝对成立的条件，保证 sql 的正确 --></span></pre></td></tr><tr><td data-num="4"></td><td><pre>  id = #&#123;id&#125;,</pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>if</span> <span class="token attr-name">test</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>pwd != null<span class="token punctuation">"</span></span> <span class="token attr-name">and</span> <span class="token attr-name">pwd</span> <span class="token attr-name">!</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="6"></td><td><pre>      pwd = #&#123;pwd&#125;,</pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>if</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="8"></td><td><pre>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>if</span> <span class="token attr-name">test</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>email != null<span class="token punctuation">"</span></span> <span class="token attr-name">and</span> <span class="token attr-name">email</span> <span class="token attr-name">!</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>      email = #&#123;email&#125;,</pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>if</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>set</span><span class="token punctuation">></span></span></pre></td></tr></table></figure></blockquote>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/zhong-jian-jian/mybatis/" class="item leancloud_visitors" data-flag-title="Mybatis" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/" title="Mybatis">http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-v9gvz5.jpg" title="SpringMVC 拦截器&amp;方法参数解析器">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>SpringMVC 拦截器&方法参数解析器</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/hou-duan/zhong-jian-jian/redis/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-lmejvq.jpg" title="redis基础">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>redis基础</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text"> 重要组成部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#sqlsessionfactory"><span class="toc-number">1.1.</span> <span class="toc-text"> SqlSessionFactory</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sqlsession"><span class="toc-number">1.2.</span> <span class="toc-text"> SqlSession</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#configuration"><span class="toc-number">1.3.</span> <span class="toc-text"> configuration</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mybatis-xml%E9%85%8D%E7%BD%AE-environmentsmapperdatasourcesetting"><span class="toc-number">2.</span> <span class="toc-text"> Mybatis XML 配置  (environments&amp;mapper&amp;datasource&amp;setting)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#setting-%E9%85%8D%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> Setting 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#setting-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E8%A1%A8%E6%A0%BC"><span class="toc-number">2.1.1.</span> <span class="toc-text"> Setting 常用配置表格</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mybatis%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BC%93%E5%AD%98"><span class="toc-number">2.1.2.</span> <span class="toc-text"> Mybatis 数据库缓存</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typealiases-%E5%88%AB%E5%90%8D%E9%85%8D%E7%BD%AE"><span class="toc-number">2.2.</span> <span class="toc-text"> typeAliases (别名) 配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typehandlers%E7%B1%BB%E5%9E%8B%E5%A4%84%E7%90%86%E5%99%A8%E9%85%8D%E7%BD%AE"><span class="toc-number">2.3.</span> <span class="toc-text"> typeHandlers (类型处理器) 配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#environments%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">2.4.</span> <span class="toc-text"> environments (环境) 配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#xml%E6%98%A0%E5%B0%84xxxmapperxml"><span class="toc-number">3.</span> <span class="toc-text"> XML 映射 (XXXMapper.xml)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81sql"><span class="toc-number">4.</span> <span class="toc-text"> 动态 SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#where-%E6%A0%87%E7%AD%BE"><span class="toc-number">4.0.1.</span> <span class="toc-text">  &lt;where&gt;  标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#if-%E6%A0%87%E7%AD%BE"><span class="toc-number">4.0.2.</span> <span class="toc-text">  &lt;if&gt;  标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#choose-when-otherwise%E6%A0%87%E7%AD%BE"><span class="toc-number">4.0.3.</span> <span class="toc-text">   &lt;choose&gt;  , &lt;when&gt;  ,  &lt;otherwise&gt;  标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#set%E6%A0%87%E7%AD%BE"><span class="toc-number">4.0.4.</span> <span class="toc-text">  &lt;set&gt;  标签</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/hou-duan/zhong-jian-jian/redis/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%85%B6%E4%BB%96/Markdown/" title="分类于 Markdown">Markdown</a>
+</div>
+
+    <span><a href="/qi-ta/markdown-yu-fa-zong-jie/" title="Markdown语法">Markdown语法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-collection/" title="Java collection">Java collection</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/spring/" title="分类于 spring">spring</a>
+</div>
+
+    <span><a href="/cai-keng-hui-zong/springaop-cai-keng/" title="Spring AOP踩坑">Spring AOP踩坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/html-ji-chu/" title="HTML基础">HTML基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" title="SpringMVC 拦截器&amp;方法参数解析器">SpringMVC 拦截器&方法参数解析器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/angular/angular-ru-men/" title="Angular入门">Angular入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" title="数据库多表查询">数据库多表查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-mian-xiang-dui-xiang/" title="Java面向对象">Java面向对象</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-ji-chu/" title="JS总结">JS总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/javaweb-ji-chu/" title="JavaWeb基础">JavaWeb基础</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/zhong-jian-jian/mybatis/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

@@ -1,0 +1,640 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/">
+
+
+
+  <title>
+数据库多表查询 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">数据库多表查询
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-22 16:23:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-22T16:23:00+08:00">2022-12-22</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>1.7k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-577yj5.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-0j6zdq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-eyd6gr.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-395d2y.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-3zzqy3.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28g879.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="外键foreign-key"><a class="anchor" href="#外键foreign-key">#</a> 外键 (foreign key)</h2>
+<blockquote>
+<p>外键：描述与其他表的关系</p>
+</blockquote>
+<ol>
+<li>一对一</li>
+<li>一对多  --&gt; 先创建 &quot;一&quot;<br />
+ 一个部门对应多个员工，那么就在员工表中设置一个外键 引用部门表的主键</li>
+<li>多对多 --&gt; 创建一个中间表</li>
+</ol>
+<pre><code># 外键
+# 1. 外键只和 DML(增删改) 有关系
+# 2. 只有当被关联表(部门表)中有相应的值,才能在员工表中insert,update
+# 3. update 和 delete 都会引起相应的数据库问题 (更新风暴和删除时将不想删的数据一起删掉)
+#  所以正常来说 on update / delete cascade都不常用
+# !!!!改的操作容易引起更新风暴()
+# 4. 如果删除表 , 一定要先删除emp(员工表 &quot;多&quot;) 再删除dept(部门表&quot;一&quot;)
+		--&gt; !!!!确保没有外键的数据需要依赖主键,主键才能删除数据
+# 5. 如果在创建表时, emp表中添加了on update cascade,
+#     那么emp表中的外键可以随着dept表中的主键改变
+#   如果在创建表时不添加,那么dept表中的主键不能随意修改
+# 6. 如果emp表的外键添加了 on delete cascade
+#     那么删除dept表中数据时 会把emp表中所有外键对应的行全部删除
+#     如果不添加 那么只有在dept的主键没有任何的emp外键对应的情况下
+#     dept中的数据才能被删除
+
+</code></pre>
+<h2 id="一对多"><a class="anchor" href="#一对多">#</a> 一对多</h2>
+<blockquote>
+<p>主键表 (一) 的删除会同步到外键表 (多)</p>
+</blockquote>
+<p>制表计划</p>
+<pre><code># 员工表
+# name age gender workage salary 部门id(外键)
+# 部门表
+# 部门id(主键) 名字 领导 创立时间 部门职责 部门描述...
+
+</code></pre>
+<p>功能实现</p>
+<pre><code>#部门表
+create table if not exists dept
+(
+  id   integer primary key auto_increment comment '部门id',
+  name varchar(10) comment '部门名称',
+  des  varchar(10) comment '部门描述'
+);
+# 员工表添加外键  外键为蓝色钥匙
+create table if not exists emp
+(
+  eid     integer primary key auto_increment comment '员工id',
+  name    varchar(10) comment '员工姓名',
+  dept_id integer comment '部门id',
+  age     integer,
+  salary  integer,
+  foreign key (dept_id) references dept (id)
+    #部门表的删改会同步到员工表中
+    on update cascade
+    #可以随便删除 部门删掉 员工表同步删除
+    on delete cascade
+) comment '员工表' charset = 'utf8';
+
+</code></pre>
+<h2 id="多对多"><a class="anchor" href="#多对多">#</a> 多对多</h2>
+<h3 id="笛卡尔积"><a class="anchor" href="#笛卡尔积">#</a> 笛卡尔积</h3>
+<blockquote>
+<p>将表 1 的 n 条数据和表 2 的 m 条数据所有情况组合在一起 (n*m 条数据)<br />
+ 多表查询本质上就是对两表结果 (笛卡尔积) 的过滤</p>
+</blockquote>
+<pre><code>select emp.name ename, dept.name dname
+from emp,
+     dept
+where emp.dept_id = dept.id;
+</code></pre>
+<h4 id="笛卡尔积过滤"><a class="anchor" href="#笛卡尔积过滤">#</a> 笛卡尔积过滤</h4>
+<p>过滤使用 on 子句<br />
+ <code>ON where having三个条件过滤子句的执行顺序(不添加()提升优先级的情况下):</code> <br />
+ <code>ON &gt; where &gt; having</code></p>
+<h4 id="内连接inner-join-使用时可省略inner-默认为内连接"><a class="anchor" href="#内连接inner-join-使用时可省略inner-默认为内连接">#</a> 内连接 (inner join  使用时可省略 inner 默认为内连接)</h4>
+<pre><code>select *
+from emp
+       inner join dept
+  # on 专门过滤笛卡尔积
+       on emp.dept_id = dept.id;
+</code></pre>
+<h4 id="左连接left-join"><a class="anchor" href="#左连接left-join">#</a> 左连接 (LEFT JOIN)</h4>
+<p>--&gt; join 左面的表无论是否满足 on 的条件，所有的行都会留在结果中<br />
+　　(右表不满足的在右边留一行空的列，即左与 null&quot;拼接&quot;)</p>
+<h4 id="右连接right-join"><a class="anchor" href="#右连接right-join">#</a> 右连接 (RIGHT JOIN)</h4>
+<p>--&gt;-join 右面的表无论是否满足 on 的条件，所有的行都会留在结果中<br />
+　　(左表不满足的在左边留一行空的列，即右表与 null&quot;拼接&quot;)<br />
+　　<br />
+&lt;img src=&quot;<span class="exturl" data-url="aHR0cDovL3d3dy5ydW5vb2IuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE5LzAxL3NxbC1qb2luLnBuZw==">http://www.runoob.com/wp-content/uploads/2019/01/sql-join.png</span>&quot;  width=90%&gt;</p>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" class="item leancloud_visitors" data-flag-title="数据库多表查询" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" title="数据库多表查询">http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/qian-duan/js-h5/css-yang-shi-ji-chu/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-k7wor1.jpg" title="css基础样式">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>css基础样式</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/shu-ju-ku/shu-ju-ku-ji-chu/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-395d2y.png" title="数据库基础">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>数据库基础</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E9%94%AEforeign-key"><span class="toc-number">1.</span> <span class="toc-text"> 外键 (foreign key)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E5%AF%B9%E5%A4%9A"><span class="toc-number">2.</span> <span class="toc-text"> 一对多</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E5%AF%B9%E5%A4%9A"><span class="toc-number">3.</span> <span class="toc-text"> 多对多</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF"><span class="toc-number">3.1.</span> <span class="toc-text"> 笛卡尔积</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF%E8%BF%87%E6%BB%A4"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 笛卡尔积过滤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E8%BF%9E%E6%8E%A5inner-join-%E4%BD%BF%E7%94%A8%E6%97%B6%E5%8F%AF%E7%9C%81%E7%95%A5inner-%E9%BB%98%E8%AE%A4%E4%B8%BA%E5%86%85%E8%BF%9E%E6%8E%A5"><span class="toc-number">3.1.2.</span> <span class="toc-text"> 内连接 (inner join  使用时可省略 inner 默认为内连接)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A6%E8%BF%9E%E6%8E%A5left-join"><span class="toc-number">3.1.3.</span> <span class="toc-text"> 左连接 (LEFT JOIN)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%B3%E8%BF%9E%E6%8E%A5right-join"><span class="toc-number">3.1.4.</span> <span class="toc-text"> 右连接 (RIGHT JOIN)</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/qian-duan/js-h5/css-yang-shi-ji-chu/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/shu-ju-ku/shu-ju-ku-ji-chu/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/basics/" title="分类于 基础">基础</a>
+</div>
+
+    <span><a href="/hou-duan/java/basics/java-ji-chu/" title="IO基础">IO基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qi-ta/zhi-neng-jia-ju/" title="智能家居">智能家居</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-xuan-ze-qi/" title="js选择器">js选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/html-ji-chu/" title="HTML基础">HTML基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/ding-wei/" title="CSS-定位">CSS-定位</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/ci-cd-jenkins/" title="CI_CD&amp;&amp;Jenkins">CI_CD&&Jenkins</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springboot-zhu-jie/" title="Spring Boot注解总结">Spring Boot注解总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" title="SpringMVC 拦截器&amp;方法参数解析器">SpringMVC 拦截器&方法参数解析器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/mybatis/" title="Mybatis">Mybatis</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-de-nei-bu-lei/" title="java的内部类">java的内部类</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

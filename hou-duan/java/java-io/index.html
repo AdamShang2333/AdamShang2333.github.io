@@ -1,0 +1,730 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/java/java-io/">
+
+
+
+  <title>
+IO 相关 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">IO 相关
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-22 16:23:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-22T16:23:00+08:00">2022-12-22</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>2.7k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-pk35x9.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-oxkgel.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-0j6zdq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-9mx3mw.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-6oq2x7.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-m993om.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/java/java-io/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="文件文件夹"><a class="anchor" href="#文件文件夹">#</a> 文件 &amp; 文件夹</h2>
+<h3 id="绝对文件路径"><a class="anchor" href="#绝对文件路径">#</a> 绝对文件路径</h3>
+<blockquote>
+<p>/Users/apple/Desktop/Java/0604_IO/src</p>
+</blockquote>
+<h3 id="相对文件路径-不是完整的一个路径"><a class="anchor" href="#相对文件路径-不是完整的一个路径">#</a> 相对文件路径 --&gt; 不是完整的一个路径</h3>
+<blockquote>
+<p>. 代表当前所在文件夹路径<br />
+.. 代表上级文件夹所在路径<br />
+../.. 代表上级的上级文件夹路径<br />
+ // 在我们的工程中，. 代表当前工程的根目录<br />
+ //--&gt; 项目中多使用相对路径 (确保不同人在不同的位置都能打开)</p>
+</blockquote>
+<h3 id="方法"><a class="anchor" href="#方法">#</a> 方法</h3>
+<hr />
+<h3 id="判断文件是否存在-exists"><a class="anchor" href="#判断文件是否存在-exists">#</a> 判断文件是否存在 .exists ( )</h3>
+<h3 id="判断文件夹是否存在-isdirectory"><a class="anchor" href="#判断文件夹是否存在-isdirectory">#</a> 判断文件夹是否存在 .isDirectory ( )</h3>
+<h3 id="创建文件夹-mkdirs"><a class="anchor" href="#创建文件夹-mkdirs">#</a> 创建文件夹 .mkdirs ( );</h3>
+<blockquote>
+<p>只有在 windows 中，\ 代表路径<br />
+ \ 在 java 中表示 tabe 键 所以要再加一个 \(转义字符)   --&gt;.\\<br />
+java 本身会对 windows 做处理</p>
+</blockquote>
+<pre><code>
+ File file = new File(&quot;./testfile/aa/bb/cc&quot;);   
+ 
+ if (!file.exists()) &#123;
+            // 只能创建一个文件夹 创建多个文件夹 使用 .mkdirs()方法
+            //file.mkdir();// 返回布尔值
+            // 实际使用中 更多是用 .mkdirs()
+            file.mkdirs();
+        &#125;
+</code></pre>
+<h3 id="创建文件-createnewfile"><a class="anchor" href="#创建文件-createnewfile">#</a> 创建文件 .createNewFile ( );</h3>
+<pre><code>File file1 = new File(&quot;./testfile/1.txt&quot;);
+        if (!file1.exists())&#123;
+            try &#123;
+                // 返回布尔值
+                file1.createNewFile();
+            &#125; catch (IOException e) &#123;
+                e.printStackTrace();
+            &#125;
+        &#125;
+</code></pre>
+<h3 id="删除文件-delete"><a class="anchor" href="#删除文件-delete">#</a> 删除文件 .delete ( )</h3>
+<pre><code>  // 两个不同的变量可以操作同一个路径 (file1 和file2)
+File file2 = new File(&quot;./testfile/1.txt&quot;);
+        if (file2.exists())&#123;
+            file2.delete();
+        &#125;
+</code></pre>
+<h3 id="删除文件夹-delete"><a class="anchor" href="#删除文件夹-delete">#</a> 删除文件夹 .delete ( )</h3>
+<pre><code>// 文件夹的删除只能对空文件夹有效!!!
+file.delete();
+
+ File file3 = new File(&quot;./testfile/aa&quot;);
+        // --&gt; !!delete方法只能把空文件夹删掉
+        // 返回值为fales
+        //file3.delete();
+
+</code></pre>
+<h3 id="获取文件夹中的所有文件"><a class="anchor" href="#获取文件夹中的所有文件">#</a> 获取文件夹中的所有文件</h3>
+<pre><code> File[] files = file1.listFiles();
+     // 类比数组的遍历(File[])
+        for (File f : files) &#123;
+            System.out.println(f.getName());
+        &#125;
+
+</code></pre>
+<h3 id="删除文件夹中所有文件利用递归"><a class="anchor" href="#删除文件夹中所有文件利用递归">#</a> 删除文件夹中所有文件 (利用递归)</h3>
+<pre><code> public static void deleteAll(File file)&#123;
+        // 如果是文件, 直接删除
+        if (!file.isDirectory())&#123;
+            file.delete();
+            return;
+        &#125;
+
+        // 如果是文件夹, 执行如下操作
+        File[] files = file.listFiles();
+        for (File f : files) &#123;
+        	   // 递归结束的出口
+            if (f.isDirectory())
+            	// 使用递归
+                deleteAll(f);
+            f.delete();
+        &#125;
+        // 将删除了所有文件的该级文件夹本身也删除掉
+        file.delete();
+    &#125;
+</code></pre>
+<h2 id="io流"><a class="anchor" href="#io流">#</a> IO 流</h2>
+<blockquote>
+<p>input (读取)  输入流，指的是计算机从文件读取数据<br />
+ output (写入) 输出流，指的是计算机将数据写入文件</p>
+</blockquote>
+<h4 id="流"><a class="anchor" href="#流">#</a> 流</h4>
+<blockquote>
+<p>指程序中有能力产出数据 (数据源) 或者接收数据 (接收端) 的对象<br />
+实际上流屏蔽了计算机处理数据的细节</p>
+</blockquote>
+<h4 id="流的类型"><a class="anchor" href="#流的类型">#</a> 流的类型</h4>
+<blockquote>
+<p>字符流：用于处理文本数据<br />
+字节流：用于处理媒体数据 (二进制文件)</p>
+</blockquote>
+<h3 id="字符流的写"><a class="anchor" href="#字符流的写">#</a> 字符流的写</h3>
+<pre><code> FileWriter fw = null;
+        File file = new File(&quot;./testfile/1.txt&quot;);
+        try &#123;
+            // 开启一个流(专门向文件内写入东西)
+            // ---&gt;!!!在关闭流之前 是不会向文件写入的!!!
+            fw = new FileWriter(file);
+            fw.write(&quot;于印和张焯强在一起啊啊啊啊啊&quot;);
+        &#125; catch (IOException e) &#123;
+            e.printStackTrace();
+            // finally ---&gt; 无论如何都要将流关掉!!!
+        &#125; finally &#123;
+            // 把流关闭时才会写入文件 (其他时间流在内存里待着)
+            try &#123;
+                // 防止fw创建失败(空指针异常)
+
+                if (fw != null) &#123;
+                    fw.close();
+                &#125;
+            &#125; catch (IOException e) &#123;
+                e.printStackTrace();
+            &#125;
+        &#125;
+    &#125;
+    
+</code></pre>
+<h3 id="字符流的读"><a class="anchor" href="#字符流的读">#</a> 字符流的读</h3>
+<pre><code>FileReader fr = null;
+        try &#123;
+            fr = new FileReader(&quot;./testfile/1.txt&quot;);
+            // 从文件读取数据
+
+            // 定义每次读取文本的长度,将读取的内容存储到buffer数组中
+            // buffer 相当于一个缓冲区
+            char buffer[] = new char[5];
+            // 每次读取长度判断用
+            int len = 0;
+            // fr.read()  --&gt; 返回int值 (读取出来的字符串长度)
+            // 每次尝试去将buffer数组读满
+            // 并且返回该次读取的长度
+            // 当长度不为-1的时候, 说明后续还有内容 , 所以继续循环
+            // 一直到读取的长度是-1为止
+            while ((len = fr.read(buffer)) != -1) &#123;
+
+                // 从下标 0 开始 转换几个数
+                // 如果不规定起始位置和长度 ,输出会有异常
+                // 内存用到哪里 哪里的内容才会被覆盖掉 不规定len 则每次都是输出五个字符
+                // 第一次为&quot;于印和张焯&quot;
+                //第二次的为&quot;强在一起焯&quot;
+                // 参数1: 要转为字符串的char数组
+                // 参数2: 从哪个下标开始转
+                // 参数3: 要转换的长度
+                System.out.println(new String(buffer, 0, len));
+            &#125;
+
+        &#125; catch (FileNotFoundException e) &#123;
+            e.printStackTrace();
+        &#125; catch (IOException e) &#123;
+            e.printStackTrace();
+        &#125; finally &#123;
+            try &#123;
+                if (fr != null) &#123;
+                    fr.close();
+                &#125;
+            &#125; catch (IOException e) &#123;
+                e.printStackTrace();
+            &#125;
+        &#125;
+    &#125;
+</code></pre>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/java/java-io/" class="item leancloud_visitors" data-flag-title="IO 相关" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/java/java-io/" title="IO 相关">http://adamshang2333.github.io/hou-duan/java/java-io/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/java/java-mian-xiang-dui-xiang/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-k7wor1.jpg" title="Java面向对象">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Java面向对象</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/hou-duan/ci-cd/maven/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-g8kjm3.jpg" title="Maven">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Maven</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">1.</span> <span class="toc-text"> 文件 &amp; 文件夹</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84"><span class="toc-number">1.1.</span> <span class="toc-text"> 绝对文件路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84-%E4%B8%8D%E6%98%AF%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%80%E4%B8%AA%E8%B7%AF%E5%BE%84"><span class="toc-number">1.2.</span> <span class="toc-text"> 相对文件路径 --&gt; 不是完整的一个路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text"> 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8-exists"><span class="toc-number">1.4.</span> <span class="toc-text"> 判断文件是否存在 .exists ( )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%96%87%E4%BB%B6%E5%A4%B9%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8-isdirectory"><span class="toc-number">1.5.</span> <span class="toc-text"> 判断文件夹是否存在 .isDirectory ( )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9-mkdirs"><span class="toc-number">1.6.</span> <span class="toc-text"> 创建文件夹 .mkdirs ( );</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6-createnewfile"><span class="toc-number">1.7.</span> <span class="toc-text"> 创建文件 .createNewFile ( );</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6-delete"><span class="toc-number">1.8.</span> <span class="toc-text"> 删除文件 .delete ( )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9-delete"><span class="toc-number">1.9.</span> <span class="toc-text"> 删除文件夹 .delete ( )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6"><span class="toc-number">1.10.</span> <span class="toc-text"> 获取文件夹中的所有文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92"><span class="toc-number">1.11.</span> <span class="toc-text"> 删除文件夹中所有文件 (利用递归)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#io%E6%B5%81"><span class="toc-number">2.</span> <span class="toc-text"> IO 流</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81"><span class="toc-number">2.0.1.</span> <span class="toc-text"> 流</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.0.2.</span> <span class="toc-text"> 流的类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E6%B5%81%E7%9A%84%E5%86%99"><span class="toc-number">2.1.</span> <span class="toc-text"> 字符流的写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E6%B5%81%E7%9A%84%E8%AF%BB"><span class="toc-number">2.2.</span> <span class="toc-text"> 字符流的读</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/java/java-mian-xiang-dui-xiang/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/hou-duan/ci-cd/maven/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-collection/" title="Java collection">Java collection</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/basics/" title="分类于 基础">基础</a>
+</div>
+
+    <span><a href="/hou-duan/java/basics/java-ji-chu/" title="IO基础">IO基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD-K8s/" title="分类于 CI/CD - K8s">CI/CD - K8s</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/k8s/" title="Kubernetes">Kubernetes</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-ji-chu/" title="数据库基础">数据库基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/ci-cd/maven/" title="Maven">Maven</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/ci-cd-jenkins/" title="CI_CD&amp;&amp;Jenkins">CI_CD&&Jenkins</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/spring/" title="分类于 spring">spring</a>
+</div>
+
+    <span><a href="/cai-keng-hui-zong/springaop-cai-keng/" title="Spring AOP踩坑">Spring AOP踩坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/h5-xin-zeng/" title="H5新增内容总结">H5新增内容总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springboot-zhu-jie/" title="Spring Boot注解总结">Spring Boot注解总结</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/java/java-io/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

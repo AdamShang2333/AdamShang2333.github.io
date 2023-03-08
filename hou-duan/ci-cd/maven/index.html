@@ -1,0 +1,730 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/ci-cd/maven/">
+
+
+
+  <title>
+Maven |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Maven
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-22 16:23:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-22T16:23:00+08:00">2022-12-22</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>2.6k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-mdmz51.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-395d2y.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9g5x5.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-g8oepq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9gwyp.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-y88q3g.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/ci-cd/maven/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>#Maven</p>
+<blockquote>
+<p>自动化的构建工具</p>
+</blockquote>
+<p>##1. Maven 的作用<br />
+ 1 管理 Jar 包</p>
+<blockquote>
+<p>a) 增加第三方 Jar 包<br />
+　　  通常，先在本地仓库进行下载，如果没有，先去私服仓库 (局域的仓库); 再联网从中央仓库 (网络仓库) 下载<br />
+ b) Jar 包之间的依赖关系 (自动把 A jar 包需要的 B C 包一起关联下载)</p>
+</blockquote>
+<p>2  将项目拆分成若干模块<br />
+ ###maven 文件目录结构<br />
+ ####src</p>
+<blockquote>
+<p>放源代码</p>
+</blockquote>
+<p>####target</p>
+<blockquote>
+<p>放编译后的文件</p>
+</blockquote>
+<p>####pom.xml</p>
+<blockquote>
+<p>配置文件</p>
+</blockquote>
+<p>### 功能模块:<br />
+<strong>clean</strong></p>
+<blockquote>
+<p>清理：删除编译的结果 (删除 target 目录), 为重新编译做准备</p>
+</blockquote>
+<p><strong>validate</strong></p>
+<blockquote></blockquote>
+<p><strong>compile</strong></p>
+<blockquote>
+<p>编译 : Java --&gt; class (只编译 main 目录中的 java 文件，编译后的文件会放在 target 文件夹中)</p>
+</blockquote>
+<p><strong>test</strong></p>
+<blockquote>
+<p>测试:</p>
+</blockquote>
+<p><strong>package</strong></p>
+<blockquote>
+<p>打包：将文件自动压缩成一个 war 文件，用于安装或部署</p>
+</blockquote>
+<p><strong>verify</strong></p>
+<blockquote></blockquote>
+<p><strong>install</strong></p>
+<blockquote>
+<p>安装：将打包的文件，放在本地仓库 (存放 Jar 包等资源的地方), 供其他项目使用</p>
+</blockquote>
+<p><strong>site</strong></p>
+<blockquote></blockquote>
+<p><strong>deploy</strong></p>
+<blockquote>
+<p>部署：将打包的文件，放在服务器上准备运行</p>
+</blockquote>
+<p>##2. 坐标</p>
+<blockquote>
+<p>在本地仓库中唯一标识出一个模块</p>
+</blockquote>
+<pre><code>	// 项目名
+  &lt;groupId&gt;com.lanou&lt;/groupId&gt;
+    // 子模块名字
+  &lt;artifactId&gt;0725_reflaction&lt;/artifactId&gt;
+    // 版本号
+  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+</code></pre>
+<p>##3. 依赖</p>
+<blockquote>
+<p>管理 Jar 的时候，通过依赖来明确 jar 包的耦合管理</p>
+</blockquote>
+<pre><code>&lt;dependencies&gt;
+	&lt;dependency&gt;
+      &lt;groupId&gt;commons-dbutils&lt;/groupId&gt;
+      &lt;artifactId&gt;commons-dbutils&lt;/artifactId&gt;
+      &lt;version&gt;1.6&lt;/version&gt;
+    &lt;/dependency&gt;
+    
+    &lt;dependency&gt;
+      &lt;groupId&gt;junit&lt;/groupId&gt;
+      &lt;artifactId&gt;junit&lt;/artifactId&gt;
+      &lt;version&gt;4.11&lt;/version&gt;
+      // 标识依赖的范围和有效性
+      &lt;scope&gt;compile&lt;/scope&gt;
+    &lt;/dependency&gt;
+    ...
+    ...
+&lt;dependencies&gt;
+</code></pre>
+<p>###3.1 依赖的范围，有效性</p>
+<blockquote>
+<p>Maven 在编译  测试  部署 (运行) 时，各自使用一套 classPath</p>
+</blockquote>
+<p>compile (编译)  ---- 默认值</p>
+<p>test (测试)</p>
+<p>provided (准备)<br />
+----&gt;Servlet-api.jar</p>
+<hr />
+<p>#### 依赖的有效性</p>
+<blockquote>
+<p>通俗的理解，就是在不同的阶段，能不能拿到 jar 包</p>
+</blockquote>
+<p>| 运行阶段 | compile|test|provided|<br />
+|:--😐:--😐:--😐:--😐:<br />
+| 编译 |✔️|❌|✔️|<br />
+| 测试 |✔️|✔️|✔️|<br />
+| 部署 (运行)|✔️|❌|❌ |</p>
+<p>###3.2 依赖的排除</p>
+<blockquote>
+<p>如果自动导入的 jar 包，有关联的依赖 jar 包，maven 会自动下载<br />
+但是使用的时候不需要自动下载的关联 jar 包的时候，<br />
+ 可以使用依赖排除，来手动取消关联 jar 包的下载</p>
+</blockquote>
+<p><code>IDEA排除依赖, 在关系视图中选择 &quot;exclude&quot; 选项后, 刷新即可;会自动生成排除的代码</code></p>
+<pre><code>  &lt;dependency&gt;
+       &lt;groupId&gt;junit&lt;/groupId&gt;
+       &lt;artifactId&gt;junit&lt;/artifactId&gt;
+   	   &lt;version&gt;4.11&lt;/version&gt;
+   	   &lt;scope&gt;compile&lt;/scope&gt;
+   	 // 排除依赖
+   	 &lt;exclusions&gt;
+     	&lt;exclusion&gt;
+       	   &lt;artifactId&gt;hamcrest-core&lt;/artifactId&gt;
+       	   &lt;groupId&gt;org.hamcrest&lt;/groupId&gt;
+        &lt;/exclusion&gt;
+      &lt;/exclusions&gt;
+  &lt;/dependency&gt;
+</code></pre>
+<p>###3.3 依赖的传递性</p>
+<p>A.jar --&gt; B.jar --&gt; C.jar<br />
+ 要使: A.jar  --&gt; C.jar<br />
+ 则需要：当且仅当 B.jar 依赖于 C.jar 的范围是 compile</p>
+<p>###3.4 多个 maven 项目之间如何依赖<br />
+ P 项目 --&gt; Q 项目<br />
+ <code>步骤</code></p>
+<blockquote>
+<ol>
+<li>P 项目 install 到本地仓库</li>
+<li>Q 项目依赖 P 项目:</li>
+</ol>
+<pre><code>&lt;dependency&gt;
+</code></pre>
+</blockquote>
+<pre><code>  &lt;groupId&gt;P项目文件名(com.lanou.X X X)&lt;/groupId&gt;
+  &lt;artifactId&gt;P项目的项目名(Y Y Y)&lt;/artifactId&gt;
+  &lt;version&gt;1.6&lt;/version&gt;
+</code></pre>
+<p>&lt;/dependency&gt;</p>
+<blockquote>
+<pre><code></code></pre>
+</blockquote>
+<p>###3.5 依赖原则<br />
+ <code>目的: 防止依赖冲突</code></p>
+<p>####1 路径最短优先原则</p>
+<blockquote>
+<p>自身 POM.XMl 有一个依赖的 jar 包；<br />
+ 也可以通过依赖传递获取 (A--&gt;C), 选择自身 pom.xml 中的</p>
+</blockquote>
+<p>####2 路径长度相同</p>
+<blockquote>
+<p>i .  在同一个 Pom 文件中，有 2 个相同的依赖，后声明的依赖会覆盖前面声明的依赖<br />
+一般来说，禁止在同 1 个 Pom 中依赖两个同名的<br />
+ ii . 如果是不同的 Pom 中，有 2 个相同的依赖，则先声明的依赖会覆盖后声明的依赖<br />
+　即: C 先依赖于 A  后依赖于 B , 二者都有 X.jar ; 那么 C 依赖 A 中的 X.jar<br />
+　　---&gt; 取决于 C 依赖于 A,B 2 个 Pom 的代码顺序</p>
+</blockquote>
+<p>##4. 继承</p>
+<blockquote>
+<p>A --&gt; B, 则 A 可以使用 B 的所有依赖</p>
+</blockquote>
+<p><code>解决了依赖传递时要求的依赖范围必须是compile的约束</code></p>
+<p><code>继承实现步骤</code></p>
+<p>##maven 生命周期<br />
+ ### 生命周期和构建的关系</p>
+<blockquote>
+<p>生命周期中的顺序: a , b , c , d , e ... 命令<br />
+当我们执行 c 命令的时候，之前的 a , b 命令都会先执行一遍<br />
+即：实际执行了 a , b c 三个命令</p>
+</blockquote>
+<pre><code>生命周期包含三个阶段:
+	1.  clean lifecycle     -- 清理
+			pre-clean  clean  post-clean
+	2.  default lifecycle   -- 默认(常用)
+	3.  site lifecycle		-- 站点
+			pre-site   site   post-site  site-deploy
+</code></pre>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/ci-cd/maven/" class="item leancloud_visitors" data-flag-title="Maven" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/ci-cd/maven/" title="Maven">http://adamshang2333.github.io/hou-duan/ci-cd/maven/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/java/java-io/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-v9gwyp.jpg" title="IO相关">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>IO相关</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/qian-duan/js-h5/css-yang-shi-ji-chu/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-oxkgel.jpg" title="css基础样式">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>css基础样式</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/java/java-io/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/qian-duan/js-h5/css-yang-shi-ji-chu/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-ji-chu/" title="JS总结">JS总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-han-shu/" title="数据库函数">数据库函数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-mian-xiang-dui-xiang/" title="Java面向对象">Java面向对象</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" title="css动态效果总结">css动态效果总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD-K8s/" title="分类于 CI/CD - K8s">CI/CD - K8s</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/k8s/" title="Kubernetes">Kubernetes</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" title="AOP&amp;静态代理&amp;动态代理">AOP&静态代理&动态代理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/html-ji-chu/" title="HTML基础">HTML基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-fan-she/" title="Java反射">Java反射</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-collection/" title="Java collection">Java collection</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/ci-cd/maven/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

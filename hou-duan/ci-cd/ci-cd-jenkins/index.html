@@ -1,0 +1,844 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Jenkins" />
+
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/ci-cd/ci-cd-jenkins/">
+
+
+
+  <title>
+CI_CD&&Jenkins - CI/CD |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">CI_CD&&Jenkins
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-02-24 16:33:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-24T16:33:00+08:00">2022-02-24</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>9.2k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>8 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9gke5.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-eyd6gr.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-q6wyer.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-k79lqq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm16gj.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28g879.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/CI-CD/" itemprop="item" rel="index" title="分类于 CI/CD"><span itemprop="name">CI/CD</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/ci-cd/ci-cd-jenkins/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="jenkins入门"><a class="anchor" href="#jenkins入门">#</a> Jenkins 入门</h1>
+<h2 id="什么是devops"><a class="anchor" href="#什么是devops">#</a> 什么是 DevOps</h2>
+<p><img data-src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180815%2F6eced928acd345c98b7fc6b07477ac46.jpeg&amp;refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1648284243&amp;t=8bb50e879c3eb1e122b3a17e1c45d248" alt="" /></p>
+<p>DevOps (Development 和 Operations 的组合词)  是一种思想或者方法论，它涵盖开发 测试 运维的整个过程</p>
+<p>DevOps 强调通过自动化的方法管理软件变更，软件继承</p>
+<p>使软件从构建到测试 发布更加快捷可靠</p>
+<h2 id="jenkins安装"><a class="anchor" href="#jenkins安装">#</a> Jenkins 安装</h2>
+<p>Jenkins 在整个 DevOps 的流程中，是处于部署发布的节点上，对整体的流程而言不可或缺</p>
+<p>Jenkins 是基于 Java 开发的 DevpOps 工具，可以自动编译构建，分发，部署和测试</p>
+<p><strong>Docker 安装 Jenkins 流程</strong></p>
+<figure class="highlight shell"><figcaption data-lang="Bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 下载 Jenkins</span></pre></td></tr><tr><td data-num="2"></td><td><pre>docker pull jenkinsci/blueocean</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment"># 设置挂载的 jenkins 数据卷，方便对 jenkins 进行设置等操作</span></pre></td></tr><tr><td data-num="5"></td><td><pre> <span class="token function">mkdir</span> -p /home/jenkins-docker</pre></td></tr><tr><td data-num="6"></td><td><pre> </pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment"># 设置挂载数据卷的权限，不然 docker run 的时候会出现停止的问题</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token function">chmod</span> <span class="token number">777</span> /home/jenkins-docker</pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment"># 无权限</span></pre></td></tr><tr><td data-num="11"></td><td><pre>root@VM-16-11-ubuntu:~<span class="token comment"># docker start -i myjenkins</span></pre></td></tr><tr><td data-num="12"></td><td><pre>Can not <span class="token function">write</span> to /var/jenkins_home/copy_reference_file.log. Wrong volume permissions?</pre></td></tr><tr><td data-num="13"></td><td><pre>touch: cannot <span class="token function">touch</span> <span class="token string">'/var/jenkins_home/copy_reference_file.log'</span><span class="token builtin class-name">:</span> Permission denied</pre></td></tr><tr><td data-num="14"></td><td><pre></pre></td></tr><tr><td data-num="15"></td><td><pre></pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token comment"># 创建并启动容器</span></pre></td></tr><tr><td data-num="17"></td><td><pre>root@VM-16-11-ubuntu:~<span class="token comment"># docker run -d -p 10240:8080 -p 10241:50000 -v /home/jenkins-docker:/var/jenkins_home -v /etc/localtime:/etc/localtime --name myjenkins jenkinsci/blueocean</span></pre></td></tr><tr><td data-num="18"></td><td><pre></pre></td></tr><tr><td data-num="19"></td><td><pre>　　-d 后台运行镜像</pre></td></tr><tr><td data-num="20"></td><td><pre></pre></td></tr><tr><td data-num="21"></td><td><pre>　　-p <span class="token number">10240</span>:8080 将镜像的8080端口映射到服务器的10240端口。</pre></td></tr><tr><td data-num="22"></td><td><pre></pre></td></tr><tr><td data-num="23"></td><td><pre>　　-p <span class="token number">10241</span>:50000 将镜像的50000端口映射到服务器的10241端口</pre></td></tr><tr><td data-num="24"></td><td><pre></pre></td></tr><tr><td data-num="25"></td><td><pre>　　-v /home/jenkins-docker:/var/jenkins_home目录为容器jenkins工作目录，我们将硬盘上的一个目录挂载到这个位置，方便后续更新镜像后继续使用原来的工作目录。这里我们设置的就是上面我们创建的 /home/jenkins-docker目录</pre></td></tr><tr><td data-num="26"></td><td><pre></pre></td></tr><tr><td data-num="27"></td><td><pre>　　-v /etc/localtime:/etc/localtime让容器使用和服务器同样的时间设置。</pre></td></tr><tr><td data-num="28"></td><td><pre></pre></td></tr><tr><td data-num="29"></td><td><pre>　　--name myjenkins 给容器起一个别名</pre></td></tr><tr><td data-num="30"></td><td><pre>　　</pre></td></tr><tr><td data-num="31"></td><td><pre>　　</pre></td></tr><tr><td data-num="32"></td><td><pre><span class="token comment"># 配置 Jenkins 容器的镜像加速　　</span></pre></td></tr><tr><td data-num="33"></td><td><pre><span class="token builtin class-name">cd</span> /home/jenkins-docker</pre></td></tr><tr><td data-num="34"></td><td><pre><span class="token function">vim</span> hudson.model.UpdateCenter.xml</pre></td></tr><tr><td data-num="35"></td><td><pre><span class="token operator">&lt;</span>?xml <span class="token assign-left variable">version</span><span class="token operator">=</span><span class="token string">'1.0'</span> <span class="token assign-left variable">encoding</span><span class="token operator">=</span><span class="token string">'UTF-8'</span>?<span class="token operator">></span></pre></td></tr><tr><td data-num="36"></td><td><pre><span class="token operator">&lt;</span>sites<span class="token operator">></span></pre></td></tr><tr><td data-num="37"></td><td><pre>  <span class="token operator">&lt;</span>site<span class="token operator">></span></pre></td></tr><tr><td data-num="38"></td><td><pre>    <span class="token operator">&lt;</span>id<span class="token operator">></span>default<span class="token operator">&lt;</span>/id<span class="token operator">></span></pre></td></tr><tr><td data-num="39"></td><td><pre>    <span class="token operator">&lt;</span>url<span class="token operator">></span>http://updates.jenkins-ci.org/update-center.json<span class="token operator">&lt;</span>/url<span class="token operator">></span></pre></td></tr><tr><td data-num="40"></td><td><pre>  <span class="token operator">&lt;</span>/site<span class="token operator">></span></pre></td></tr><tr><td data-num="41"></td><td><pre><span class="token operator">&lt;</span>/sites<span class="token operator">></span></pre></td></tr><tr><td data-num="42"></td><td><pre></pre></td></tr><tr><td data-num="43"></td><td><pre><span class="token comment"># 将镜像源替换</span></pre></td></tr><tr><td data-num="44"></td><td><pre>将 url 修改为 清华大学官方镜像：https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json</pre></td></tr></table></figure><p><mark>注意，jenkins 如果使用官方版本，会出现版本过低，兼容有问题</mark></p>
+<p><mark>这里建议使用 jenkins 官方推荐的长期支持版本 <strong>jenkinsci/blueocean</strong></mark></p>
+<p><mark>官方的 Docker 长期支持版本中，虽然内置了 Tomcat, 但是相关的读写权限不够，建议单独准备 Web 服务器</mark></p>
+<p>到此为止，基础的安装配置完成.</p>
+<p>访问 IP:10240 , 可以看到如下界面:</p>
+<p><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/1645699070765.png" alt="" /></p>
+<p>按照上面的提示，获取密码完成登录即可使用 Jenkins!</p>
+<p><mark>注意，这里的 jenkins_home 要按照自己挂载出来的宿主机文件目录来查找！</mark></p>
+<p>初次登录，按照自己的需求选择需要安装的插件</p>
+<p>一般来说，选择推荐即可。有需要添加的插件可以后期自己安装</p>
+<p><img data-src="https://img2018.cnblogs.com/blog/785976/201907/785976-20190710153716323-1817114899.png" alt="" /></p>
+<h2 id="jenkins环境配置"><a class="anchor" href="#jenkins环境配置">#</a> Jenkins 环境配置</h2>
+<h3 id="配置插件"><a class="anchor" href="#配置插件">#</a> 配置插件</h3>
+<p>Jenkins 整个的运行都是依赖于各种的插件支持，可以类比 vs code</p>
+<p>插件的安装需要在系统的插件管理界面安装.</p>
+<p><mark>注：安装的插件可能缺少某些依赖的 jar 包，可以安装插件来完善 jar 的支持，或者自己下载 jar 包到 Jenkins 的 lib 库</mark></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20vb3NjaGluYS9HaXRlZS1KZW5raW5zLVBsdWdpbi9pc3N1ZXMvSTROUUFKP2Zyb209cHJvamVjdC1pc3N1ZQ==">Jenkins 安装 Gitee 插件缺少 jar 报错 issue</span></p>
+<h3 id="配置jdk-maven"><a class="anchor" href="#配置jdk-maven">#</a> 配置 JDK Maven</h3>
+<p>配置 JDK 可以设置从 Jenkins 自动安装 jdk, 或者使用自己服务器内部的 jdk 路径</p>
+<p>Maven 的设置也是一样，可以选择自动安装或手动指定路径</p>
+<h3 id="配置githubgitee的api-token"><a class="anchor" href="#配置githubgitee的api-token">#</a> 配置 Github/Gitee 的 API Token</h3>
+<p>Jenkins 需要在系统配置中，对 Github 或 Gitee 进行 API 调用 Token 的配置，才能使 Jenkins 有权限获取到源代码进行构建.</p>
+<p><strong>Github 配置</strong></p>
+<p><strong>Gitee 配置</strong></p>
+<h3 id="配置tomcat服务器环境"><a class="anchor" href="#配置tomcat服务器环境">#</a> 配置 Tomcat 服务器环境</h3>
+<p>如果使用 Jenkins 和 Tomcat 发布 war 包来完成 CI/CD, 则需要在 Tomcat 中设置对应的管理用户，以便后续部署时使用:</p>
+<ul>
+<li>向 tomcat 中添加用户
+<ul>
+<li><code>$tomcathome/conf/tomcat-users.xml </code> 下，仿照注释添加用户并配置角色</li>
+</ul>
+</li>
+<li>将默认的只允许 tomcat 所在本地浏览器访问更改
+<ul>
+<li><code>$tomcathome/webapps/host-manager 和 manager/META-INF/context.xml </code> , 修改 IP 限制</li>
+</ul>
+</li>
+<li>重启 tomcat, 载入新配置</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hoZGh6L2FydGljbGUvZGV0YWlscy84NzgwNzg5Mg==">参考: Tomcat 的 managerhost 页面 403 的原因和解决办法</span></p>
+<h2 id="项目构建"><a class="anchor" href="#项目构建">#</a> 项目构建</h2>
+<h3 id="项目构建的配置流程"><a class="anchor" href="#项目构建的配置流程">#</a> 项目构建的配置流程</h3>
+<p>项目的构建至少需要完成以下几步:</p>
+<ul>
+<li>源码管理
+<ul>
+<li>需要给出相关代码库的 url</li>
+<li>Credentials 中，对应填写 GitHub/Gitee 的账户信息 (注意与 API 调用的 Token 不同！)</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/1646118767771.png" alt="" /></p>
+<ul>
+<li>构建触发器＆＆构建环境
+<ul>
+<li>构建触发器可以决定什么时候才能触发构建，如使用 webhook, 根据 GitHub/gitee/gitlab 的状态来触发构建
+<ul>
+<li>触发远程构建，指的是从远程向 Jenkins 发送 post/get 请求来触发构建，比 webhook 可定制性更强</li>
+<li>webhook 触发构建，是 github/gitee 在执行代码过程中向 Jenkins 触发构建</li>
+<li>webhook 触发构建，需要在 git 平台填写 jenkins 生成的 webhook 密码！！否则尝试触发时报错 403</li>
+</ul>
+</li>
+<li>构建环境一般是指对要部署的服务器环境做预先准备工作，一般需要 SSH server 的支持</li>
+</ul>
+</li>
+</ul>
+<p>![image-20220301154658077](/Users/apple/Library/Application Support/typora-user-images/image-20220301154658077.png)</p>
+<ul>
+<li>构建
+<ul>
+<li>真正对源代码执行构建的配置，一般都是使用 Maven 完成构建</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/1646120847774.png" alt="" /></p>
+<ul>
+<li>构建后操作
+<ul>
+<li>对构建完成之后进行的操作，比如:
+<ul>
+<li>通过插件部署 war 到 Jenkins 服务器上的 tomcat 中；</li>
+<li>发送构建邮件；</li>
+<li>将构建好的包发送 SSH 等</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/1646120891896.png" alt="" /></p>
+<h3 id="使用插件部署war包"><a class="anchor" href="#使用插件部署war包">#</a> 使用插件部署 war 包</h3>
+<p>Deploy war to container 这个插件，提供了将 Jenkins 构建好的 war 包便捷部署到 tomcat 等 web 容器的能力.</p>
+<p>对于 tomcat 而言，需要满足以下几点:</p>
+<ul>
+<li>开放外网访问管理页面的权限</li>
+<li>提供 Jenkins 用于登录操作 tomcat 的 admin 用户</li>
+</ul>
+<p>构建后部署的配置内容大致如下图所示:</p>
+<ul>
+<li>war/ear files, 对应填写编译后项目根路径下 target 目录下的 war 包路径</li>
+<li>context path 为实际访问站点的 url 路径</li>
+<li>credentials 中，为 tomcat 容器中配置的管理员信息</li>
+<li>tomcat url 为远程访问的 tomcat 服务器地址</li>
+</ul>
+<p><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/1646131980053.png" alt="" /></p>
+<h3 id="todo-使用docker构建部署"><a class="anchor" href="#todo-使用docker构建部署">#</a> Todo 使用 Docker 构建部署</h3>
+<h2 id="pipeline"><a class="anchor" href="#pipeline">#</a> Pipeline</h2>
+<p>### 什么是 pipeline?</p>
+<p>引用 Jenkins 官方:</p>
+<p>Jenkins Pipeline（或简称为 &quot;Pipeline&quot;）<strong>是一套插件</strong>，将持续交付的实现和实施集成到 Jenkins 中。</p>
+<p>持续交付 Pipeline 自动化的表达了这样一种流程：将基于版本控制管理的软件持续的交付到您的用户和消费者手中。</p>
+<p>Jenkins Pipeline 提供了一套可扩展的工具，用于将 “简单到复杂” 的交付流程实现为 “持续交付即代码”。</p>
+<p>Pipeline 的<strong>定义通常被写入到一个文本文件（称为  <code>Jenkinsfile</code>  ）中，该文件可以被放入项目的源代码控制库中。</strong></p>
+<blockquote>
+<p>关于 Pipeline 和 Jenkinsfile , 可以类比 Docker 的 Dockerfile 来理解，都是将工作流程以代码文件的形式来定义并执行</p>
+</blockquote>
+<h3 id="pipeline的优点"><a class="anchor" href="#pipeline的优点">#</a> Pipeline 的优点</h3>
+<ul>
+<li>代码化：以代码的形式实现，通常可以被源代码控制，使得团队能够编辑 审查和迭代其 CD 流程</li>
+<li>可持续性: Jenkins 重启或者中断后，都不会影响 Pipeline Job</li>
+<li>可暂停运行: Pipeline 可以选择暂停并等待输入，然后再继续运行 Pipeline</li>
+<li>多功能: Pipeline 支持复杂的 CD 要求，包括 fork/join 子进程，循环和并行执行任务的能力</li>
+<li>可扩展: Pipeline 插件支持自定义扩展以及与其他插件集成</li>
+</ul>
+<h3 id="pipeline的声明式和脚本式"><a class="anchor" href="#pipeline的声明式和脚本式">#</a> Pipeline 的声明式和脚本式</h3>
+<p><strong>pipeline 语法种类:</strong></p>
+<ul>
+<li>
+<p>声明式 (Declarative)</p>
+<ul>
+<li>是 Pipeline Plugin2.5 以后才引入</li>
+<li>提供比脚本式语法更丰富的语法功能</li>
+<li>在编写和理解代码时更容易</li>
+</ul>
+</li>
+<li>
+<p>脚本式 (Scripted)</p>
+<ul>
+<li>基于 Groovy 实现</li>
+</ul>
+<p>声明式</p>
+<figure class="highlight shell"><figcaption data-lang="Bash"></figcaption><table><tr><td data-num="1"></td><td><pre>Jenkinsfile <span class="token punctuation">(</span>Declarative Pipeline<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre>pipeline <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    agent <span class="token punctuation">&#123;</span> docker <span class="token string">'maven:3.3.3'</span> <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    stages <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        stage<span class="token punctuation">(</span><span class="token string">'build'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>            steps <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>                <span class="token function">sh</span> <span class="token string">'mvn --version'</span></pre></td></tr><tr><td data-num="8"></td><td><pre>            <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>脚本式</p>
+<figure class="highlight shell"><figcaption data-lang="Bash"></figcaption><table><tr><td data-num="1"></td><td><pre>Jenkinsfile <span class="token punctuation">(</span>Scripted Pipeline<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre>/* 需要Docker Pipeline插件 */</pre></td></tr><tr><td data-num="3"></td><td><pre>node<span class="token punctuation">(</span><span class="token string">'docker'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    checkout scm</pre></td></tr><tr><td data-num="5"></td><td><pre>    stage<span class="token punctuation">(</span><span class="token string">'Build'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        docker.image<span class="token punctuation">(</span><span class="token string">'maven:3.3.3'</span><span class="token punctuation">)</span>.inside <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>            <span class="token function">sh</span> <span class="token string">'mvn --version'</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><blockquote>
+<p>agent: Jenkins 为 pipeline 分配的执行空间和工作空间</p>
+<p>echo: 在控制台输出</p>
+<p>node 作用等同于 agent</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="pipeline结构基本概念"><a class="anchor" href="#pipeline结构基本概念">#</a> pipeline 结构 &amp;&amp; 基本概念</h3>
+<p>典型的 pipeline 结构如下:</p>
+<figure class="highlight groovy"><figcaption data-lang="groovy"></figcaption><table><tr><td data-num="1"></td><td><pre>pipeline <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token comment">// 声明式，脚本式略有不同，为 node 节点包含 stages &#123;&#125;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    agent any</pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token comment">// node&#123; </span></pre></td></tr><tr><td data-num="5"></td><td><pre>  </pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token comment">// 设置环境指令，在最高层的 pipeline 块的 environment 指令适用于流水线的所有步骤。</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  environment <span class="token punctuation">&#123;</span> </pre></td></tr><tr><td data-num="8"></td><td><pre>        CC <span class="token operator">=</span> <span class="token string">'clang'</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">//credentials () 方法为 environment 指令下的方法，可以创建密码凭证</span></pre></td></tr><tr><td data-num="10"></td><td><pre>        AWS_SECRET_ACCESS_KEY <span class="token operator">=</span> <span class="token function">credentials</span><span class="token punctuation">(</span><span class="token string">'jenkins-aws-secret-access-key'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  </pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token comment">//tools 指令 帮助我们自动下载并安装所指定的构建工具，并将其加入 PATH 变量中，之后就可以在 sh 步骤里直接使用了。</span></pre></td></tr><tr><td data-num="14"></td><td><pre>  <span class="token comment">// 但在 agent none 的情况下不会生效。通过命令 sh "printenv"，可以看到环境变量的所有值。</span></pre></td></tr><tr><td data-num="15"></td><td><pre>   tools <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        maven <span class="token string">'maven.3.6.3'</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  </pre></td></tr><tr><td data-num="19"></td><td><pre>  <span class="token comment">//tigger 指令只能被定义在 pipeline 块下</span></pre></td></tr><tr><td data-num="20"></td><td><pre>  <span class="token comment">// Jenkins 内置支持 cron、pollSCM，upstream 三种方式。其他方式可以通过插件来实现。</span></pre></td></tr><tr><td data-num="21"></td><td><pre>  trigger<span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    cron <span class="token punctuation">(</span><span class="token string">'0 0 * * *'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="23"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="24"></td><td><pre>    </pre></td></tr><tr><td data-num="25"></td><td><pre>  <span class="token comment">// 声明参数指令</span></pre></td></tr><tr><td data-num="26"></td><td><pre>    parameters <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="27"></td><td><pre>        <span class="token function">string</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">'Greeting'</span><span class="token punctuation">,</span> defaultValue<span class="token punctuation">:</span> <span class="token string">'Hello'</span><span class="token punctuation">,</span> description<span class="token punctuation">:</span> <span class="token string">'How should I greet the world?'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="28"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="29"></td><td><pre>  </pre></td></tr><tr><td data-num="30"></td><td><pre>  <span class="token comment">//options 指令允许从流水线内部配置特定于流水线的选项，可以对流水线设置超时 重试等特殊操作</span></pre></td></tr><tr><td data-num="31"></td><td><pre>    options <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>        <span class="token function">timeout</span><span class="token punctuation">(</span>time<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> unit<span class="token punctuation">:</span> <span class="token string">'HOURS'</span><span class="token punctuation">)</span> </pre></td></tr><tr><td data-num="33"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="34"></td><td><pre>    stages <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>        <span class="token function">stage</span><span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="36"></td><td><pre>          <span class="token comment">// 设置环境指令，定义在 stage 中的 environment 指令只适用于 stage 中的步骤。</span></pre></td></tr><tr><td data-num="37"></td><td><pre>          environment <span class="token punctuation">&#123;</span> </pre></td></tr><tr><td data-num="38"></td><td><pre>                DEBUG_FLAGS <span class="token operator">=</span> <span class="token string">'-g'</span></pre></td></tr><tr><td data-num="39"></td><td><pre>            <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="40"></td><td><pre>          </pre></td></tr><tr><td data-num="41"></td><td><pre>          <span class="token comment">// 允许 pipeline 根据给定的条件，决定是否执行 stage 内的 step</span></pre></td></tr><tr><td data-num="42"></td><td><pre>          when <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="43"></td><td><pre>              expression <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="44"></td><td><pre>                currentBuild<span class="token punctuation">.</span>result <span class="token operator">==</span> null <span class="token operator">||</span> currentBuild<span class="token punctuation">.</span>result <span class="token operator">==</span> <span class="token string">'SUCCESS'</span> </pre></td></tr><tr><td data-num="45"></td><td><pre>              <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="46"></td><td><pre>            <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="47"></td><td><pre>          </pre></td></tr><tr><td data-num="48"></td><td><pre>          <span class="token comment">//stage 的 options 指令类似于流水线根目录上的 options 指令。</span></pre></td></tr><tr><td data-num="49"></td><td><pre>          <span class="token comment">//stage - 级别 options 只能包括 retry, timeout, 或 timestamps 等步骤，或与 stage 相关的声明式选项，如 skipDefaultCheckout。</span></pre></td></tr><tr><td data-num="50"></td><td><pre>					<span class="token comment">// 在 `stage`, options 指令中的步骤在进入 agent 之前被调用或在 when 条件出现时进行检查。</span></pre></td></tr><tr><td data-num="51"></td><td><pre>					options <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="52"></td><td><pre>               <span class="token function">timeout</span><span class="token punctuation">(</span>time<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> unit<span class="token punctuation">:</span> <span class="token string">'HOURS'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="53"></td><td><pre>            	 <span class="token function">retry</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="54"></td><td><pre>            <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="55"></td><td><pre>          </pre></td></tr><tr><td data-num="56"></td><td><pre>          steps <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="57"></td><td><pre>                echo <span class="token string">'Hello World'</span></pre></td></tr><tr><td data-num="58"></td><td><pre>              <span class="token comment">// 使用参数</span></pre></td></tr><tr><td data-num="59"></td><td><pre>              echo <span class="token string gstring">"<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">&#123;</span>params<span class="token punctuation">.</span>Greeting<span class="token punctuation">&#125;</span></span> World!"</span></pre></td></tr><tr><td data-num="60"></td><td><pre>              <span class="token comment">// 流水线步骤，可以组合生成多个证书</span></pre></td></tr><tr><td data-num="61"></td><td><pre>              <span class="token function">withCredentials</span><span class="token punctuation">(</span> <span class="token punctuation">...</span> <span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">...</span> <span class="token punctuation">&#125;</span> </pre></td></tr><tr><td data-num="62"></td><td><pre>            <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="63"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="64"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="65"></td><td><pre>  </pre></td></tr><tr><td data-num="66"></td><td><pre>   <span class="token comment">//post 块处理故障，允许声明多个不同的 post 条件</span></pre></td></tr><tr><td data-num="67"></td><td><pre>   <span class="token comment">// 比如: always、unstable、success、failure 和 changed</span></pre></td></tr><tr><td data-num="68"></td><td><pre>    post <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="69"></td><td><pre>        always <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="70"></td><td><pre>            junit <span class="token string">'**/target/*.xml'</span></pre></td></tr><tr><td data-num="71"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="72"></td><td><pre>        failure <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="73"></td><td><pre>            mail to<span class="token punctuation">:</span> team<span class="token annotation punctuation">@example</span><span class="token punctuation">.</span>com<span class="token punctuation">,</span> subject<span class="token punctuation">:</span> <span class="token string">'The Pipeline failed :('</span></pre></td></tr><tr><td data-num="74"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="75"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="76"></td><td><pre>  <span class="token comment">// &#125;</span></pre></td></tr><tr><td data-num="77"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><ul>
+<li>
+<p><strong css-module=".">pipeline</strong></p>
+<ul>
+<li>
+<p>是用户定义的一个 CD 流水线模型 。流水线的代码定义了整个的构建过程，他通常包括构建，测试和交付应用程序的阶段 。</p>
+<p>另外 ，  <code>pipeline</code>  块是 ==<strong> 声明式流水线语法的特有根节点关键部分</strong> ==</p>
+</li>
+</ul>
+</li>
+<li css-module=".">
+<p><strong css-module=".">agent</strong> / <strong>node</strong></p>
+<ul>
+<li>一个 Node 就是一个 Jenkins 节点，或者是 Master 或者是 Agent. 是执行 Step 的具体运行环境，指示 Jenkins 为 pipeline<strong> 分配一个执行器和工作区</strong>，<strong> 流水线中的每个阶段都必须在某个地方（物理机、虚拟机或 Docker 容器）执行，agent 部分即指定具体在哪个 Jenkins 实例执行</strong>。</li>
+<li>应用在 <code>pipeline</code>  块的顶层，或  <code>stage</code>  指令内</li>
+<li>没有  <code>agent/node</code>  指令的话，声明式流水线不仅无效，它也不可能完成任何工作！</li>
+<li><code>node</code>  是<strong>脚本化语法的特有关键部分</strong></li>
+<li><code>agent</code>  是<strong>声明式语法特有关键部分</strong></li>
+<li>对于 agent 的概念理解，可以类比 redis 或者 MQ 的主从实例</li>
+</ul>
+</li>
+<li css-module=".">
+<p><strong css-module=".">stages</strong>/stage</p>
+<ul>
+<li><code>stage</code>  块定义了在整个流水线的执行任务的概念性地不同的的子集 (比如 &quot;Build&quot;, &quot;Test&quot; 和 &quot;Deploy&quot; 阶段), 它被许多插件用于可视化 或 Jenkins 流水线目前的 状态 / 进展</li>
+<li>注意！！stage 块是一个逻辑分组的概念，可以跨多个 Node/Agent</li>
+<li>如果使用 stages {...} 块表示嵌套多个 stage, 至少需要包含一个 stage 块</li>
+</ul>
+</li>
+<li>
+<p><strong css-module=".">step</strong></p>
+<ul>
+<li>step 是最基本的操作单元，小到创建一个目录，达到构建一个 Docker 镜像。由各类 Jenkins Plugin 提供，如 sh 'make'</li>
+<li>本质上 ，一个单一的任务，a step 告诉 Jenkins 在特定的时间点要做_what_ (或过程中的 &quot;step&quot;)。 举个例子，要执行 shell 命令 ，请使用  <code>sh</code>  步骤:  <code>sh 'make'</code> 。当一个插件扩展了流水线 DSL, [<span class="exturl" data-url="aHR0cHM6Ly93d3cuamVua2lucy5pby96aC9kb2MvYm9vay9waXBlbGluZS8jX2Zvb3Rub3RlZGVmXzE=">1</span>] 通常意味着插件已经实现了一个新的 <em>step</em>。</li>
+<li>Jenkins 的很多插件可以被直接拿来当作一个步骤使用。只要安装了这些适配了 Jenkins pipeline 的插件，就可以使用其提供的 pipeline 步骤。</li>
+</ul>
+</li>
+</ul>
+<p>以上每一个部分（section）都是必需的，少一个，Jenkins 都会报错。</p>
+<ul>
+<li css-module=".">post
+<ul>
+<li>用来处理故障或根据步骤完成状态执行特定指令
+<ul>
+<li>always：不论当前完成状态是什么，都执行。</li>
+<li>changed：只要当前完成状态与上一次完成状态不同就执行。</li>
+<li>fixed：上一次完成状态为失败或不稳定（unstable），当前完成状态为成功时执行</li>
+<li>regression：上一次完成状态为成功，当前完成状态为失败、不稳定或中止（aborted）时执行。</li>
+<li>aborted：当前执行结果是中止状态时（一般为人为中止）执行。</li>
+<li>failure：当前完成状态为失败时执行。</li>
+<li>success：当前完成状态为成功时执行。</li>
+<li>unstable：当前完成状态为不稳定时执行。</li>
+<li>cleanup：清理条件块。不论当前完成状态是什么，在其他所有条件块执行完成后都执行。</li>
+</ul>
+</li>
+<li><strong>post 部分可以同时包含多种条件块。</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="pipeline特有语法"><a class="anchor" href="#pipeline特有语法">#</a> pipeline 特有语法</h3>
+<p>####<strong>字符串插值</strong></p>
+<p>类似 Groovy 语法，可以支持字符串插值，但是注意只在使用双引号时才会生效</p>
+<figure class="highlight groovy"><figcaption data-lang="groovy"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">def</span> singlyQuoted <span class="token operator">=</span> <span class="token string">'Hello'</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">def</span> doublyQuoted <span class="token operator">=</span> <span class="token string gstring">"World"</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">def</span> username <span class="token operator">=</span> <span class="token string">'Jenkins'</span></pre></td></tr><tr><td data-num="5"></td><td><pre>echo <span class="token string">'Hello Mr. $&#123;username&#125;'</span></pre></td></tr><tr><td data-num="6"></td><td><pre>echo <span class="token string gstring">"I said, Hello Mr. <span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">&#123;</span>username<span class="token punctuation">&#125;</span></span>"</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">// 结果:</span></pre></td></tr><tr><td data-num="9"></td><td><pre>Hello Mr<span class="token punctuation">.</span> <span class="token punctuation">$</span><span class="token punctuation">&#123;</span>username<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>I said<span class="token punctuation">,</span> Hello Mr<span class="token punctuation">.</span> Jenkins</pre></td></tr></table></figure><p>####<strong>pipeline 指令</strong></p>
+<p>基本结构满足不了现实多变的需求。所以，Jenkins pipeline 通过各种指令（directive）来丰富自己。指令可以被理解为对 Jenkins pipeline 基本结构的补充。</p>
+<p>Jenkins pipeline 支持的指令有：</p>
+<p>・environment：用于设置环境变量，可定义在 stage 或 pipeline 部分。<br />
+・tools：可定义在 pipeline 或 stage 部分。它会自动下载并安装我们指定的工具，并将其加入 PATH 变量中。<br />
+・input：定义在 stage 部分，会暂停 pipeline，提示你输入内容。<br />
+・options：用于配置 Jenkins pipeline 本身的选项，比如 options {retry（3）} 指当 pipeline 失败时再重试 2 次。options 指令可定义在 stage 或 pipeline 部分。</p>
+<p>・parallel：并行执行多个 step。在 pipeline 插件 1.2 版本后，parallel 开始支持对多个阶段进行并行执行。<br />
+・parameters：与 input 不同，parameters 是执行 pipeline 前传入的一些参数。<br />
+・triggers：用于定义执行 pipeline 的触发器。<br />
+・when：当满足 when 定义的条件时，阶段才执行。<mark>常用来实现不同分支发布不同环境</mark></p>
+<p>在使用指令时，需要注意的是每个指令都有自己的 “作用域”。如果指令使用的位置不正确，Jenkins 将会报错。</p>
+<p><strong>when 指令支持的内置条件</strong></p>
+<ul>
+<li>
+<p>branch</p>
+<p>当正在构建的分支与模式给定的分支匹配时，执行这个阶段，例如:  <code>when &#123; branch 'master' &#125;</code> 。注意，这只适用于多分支流水线。</p>
+</li>
+<li>
+<p>environment</p>
+<p>当指定的环境变量是给定的值时，执行这个步骤，例如:  <code>when &#123; environment name: 'DEPLOY_TO', value: 'production' &#125;</code></p>
+</li>
+<li>
+<p>expression</p>
+<p>当指定的 Groovy 表达式评估为 true 时，执行这个阶段，例如:  <code>when &#123; expression &#123; return params.DEBUG_BUILD &#125; &#125;</code></p>
+</li>
+<li>
+<p>not</p>
+<p>当嵌套条件是错误时，执行这个阶段，必须包含一个条件，例如:  <code>when &#123; not &#123; branch 'master' &#125; &#125;</code></p>
+</li>
+<li>
+<p>allOf</p>
+<p>当所有的嵌套条件都正确时，执行这个阶段，必须包含至少一个条件，例如:  <code>when &#123; allOf &#123; branch 'master'; environment name: 'DEPLOY_TO', value: 'production' &#125; &#125;</code></p>
+</li>
+<li>
+<p>anyOf</p>
+<p>当至少有一个嵌套条件为真时，执行这个阶段，必须包含至少一个条件，例如:  <code>when &#123; anyOf &#123; branch 'master'; branch 'staging' &#125; &#125;</code></p>
+</li>
+</ul>
+<blockquote>
+<p>特殊地:</p>
+<ol>
+<li>如果  <code>when</code>  指令包含多个条件，所有的子条件必须返回 True，阶段才能执行；</li>
+<li>默认情况下，如果定义了某个阶段的代理，在进入该 <code>stage</code>  的  <code>agent</code>  后该  <code>stage</code>  的  <code>when</code>  条件将会被评估。但是，可以通过在  <code>when</code>  块中指定  <code>beforeAgent</code>  选项来更改此选项。 如果  <code>beforeAgent</code>  被设置为  <code>true</code> , 那么就会首先对  <code>when</code>  条件进行评估，并且只有在  <code>when</code>  条件验证为真时才会进入  <code>agent</code>  。</li>
+<li></li>
+</ol>
+</blockquote>
+<p>####<strong>使用环境变量</strong></p>
+<ol>
+<li>
+<p><strong>内置环境变量</strong></p>
+<p>通过全局变量  <code>env</code>  提供环境变量，它在  <code>Jenkinsfile</code>  文件的任何地方都可以使用。Jenkins 流水线中可访问的完整的环境变量列表记录在  <code>$&#123;YOUR_JENKINS_URL&#125;/pipeline-syntax/globals#env</code></p>
+</li>
+<li>
+<p><strong>自定义环境变量</strong></p>
+<ol>
+<li>
+<p>声明式流水线支持 <span class="exturl" data-url="aHR0cHM6Ly93d3cuamVua2lucy5pby96aC9kb2MvYm9vay9waXBlbGluZS9qZW5raW5zZmlsZS8jLi4vc3ludGF4I2Vudmlyb25tZW50">environment</span> 指令</p>
+<figure class="highlight groovy"><figcaption data-lang="groovy"></figcaption><table><tr><td data-num="1"></td><td><pre>pipeline <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    agent any</pre></td></tr><tr><td data-num="3"></td><td><pre>    environment <span class="token punctuation">&#123;</span> </pre></td></tr><tr><td data-num="4"></td><td><pre>        CC <span class="token operator">=</span> <span class="token string">'clang'</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr></table></figure></li>
+<li>
+<p>脚本式流水线的使用者必须使用  <code>withEnv</code>  步骤</p>
+<figure class="highlight groovy"><figcaption data-lang="groovy"></figcaption><table><tr><td data-num="1"></td><td><pre>node <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token comment">/* .. snip .. */</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token function">withEnv</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string gstring">"PATH+MAVEN=<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">&#123;</span>tool <span class="token string">'M3'</span><span class="token punctuation">&#125;</span></span>/bin"</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        sh <span class="token string">'mvn -B verify'</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+<h2 id="参考补充"><a class="anchor" href="#参考补充">#</a> 参考补充</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vNTRjaGVuc29uZ3hpYS9wLzE0OTk4NjQ0Lmh0bWw=">Jenkins 学习笔记</span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuamVua2lucy5pby96aC9kb2MvYm9vay9waXBlbGluZS9zeW50YXgv">Jenkins 官方 Pipeline 语法</span></p>
+
+      <div class="tags">
+          <a href="/tags/Jenkins/" rel="tag"><i class="ic i-tag"></i> Jenkins</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/ci-cd/ci-cd-jenkins/" class="item leancloud_visitors" data-flag-title="CI_CD&&Jenkins" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/ci-cd/ci-cd-jenkins/" title="CI_CD&amp;&amp;Jenkins">http://adamshang2333.github.io/hou-duan/ci-cd/ci-cd-jenkins/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/docker/docker-ru-men/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-v9gwyp.jpg" title="Docker入门 2333">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Docker入门 2333</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/hou-duan/ci-cd/ce-shi-jenkins/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-g77wxd.jpg" title="测试Jenkins">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> CI/CD</span>
+  <h3>测试Jenkins</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jenkins%E5%85%A5%E9%97%A8"><span class="toc-number">1.</span> <span class="toc-text"> Jenkins 入门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFdevops"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是 DevOps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jenkins%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.</span> <span class="toc-text"> Jenkins 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jenkins%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.</span> <span class="toc-text"> Jenkins 环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 配置插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEjdk-maven"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 配置 JDK Maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEgithubgitee%E7%9A%84api-token"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 配置 Github&#x2F;Gitee 的 API Token</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEtomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 配置 Tomcat 服务器环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA"><span class="toc-number">1.4.</span> <span class="toc-text"> 项目构建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E7%9A%84%E9%85%8D%E7%BD%AE%E6%B5%81%E7%A8%8B"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 项目构建的配置流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%8F%92%E4%BB%B6%E9%83%A8%E7%BD%B2war%E5%8C%85"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 使用插件部署 war 包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#todo-%E4%BD%BF%E7%94%A8docker%E6%9E%84%E5%BB%BA%E9%83%A8%E7%BD%B2"><span class="toc-number">1.4.3.</span> <span class="toc-text"> Todo 使用 Docker 构建部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pipeline"><span class="toc-number">1.5.</span> <span class="toc-text"> Pipeline</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pipeline%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">1.5.1.</span> <span class="toc-text"> Pipeline 的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pipeline%E7%9A%84%E5%A3%B0%E6%98%8E%E5%BC%8F%E5%92%8C%E8%84%9A%E6%9C%AC%E5%BC%8F"><span class="toc-number">1.5.2.</span> <span class="toc-text"> Pipeline 的声明式和脚本式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pipeline%E7%BB%93%E6%9E%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.5.3.</span> <span class="toc-text"> pipeline 结构 &amp;&amp; 基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pipeline%E7%89%B9%E6%9C%89%E8%AF%AD%E6%B3%95"><span class="toc-number">1.5.4.</span> <span class="toc-text"> pipeline 特有语法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%A1%A5%E5%85%85"><span class="toc-number">1.6.</span> <span class="toc-text"> 参考补充</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/hou-duan/ci-cd/ci-cd-jenkins/" rel="bookmark" title="CI_CD&&Jenkins">CI_CD&&Jenkins</a></li><li><a href="/hou-duan/ci-cd/ce-shi-jenkins/" rel="bookmark" title="测试Jenkins">测试Jenkins</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/docker/docker-ru-men/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/hou-duan/ci-cd/ce-shi-jenkins/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/basics/" title="分类于 基础">基础</a>
+</div>
+
+    <span><a href="/hou-duan/java/basics/java-ji-chu/" title="IO基础">IO基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-fan-she/" title="Java反射">Java反射</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/docker/docker-ru-men/" title="Docker入门 2333">Docker入门 2333</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" title="SpringMVC 拦截器&amp;方法参数解析器">SpringMVC 拦截器&方法参数解析器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-mian-xiang-dui-xiang/" title="Java面向对象">Java面向对象</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/bing-fa-fen-bu-shi/redis-gao-bing-fa-fen-bu-shi-suo/" title="Redis高并发分布式锁">Redis高并发分布式锁</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-ji-chu/" title="数据库基础">数据库基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/swagger-shi-yong-wen-dang/" title="swagger使用文档">swagger使用文档</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/h5-xin-zeng/" title="H5新增内容总结">H5新增内容总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/mybatis/" title="Mybatis">Mybatis</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/ci-cd/ci-cd-jenkins/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

@@ -1,0 +1,752 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/java/java-collection/">
+
+
+
+  <title>
+Java collection |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Java collection
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-03-08 19:32:40">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-03-08T19:32:40+08:00">2023-03-08</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>3.1k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>3 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-57wx33.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-0j6zdq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-4lmre2.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm16gj.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-6oq2x7.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-g77wxd.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/java/java-collection/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="collection容器"><a class="anchor" href="#collection容器">#</a> Collection 容器</h2>
+<blockquote>
+<p>容器的特点:<br />
+1. 只用于<strong>存储对象</strong>  --&gt; 但可以使用泛型规定具体对象<br />
+ --&gt;  如果是基本类型，在 Java 内部也会转为对应类的对象<br />
+ 2. 长度可变<br />
+ 3. 存储对象的类型可以不同 --&gt; 无泛型时</p>
+</blockquote>
+<h4 id="容器方法"><a class="anchor" href="#容器方法">#</a> 容器方法</h4>
+<h4 id="add-添加一个对象"><a class="anchor" href="#add-添加一个对象">#</a> .add  添加一个对象</h4>
+<h4 id="addall-把参数容器的所有元素添加到容器中"><a class="anchor" href="#addall-把参数容器的所有元素添加到容器中">#</a> .addAll  把参数容器的<strong>所有元素</strong>添加到容器中</h4>
+<pre><code>// 把参数容器(a2)整体作为一个对象add进数组arr中
+ arr.addAll(a2);      
+</code></pre>
+<h4 id="size-获取容器的大小无参"><a class="anchor" href="#size-获取容器的大小无参">#</a> .size () 获取容器的大小 (无参)</h4>
+<h4 id="removeobject-移除只移除遇到的第一个"><a class="anchor" href="#removeobject-移除只移除遇到的第一个">#</a> .remove (object) 移除 (只移除遇到的第一个)</h4>
+<h4 id="contains-判断是否包含某一对象遇到的第一个"><a class="anchor" href="#contains-判断是否包含某一对象遇到的第一个">#</a> .contains () 判断是否包含某一对象 (遇到的第一个)</h4>
+<blockquote>
+<p>.contains 返回布尔值</p>
+</blockquote>
+<h2 id="迭代器-iterator"><a class="anchor" href="#迭代器-iterator">#</a> 迭代器 iterator</h2>
+<pre><code>    // 迭代器使用完之后 指针指向迭代器之前停止的位置(遍历后 指针停在最后) 无法重复利用
+    // 迭代器想用时要再次赋值 !!!
+</code></pre>
+<pre><code> Iterator&lt;String&gt; it = arr.iterator();
+        while (it.hasNext()) &#123;
+        // 每次.next 调用一次指针 进行一次迭代器的移位  
+        // 实质上在循环内执行了两次指针的移动 对奇数次来说 最后一次会找不到可用元素
+              System.out.println(it.next());           
+             if (&quot;王五&quot;.equals(it.next())) &#123;
+                it.remove();
+
+            &#125;
+        &#125;
+        // 迭代器使用完之后 指针指向迭代器之前停止的位置(遍历后 指针停在最后) 无法重复利用
+        // 迭代器想用时要再次赋值 !!!
+        it = arr.iterator();
+</code></pre>
+<h2 id="泛型"><a class="anchor" href="#泛型">#</a> 泛型</h2>
+<blockquote>
+<p>限制容器中保存的对象类型<br />
+每次取出的对象，想让它是规定的类型 (不是 object)<br />
+<strong>&lt; &gt; 内可以放入类 基本数据类型等</strong></p>
+</blockquote>
+<pre><code>	List&lt;String&gt; l = new ArrayList&lt;&gt;();
+</code></pre>
+<h2 id="list"><a class="anchor" href="#list">#</a> List</h2>
+<blockquote>
+<p>威力增强版的数组，特点 :<br />
+1. 元素有序 (按放入顺序)<br />
+2. <strong>按下标取值 (从 0 开始)</strong><br />
+ 3. 放入对象可重复<br />
+ 4. 继承自 collection</p>
+</blockquote>
+<h4 id="list特有方法"><a class="anchor" href="#list特有方法">#</a> List 特有方法</h4>
+<h4 id="按下标-添加-元素"><a class="anchor" href="#按下标-添加-元素">#</a> 按下标 添加 元素</h4>
+<pre><code>arr.add(0,&quot;小金刚&quot;);
+</code></pre>
+<h4 id="按下标-移除-元素注意下标越界"><a class="anchor" href="#按下标-移除-元素注意下标越界">#</a> 按下标 移除 元素 (注意下标越界)</h4>
+<pre><code> arr.remove(2);
+</code></pre>
+<h4 id="按下标-修改-元素注意下标越界"><a class="anchor" href="#按下标-修改-元素注意下标越界">#</a> 按下标 修改 元素 (注意下标越界)</h4>
+<pre><code> arr.set(0,&quot;太二真人&quot;);
+</code></pre>
+<h4 id="按下标-获取-元素注意下标越界"><a class="anchor" href="#按下标-获取-元素注意下标越界">#</a> 按下标 获取 元素 (注意下标越界)</h4>
+<pre><code> arr.get(5);
+</code></pre>
+<h4 id="list遍历三种方法"><a class="anchor" href="#list遍历三种方法">#</a> List 遍历 (三种方法)</h4>
+<h4 id="fori-循环代码需要顺序或者下标参与"><a class="anchor" href="#fori-循环代码需要顺序或者下标参与">#</a> fori --&gt; 循环代码需要顺序或者下标参与</h4>
+<pre><code> // 第一种 for循环 arr.fori
+      
+        for (int i = 0; i &lt; arr.size(); i++) &#123;
+            System.out.println(arr.get(i));
+        &#125;
+</code></pre>
+<h4 id="for-循环代码只需要元素-不需要下标"><a class="anchor" href="#for-循环代码只需要元素-不需要下标">#</a> for --&gt; 循环代码只需要元素 不需要下标</h4>
+<pre><code> // 第二种 foreach 循环  arr.for
+
+        // 内部的 o1 就相当于 arr.get(i)  方法替我们实现 直接使用o1就行
+        for (Object o1 : arr) &#123;
+
+        &#125;
+</code></pre>
+<h4 id="迭代器-需要在遍历期间更改list的长度"><a class="anchor" href="#迭代器-需要在遍历期间更改list的长度">#</a> 迭代器  --&gt; 需要在遍历期间更改 List 的长度</h4>
+<pre><code>// 第三种 使用迭代器遍历List
+        // 前两种在遍历过程中不能对数组元素做增删操作!!!
+
+        // step1 获取容器的迭代器对象
+        Iterator it = arr.iterator();
+
+        // 返回布尔值 标示&quot;之后还有没有值&quot;
+        // boolean b = it.hasNext();
+        // step2 判断迭代器中还有没有元素
+        while (it.hasNext())&#123;
+            // step3 获取下一个元素
+            Object obj = it.next();
+            if (&quot;李四&quot;.equals(obj))&#123;
+                it.remove();
+            &#125;
+       &#125; 
+</code></pre>
+<h2 id="set"><a class="anchor" href="#set">#</a> Set</h2>
+<blockquote>
+<p>特点 :</p>
+<ol>
+<li>元素无序</li>
+<li>元素<strong>不能重复 (可以去重)</strong><br />
+ 继承自 collection</li>
+</ol>
+</blockquote>
+<h4 id="list遍历两种方法"><a class="anchor" href="#list遍历两种方法">#</a> List 遍历 (两种方法)</h4>
+<h4 id="for-循环代码只需要元素-不需要下标-2"><a class="anchor" href="#for-循环代码只需要元素-不需要下标-2">#</a> for --&gt; 循环代码只需要元素 不需要下标</h4>
+<pre><code>  for (Object o1 : set) &#123;
+
+        &#125;
+</code></pre>
+<h4 id="迭代器-需要在遍历期间更改list的长度-2"><a class="anchor" href="#迭代器-需要在遍历期间更改list的长度-2">#</a> 迭代器  --&gt; 需要在遍历期间更改 List 的长度</h4>
+<pre><code>Iterator itset = set.iterator();
+        while (itset.hasNext())&#123;
+            System.out.println(itset.next());
+        &#125;
+</code></pre>
+<h2 id="map"><a class="anchor" href="#map">#</a> Map</h2>
+<blockquote>
+<p>Map -- <strong>不是继承自 collection</strong><br />
+1. 只能存储对象<br />
+ 2. 长度可变<br />
+ 3. 可以存储不同类型的对象</p>
+</blockquote>
+<pre><code>		// List 更倾向存储相同 类型&amp;&amp;作用的数据 -- 直接遍历做集中处理即可
+        // Map  更倾向存储不同 类型&amp;&amp;作用的数据
+        // 当数据类型复杂多变,但是又要集中处理的情况, 就可以使用MAp
+        // 如果数据类型是固定的, 那么可以使用类来替代Map
+</code></pre>
+<h4 id="map独有特点"><a class="anchor" href="#map独有特点">#</a> Map 独有特点:</h4>
+<blockquote></blockquote>
+<ol>
+<li>无序</li>
+<li>以<strong>键值对</strong> (key-value) 的方式存储数据</li>
+<li><strong>key 不能重复</strong>，一个 key 只对应一个 value  (kay 又被称为映射) y=f (x)</li>
+</ol>
+<h3 id="map方法"><a class="anchor" href="#map方法">#</a> Map 方法</h3>
+<h4 id="putkeyvalue-存储键值对"><a class="anchor" href="#putkeyvalue-存储键值对">#</a> .put (key,value) 存储键值对</h4>
+<pre><code> Map map = new HashMap();
+        map.put(&quot;name&quot;,&quot;张三&quot;);
+        map.put(&quot;age&quot;,14);
+        
+        // !!!key 值相同(name) 
+        //    --&gt; 张三会被覆盖为李四
+        map.put(&quot;name&quot;,&quot;李四&quot;);
+</code></pre>
+<h4 id="getkey-获取值"><a class="anchor" href="#getkey-获取值">#</a> .get (key)  获取值</h4>
+<pre><code> map.get(&quot;name&quot;);
+</code></pre>
+<h4 id="removekey-移除值删除键值对"><a class="anchor" href="#removekey-移除值删除键值对">#</a> .remove (key)  移除值 (删除键值对)</h4>
+<pre><code> map.remove(&quot;name&quot;);
+</code></pre>
+<h4 id="containskeykey-判断是否包含key"><a class="anchor" href="#containskeykey-判断是否包含key">#</a> .containsKey (key)  判断是否包含 key</h4>
+<pre><code> map.containsKey(&quot;name&quot;);
+</code></pre>
+<h4 id="containsvaluevalue-判断是否包含值"><a class="anchor" href="#containsvaluevalue-判断是否包含值">#</a> .containsValue (value)   判断是否包含值</h4>
+<pre><code> map.containsValue(&quot;李四&quot;);
+</code></pre>
+<h4 id="size-map的大小一个键值对算一条数据"><a class="anchor" href="#size-map的大小一个键值对算一条数据">#</a> .size ()  map 的大小 (一个键值对算一条数据)</h4>
+<pre><code> map.size();
+</code></pre>
+<h4 id="isempty-判断是否大小为0-返回值为boolean"><a class="anchor" href="#isempty-判断是否大小为0-返回值为boolean">#</a> .isEmpty ( )   判断是否大小为 0 -- 返回值为 Boolean</h4>
+<pre><code> map.isEmpty();
+</code></pre>
+<h4 id="clear-清空map删除所有值"><a class="anchor" href="#clear-清空map删除所有值">#</a> .clear ()   清空 Map (删除所有值)</h4>
+<pre><code> map.clear();
+</code></pre>
+<h3 id="遍历"><a class="anchor" href="#遍历">#</a> 遍历</h3>
+<blockquote>
+<p>map 的遍历很少用到 (遍历目的是对数据做集中处理)<br />
+// 1. 只要有 key, 一定会获得 value<br />
+//    --&gt; 无 key 输出 null<br />
+// 2. map 是无序的 (无法使用 fori)<br />
+// 3. <strong>map 和迭代器没有关系</strong> (迭代器只针对 collection 接口)</p>
+</blockquote>
+<h4 id="遍历方法1"><a class="anchor" href="#遍历方法1">#</a> 遍历方法 1:</h4>
+<pre><code>        // 获取所有的key 遍历所有的key获取value 放入set
+
+        // 拿到所有的key -- 放入set中(?: set 和 key都是不能重复的)
+        Set set = map.keySet();
+        for (Object key : set) &#123;
+            Object v = map.get(key);
+            System.out.println(key + &quot;的值是&quot; + v);
+        &#125;
+</code></pre>
+<h4 id="方法2"><a class="anchor" href="#方法2">#</a> 方法 2:</h4>
+<pre><code>        // 在Map里面 每一个键值对都是一个entry对象
+        // 容量很大,不确定 的时候适合用
+        // 不许记忆... 很少用
+        Set entrySet = map.entrySet();
+        for (Object entry : entrySet) &#123;
+            Map.Entry e = (Map.Entry) entry;
+            Object key = e.getKey();
+            Object value = e.getValue();
+            System.out.println(key+&quot;的值是:&quot;+value);
+        &#125;
+</code></pre>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/java/java-collection/" class="item leancloud_visitors" data-flag-title="Java collection" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/java/java-collection/" title="Java collection">http://adamshang2333.github.io/hou-duan/java/java-collection/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/java/jdbc/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-k7wor1.jpg" title="JDBC">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>JDBC</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/hou-duan/java/java-fan-she/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-3z9p26.png" title="Java反射">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Java反射</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#collection%E5%AE%B9%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text"> Collection 容器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.0.1.</span> <span class="toc-text"> 容器方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#add-%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.0.2.</span> <span class="toc-text"> .add  添加一个对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#addall-%E6%8A%8A%E5%8F%82%E6%95%B0%E5%AE%B9%E5%99%A8%E7%9A%84%E6%89%80%E6%9C%89%E5%85%83%E7%B4%A0%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%AE%B9%E5%99%A8%E4%B8%AD"><span class="toc-number">1.0.3.</span> <span class="toc-text"> .addAll  把参数容器的所有元素添加到容器中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#size-%E8%8E%B7%E5%8F%96%E5%AE%B9%E5%99%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E6%97%A0%E5%8F%82"><span class="toc-number">1.0.4.</span> <span class="toc-text"> .size () 获取容器的大小 (无参)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#removeobject-%E7%A7%BB%E9%99%A4%E5%8F%AA%E7%A7%BB%E9%99%A4%E9%81%87%E5%88%B0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA"><span class="toc-number">1.0.5.</span> <span class="toc-text"> .remove (object) 移除 (只移除遇到的第一个)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#contains-%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%8C%85%E5%90%AB%E6%9F%90%E4%B8%80%E5%AF%B9%E8%B1%A1%E9%81%87%E5%88%B0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA"><span class="toc-number">1.0.6.</span> <span class="toc-text"> .contains () 判断是否包含某一对象 (遇到的第一个)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8-iterator"><span class="toc-number">2.</span> <span class="toc-text"> 迭代器 iterator</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text"> 泛型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#list"><span class="toc-number">4.</span> <span class="toc-text"> List</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#list%E7%89%B9%E6%9C%89%E6%96%B9%E6%B3%95"><span class="toc-number">4.0.1.</span> <span class="toc-text"> List 特有方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E4%B8%8B%E6%A0%87-%E6%B7%BB%E5%8A%A0-%E5%85%83%E7%B4%A0"><span class="toc-number">4.0.2.</span> <span class="toc-text"> 按下标 添加 元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E4%B8%8B%E6%A0%87-%E7%A7%BB%E9%99%A4-%E5%85%83%E7%B4%A0%E6%B3%A8%E6%84%8F%E4%B8%8B%E6%A0%87%E8%B6%8A%E7%95%8C"><span class="toc-number">4.0.3.</span> <span class="toc-text"> 按下标 移除 元素 (注意下标越界)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E4%B8%8B%E6%A0%87-%E4%BF%AE%E6%94%B9-%E5%85%83%E7%B4%A0%E6%B3%A8%E6%84%8F%E4%B8%8B%E6%A0%87%E8%B6%8A%E7%95%8C"><span class="toc-number">4.0.4.</span> <span class="toc-text"> 按下标 修改 元素 (注意下标越界)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E4%B8%8B%E6%A0%87-%E8%8E%B7%E5%8F%96-%E5%85%83%E7%B4%A0%E6%B3%A8%E6%84%8F%E4%B8%8B%E6%A0%87%E8%B6%8A%E7%95%8C"><span class="toc-number">4.0.5.</span> <span class="toc-text"> 按下标 获取 元素 (注意下标越界)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#list%E9%81%8D%E5%8E%86%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">4.0.6.</span> <span class="toc-text"> List 遍历 (三种方法)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fori-%E5%BE%AA%E7%8E%AF%E4%BB%A3%E7%A0%81%E9%9C%80%E8%A6%81%E9%A1%BA%E5%BA%8F%E6%88%96%E8%80%85%E4%B8%8B%E6%A0%87%E5%8F%82%E4%B8%8E"><span class="toc-number">4.0.7.</span> <span class="toc-text"> fori --&gt; 循环代码需要顺序或者下标参与</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#for-%E5%BE%AA%E7%8E%AF%E4%BB%A3%E7%A0%81%E5%8F%AA%E9%9C%80%E8%A6%81%E5%85%83%E7%B4%A0-%E4%B8%8D%E9%9C%80%E8%A6%81%E4%B8%8B%E6%A0%87"><span class="toc-number">4.0.8.</span> <span class="toc-text"> for --&gt; 循环代码只需要元素 不需要下标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8-%E9%9C%80%E8%A6%81%E5%9C%A8%E9%81%8D%E5%8E%86%E6%9C%9F%E9%97%B4%E6%9B%B4%E6%94%B9list%E7%9A%84%E9%95%BF%E5%BA%A6"><span class="toc-number">4.0.9.</span> <span class="toc-text"> 迭代器  --&gt; 需要在遍历期间更改 List 的长度</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#set"><span class="toc-number">5.</span> <span class="toc-text"> Set</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#list%E9%81%8D%E5%8E%86%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">5.0.1.</span> <span class="toc-text"> List 遍历 (两种方法)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#for-%E5%BE%AA%E7%8E%AF%E4%BB%A3%E7%A0%81%E5%8F%AA%E9%9C%80%E8%A6%81%E5%85%83%E7%B4%A0-%E4%B8%8D%E9%9C%80%E8%A6%81%E4%B8%8B%E6%A0%87-2"><span class="toc-number">5.0.2.</span> <span class="toc-text"> for --&gt; 循环代码只需要元素 不需要下标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8-%E9%9C%80%E8%A6%81%E5%9C%A8%E9%81%8D%E5%8E%86%E6%9C%9F%E9%97%B4%E6%9B%B4%E6%94%B9list%E7%9A%84%E9%95%BF%E5%BA%A6-2"><span class="toc-number">5.0.3.</span> <span class="toc-text"> 迭代器  --&gt; 需要在遍历期间更改 List 的长度</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#map"><span class="toc-number">6.</span> <span class="toc-text"> Map</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#map%E7%8B%AC%E6%9C%89%E7%89%B9%E7%82%B9"><span class="toc-number">6.0.1.</span> <span class="toc-text"> Map 独有特点:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#map%E6%96%B9%E6%B3%95"><span class="toc-number">6.1.</span> <span class="toc-text"> Map 方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#putkeyvalue-%E5%AD%98%E5%82%A8%E9%94%AE%E5%80%BC%E5%AF%B9"><span class="toc-number">6.1.1.</span> <span class="toc-text"> .put (key,value) 存储键值对</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getkey-%E8%8E%B7%E5%8F%96%E5%80%BC"><span class="toc-number">6.1.2.</span> <span class="toc-text"> .get (key)  获取值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#removekey-%E7%A7%BB%E9%99%A4%E5%80%BC%E5%88%A0%E9%99%A4%E9%94%AE%E5%80%BC%E5%AF%B9"><span class="toc-number">6.1.3.</span> <span class="toc-text"> .remove (key)  移除值 (删除键值对)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#containskeykey-%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%8C%85%E5%90%ABkey"><span class="toc-number">6.1.4.</span> <span class="toc-text"> .containsKey (key)  判断是否包含 key</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#containsvaluevalue-%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%8C%85%E5%90%AB%E5%80%BC"><span class="toc-number">6.1.5.</span> <span class="toc-text"> .containsValue (value)   判断是否包含值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#size-map%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%B8%80%E4%B8%AA%E9%94%AE%E5%80%BC%E5%AF%B9%E7%AE%97%E4%B8%80%E6%9D%A1%E6%95%B0%E6%8D%AE"><span class="toc-number">6.1.6.</span> <span class="toc-text"> .size ()  map 的大小 (一个键值对算一条数据)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#isempty-%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%A4%A7%E5%B0%8F%E4%B8%BA0-%E8%BF%94%E5%9B%9E%E5%80%BC%E4%B8%BAboolean"><span class="toc-number">6.1.7.</span> <span class="toc-text"> .isEmpty ( )   判断是否大小为 0 -- 返回值为 Boolean</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#clear-%E6%B8%85%E7%A9%BAmap%E5%88%A0%E9%99%A4%E6%89%80%E6%9C%89%E5%80%BC"><span class="toc-number">6.1.8.</span> <span class="toc-text"> .clear ()   清空 Map (删除所有值)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%8D%E5%8E%86"><span class="toc-number">6.2.</span> <span class="toc-text"> 遍历</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%81%8D%E5%8E%86%E6%96%B9%E6%B3%951"><span class="toc-number">6.2.1.</span> <span class="toc-text"> 遍历方法 1:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%952"><span class="toc-number">6.2.2.</span> <span class="toc-text"> 方法 2:</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/java/jdbc/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/hou-duan/java/java-fan-she/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/docker/docker-ru-men/" title="Docker入门 2333">Docker入门 2333</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/ci-cd/maven/" title="Maven">Maven</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ZooKeeper/" title="分类于 ZooKeeper">ZooKeeper</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/ZooKeeper/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/zookeeper-ru-men/" title="ZooKeeper入门">ZooKeeper入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/redis/" title="redis基础">redis基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" title="AOP&amp;静态代理&amp;动态代理">AOP&静态代理&动态代理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/jdbc/" title="JDBC">JDBC</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/ce-shi-jenkins/" title="测试Jenkins">测试Jenkins</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/" title="分布式事务">分布式事务</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" title="SpringMVC 拦截器&amp;方法参数解析器">SpringMVC 拦截器&方法参数解析器</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/java/java-collection/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

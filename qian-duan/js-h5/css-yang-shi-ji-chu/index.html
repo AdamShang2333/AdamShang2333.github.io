@@ -1,0 +1,707 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/qian-duan/js-h5/css-yang-shi-ji-chu/">
+
+
+
+  <title>
+css 基础样式 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">css 基础样式
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-22 16:23:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-22T16:23:00+08:00">2022-12-22</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>2.5k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-6oq2x7.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-y88q3g.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-z8gydv.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-5womy5.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-g8kjm3.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-83yp2j.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/qian-duan/js-h5/css-yang-shi-ji-chu/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="字体属性"><a class="anchor" href="#字体属性">#</a> 字体属性</h2>
+<h3 id="设置字体的大小"><a class="anchor" href="#设置字体的大小">#</a> 设置字体的大小</h3>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>font-size  设置字体的大小   </pre></td></tr><tr><td data-num="2"></td><td><pre>​取值：font-size: 12px;  </pre></td></tr><tr><td data-num="3"></td><td><pre>注意：在css大多数数值都需要添加单位</pre></td></tr></table></figure><h3 id="设置字体的粗细"><a class="anchor" href="#设置字体的粗细">#</a> 设置字体的粗细</h3>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>font-weight 设置字体的粗细 </pre></td></tr><tr><td data-num="2"></td><td><pre>取值：normal 、bold、 100 - 900</pre></td></tr></table></figure><p>多说一嘴：用数字设置的时候，只有 400 和 700 会产生变化，是因为字体在初始设计的时候就没有设置太多的粗细标准，一般就是两种，默认的和加粗的<br />
+所以 在实际工作中 用的最多的就是 normal（400） bold（700）</p>
+<h3 id="设置字体的风格"><a class="anchor" href="#设置字体的风格">#</a> 设置字体的风格</h3>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>font-style 设置字体的风格(样式)</pre></td></tr><tr><td data-num="2"></td><td><pre>取值：</pre></td></tr><tr><td data-num="3"></td><td><pre>​	normal 默认 显示标准的字体样式</pre></td></tr><tr><td data-num="4"></td><td><pre>​	italic 字体倾斜</pre></td></tr></table></figure><h3 id="设置不同类型的字体"><a class="anchor" href="#设置不同类型的字体">#</a> 设置不同类型的字体</h3>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>font-family 设置不同的字体</pre></td></tr><tr><td data-num="2"></td><td><pre>取值：宋体、微软雅黑、黑体、。。。等等</pre></td></tr></table></figure><p>多说一嘴：</p>
+<ol>
+<li>不推荐使用一些冷门字体，因为一些冷门字体很多电脑里面默认没有安装，这个时候就会显示不出来。所以实际工作中，默认都是一些主流字体 如宋体 微软雅黑 等。。。</li>
+<li>字体可以写多组，中间用逗号隔开</li>
+<li>字体名称中如果有空格 # $ 这种特殊字符的时候需要添加上引号 中文字体也需要添加引号<br />
+了解：<span class="exturl" data-url="aHR0cDovL2NvZGUuY2lhb2NhLmNvbS9zdHlsZS9jc3Nmb250MnVuaWNvZGUv">http://code.ciaoca.com/style/cssfont2unicode/</span></li>
+</ol>
+<h3 id="font简写"><a class="anchor" href="#font简写">#</a> font 简写</h3>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>font: font-style  font-weight  font-size/line-height  font-family;</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>不建议修改顺序  并且不需要设置的属性可以不写  但是font-size和font-family必须指定，否则将不起作用</pre></td></tr></table></figure><h2 id="文字的对齐-缩进-下划线"><a class="anchor" href="#文字的对齐-缩进-下划线">#</a> 文字的对齐 缩进 下划线</h2>
+<p>水平对齐</p>
+<pre><code>text-align:值;  
+取值：left right center
+该属性控制的是标签  “内部的文字”  水平居中
+</code></pre>
+<p>首行缩进</p>
+<pre><code>text-indent:值;
+取值可以是像素，也可以是em  推荐写法：text-indent:2em;
+</code></pre>
+<p>字体下划线和删除线</p>
+<pre><code>text-decoration:值;
+取值：underline 下划线  line-through 删除线 none 去掉多余的样式
+</code></pre>
+<h2 id="背景"><a class="anchor" href="#背景">#</a> 背景</h2>
+<h3 id="背景颜色"><a class="anchor" href="#背景颜色">#</a> 背景颜色</h3>
+<pre><code>background-color: red; 
+
+颜色可以设置成十六进制 或者 rgb 或者 rgba 
+</code></pre>
+<h3 id="背景图片"><a class="anchor" href="#背景图片">#</a> 背景图片</h3>
+<pre><code>background-image: url(图片路径);
+</code></pre>
+<h3 id="背景平铺"><a class="anchor" href="#背景平铺">#</a> 背景平铺</h3>
+<pre><code>background-repeat: 背景平铺;
+
+1.repeat 平铺  默认的
+2.no-repeat 不平铺
+3.repeat-x 水平平铺
+4.repeat-y 垂直平铺
+</code></pre>
+<h3 id="背景是否滚动"><a class="anchor" href="#背景是否滚动">#</a> 背景是否滚动</h3>
+<pre><code>background-attachment: 背景是否滚动;
+
+1.scroll  默认值 图片跟随盒子一起滚动
+2.fixed	  图片不跟随盒子一起滚动
+</code></pre>
+<h3 id="背景位置"><a class="anchor" href="#背景位置">#</a> 背景位置</h3>
+<pre><code>background-position: 背景位置;
+
+1.方位名词 right top left center bottom 书写的顺序不论
+2.像素 如果是像素 那么默认在以“当前盒子”的左上角为0 0原点 构建一个坐标系 第一值是X轴的位置 第二个值是Y轴的位置 交互的点就是图片开始显示的起始位置
+	多说一嘴：
+	1、程序里面的坐标系X轴水平向右  Y轴垂直向下
+	2、注意顺序
+3.百分比  百分比参照的自身盒子的宽高： 最终的位置是当前盒子自身的宽高的百分比 - 图片自身的宽高的百分比
+4.还可以混写 混写是需要考虑顺序
+</code></pre>
+<h3 id="背景的简写"><a class="anchor" href="#背景的简写">#</a> 背景的简写</h3>
+<pre><code>background:背景颜色 背景图片地址 背景平铺 背景滚动 背景位置;
+
+如：background: #fff url() no-repeat scroll center center;
+</code></pre>
+<h3 id="img和背景图片的区别"><a class="anchor" href="#img和背景图片的区别">#</a> img 和背景图片的区别：</h3>
+<pre><code>img不需要专门写宽高就能够显示在页面上
+而背景图片默认是撑不开容器的 需要专门写宽高
+一般产品插入图都推荐使用img而一些小的icon 或者很少更新的图片 再或者超大的图片推荐使用背景图
+
+而且背景图可以让内部的文字盖在上面，但是img不行（除非后期用定位）
+</code></pre>
+<h2 id="css的三大特性"><a class="anchor" href="#css的三大特性">#</a> css 的三大特性</h2>
+<h3 id="继承性"><a class="anchor" href="#继承性">#</a> 继承性</h3>
+<blockquote>
+<p>后代元素会继承祖先元素的一些样式 跟文字相关属性可以继承 color  font-  line-  text- 可以继承  块元素可以继承父级元素的宽度，高度不继承</p>
+</blockquote>
+<ul>
+<li>注意：a 链接颜色不予继承，需要单独写</li>
+<li>注意：如果元素自身有该 css 样式，那么该样式不予继承</li>
+</ul>
+<pre><code>&lt;div class=&quot;father&quot;&gt;
+	爸爸
+	&lt;div class=&quot;son&quot;&gt;
+		儿子
+		&lt;div class=&quot;grandson&quot;&gt;孙子&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="层叠性"><a class="anchor" href="#层叠性">#</a> 层叠性</h3>
+<blockquote>
+<p>后渲染的 css 样式会覆盖掉先渲染的 css 样式 （权重相同的情况下）<br />
+注意：层叠性真针对 css 的书写位置，类的调用位置先后会它没有影响</p>
+</blockquote>
+<pre><code>&lt;style&gt;
+	.box1 &#123;
+		/* 最终绿色起效果 */
+		color: red;
+		color: green;
+	&#125;
+&lt;/style&gt;
+
+&lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+</code></pre>
+<h3 id="优先级权重"><a class="anchor" href="#优先级权重">#</a> 优先级（权重）</h3>
+<blockquote>
+<p>不同的选择器之间会有不同的优先级</p>
+</blockquote>
+<pre><code>
+继承 &lt; 通配符 &lt; 标签选择器 &lt; 类选择器 &lt; ID选择器 &lt; 行内样式 &lt;　!important
+
+</code></pre>
+<h3 id="权重叠加"><a class="anchor" href="#权重叠加">#</a> 权重叠加</h3>
+<h3 id="css特殊性specificity"><a class="anchor" href="#css特殊性specificity">#</a> CSS 特殊性（Specificity）</h3>
+<p>关于 CSS 权重，我们需要一套计算公式来去计算，这个就是 CSS Specificity，我们称为 CSS 特性或称非凡性，它是一个衡量 CSS 值优先级的一个标准 具体规范入如下：</p>
+<p>specificity 用一个四位的数 字串 (CSS2 是三位) 来表示，更像四个级别，值从左到右，左面的最大，一级大于一级，数位之间没有进制，级别之间不可超越。</p>
+<table>
+<thead>
+<tr>
+<th>继承或者 * 的贡献值</th>
+<th>0,0,0,0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每个元素（标签）贡献值为</td>
+<td>0,0,0,1</td>
+</tr>
+<tr>
+<td>每个类，伪类贡献值为</td>
+<td>0,0,1,0</td>
+</tr>
+<tr>
+<td>每个 ID 贡献值为</td>
+<td>0,1,0,0</td>
+</tr>
+<tr>
+<td>每个行内样式贡献值</td>
+<td>1,0,0,0</td>
+</tr>
+<tr>
+<td>每个！important 贡献值</td>
+<td>正无穷</td>
+</tr>
+</tbody>
+</table>
+<pre><code>权重是可以叠加的
+
+比如的例子：
+
+div ul  li   ------&gt;      0,0,0,3
+.nav ul li   ------&gt;      0,0,1,2
+a:hover      -----—&gt;      0,0,1,1
+.nav a       ------&gt;      0,0,1,1   
+#nav p       ------&gt;      0,1,0,1
+</code></pre>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="qian-duan/js-h5/css-yang-shi-ji-chu/" class="item leancloud_visitors" data-flag-title="css 基础样式" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/qian-duan/js-h5/css-yang-shi-ji-chu/" title="css 基础样式">http://adamshang2333.github.io/qian-duan/js-h5/css-yang-shi-ji-chu/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/ci-cd/maven/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-o33gv7.jpg" title="Maven">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Maven</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-9mm621.jpg" title="数据库多表查询">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>数据库多表查询</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text"> 字体属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="toc-number">1.1.</span> <span class="toc-text"> 设置字体的大小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E7%9A%84%E7%B2%97%E7%BB%86"><span class="toc-number">1.2.</span> <span class="toc-text"> 设置字体的粗细</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E7%9A%84%E9%A3%8E%E6%A0%BC"><span class="toc-number">1.3.</span> <span class="toc-text"> 设置字体的风格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E4%B8%8D%E5%90%8C%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AD%97%E4%BD%93"><span class="toc-number">1.4.</span> <span class="toc-text"> 设置不同类型的字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#font%E7%AE%80%E5%86%99"><span class="toc-number">1.5.</span> <span class="toc-text"> font 简写</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E7%9A%84%E5%AF%B9%E9%BD%90-%E7%BC%A9%E8%BF%9B-%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="toc-number">2.</span> <span class="toc-text"> 文字的对齐 缩进 下划线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">3.</span> <span class="toc-text"> 背景</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2"><span class="toc-number">3.1.</span> <span class="toc-text"> 背景颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="toc-number">3.2.</span> <span class="toc-text"> 背景图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E5%B9%B3%E9%93%BA"><span class="toc-number">3.3.</span> <span class="toc-text"> 背景平铺</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E6%98%AF%E5%90%A6%E6%BB%9A%E5%8A%A8"><span class="toc-number">3.4.</span> <span class="toc-text"> 背景是否滚动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E4%BD%8D%E7%BD%AE"><span class="toc-number">3.5.</span> <span class="toc-text"> 背景位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E7%9A%84%E7%AE%80%E5%86%99"><span class="toc-number">3.6.</span> <span class="toc-text"> 背景的简写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#img%E5%92%8C%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.7.</span> <span class="toc-text"> img 和背景图片的区别：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text"> css 的三大特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E6%80%A7"><span class="toc-number">4.1.</span> <span class="toc-text"> 继承性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%82%E5%8F%A0%E6%80%A7"><span class="toc-number">4.2.</span> <span class="toc-text"> 层叠性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%85%88%E7%BA%A7%E6%9D%83%E9%87%8D"><span class="toc-number">4.3.</span> <span class="toc-text"> 优先级（权重）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%83%E9%87%8D%E5%8F%A0%E5%8A%A0"><span class="toc-number">4.4.</span> <span class="toc-text"> 权重叠加</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css%E7%89%B9%E6%AE%8A%E6%80%A7specificity"><span class="toc-number">4.5.</span> <span class="toc-text"> CSS 特殊性（Specificity）</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/ci-cd/maven/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-io/" title="IO相关">IO相关</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-ji-chu/" title="JS总结">JS总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%85%B6%E4%BB%96/Markdown/" title="分类于 Markdown">Markdown</a>
+</div>
+
+    <span><a href="/qi-ta/markdown-yu-fa-zong-jie/" title="Markdown语法">Markdown语法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" title="数据库多表查询">数据库多表查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/h5-xin-zeng/" title="H5新增内容总结">H5新增内容总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/ci-cd-jenkins/" title="CI_CD&amp;&amp;Jenkins">CI_CD&&Jenkins</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/spring-yu-springmvc-de-guan-xi/" title="Spring&amp;&amp;SpringMVC">Spring&&SpringMVC</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-fan-she/" title="Java反射">Java反射</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/ding-wei/" title="CSS-定位">CSS-定位</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'qian-duan/js-h5/css-yang-shi-ji-chu/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

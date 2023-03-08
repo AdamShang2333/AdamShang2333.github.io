@@ -1,0 +1,742 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="spring,SpringBoot" />
+
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/spring/springboot-zhu-jie/">
+
+
+
+  <title>
+Spring Boot 注解总结 - 总结 - spring |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Spring Boot 注解总结
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2021-08-17 20:53:11">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-17T20:53:11+08:00">2021-08-17</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>4.8k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>4 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-ym1jpg.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-xlxdvo.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-mdmz51.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-k79lqq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-9mm621.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-395d2y.png"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/spring/" itemprop="item" rel="index" title="分类于 spring"><span itemprop="name">spring</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/spring/%E6%80%BB%E7%BB%93/" itemprop="item" rel="index" title="分类于 总结"><span itemprop="name">总结</span></a>
+<meta itemprop="position" content="2" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/spring/springboot-zhu-jie/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="springboot-注解总结"><a class="anchor" href="#springboot-注解总结">#</a> SpringBoot 注解总结</h1>
+<h2 id="1-组件注册注解"><a class="anchor" href="#1-组件注册注解">#</a> 1  组件注册注解</h2>
+<h3 id="configuration"><a class="anchor" href="#configuration">#</a> @Configuration</h3>
+<p>标注在类上，标识为配置类</p>
+<h3 id="bean"><a class="anchor" href="#bean">#</a> @Bean</h3>
+<p>标注在方法上，向容器注入 Bean ;</p>
+<p>可以传入 value 属性的值来指定 Bean 的名字</p>
+<blockquote>
+<p>@Bean 标注的方法创建对象时，方法参数的值默认从 IOC 容器中获取 (可以不加 @Autowired 指定)</p>
+</blockquote>
+<h3 id="componentscan"><a class="anchor" href="#componentscan">#</a> @ComponentScan</h3>
+<p>标注在配置类上，配置组件的扫描规则</p>
+<p>可以在<strong>一个类上标注多个</strong>，指定复合的扫描规则</p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 注解属性</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 包含的过滤规则</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token class-name">Filter</span><span class="token punctuation">[</span> <span class="token punctuation">]</span>  includeFilters </pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// 排除组件的过滤规则</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token class-name">Filter</span><span class="token punctuation">[</span> <span class="token punctuation">]</span>  excludeFilters </pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token comment">// 扫描路径</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token class-name">String</span> value</pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token comment">// 是否使用默认过滤规则 (默认 true 扫描所有)</span></pre></td></tr><tr><td data-num="9"></td><td><pre> <span class="token keyword">boolean</span>  useDefaultFilters </pre></td></tr><tr><td data-num="10"></td><td><pre>  </pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token comment">// 使用示例</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token annotation punctuation">@ComponentScan</span><span class="token punctuation">(</span>excludFilters<span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>  <span class="token annotation punctuation">@Filter</span><span class="token punctuation">(</span>type<span class="token operator">=</span> <span class="token class-name">FilterType</span><span class="token punctuation">.</span>ANNOTATION <span class="token punctuation">,</span>classes<span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token class-name">Controller</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><blockquote>
+<p>FilterType 有多种:</p>
+<p>ANNOTATION : 根据注解</p>
+<p>ASSIGNABLE_TYPE : 根据类的类型</p>
+<p>REG : 根据正则表达式</p>
+<p>ASPCJ : 根据 aspcJ 表达式</p>
+<p><strong>CUSTOM</strong> : 根据用户自定义规则</p>
+<p>==&gt; 实现 TypeFolter 接口的 match 方法来灵活自定义过滤</p>
+</blockquote>
+<h3 id="scope"><a class="anchor" href="#scope">#</a> @Scope</h3>
+<p>标注在<strong>类或方法</strong>，指定 bean 的作用范围</p>
+<p><strong>可选值</strong>:</p>
+<blockquote>
+<p>SCOPE_PROTOTYPE  // 多实例</p>
+<p>​    ==&gt; 创建 IOC 容器是不会创建对象，每次获取对象时才会调用方法创建对象</p>
+<p>SCOPE_SINGLETON  // 单实例 <strong>(默认值)</strong></p>
+<p>​    ==&gt; 容器启动时就会调用方法创建对象放入 IOC 容器中</p>
+<p>SCOPE_REQUEST //web 同一次请求创建一个实例<br />
+ SCOPE_SESSION  //web , 同一个 session 创建一个对象</p>
+</blockquote>
+<h3 id="lazy"><a class="anchor" href="#lazy">#</a> @Lazy</h3>
+<p>标注在<strong>类，方法，构造方法，属性</strong>，指定对象的创建使用懒加载</p>
+<h3 id="conditional"><a class="anchor" href="#conditional">#</a> @Conditional</h3>
+<p>标注在 <strong>类，方法</strong></p>
+<p>按照一定条件，满足条件的 bean 注册到 IOC 容器中</p>
+<p>在 Spring 的底层中大量使用</p>
+<blockquote>
+<p>传入实现 Condition 接口，match 方法的子类来完成自定义的匹配条件</p>
+</blockquote>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token annotation punctuation">@Retention</span><span class="token punctuation">(</span><span class="token class-name">RetentionPolicy</span><span class="token punctuation">.</span>RUNTIME<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token annotation punctuation">@Target</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token class-name">ElementType</span><span class="token punctuation">.</span>TYPE<span class="token punctuation">,</span> <span class="token class-name">ElementType</span><span class="token punctuation">.</span>METHOD<span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">public</span> <span class="token annotation punctuation">@interface</span> <span class="token class-name">Conditional</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>	<span class="token comment">/**</pre></td></tr><tr><td data-num="6"></td><td><pre>	 * All &#123;@link Condition&#125;s that must &#123;@linkplain Condition#matches match&#125;</pre></td></tr><tr><td data-num="7"></td><td><pre>	 * in order for the component to be registered.</pre></td></tr><tr><td data-num="8"></td><td><pre>	 */</span></pre></td></tr><tr><td data-num="9"></td><td><pre>	<span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">Condition</span><span class="token punctuation">></span></span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">value</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Condition</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>	<span class="token keyword">boolean</span> <span class="token function">matches</span><span class="token punctuation">(</span><span class="token class-name">ConditionContext</span> context<span class="token punctuation">,</span> <span class="token class-name">AnnotatedTypeMetadata</span> metadata<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="14"></td><td><pre></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="import"><a class="anchor" href="#import">#</a> @Import</h3>
+<p>标注在<strong>类</strong>上，导入外部第三方包中的组件到 IOC 容器中</p>
+<p>bean 的 id 默认是类的全类名</p>
+<blockquote>
+<p>可以实现 <strong>ImportSelector</strong> 接口，来重写 selectImports</p>
+<p>实现自定义的组件导入逻辑</p>
+</blockquote>
+<p><strong>ImportSelector 接口:</strong></p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">ImportSelector</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>	<span class="token comment">/**</pre></td></tr><tr><td data-num="4"></td><td><pre>	 * Select and return the names of which class(es) should be imported based on</pre></td></tr><tr><td data-num="5"></td><td><pre>	 * the &#123;@link AnnotationMetadata&#125; of the importing @&#123;@link Configuration&#125; class.</pre></td></tr><tr><td data-num="6"></td><td><pre>	 */</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token comment">// 注意，方法的放回值不能为 null 之后调用流程会报错 NPE</span></pre></td></tr><tr><td data-num="8"></td><td><pre>	<span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">selectImports</span><span class="token punctuation">(</span><span class="token class-name">AnnotationMetadata</span> importingClassMetadata<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p><strong>ImportBeanDefinitionRegistrar 接口 :</strong></p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">ImportBeanDefinitionRegistrar</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre> <span class="token comment">/**</pre></td></tr><tr><td data-num="4"></td><td><pre>  *AnnotationMetadata 当前类的信息</pre></td></tr><tr><td data-num="5"></td><td><pre>  *BeanDefinitionRegistry  BeanDefinition 注册器</pre></td></tr><tr><td data-num="6"></td><td><pre>  *  调用 BeanDefinitionRegistry.registerBeanDefinition 方法，来手动注册 bean 到 IOC 容器</pre></td></tr><tr><td data-num="7"></td><td><pre>  *</pre></td></tr><tr><td data-num="8"></td><td><pre>   */</span></pre></td></tr><tr><td data-num="9"></td><td><pre>   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">registerBeanDefinitions</span><span class="token punctuation">(</span></pre></td></tr><tr><td data-num="10"></td><td><pre>         <span class="token class-name">AnnotationMetadata</span> importingClassMetadata<span class="token punctuation">,</span> <span class="token class-name">BeanDefinitionRegistry</span> registry<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="factorybean接口"><a class="anchor" href="#factorybean接口">#</a> FactoryBean 接口</h3>
+<p>factoryBean 接口也能实现向 IOC 容器中注册 bean ,</p>
+<p>通过实现接口，重写</p>
+<p>T  getObject ( )</p>
+<p>Class&lt;?&gt;   getObjectType( )</p>
+<p>boolean isSingleton()</p>
+<blockquote>
+<p>重写 factoryBean 中的方法，返回 getObject () 中的工厂创建对象，</p>
+<p>使用 applicontex.getBean (工厂类名) 获取的是工厂 bean 生产的 bean;</p>
+<p>要获取工厂 bean 本身，则在<strong>类名前加 &quot;&amp;&quot; 前缀</strong>来指明获取工厂 bean</p>
+</blockquote>
+<h2 id="bean生命周期"><a class="anchor" href="#bean生命周期">#</a> Bean 生命周期</h2>
+<p>bean 的生命周期，指的是 bean 创建 --&gt; 初始化 --&gt; 销毁的过程</p>
+<p>一般 由 IOC 容器来管理整个 bean 的生命周期</p>
+<p>可以自定义初始化和销毁的方法，容器在 bean 进行到当前生命周期时，调用我们自定义的方法来执行</p>
+<h3 id="自定义bean的initmethoddestroymethod"><a class="anchor" href="#自定义bean的initmethoddestroymethod">#</a> 自定义 @bean 的 initMethod/destroyMethod</h3>
+<h4 id="beaninitmethod"><a class="anchor" href="#beaninitmethod">#</a> @Bean(initMethod=&quot;&quot;  )</h4>
+<p>指定 bean 的初始化方法，在<strong>对象创建完成 并赋值好属性</strong>之后调用</p>
+<h4 id="beandestroymethod"><a class="anchor" href="#beandestroymethod">#</a> @Bean(destroyMethod=&quot;&quot;  )</h4>
+<p>指定 bean 的销毁方法，在<strong> IOC 容器关闭后</strong>调用</p>
+<blockquote>
+<p>多实例 Bean 的情况下，</p>
+<p>在对象被获取后创建完成时  调用 init 方法；</p>
+<p><strong>在 IOC 容器销毁时并不会销毁多例 Bean (交由用户自行销毁 IOC 容器不会管理 bean 的完整生命周期)</strong></p>
+</blockquote>
+<h3 id="initializingbean接口"><a class="anchor" href="#initializingbean接口">#</a> InitializingBean 接口</h3>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 在创建并赋值后调用</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">InitializingBean</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>	<span class="token keyword">void</span> <span class="token function">afterPropertiesSet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>###DisposableBean 接口</p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">DisposableBean</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>	<span class="token keyword">void</span> <span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="postconstruct"><a class="anchor" href="#postconstruct">#</a> @PostConstruct</h3>
+<p>JSR250 规定，标注在<strong>方法上</strong>，bean 创建完成并赋值后调用</p>
+<h3 id="predestroy"><a class="anchor" href="#predestroy">#</a> @PreDestroy</h3>
+<p>JSR250 规定，标注在<strong>方法</strong>上，在容器销毁之前调用</p>
+<h3 id="beanpostprocessor接口"><a class="anchor" href="#beanpostprocessor接口">#</a> BeanPostProcessor 接口</h3>
+<p>bean 的后置处理器，在 bean 初始化前后进行一些处理工作</p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">BeanPostProcessor</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">// 在初始化之前进行处理</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token comment">// 在任何的初始化方法之前！！包括 InitializingBean.afterPropertiesSet () 方法</span></pre></td></tr><tr><td data-num="5"></td><td><pre>	<span class="token class-name">Object</span> <span class="token function">postProcessBeforeInitialization</span><span class="token punctuation">(</span><span class="token class-name">Object</span> bean<span class="token punctuation">,</span> <span class="token class-name">String</span> beanName<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">BeansException</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token comment">// 在初始化之后进行处理</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token comment">// 在任何初始化方法之后调用</span></pre></td></tr><tr><td data-num="9"></td><td><pre>	<span class="token class-name">Object</span> <span class="token function">postProcessAfterInitialization</span><span class="token punctuation">(</span><span class="token class-name">Object</span> bean<span class="token punctuation">,</span> <span class="token class-name">String</span> beanName<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">BeansException</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><blockquote>
+<p>常用的 ApplicationContextAwaewProcessor 接口，也是实现了 BeanPostProcessor 接口，才能在实现类中传入当前的 applicatonContext 对象</p>
+</blockquote>
+<h2 id="属性赋值"><a class="anchor" href="#属性赋值">#</a> 属性赋值</h2>
+<h3 id="value"><a class="anchor" href="#value">#</a> @Value</h3>
+<p>对属性赋值</p>
+<p>可以写:</p>
+<p>​	1.     基本类型的数值</p>
+<pre><code>2.	可以写SpEL , #&#123;&#125;
+3.	可以写	$&#123; &#125; , 去除配置文件(properties/yml)中的值
+</code></pre>
+<h3 id="propertysource"><a class="anchor" href="#propertysource">#</a> @PropertySource</h3>
+<p>指定配置文件路径，<strong>可重复标注多个 source</strong></p>
+<p>加载外部配置文件中的 k/v 值 保存在运行时的环境变量中；</p>
+<p>加载完外部的配置文件以后，使用 ${ } 取出配置文件的值</p>
+<blockquote>
+<p>也可以使用 applicationContext 对象的 getEnvironment 方法</p>
+<p>获取到 environment 对象后，使用 environment.getProperty 来获取配置文件 k/v</p>
+</blockquote>
+<h2 id="自动装配"><a class="anchor" href="#自动装配">#</a> 自动装配</h2>
+<h3 id="autowired"><a class="anchor" href="#autowired">#</a> @Autowired</h3>
+<p>标注在<strong>属性，参数，方法，构造方法上</strong>；实现依赖注入 (DI)</p>
+<blockquote>
+<p>默认按照类型在 IOC 容器找到组件进行装配，</p>
+<p>如果找到多个相同类型的组件，再将属性名称作为组件 id 去完成装配.(可以使用 <strong>@Qualifier</strong> 指定)</p>
+</blockquote>
+<p>注解属性 :</p>
+<p>required : 默认 true ,IOC 容器中必须有相应 bean 来装配</p>
+<h3 id="primary"><a class="anchor" href="#primary">#</a> @Primary</h3>
+<p>标注在 <strong>类型，方法上</strong>；指定默认的首选装载 bean</p>
+<blockquote>
+<p>@Primary 和 @Qualifier 同时使用时</p>
+<p>会优先按照 @Qualifier 执行装配</p>
+</blockquote>
+<h3 id="resource"><a class="anchor" href="#resource">#</a> @Resource</h3>
+<p><strong>JSR250 规范注解</strong>，不支持 @Primary @Qualifire</p>
+<blockquote>
+<p>默认按照属性名称来装配，可以通过 name 属性来指定装配 bean</p>
+</blockquote>
+<h3 id="inject"><a class="anchor" href="#inject">#</a> @inject</h3>
+<p><strong>JSR330 规范注解</strong>，需要额外导入 javax.inject 包；</p>
+<p>和 Autowired 功能一样，能支持 @Primary ;</p>
+<p>但是没有 required =false 属性</p>
+<h3 id="aware接口"><a class="anchor" href="#aware接口">#</a> Aware 接口</h3>
+<p>Bean 在装配时，如果想使用 Spring 底层的组件 则相应的 Bean 实现 xxxAware 接口 即可传入相应 Spring 组件</p>
+<h4 id="常用aware子接口"><a class="anchor" href="#常用aware子接口">#</a> 常用 Aware 子接口:</h4>
+<ul>
+<li><strong>ApplicationContextAware</strong>
+<ul>
+<li>获取到运行时的 IOC 容器</li>
+</ul>
+</li>
+<li><strong>BeanNameAware</strong>
+<ul>
+<li>获取当前 bean 在 IOC 中的名字</li>
+</ul>
+</li>
+<li>EmbeddedValueResolverAware
+<ul>
+<li>获取 StringValueResolver (占位符解析器)</li>
+</ul>
+</li>
+<li>ApplicationEventPublishAware</li>
+<li>ResourceLoaderAware</li>
+<li>MessageSourceAware</li>
+</ul>
+<h3 id="profile"><a class="anchor" href="#profile">#</a> @Profile</h3>
+<p>指定组件在哪个环境的情况下，动态的激活和切换一系列组件 (开发 生产环境的数据库等配置)</p>
+<p>可以标注在 <strong>类，方法上</strong> (<strong>写在类上，只有是指定环境的时候，整个配置类下的所有组件才能生效)</strong></p>
+<blockquote>
+<p>注：没有标注环境标识的 bean, 在任何环境下都是加载的</p>
+</blockquote>
+<p>配置 @profile 注解环境的方式</p>
+<ol>
+<li>
+<p>使用命令行参数：在虚拟机参数位置加载 - Dspring.profiles.active=test</p>
+</li>
+<li>
+<p>使用代码 API 设置</p>
+<pre><code>// 1.创建application对象
+new ApplicationContext()
+// 2.environment对象设置activeProfile属性
+context.getEnvironment().setActiveProfiles(&quot;test&quot;,&quot;dev&quot;);
+// 3.注册主配置类 (MyConfigOfProfile 为自己配置的环境配置类)
+context.redister(MyConfigOfProfile.class);
+// 4.启动刷新容器
+context.refresh();
+</code></pre>
+</li>
+</ol>
+
+      <div class="tags">
+          <a href="/tags/spring/" rel="tag"><i class="ic i-tag"></i> spring</a>
+          <a href="/tags/SpringBoot/" rel="tag"><i class="ic i-tag"></i> SpringBoot</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:50" itemprop="dateModified" datetime="2023-03-08T19:32:50+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/spring/springboot-zhu-jie/" class="item leancloud_visitors" data-flag-title="Spring Boot 注解总结" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/spring/springboot-zhu-jie/" title="Spring Boot 注解总结">http://adamshang2333.github.io/hou-duan/spring/springboot-zhu-jie/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/zhong-jian-jian/zookeeper-ru-men/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-z8gydv.jpg" title="ZooKeeper入门">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 微服务</span>
+  <h3>ZooKeeper入门</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/qian-duan/angular/angular-ru-men/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-6ojgq7.jpg" title="Angular入门">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Angular入门</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#springboot-%E6%B3%A8%E8%A7%A3%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text"> SpringBoot 注解总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%BB%84%E4%BB%B6%E6%B3%A8%E5%86%8C%E6%B3%A8%E8%A7%A3"><span class="toc-number">1.1.</span> <span class="toc-text"> 1  组件注册注解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#configuration"><span class="toc-number">1.1.1.</span> <span class="toc-text"> @Configuration</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bean"><span class="toc-number">1.1.2.</span> <span class="toc-text"> @Bean</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#componentscan"><span class="toc-number">1.1.3.</span> <span class="toc-text"> @ComponentScan</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scope"><span class="toc-number">1.1.4.</span> <span class="toc-text"> @Scope</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lazy"><span class="toc-number">1.1.5.</span> <span class="toc-text"> @Lazy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#conditional"><span class="toc-number">1.1.6.</span> <span class="toc-text"> @Conditional</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#import"><span class="toc-number">1.1.7.</span> <span class="toc-text"> @Import</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#factorybean%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.1.8.</span> <span class="toc-text"> FactoryBean 接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bean%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">1.2.</span> <span class="toc-text"> Bean 生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89bean%E7%9A%84initmethoddestroymethod"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 自定义 @bean 的 initMethod&#x2F;destroyMethod</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#beaninitmethod"><span class="toc-number">1.2.1.1.</span> <span class="toc-text"> @Bean(initMethod&#x3D;&quot;&quot;  )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#beandestroymethod"><span class="toc-number">1.2.1.2.</span> <span class="toc-text"> @Bean(destroyMethod&#x3D;&quot;&quot;  )</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#initializingbean%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.2.2.</span> <span class="toc-text"> InitializingBean 接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#postconstruct"><span class="toc-number">1.2.3.</span> <span class="toc-text"> @PostConstruct</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#predestroy"><span class="toc-number">1.2.4.</span> <span class="toc-text"> @PreDestroy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#beanpostprocessor%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.2.5.</span> <span class="toc-text"> BeanPostProcessor 接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E8%B5%8B%E5%80%BC"><span class="toc-number">1.3.</span> <span class="toc-text"> 属性赋值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#value"><span class="toc-number">1.3.1.</span> <span class="toc-text"> @Value</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#propertysource"><span class="toc-number">1.3.2.</span> <span class="toc-text"> @PropertySource</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D"><span class="toc-number">1.4.</span> <span class="toc-text"> 自动装配</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#autowired"><span class="toc-number">1.4.1.</span> <span class="toc-text"> @Autowired</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#primary"><span class="toc-number">1.4.2.</span> <span class="toc-text"> @Primary</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#resource"><span class="toc-number">1.4.3.</span> <span class="toc-text"> @Resource</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#inject"><span class="toc-number">1.4.4.</span> <span class="toc-text"> @inject</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#aware%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.4.5.</span> <span class="toc-text"> Aware 接口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8aware%E5%AD%90%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.4.5.1.</span> <span class="toc-text"> 常用 Aware 子接口:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#profile"><span class="toc-number">1.4.6.</span> <span class="toc-text"> @Profile</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/hou-duan/spring/spring-aop-zong-jie/" rel="bookmark" title="Spring AOP总结">Spring AOP总结</a></li><li><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" rel="bookmark" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></li><li class="active"><a href="/hou-duan/spring/springboot-zhu-jie/" rel="bookmark" title="Spring Boot注解总结">Spring Boot注解总结</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/zhong-jian-jian/zookeeper-ru-men/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/qian-duan/angular/angular-ru-men/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/spring-jdbc/" title="Spring JDBC">Spring JDBC</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" title="分类于 mysql">mysql</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/hexo/" title="分类于 hexo">hexo</a>
+</div>
+
+    <span><a href="/shu-ju-ku/mysql-you-hua-shen-ru/" title="MySQL 深入优化总结">MySQL 深入优化总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/MQ/" title="分类于 MQ">MQ</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/MQ/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/rocketmq-ru-men/" title="RocketMQ">RocketMQ</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/mybatis/" title="Mybatis">Mybatis</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-fan-she/" title="Java反射">Java反射</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qi-ta/zhi-neng-jia-ju/" title="智能家居">智能家居</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-xuan-ze-qi/" title="js选择器">js选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" title="数据库多表查询">数据库多表查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/spring-aop-zong-jie/" title="Spring AOP总结">Spring AOP总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/javaweb-ji-chu/" title="JavaWeb基础">JavaWeb基础</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/spring/springboot-zhu-jie/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

@@ -1,0 +1,693 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/">
+
+
+
+  <title>
+数据库函数 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">数据库函数
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-22 16:23:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-22T16:23:00+08:00">2022-12-22</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>2k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-oxkgel.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm16gj.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-5womy5.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-p8rw79.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-z8gydv.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9g5x5.png"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="操作函数"><a class="anchor" href="#操作函数">#</a> 操作函数</h2>
+<h3 id="1字符串操作函数"><a class="anchor" href="#1字符串操作函数">#</a> 1. 字符串操作函数</h3>
+<h4 id="as-关键字"><a class="anchor" href="#as-关键字">#</a> as 关键字</h4>
+<blockquote>
+<p>给<strong>列</strong>或者<strong>表</strong>起别名，将过长的表名简化<br />
+特别注意:</p>
+<p>1.<strong> 只在当前 SQL 语句内生效</strong>，到下一个 SQL 语句就失效  ---&gt; 不是全局 &quot;改名&quot;<br />
+2. 在名字后直接加空格，不加 as 关键字也行</p>
+</blockquote>
+<pre><code>select concat('张三', '李四', 'ddd') as name;
+</code></pre>
+<p>as 也可以不加 直接在名字后面加 ' '(空格) 后接关键字</p>
+<pre><code>// age sage :等价于 age as sage
+select s.name as sname, age sage, gender
+from student as s;
+</code></pre>
+<h4 id="insert-替换"><a class="anchor" href="#insert-替换">#</a> insert 替换</h4>
+<p><code>格式:  insert (stringA,m,n,stringB)</code> <br />
+ 将 A 从第 m 个字符开始，替换 n 个；这 n 个替换为 B  .<br />
+<strong> 序号从 1 开始</strong></p>
+<pre><code>select insert('这是一个字符串', 5, 3, '喵喵喵');
+// 输出结果: 这是一个喵喵喵
+</code></pre>
+<h4 id="upperlower-大小写转换"><a class="anchor" href="#upperlower-大小写转换">#</a> upper/lower 大小写转换</h4>
+<p>类比 string 的方法</p>
+<pre><code>select upper('aaa'); // 结果:AAA
+select lower('HHH'); // 结果: hhh
+
+</code></pre>
+<h4 id="substring-截取子串"><a class="anchor" href="#substring-截取子串">#</a> substring 截取子串</h4>
+<pre><code>select substring('这是一个字符串', 2);
+// --&gt; 等价于:
+	select substring('这是一个字符串' from 2);
+
+select substring('这是一个字符串', 2, 3);
+
+</code></pre>
+<hr />
+<h3 id="2时间操作函数"><a class="anchor" href="#2时间操作函数">#</a> 2. 时间操作函数</h3>
+<h4 id="curtime-获取当前时间"><a class="anchor" href="#curtime-获取当前时间">#</a> curtime () 获取当前时间</h4>
+<h4 id="curdate-获取当前日期"><a class="anchor" href="#curdate-获取当前日期">#</a> curdate () 获取当前日期</h4>
+<h4 id="now-获取当前时间和日期"><a class="anchor" href="#now-获取当前时间和日期">#</a> now () 获取当前时间和日期</h4>
+<h4 id="mysql的时间类型"><a class="anchor" href="#mysql的时间类型">#</a> mysql 的时间类型  :</h4>
+<p>1.date ：只保存日期<br />
+ 2.timestamp ：时间戳 能保存时间和日期，根据时区进行修正 (时区不一样 看到的时间也不同)<br />
+　　　　　　(范围: 1970~2038 年  最大到 2038 年 1 月 19 日 3:14)<br />
+ 3.datetime 能保存时间和日期，不会根据时区进行修正；(最大到 9999-12-31 23:59:59.9999999)</p>
+<pre><code>select year(now());
+select month(now());
+# 一年中的第几周
+select week(now());
+select hour(now());
+
+# 两个日期间相隔的天数 (昨天,今天 相隔1天)
+select datediff(now(), '2019-1-1');
+# 计算xx天之后的日期
+select adddate(now(), 20);
+
+</code></pre>
+<h2 id="数学函数"><a class="anchor" href="#数学函数">#</a> 数学函数</h2>
+<pre><code># 生成一个随机数
+select rand();
+# 向下取整 --&gt; 7
+select floor(7.9);
+# 向上取整 --&gt; 8
+select ceil(7.1);
+
+</code></pre>
+<h2 id="聚合函数"><a class="anchor" href="#聚合函数">#</a> 聚合函数</h2>
+<blockquote>
+<p>对数据进行集中操作的函数 ---&gt; 对<strong>整列数据</strong>进行处理</p>
+<blockquote>
+<p>注意:<br />
+1. 多个聚合函数可以一起写<br />
+ 2. 聚合函数的返回不能和列名一起 会报错<br />
+　(返回的都是一列的值 不能和某个条件查询的某行值一起返回)<br />
+３. 如果使用了 group by 的列，可以和聚合函数写在一起</p>
+</blockquote>
+</blockquote>
+<h4 id="求和-sum"><a class="anchor" href="#求和-sum">#</a> 求和　 sum ()</h4>
+<h4 id="平均值-avg"><a class="anchor" href="#平均值-avg">#</a> 平均值 avg ()</h4>
+<h4 id="最大值-max"><a class="anchor" href="#最大值-max">#</a> 最大值 max ()</h4>
+<h4 id="最小值-min"><a class="anchor" href="#最小值-min">#</a> 最小值 min ()</h4>
+<h4 id="求数量-count"><a class="anchor" href="#求数量-count">#</a> 求数量 count (*)</h4>
+<blockquote>
+<p><em><em>注意:　填 * 不会过滤空行；填分组名字会过滤掉空行 (空值)<br />
+---&gt; 计算数量最好使用</em> 保留空行</em> *</p>
+</blockquote>
+<pre><code># 2. 查询每个学员的成绩在90以上的课程有多少门(成绩90以上, 每个学员有几门课程)
+# 填 * 不会过滤空行 填分组名字会过滤掉空行(空值)
+# 计算数量最好使用* 保留空行
+select count(*), sname
+from Score
+where grade &gt;= 90
+group by sname;
+
+</code></pre>
+<hr />
+<h3 id="having-子句"><a class="anchor" href="#having-子句">#</a> having 子句</h3>
+<blockquote>
+<p>对<strong>分组的结果</strong>进行过滤 (where 对每一个结果进行过滤)<br />
+　１.<strong>having</strong> 的条件一般都是<strong>对聚合函数的判断</strong>！！<br />
+　２.<strong>where</strong> 的条件一般都是<strong>对列的判断</strong>.</p>
+</blockquote>
+<pre><code>select avg(grade), sname
+from Score
+group by sname
+having sum(grade) &gt; 300;
+
+</code></pre>
+<h3 id="on-where和-having-的使用"><a class="anchor" href="#on-where和-having-的使用">#</a> on , where 和 having 的使用:</h3>
+<p><strong>!!!on 最先执行，where 次之  having 最后执行</strong></p>
+<pre><code> on:使用join联表的时候使用
+ 如果条件是针对表中的行,就用where  (对本身的各条数据有限制)
+ 如果条件是针对分组的,就用having
+ 
+</code></pre>
+<p><strong>[on where 和 having 的区别] [1]</strong><br />
+[1]:<span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vUmVnbGUvcC82Mjg0MDM1Lmh0bWw=">https://www.cnblogs.com/Regle/p/6284035.html</span></p>
+<h3 id="group-by-子句"><a class="anchor" href="#group-by-子句">#</a> group by 子句</h3>
+<p><code>多见&quot;每个,各个&quot;这种词 使用分组</code></p>
+<blockquote>
+<p>该子句后面跟某一列的列名 表示按该列进行分组<br />
+ --&gt; 分组列中值一样的数据 放入一个 &quot;小组&quot; , 可以对其使用聚合函数</p>
+<blockquote>
+<p>1. 当一列被标记为分组，那么该列可以写在查询结果中<br />
+ 2. 只要进行分组，基本都和聚合函数有关系<br />
+ 3. 可以有多层分组，以 &quot;,&quot; 分隔接在 group by 后面</p>
+</blockquote>
+</blockquote>
+<h3 id="distinct-关键字"><a class="anchor" href="#distinct-关键字">#</a> distinct 关键字</h3>
+<blockquote>
+<p>查询结果不重复</p>
+</blockquote>
+<pre><code>select distinct depart
+from Employee;
+</code></pre>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="shu-ju-ku/shu-ju-ku-han-shu/" class="item leancloud_visitors" data-flag-title="数据库函数" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/" title="数据库函数">http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/shu-ju-ku/shu-ju-ku-ji-chu/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-xlxdvo.jpg" title="数据库基础">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>数据库基础</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/qi-ta/zhi-neng-jia-ju/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-k79lqq.jpg" title="智能家居">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>智能家居</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text"> 操作函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 字符串操作函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#as-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.1.</span> <span class="toc-text"> as 关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#insert-%E6%9B%BF%E6%8D%A2"><span class="toc-number">1.1.2.</span> <span class="toc-text"> insert 替换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#upperlower-%E5%A4%A7%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.1.3.</span> <span class="toc-text"> upper&#x2F;lower 大小写转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#substring-%E6%88%AA%E5%8F%96%E5%AD%90%E4%B8%B2"><span class="toc-number">1.1.4.</span> <span class="toc-text"> substring 截取子串</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E6%97%B6%E9%97%B4%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 时间操作函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#curtime-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4"><span class="toc-number">1.2.1.</span> <span class="toc-text"> curtime () 获取当前时间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#curdate-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%A5%E6%9C%9F"><span class="toc-number">1.2.2.</span> <span class="toc-text"> curdate () 获取当前日期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#now-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%A5%E6%9C%9F"><span class="toc-number">1.2.3.</span> <span class="toc-text"> now () 获取当前时间和日期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql%E7%9A%84%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.4.</span> <span class="toc-text"> mysql 的时间类型  :</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text"> 数学函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text"> 聚合函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B1%82%E5%92%8C-sum"><span class="toc-number">3.0.1.</span> <span class="toc-text"> 求和　 sum ()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%B3%E5%9D%87%E5%80%BC-avg"><span class="toc-number">3.0.2.</span> <span class="toc-text"> 平均值 avg ()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E5%80%BC-max"><span class="toc-number">3.0.3.</span> <span class="toc-text"> 最大值 max ()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%B0%8F%E5%80%BC-min"><span class="toc-number">3.0.4.</span> <span class="toc-text"> 最小值 min ()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B1%82%E6%95%B0%E9%87%8F-count"><span class="toc-number">3.0.5.</span> <span class="toc-text"> 求数量 count (*)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#having-%E5%AD%90%E5%8F%A5"><span class="toc-number">3.1.</span> <span class="toc-text"> having 子句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#on-where%E5%92%8C-having-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">3.2.</span> <span class="toc-text"> on , where 和 having 的使用:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#group-by-%E5%AD%90%E5%8F%A5"><span class="toc-number">3.3.</span> <span class="toc-text"> group by 子句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#distinct-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">3.4.</span> <span class="toc-text"> distinct 关键字</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/shu-ju-ku/shu-ju-ku-ji-chu/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/qi-ta/zhi-neng-jia-ju/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/spring/" title="分类于 spring">spring</a>
+</div>
+
+    <span><a href="/cai-keng-hui-zong/springaop-cai-keng/" title="Spring AOP踩坑">Spring AOP踩坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/java/basics/" title="分类于 基础">基础</a>
+</div>
+
+    <span><a href="/hou-duan/java/basics/java-ji-chu/" title="IO基础">IO基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/spring-aop-zong-jie/" title="Spring AOP总结">Spring AOP总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-han-shu/" title="数据库函数">数据库函数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qi-ta/zhi-neng-jia-ju/" title="智能家居">智能家居</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ZooKeeper/" title="分类于 ZooKeeper">ZooKeeper</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/ZooKeeper/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/zookeeper-ru-men/" title="ZooKeeper入门">ZooKeeper入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/duo-xian-cheng-ru-men/" title="多线程入门">多线程入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/javaweb-ji-chu/" title="JavaWeb基础">JavaWeb基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/ce-shi-jenkins/" title="测试Jenkins">测试Jenkins</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" title="SpringMVC 拦截器&amp;方法参数解析器">SpringMVC 拦截器&方法参数解析器</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'shu-ju-ku/shu-ju-ku-han-shu/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

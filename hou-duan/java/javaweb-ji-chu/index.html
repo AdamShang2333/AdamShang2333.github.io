@@ -1,0 +1,804 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/">
+
+
+
+  <title>
+JavaWeb 基础 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">JavaWeb 基础
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-03-08 19:32:40">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-03-08T19:32:40+08:00">2023-03-08</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>4.7k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>4 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm26jw.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-5d32r9.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-nm1l1m.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-9mm621.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28eo16.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28g879.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="应用组成结构"><a class="anchor" href="#应用组成结构">#</a> 应用组成结构</h2>
+<p><img data-src="https://images0.cnblogs.com/i/289233/201405/172304056712920.png" alt="组成" /></p>
+<p><strong>注: !!! 在 JavaWeb 中，没有明显的主函数</strong></p>
+<p><strong>WEB-INF</strong> 　－－＞&quot;安全区&quot; 后端判断有无权限获取该文件夹下的内容</p>
+<blockquote>
+<p>WEB-INF 文件夹 是一个对前端隐藏的文件夹<br />
+即，前端没法通过访问 WEB-INF 路径访问里面的内容 --&gt;<br />
+ 如果必须要访问，只能通过后台代码转发.</p>
+</blockquote>
+<p><strong>web.xml</strong>　－－＞配置文件设置</p>
+<blockquote>
+<p>在 javaWeb 程序启动时，最早加载的配置文件</p>
+</blockquote>
+<h2 id="webxml"><a class="anchor" href="#webxml">#</a> web.xml</h2>
+<p>.xml 代码示例 :</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;web-app xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd&quot;
+         version=&quot;4.0&quot;&gt;
+      
+     // 配置servlet    
+     // Step 1 : servlet的本地设置
+    &lt;servlet&gt;
+        // 给每个servlet起别名(外号)
+        &lt;servlet-name&gt;mservlet&lt;/servlet-name&gt;  //*关联,须一致*
+        // 指定servlet的类(Java类 关联)
+        &lt;servlet-class&gt;com.oldFun.controller.MainServlet&lt;/servlet-class&gt;
+    &lt;/servlet&gt;
+    //  Step 2 : 创建和服务器的映射
+    &lt;servlet-mapping&gt;
+        // 和本地的&quot;外号&quot;关联
+        &lt;servlet-name&gt;mservlet&lt;/servlet-name&gt;  //*关联,须一致*
+        // 指定访问的地址(起一个名字,别忘了&quot;/&quot;!!!)
+        &lt;url-pattern&gt;/main&lt;/url-pattern&gt;
+    &lt;/servlet-mapping&gt;
+    
+    &lt;servlet&gt;
+        // 起名字(外号)
+        &lt;servlet-name&gt;helloServlet&lt;/servlet-name&gt;
+        // 指定servlet的类
+        &lt;servlet-class&gt;com.oldFun.controller.HelloServlet&lt;/servlet-class&gt;
+    &lt;/servlet&gt;
+    // 映射
+    &lt;servlet-mapping&gt;
+        &lt;servlet-name&gt;helloServlet&lt;/servlet-name&gt;
+        // 指定地址
+        &lt;url-pattern&gt;/suibian&lt;/url-pattern&gt;
+    &lt;/servlet-mapping&gt;
+
+&lt;/web-app&gt;
+</code></pre>
+<h2 id="servlet"><a class="anchor" href="#servlet">#</a> Servlet</h2>
+<p><code>背景 </code></p>
+<blockquote>
+<p>sun 公司提供的一门用于开发动态 web 资源的技术<br />
+ Sun 公司在其 API 中提供了一个 servlet 接口，</p>
+</blockquote>
+<p><code>实现</code></p>
+<blockquote>
+<p>用户若想用发一个动态 web 资源 (即开发一个 Java 程序向浏览器输出数据)<br />
+ 需要完成以下 2 个步骤：<br />
+　　<strong>1、编写一个 Java 类，实现 servlet 接口。<br />
+　　2、把开发好的 Java 类部署到 web 服务器中。</strong><br />
+　　　　按照一种约定俗成的称呼习惯，<strong>通常也把实现了 servlet 接口的 java 程序，称之为 Servlet</strong></p>
+</blockquote>
+<p><code>作用</code></p>
+<blockquote>
+<p>Servlet 接口就是处理网络请求的一套规范，<br />
+负责连接 web 服务器（如 tomcat 服务器)，存取数据<br />
+交互式的生成动态的 web 内容</p>
+</blockquote>
+<p><code>小结</code></p>
+<blockquote>
+<p>Servlet : JavaWeb 负责处理所有请求的类<br />
+每一个请求，对应一个 servlet 对象；每一个 servlet 类 只有一个对象 (单例设计模式)<br />
+－－＞ <strong>每一个请求，对应一个 Servlet 类</strong></p>
+</blockquote>
+<h3 id="servlet实现方式"><a class="anchor" href="#servlet实现方式">#</a> Servlet 实现方式</h3>
+<h4 id="1-通过接口实现-需要实现所有的方法"><a class="anchor" href="#1-通过接口实现-需要实现所有的方法">#</a> 1.    通过接口实现 －－＞ 需要实现所有的方法！！！</h4>
+<p>​	 <code>常用重要方法</code> <br />
+​</p>
+<pre><code>&gt;init 方法 : 初始化方法,只执行一次(创建servlet对象的时候执行.)  
+　     作用：做一些设置和初始化工作    
+&gt;
+&gt;service 方法 : 会被执行多次  
+　     作用：负责每次请求要显示的内容    
+&gt;
+&gt;destroy 方法 : 当servlet对象被销毁时执行 (服务器停止运行时, 对象被销毁)  
+　     作用：做一些资源释放的操作 
+</code></pre>
+<p>实例:</p>
+<pre><code>//** implements 来实现:
+public class HelloServlet implements Servlet &#123;
+
+    /**
+     * 该方法是servlet对象的初始化方法, 只会执行一次
+     * 在创建servlet对象的时候执行.
+     * 作用: 做一些设置和初始化工作
+     * @param servletConfig
+     * @throws ServletException
+     */
+    @Override
+    public void init(ServletConfig servletConfig) throws ServletException &#123;
+        System.out.println(&quot;HelloServlet初始化&quot;);
+    &#125;
+
+    @Override
+    public ServletConfig getServletConfig() &#123;
+        return null;
+    &#125;
+
+    /**
+     * 这个方法会被执行多次,负责每次请求要显示的内容
+     * @param servletRequest  请求
+     * @param servletResponse 响应
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException &#123;
+        System.out.println(&quot;service方法执行&quot;);
+    &#125;
+
+    @Override
+    public String getServletInfo() &#123;
+        return null;
+    &#125;
+
+    /**
+     * 当servlet对象被销毁时执行该方法
+     * 服务器停止运行时, 对象被销毁
+     * 做一些资源释放的操作
+     */
+    @Override
+    public void destroy() &#123;
+        System.out.println(&quot;helloServlet被销毁&quot;);
+    &#125;
+  &#125;
+</code></pre>
+<h4 id="2-通过继承实现-"><a class="anchor" href="#2-通过继承实现-">#</a> 2.    通过继承实现  －－＞</h4>
+<blockquote>
+<p>继承来实现，设计模式上属于适配器模式<br />
+适用场景：接口过多，但是常用的方法很少<br />
+优点：不常用的方法</p>
+</blockquote>
+<p><code>继承父类: </code></p>
+<h4 id="21-继承genericservlet"><a class="anchor" href="#21-继承genericservlet">#</a> 2.1 继承 GenericServlet</h4>
+<blockquote>
+<p>常用于重写 <strong>service</strong> 方法</p>
+</blockquote>
+<p>实例</p>
+<pre><code>public class MainServlet  extends GenericServlet &#123;
+
+    @Override
+    public void service (ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException &#123;
+        // 给页面显示一点内容
+        System.out.println(&quot;service方法&quot;);
+        // 开启一个字符流
+        PrintWriter writer = servletResponse.getWriter();
+        writer.println(&quot;&lt;h1&gt;hello servlet&lt;/h1&gt;&quot;);
+        // 关闭字符流
+        writer.close();
+</code></pre>
+<p><code>或者</code></p>
+<h4 id="22-继承httpservlet"><a class="anchor" href="#22-继承httpservlet">#</a> 2.2 继承 HttpServlet</h4>
+<blockquote>
+<p>重写 <strong>doPost</strong>  <strong>doGet</strong> 方法</p>
+</blockquote>
+<p><code>继承HttpServlet更常用,使用时注意删除super.doGet ;  super.doGet</code></p>
+<p>实例</p>
+<pre><code>
+// @WebServlet -- 快速配置 不用在xml中再配置了
+// !!!!url 中的&quot;/&quot;要记得写,不然很多的请求中报错很难找
+// !!!url中的大小写有要求,会按照大小写区分
+@WebServlet(urlPatterns = &quot;/home&quot;)
+public class IntroServlet  extends HttpServlet &#123;
+
+    @Override
+    protected void doGet(HttpServletRequest req,
+                         HttpServletResponse resp) throws ServletException, IOException &#123;
+         // super.doGet(req, resp);  必须删掉 不然会不支持这个请求
+                 
+         // 在头部文件指明发送给浏览器的内容以及格式
+         // resp设置响应头, 方便浏览器直接判断响应的内容
+        resp.setHeader(&quot;Content-Type&quot;, &quot;text/html;charset=utf-8&quot;);
+
+        ServletContext context = this.getServletContext();
+
+        // 读取context中的数据
+        Object name = context.getAttribute(&quot;name&quot;);
+        // 需要先访问存值的页面, 再访问取值的页面 才能取到context中的值
+        System.out.println(&quot;从context中读取的数据&quot;+name);
+        // 删除context保存的数据
+        context.removeAttribute(&quot;name&quot;);
+        System.out.println(&quot;删除context的数据&quot;);
+        PrintWriter pw = resp.getWriter();
+        pw.write(&quot;&lt;div&gt;第一个请求&lt;/div&gt;&quot;);
+        pw.close();
+    &#125;
+
+    @Override
+    protected void doPost(HttpServletRequest req,
+                          HttpServletResponse resp) throws ServletException, IOException &#123;
+          // 从父类继承过来的doPost方法需要删除
+          // ?? : 父类中默认不支持 doPost 和 dpGet
+//        super.doPost(req, resp);
+    &#125;
+&#125;
+</code></pre>
+<h3 id="servlet的常用三大对象requset-session-servletcontext"><a class="anchor" href="#servlet的常用三大对象requset-session-servletcontext">#</a> Servlet 的常用三大对象 (requset ; session ; servletContext)</h3>
+<p><code>获取方法</code></p>
+<blockquote>
+<p>三大常用对象，<br />
+ 都是通过<strong> request 调用 get 方法</strong>来得到一个对象</p>
+</blockquote>
+<p><code>区别</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">种类</th>
+<th style="text-align:center">类名</th>
+<th style="text-align:center">生命周期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>request</strong></td>
+<td style="text-align:center">HttpServletRequest</td>
+<td style="text-align:center">本次请求有效</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>session</strong></td>
+<td style="text-align:center">HttpSession</td>
+<td style="text-align:center">当前浏览器有效，可以跨页面</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>servletContext</strong></td>
+<td style="text-align:center">ServletContext</td>
+<td style="text-align:center">整个项目有效，可以跨页面</td>
+</tr>
+</tbody>
+</table>
+<p>``</p>
+<h4 id="servletcontext"><a class="anchor" href="#servletcontext">#</a> servletContext</h4>
+<blockquote>
+<p>一个项目只有一个 servletContext 对象  (全局)<br />
+ 在项目启动期间，保存在 servletContext 中的数据可以一直使用 (跨页面)</p>
+</blockquote>
+<p><code>生命周期</code> <br />
+项目启动到关闭，服务器重启时 会被销毁</p>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/java/javaweb-ji-chu/" class="item leancloud_visitors" data-flag-title="JavaWeb 基础" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/" title="JavaWeb 基础">http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/java/java-fan-she/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-oxkgel.jpg" title="Java反射">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Java反射</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/hou-duan/java/basics/java-ji-chu/" itemprop="url" rel="next" data-background-image="&#x2F;assets&#x2F;wallhaven-6oq9mw.jpg" title="IO基础">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 基础</span>
+  <h3>IO基础</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E7%BB%84%E6%88%90%E7%BB%93%E6%9E%84"><span class="toc-number">1.</span> <span class="toc-text"> 应用组成结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#webxml"><span class="toc-number">2.</span> <span class="toc-text"> web.xml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#servlet"><span class="toc-number">3.</span> <span class="toc-text"> Servlet</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#servlet%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">3.1.</span> <span class="toc-text"> Servlet 实现方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%80%9A%E8%BF%87%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0-%E9%9C%80%E8%A6%81%E5%AE%9E%E7%8E%B0%E6%89%80%E6%9C%89%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 1.    通过接口实现 －－＞ 需要实现所有的方法！！！</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E9%80%9A%E8%BF%87%E7%BB%A7%E6%89%BF%E5%AE%9E%E7%8E%B0-"><span class="toc-number">3.1.2.</span> <span class="toc-text"> 2.    通过继承实现  －－＞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#21-%E7%BB%A7%E6%89%BFgenericservlet"><span class="toc-number">3.1.3.</span> <span class="toc-text"> 2.1 继承 GenericServlet</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22-%E7%BB%A7%E6%89%BFhttpservlet"><span class="toc-number">3.1.4.</span> <span class="toc-text"> 2.2 继承 HttpServlet</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#servlet%E7%9A%84%E5%B8%B8%E7%94%A8%E4%B8%89%E5%A4%A7%E5%AF%B9%E8%B1%A1requset-session-servletcontext"><span class="toc-number">3.2.</span> <span class="toc-text"> Servlet 的常用三大对象 (requset ; session ; servletContext)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#servletcontext"><span class="toc-number">3.2.1.</span> <span class="toc-text"> servletContext</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/java/java-fan-she/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/hou-duan/java/basics/java-ji-chu/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" title="分类于 mysql">mysql</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/hexo/" title="分类于 hexo">hexo</a>
+</div>
+
+    <span><a href="/shu-ju-ku/mysql-you-hua-shen-ru/" title="MySQL 深入优化总结">MySQL 深入优化总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/h5-xin-zeng/" title="H5新增内容总结">H5新增内容总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-io/" title="IO相关">IO相关</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/html-ji-chu/" title="HTML基础">HTML基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/duo-xian-cheng-ru-men/" title="多线程入门">多线程入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
+</div>
+
+    <span><a href="/hou-duan/ci-cd/ce-shi-jenkins/" title="测试Jenkins">测试Jenkins</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/bing-fa-fen-bu-shi/redis-gao-bing-fa-fen-bu-shi-suo/" title="Redis高并发分布式锁">Redis高并发分布式锁</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+</div>
+
+    <span><a href="/hou-duan/spring/springboot-zhu-jie/" title="Spring Boot注解总结">Spring Boot注解总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" title="SpringMVC 拦截器&amp;方法参数解析器">SpringMVC 拦截器&方法参数解析器</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/java/javaweb-ji-chu/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

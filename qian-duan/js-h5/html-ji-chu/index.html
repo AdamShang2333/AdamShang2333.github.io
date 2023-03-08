@@ -1,0 +1,835 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/">
+
+
+
+  <title>
+HTML 基础 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">HTML 基础
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-03-08 19:32:40">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-03-08T19:32:40+08:00">2023-03-08</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>2.8k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>3 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-p8rw79.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-4lmre2.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-3z9vq3.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-k79lqq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9gke5.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-z8gydv.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="html模板"><a class="anchor" href="#html模板">#</a> html 模板</h1>
+<pre><code>&lt;!--申明一个HTML文档--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;!--代表一个网页的整体--&gt;
+&lt;html&gt;
+	&lt;!--展示网页标题，样式等--&gt;
+	&lt;head&gt;
+		&lt;!--设置编码格式，防止乱码（UTF-8 常用编码格式）--&gt;
+		&lt;meta charset=&quot;UTF-8&quot;&gt;
+		&lt;!--设置网页标题--&gt;
+		&lt;title&gt;百度一下&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;!--网页主体（直观见到的）--&gt;
+	&lt;body&gt;
+		
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h1 id="项目文件创建"><a class="anchor" href="#项目文件创建">#</a> 项目文件创建</h1>
+<p>**img 😗* 项目图片资源，可以有子文件夹，对不同的页面分类</p>
+<p>**js 😗* 外部引入的 js 文件</p>
+<p>**css 😗* 外部引入的 css 文件，比如 normalize.css, 或框架 css 文件</p>
+<p>**index/home.html 😗* 首页<br />
+<strong> favicon.ico</strong> : 浏览器标签栏图标</p>
+<h1 id="标签分类"><a class="anchor" href="#标签分类">#</a> 标签分类</h1>
+<ul>
+<li>
+<p>模板 功能类</p>
+<pre><code> html body head link title style meta strong  em   
+ link: 
+</code></pre>
+</li>
+<li>
+<p>块标签</p>
+<pre><code> div h1~h6 p ul ol li  br hr
+</code></pre>
+<p><strong>特性:</strong></p>
+<ol>
+<li>display:block</li>
+<li>占父级的一行</li>
+<li>可以嵌套块标签和行标签 (p 标签只能嵌套行标签)</li>
+<li>居中：给<strong>本身</strong>加 margin: 0 auto</li>
+<li>可以设置宽高，不设置高度时，由内容撑开</li>
+</ol>
+</li>
+<li>
+<p>行标签</p>
+</li>
+</ul>
+<pre><code>span a img i  b sub sup input  
+</code></pre>
+<p><strong>特性</strong></p>
+<ol>
+<li>display:inline</li>
+<li>多个行标签可在一行显示</li>
+<li>不能设置宽高，默认由内容撑开</li>
+<li>行标签可以嵌套行标签</li>
+<li>居中：给父标签加 : text-align:center</li>
+<li>垂直方向 margin,padding 失效</li>
+</ol>
+<ul>
+<li>表单</li>
+</ul>
+<pre><code>form tbody  label input select textarea 
+</code></pre>
+<ul>
+<li>表格</li>
+</ul>
+<pre><code>table tr td th  
+</code></pre>
+<h1 id="选择器"><a class="anchor" href="#选择器">#</a> 选择器</h1>
+<ul>
+<li><strong>基本选择器</strong></li>
+</ul>
+<ol>
+<li>id 选择器</li>
+<li>类选择器</li>
+<li>标签选择器</li>
+<li>通配符选择器</li>
+</ol>
+<blockquote>
+<p>优先级:<br />
+ 继承 &lt; 通配符 &lt; 标签选择器 &lt; 类选择器 &lt; ID 选择器 &lt; 行内样式 &lt;　!important</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>组合选择器</strong></p>
+<p>1. 群组选择器<br />
+ 2. 后代选择器</p>
+</li>
+</ul>
+<h1 id="布局"><a class="anchor" href="#布局">#</a> 布局</h1>
+<h3 id="盒模型"><a class="anchor" href="#盒模型">#</a> 盒模型</h3>
+<ul>
+<li>border</li>
+<li>margin  : 垂直方向合并问题</li>
+<li>padding</li>
+<li>box-sizing : border-box</li>
+</ul>
+<p><strong>兄弟关系用 margin, 父子关系用 padding</strong></p>
+<p>### 浮动</p>
+<blockquote>
+<p>浮动最早是解决文字环绕问题，现在一般用来做左右布局使用，使用时注意清浮动.</p>
+</blockquote>
+<p><strong>清浮动: overflow : hidden</strong></p>
+<p><strong>浮动元素的特性</strong></p>
+<blockquote></blockquote>
+<ol>
+<li>浮动元素不占文档流</li>
+<li>设置成浮动后不再具有行块标签的特性，称为浮动元素</li>
+<li>浮动元素可以设置宽高，默认由内容撑开</li>
+</ol>
+<p><strong>注意：浮动元素的兄弟标签都要为浮动</strong></p>
+<h3 id="定位"><a class="anchor" href="#定位">#</a> 定位</h3>
+<ul>
+<li>
+<p><strong>static</strong> 默认值</p>
+</li>
+<li>
+<p><strong>fixed</strong> 固定定位</p>
+<p>特性:</p>
+<ol>
+<li>相对于浏览器定位</li>
+<li>不占文档流</li>
+<li>不再是行块标签，成为定位元素</li>
+<li>可以设置宽高，由内容撑开</li>
+<li>一般用作导航 / 导航弹出框等</li>
+</ol>
+</li>
+<li>
+<p><strong>relative</strong> 相对定位</p>
+<p>特性:</p>
+<ol>
+<li>相对于自身定位</li>
+<li>占文档流</li>
+<li>不改变标签本身特性</li>
+<li>一般用来做微调或者是绝对定位的父级</li>
+</ol>
+</li>
+<li>
+<p><strong>absolute</strong> 绝对定位</p>
+</li>
+</ul>
+<p>特性:</p>
+<ol>
+<li>相对于最近的定位父级 (从父标签往外找) , 如果没有定位父级，相对于浏览器定位<br />
+ 2. 不占文档流<br />
+ 3. 不再是行块标签，成为定位元素</li>
+</ol>
+<pre><code>**top / left / right / bottom / z-index :只能和定位配合使用**  
+**定位居中**
+</code></pre>
+<h1 id="css样式"><a class="anchor" href="#css样式">#</a> css 样式</h1>
+<h3 id="背景"><a class="anchor" href="#背景">#</a> 背景</h3>
+<ul>
+<li>background</li>
+<li>background-image</li>
+<li>background-color</li>
+<li>background-size: 水平 垂直</li>
+<li>background-repeat</li>
+<li>background-position</li>
+<li>background-clip</li>
+</ul>
+<h3 id="字体"><a class="anchor" href="#字体">#</a> 字体</h3>
+<ul>
+<li>font-size</li>
+<li>font-famliy</li>
+<li>font-style</li>
+<li>font-weight</li>
+<li>font-height</li>
+<li>line-height</li>
+<li>word-spacing</li>
+<li>letter-spacing</li>
+<li>text-decoration  (下划线等)</li>
+<li>text-align</li>
+<li>text-shadow</li>
+<li>color</li>
+</ul>
+<h3 id="杂七杂八"><a class="anchor" href="#杂七杂八">#</a> 杂七杂八</h3>
+<ul>
+<li>border-radius</li>
+<li>list-style</li>
+<li>cursor</li>
+<li>vertical-align</li>
+<li>box-shadow</li>
+<li>box-sizing</li>
+<li>overflow</li>
+<li>outline (input 点击后的边框)</li>
+<li>max-width</li>
+<li>min-width</li>
+</ul>
+<h3 id="透明度"><a class="anchor" href="#透明度">#</a> 透明度</h3>
+<ul>
+<li>opcity</li>
+<li>filter : alpha () -- 适配 IE</li>
+<li>rgba</li>
+</ul>
+<h3 id="隐藏"><a class="anchor" href="#隐藏">#</a> 隐藏</h3>
+<ul>
+<li>display: none ; 不占文档流</li>
+<li>visibility : hidden ; 占文档流</li>
+<li>透明度为 0</li>
+</ul>
+<h3 id="颜色值"><a class="anchor" href="#颜色值">#</a> 颜色值</h3>
+<ul>
+<li>单词</li>
+<li>rgb</li>
+<li>rgba</li>
+<li>十六进制</li>
+</ul>
+<h3 id="单位"><a class="anchor" href="#单位">#</a> 单位</h3>
+<ul>
+<li>px</li>
+<li>em</li>
+<li>rem</li>
+<li>deg</li>
+</ul>
+<h1 id="h5新增标签和选择器"><a class="anchor" href="#h5新增标签和选择器">#</a> H5 新增标签和选择器</h1>
+<h3 id="新增标签"><a class="anchor" href="#新增标签">#</a> 新增标签</h3>
+<p>audio 	video	 canvas<br />
+header footer nav  main.....</p>
+<h3 id="选择器-2"><a class="anchor" href="#选择器-2">#</a> 选择器</h3>
+<p>属性选择器</p>
+<p>伪类选择器</p>
+<h1 id="过渡2d-3d变换动画"><a class="anchor" href="#过渡2d-3d变换动画">#</a> 过渡 / 2D 3D 变换 / 动画</h1>
+<h3 id="过渡-transition"><a class="anchor" href="#过渡-transition">#</a> 过渡   transition</h3>
+<p><strong>常用 : transition all 1s liner (匀速) ;</strong></p>
+<h3 id="2d-变换-transform"><a class="anchor" href="#2d-变换-transform">#</a> 2D 变换 transform</h3>
+<ul>
+<li>transform : translate();</li>
+<li>transform : scale();</li>
+<li>transform: rotate(..deg);</li>
+<li>transform;skew(..deg);</li>
+<li>transform-orgin: 基准点</li>
+</ul>
+<h3 id="3d-变换-开3d-景深"><a class="anchor" href="#3d-变换-开3d-景深">#</a> 3D 变换  -&gt; 开 3D 景深</h3>
+<h3 id="动画-animation"><a class="anchor" href="#动画-animation">#</a> 动画  animation</h3>
+<p><strong>定义动画效果 @keyframes</strong></p>
+<p>** 动画库 : animate.css 使用方式两种 **</p>
+<pre><code>
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/animate.css&quot;/&gt;
+
+&lt;!--第一种--&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+	animation: heartBeat  3s;
+&lt;/style&gt;
+
+&lt;!--第二种  !!!class中记得加animated!!!--&gt;
+&lt;div class=&quot;animated heartBeat&quot;&gt;&lt;/div&gt;
+
+</code></pre>
+<h1 id="响应式布局"><a class="anchor" href="#响应式布局">#</a> 响应式布局</h1>
+<blockquote>
+<p>更适用于移动端，来对不同的屏幕做适配，PC 端使用的话，页面不会太复杂</p>
+</blockquote>
+<p><strong>移动端布局，必须添加 viewport</strong></p>
+<h3 id="流式布局百分比布局"><a class="anchor" href="#流式布局百分比布局">#</a> 流式布局 / 百分比布局</h3>
+<ol>
+<li>
+<p>宽度：本身宽度 / 父级的宽度</p>
+</li>
+<li>
+<p>高度：本身高度 / 父级的高度</p>
+</li>
+<li>
+<p>定位值 :</p>
+<p>纵向定位 (top bottom) / 定位父级的高度<br />
+横向定位 (left right) / 定位父级的宽度</p>
+</li>
+<li>
+<p>盒模型 (margin padding)</p>
+<p>盒模型纵向  纵向值 / 父级的宽度盒模型横向<br />
+横向值 / 父级的宽度？: 多数情况高度由文档流撑开</p>
+</li>
+</ol>
+<h3 id="媒体查询"><a class="anchor" href="#媒体查询">#</a> 媒体查询</h3>
+<p>@media only screen and (min-width:980px )<br />
+@media only screen and (max-width:600px )<br />
+@media only screen and (min-width: 700px) and (max-width: 800px)</p>
+<h1 id="其他"><a class="anchor" href="#其他">#</a> 其他</h1>
+<h3 id="字体图标"><a class="anchor" href="#字体图标">#</a> 字体图标</h3>
+<h3 id="滑动门"><a class="anchor" href="#滑动门">#</a> 滑动门</h3>
+<h3 id="精灵图雪碧图-http"><a class="anchor" href="#精灵图雪碧图-http">#</a> 精灵图 / 雪碧图 [http]</h3>
+<h3 id="hover效果"><a class="anchor" href="#hover效果">#</a> hover 效果</h3>
+<h3 id="锚点"><a class="anchor" href="#锚点">#</a> 锚点</h3>
+<h3 id="线性渐变-径向渐变"><a class="anchor" href="#线性渐变-径向渐变">#</a> 线性渐变 径向渐变</h3>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="qian-duan/js-h5/html-ji-chu/" class="item leancloud_visitors" data-flag-title="HTML 基础" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/" title="HTML 基础">http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/qian-duan/js-h5/h5-xin-zeng/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-3z9p26.png" title="H5新增内容总结">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>H5新增内容总结</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/qian-duan/js-h5/js-xuan-ze-qi/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-p8rw79.jpg" title="js选择器">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>js选择器</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#html%E6%A8%A1%E6%9D%BF"><span class="toc-number">1.</span> <span class="toc-text"> html 模板</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%88%9B%E5%BB%BA"><span class="toc-number">2.</span> <span class="toc-text"> 项目文件创建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E5%88%86%E7%B1%BB"><span class="toc-number">3.</span> <span class="toc-text"> 标签分类</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">4.</span> <span class="toc-text"> 选择器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%83%E5%B1%80"><span class="toc-number">5.</span> <span class="toc-text"> 布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%92%E6%A8%A1%E5%9E%8B"><span class="toc-number">5.0.1.</span> <span class="toc-text"> 盒模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D"><span class="toc-number">5.0.2.</span> <span class="toc-text"> 定位</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css%E6%A0%B7%E5%BC%8F"><span class="toc-number">6.</span> <span class="toc-text"> css 样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">6.0.1.</span> <span class="toc-text"> 背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-number">6.0.2.</span> <span class="toc-text"> 字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB"><span class="toc-number">6.0.3.</span> <span class="toc-text"> 杂七杂八</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%8F%E6%98%8E%E5%BA%A6"><span class="toc-number">6.0.4.</span> <span class="toc-text"> 透明度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E8%97%8F"><span class="toc-number">6.0.5.</span> <span class="toc-text"> 隐藏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2%E5%80%BC"><span class="toc-number">6.0.6.</span> <span class="toc-text"> 颜色值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D"><span class="toc-number">6.0.7.</span> <span class="toc-text"> 单位</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#h5%E6%96%B0%E5%A2%9E%E6%A0%87%E7%AD%BE%E5%92%8C%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">7.</span> <span class="toc-text"> H5 新增标签和选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E6%A0%87%E7%AD%BE"><span class="toc-number">7.0.1.</span> <span class="toc-text"> 新增标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8-2"><span class="toc-number">7.0.2.</span> <span class="toc-text"> 选择器</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%87%E6%B8%A12d-3d%E5%8F%98%E6%8D%A2%E5%8A%A8%E7%94%BB"><span class="toc-number">8.</span> <span class="toc-text"> 过渡 &#x2F; 2D 3D 变换 &#x2F; 动画</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%87%E6%B8%A1-transition"><span class="toc-number">8.0.1.</span> <span class="toc-text"> 过渡   transition</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2d-%E5%8F%98%E6%8D%A2-transform"><span class="toc-number">8.0.2.</span> <span class="toc-text"> 2D 变换 transform</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3d-%E5%8F%98%E6%8D%A2-%E5%BC%803d-%E6%99%AF%E6%B7%B1"><span class="toc-number">8.0.3.</span> <span class="toc-text"> 3D 变换  -&gt; 开 3D 景深</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB-animation"><span class="toc-number">8.0.4.</span> <span class="toc-text"> 动画  animation</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">9.</span> <span class="toc-text"> 响应式布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%E7%99%BE%E5%88%86%E6%AF%94%E5%B8%83%E5%B1%80"><span class="toc-number">9.0.1.</span> <span class="toc-text"> 流式布局 &#x2F; 百分比布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">9.0.2.</span> <span class="toc-text"> 媒体查询</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">10.</span> <span class="toc-text"> 其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87"><span class="toc-number">10.0.1.</span> <span class="toc-text"> 字体图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%91%E5%8A%A8%E9%97%A8"><span class="toc-number">10.0.2.</span> <span class="toc-text"> 滑动门</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%9B%AA%E7%A2%A7%E5%9B%BE-http"><span class="toc-number">10.0.3.</span> <span class="toc-text"> 精灵图 &#x2F; 雪碧图 [http]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hover%E6%95%88%E6%9E%9C"><span class="toc-number">10.0.4.</span> <span class="toc-text"> hover 效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%9A%E7%82%B9"><span class="toc-number">10.0.5.</span> <span class="toc-text"> 锚点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E6%B8%90%E5%8F%98-%E5%BE%84%E5%90%91%E6%B8%90%E5%8F%98"><span class="toc-number">10.0.6.</span> <span class="toc-text"> 线性渐变 径向渐变</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/qian-duan/js-h5/h5-xin-zeng/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/qian-duan/js-h5/js-xuan-ze-qi/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ZooKeeper/" title="分类于 ZooKeeper">ZooKeeper</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/ZooKeeper/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/zookeeper-ru-men/" title="ZooKeeper入门">ZooKeeper入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-fan-she/" title="Java反射">Java反射</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/redis/" title="redis基础">redis基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/mybatis/" title="Mybatis">Mybatis</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/duo-xian-cheng-ru-men/" title="多线程入门">多线程入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" title="AOP&amp;静态代理&amp;动态代理">AOP&静态代理&动态代理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qi-ta/zhi-neng-jia-ju/" title="智能家居">智能家居</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/bing-fa-fen-bu-shi/fen-bu-shi-shi-wu/" title="分布式事务">分布式事务</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/spring-jdbc/" title="Spring JDBC">Spring JDBC</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%85%B6%E4%BB%96/Markdown/" title="分类于 Markdown">Markdown</a>
+</div>
+
+    <span><a href="/qi-ta/markdown-yu-fa-zong-jie/" title="Markdown语法">Markdown语法</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'qian-duan/js-h5/html-ji-chu/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>

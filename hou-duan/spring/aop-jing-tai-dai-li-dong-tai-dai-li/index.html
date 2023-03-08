@@ -1,0 +1,726 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="一位Blog" href="http://adamshang2333.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="一位Blog" href="http://adamshang2333.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="一位Blog" href="http://adamshang2333.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://adamshang2333.github.io/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/">
+
+
+
+  <title>
+AOP & 静态代理 & 动态代理 |
+bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">AOP & 静态代理 & 动态代理
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-22 16:23:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-22T16:23:00+08:00">2022-12-22</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>9.2k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>8 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">bit Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-6ojgq7.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-6oq2x7.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-73pvk9.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-oxkgel.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-k79lqq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm1lwy.png"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://adamshang2333.github.io/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/%E5%90%90%E8%88%8C.jpeg">
+    <meta itemprop="name" content="别人都叫我老范">
+    <meta itemprop="description" content="bit =>byte KB MB GB TB ... 积跬步而行千里, <div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="一位 Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>## 代理模式</p>
+<p>代理模式给某一个对象提供一个代理对象，并由代理对象控制对原对象的引用。<br />
+通俗的来讲代理模式就是我们生活中常见的中介。</p>
+<p>### 代理的作用<br />
+<strong>中介隔离作用 ：</strong><br />
+在某些情况下，一个客户类不想或者不能直接引用一个委托对象，而代理类对象可以在客户类和委托对象之间起到中介的作用，<mark><strong>其特征是代理类和委托类实现相同的接口。</strong></mark></p>
+<p><strong>开闭原则，增加功能 ：</strong><br />
+代理类除了是客户类和委托类的中介之外，我们还可以通过给代理类增加额外的功能来扩展委托类的功能，这样做我们只需要修改代理类而不需要再修改委托类，符合代码设计的开闭原则。<br />
+代理类主要负责为委托类预处理消息、过滤消息、把消息转发给委托类，以及事后对返回结果的处理等。<mark>代理类本身并不真正实现服务，而是同过调用委托类的相关方法，来提供特定的服务。真正的业务功能还是由委托类来实现，但是可以在业务功能执行的前后加入一些公共的服务。</mark><br />
+例如我们想给项目加入缓存、日志这些功能，我们就可以使用代理类来完成，而没必要打开已经封装好的委托类。</p>
+<p>### 分类</p>
+<blockquote>
+<p>按照 <mark><strong>代理创建的时期</strong></mark> 来进行分类的话，<br />
+可以分为两种：<strong>静态代理、动态代理。</strong><br />
+静态代理 是由程序员创建或特定工具自动生成源代码，在对其编译。在程序员运行之前，代理类.class 文件就已经被创建了。<br />
+动态代理  是在程序运行时通过反射机制动态创建的。</p>
+<p>按照 ==<strong> 实现方式</strong> == 来进行分类:<br />
+ 可以分为：通过接口实现，通过继承实现<br />
+　注：在动态代理中，通过 JDK 方式 (接口) 或者 CGLib (继承) 来实现动态代理</p>
+</blockquote>
+<p>## 静态代理</p>
+<p>### 实现步骤<br />
+ ####Step1 创建服务类接口 / 被继承父类<br />
+ <code>1.1 接口创建</code></p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">BookService</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p><code>1.2 创建父类</code></p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CategoryService</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">del</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"删除分类"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>####Step2 委托类，实现服务类接口</p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BookServiceImpl</span> <span class="token keyword">implements</span> <span class="token class-name">BookService</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token annotation punctuation">@Override</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"添加图书"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>####Step3 创建代理类 (功能添加等)</p>
+<blockquote>
+<p>创建代理类，有两种方式:</p>
+<ol>
+<li>通过实现与委托类相同的接口</li>
+<li>通过继承委托类<br />
+　 继承最好也要引入父类作为成员变量</li>
+</ol>
+</blockquote>
+<p><strong>3.1 代理类实现与委托类相同的接口</strong></p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 在主要业务之外添加日志功能  </span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 实现与委托类相同的接口  </span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LogBookService</span> <span class="token keyword">implements</span> <span class="token class-name">BookService</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">// 将接口类定义为成员变量</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">private</span> <span class="token class-name">BookService</span> service<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token comment">// 构造方法，将成员变量 (接口) 传入</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">public</span> <span class="token class-name">LogBookService</span><span class="token punctuation">(</span><span class="token class-name">BookService</span> service<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>service <span class="token operator">=</span> service<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token annotation punctuation">@Override</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>        <span class="token comment">// 将之前的委托类，通过成员变量的方式引入新的接口实现类 -- 代理类</span></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token comment">// 在这里进行执行功能前 / 后的添加</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        <span class="token comment">// 相当于 "包一层", 提供功能的添加</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"开始添加"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token comment">// 实际调用的是实现了接口的委托类 (多态)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        service<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"添加完成"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p><strong>3.2 代理类继承委托类</strong><br />
+<strong>直接调用父类方法</strong></p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LogCategoryService</span> <span class="token keyword">extends</span> <span class="token class-name">CategoryService</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token annotation punctuation">@Override</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">del</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"开始删除"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token comment">// 调用父类方法</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">del</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"删除分类"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p><strong>传入父类作为成员变量</strong></p>
+<pre><code class="language-jAVA">public class LogCategoryService extends CategoryService &#123;
+    // 将父类作为成员变量传入
+    private CategoryService categoryService;
+    public LogCategoryService(CategoryService categoryService) &#123;
+        this.categoryService = categoryService;
+    &#125;
+
+    @Override
+    public void del() &#123;
+        System.out.println(&quot;开始删除&quot;);
+        // 调用成员变量方法
+        categoryService.del();
+        System.out.println(&quot;删除分类&quot;);
+    &#125;
+&#125;
+</code></pre>
+<blockquote>
+<p>两种方式都可以通过继承来实现代理，但是传入父类作为成员变量更好些</p>
+</blockquote>
+<p>#### 测试</p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BookManagerTest</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">private</span> <span class="token class-name">BookManager</span> bookManager<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">// 在执行方法前的初始化</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token annotation punctuation">@Before</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setUp</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token class-name">BookService</span> service <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BookServiceImpl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token comment">// 在原有的实现类基础上，"包裹" 上新的实现类 (利用构造方法传入)</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token comment">// 相当于 a += 1 的操作</span></pre></td></tr><tr><td data-num="10"></td><td><pre>        service <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LogBookService</span><span class="token punctuation">(</span>service<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        service <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DurationBookService</span><span class="token punctuation">(</span>service<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>        bookManager <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BookManager</span><span class="token punctuation">(</span>service<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="14"></td><td><pre></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token annotation punctuation">@Test</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">addBook</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>bookManager<span class="token punctuation">.</span><span class="token function">addBook</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>继承实现与接口实现的区别<br />
+ <code>继承方式：每多一个逻辑，多一个代理类；逻辑顺序改变一次顺序，多一个代理类</code> <br />
+ <code>接口方式：每多一个逻辑，多一个代理类；逻辑顺序改变一次顺序，只需在调用时改变顺序</code></p>
+<p>## 动态代理</p>
+<blockquote>
+<p>多个方法需要代理的时候，使用静态代理就需要多次编写代理类和代理逻辑<br />
+在逻辑重复的场景下，比较繁琐 (日志打印 / 登录验证等)<br />
+ 此时适合使用动态代理</p>
+</blockquote>
+<h3 id="实现方式"><a class="anchor" href="#实现方式">#</a> 实现方式</h3>
+<ol>
+<li>使用<strong> JDK 反射</strong>包下的动态代理类进行实现<br />
+针对<strong>有接口的类</strong>进行动态代理</li>
+<li>使用第三方的框架 Enhancer (jar 包:<strong>CGLib</strong>) 实现动态代理<br />
+针对<strong>可继承的类</strong>进行动态代理</li>
+</ol>
+<h3 id="1-jdk动态代理实现接口实现"><a class="anchor" href="#1-jdk动态代理实现接口实现">#</a> 1. JDK 动态代理实现 (接口实现)</h3>
+<blockquote>
+<p>步骤 :<br />
+1 需要 new 一个代理实例 (通过 JDK 自带的 Proxy.newProxyInstance () 方法来实现 )<br />
+　参数：类加载器 ；委托类实现的所有接口；具体代理方式 (逻辑)　<br />
+2  获取类加载器<br />
+　获取类加载器的方式有很多，通过任意一个类来获取都可以:<br />
+　　  <code>bs.getClass().getClassLoader()</code> <br />
+　或者通过 ClassLoader 类的 getClassLoader 方法获取<br />
+　　 <code>ClassLoader.getSystemClassLoader()</code> <br />
+ 3  获取委托类的接口类型<br />
+ 4  传入一个具体代理方式 (实现 InvocationHandler 接口)</p>
+</blockquote>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">Proxy</span>类的方法源码<span class="token operator">:</span></pre></td></tr><tr><td data-num="2"></td><td><pre> <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">Object</span> newProxyInstance</pre></td></tr><tr><td data-num="3"></td><td><pre>                        <span class="token punctuation">(</span><span class="token class-name">ClassLoader</span> loader<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre> <span class="token comment">// 一个 interface 对象数组，表示我们将要给我们的代理对象提供一组什么样的接口</span></pre></td></tr><tr><td data-num="5"></td><td><pre>                         <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">></span></span><span class="token punctuation">[</span><span class="token punctuation">]</span> interfaces<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">// 表示的是当动态代理对象调用方法的时候会关联到哪一个 InvocationHandler 对象上，</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 并最终由其调用。</span></pre></td></tr><tr><td data-num="8"></td><td><pre>                         <span class="token class-name">InvocationHandler</span> h <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token keyword">throws</span> <span class="token class-name">IllegalArgumentException</span></pre></td></tr></table></figure><figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">BookService</span> bs <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BookServiceImpl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre> <span class="token comment">// 这种方法也可以调取到类加载器</span></pre></td></tr><tr><td data-num="3"></td><td><pre> <span class="token comment">// ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();</span></pre></td></tr><tr><td data-num="4"></td><td><pre> <span class="token comment">// 获取创建 Proxy 实例需要的参数</span></pre></td></tr><tr><td data-num="5"></td><td><pre> <span class="token class-name">ClassLoader</span> classLoader <span class="token operator">=</span> bs<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre> <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">></span></span><span class="token punctuation">[</span><span class="token punctuation">]</span> interfaces <span class="token operator">=</span> bs<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getInterfaces</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre> <span class="token comment">// 把原对象传入 (需要被增强的委托类)</span></pre></td></tr><tr><td data-num="8"></td><td><pre> <span class="token class-name">LogInvocationHandler</span> handler <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LogInvocationHandler</span><span class="token punctuation">(</span>bs<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre> </pre></td></tr><tr><td data-num="10"></td><td><pre> <span class="token comment">// 也可以不从 BookService 对象中获取接口 class, 直接传入 BookService.class</span></pre></td></tr><tr><td data-num="11"></td><td><pre> <span class="token comment">// 但是这样会增强耦合性，减少代码的扩展性</span></pre></td></tr><tr><td data-num="12"></td><td><pre> <span class="token comment">// Proxy.newProxyInstance(classLoader,new Class[]&#123;BookService.class&#125;)</span></pre></td></tr><tr><td data-num="13"></td><td><pre> <span class="token comment">// Proxy 实例对象向下转型，实质上是实现了 BookService 接口的一个类</span></pre></td></tr><tr><td data-num="14"></td><td><pre> <span class="token class-name">BookService</span> bp <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">BookService</span><span class="token punctuation">)</span> <span class="token class-name">Proxy</span><span class="token punctuation">.</span><span class="token function">newProxyInstance</span><span class="token punctuation">(</span></pre></td></tr><tr><td data-num="15"></td><td><pre> classLoader<span class="token punctuation">,</span>interfaces<span class="token punctuation">,</span>handler<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="16"></td><td><pre> <span class="token comment">// 被增强的代理类执行方法 (扩展了原有功能)</span></pre></td></tr><tr><td data-num="17"></td><td><pre> bp<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><hr />
+<blockquote>
+<p>InvocationHandler 接口是 proxy 代理实例的调用处理程序实现的一个接口，<br />
+每一个 proxy 代理实例都有一个关联的调用处理程序；<br />
+在代理实例调用方法时，方法调用被编码分派到调用处理程序的 invoke 方法。</p>
+</blockquote>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">InvocationHandler</span>的源码</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">InvocationHandler</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">invoke</span><span class="token punctuation">(</span><span class="token class-name">Object</span> proxy<span class="token punctuation">,</span> <span class="token class-name">Method</span> method<span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token keyword">throws</span> <span class="token class-name">Throwable</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>自定义的 InvocationHandler 实现类</p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LogInvocationHandler</span> <span class="token keyword">implements</span> <span class="token class-name">InvocationHandler</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">public</span> <span class="token class-name">Object</span> target<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token comment">// 通过构造方法把代理对象传入</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">public</span> <span class="token class-name">LogInvocationHandler</span><span class="token punctuation">(</span><span class="token class-name">Object</span> target<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>target <span class="token operator">=</span> target<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">/**</pre></td></tr><tr><td data-num="8"></td><td><pre>     * @param proxy   被代理后的对象</pre></td></tr><tr><td data-num="9"></td><td><pre>     * @param method  被代理对象调用的方法</pre></td></tr><tr><td data-num="10"></td><td><pre>     * @param args    被代理对象调用方法的时候，传递进来的参数</pre></td></tr><tr><td data-num="11"></td><td><pre>     * @return        被代理对象被调用之后的返回值</pre></td></tr><tr><td data-num="12"></td><td><pre>     * @throws Throwable</pre></td></tr><tr><td data-num="13"></td><td><pre>     */</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token annotation punctuation">@Override</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">invoke</span><span class="token punctuation">(</span><span class="token class-name">Object</span> proxy<span class="token punctuation">,</span> <span class="token class-name">Method</span> method<span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Throwable</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="16"></td><td><pre></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>method<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"方法开始调用"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        <span class="token comment">// 被代理的对象中的所有方法，在执行的时候都会被代理</span></pre></td></tr><tr><td data-num="19"></td><td><pre>        <span class="token comment">// !! 这里传入的参数一定是 target 如果传入 proxy 形参 会造成死循环</span></pre></td></tr><tr><td data-num="20"></td><td><pre>        <span class="token class-name">Object</span> value <span class="token operator">=</span> method<span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"方法返回值类型:"</span><span class="token operator">+</span>method<span class="token punctuation">.</span><span class="token function">getGenericReturnType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>        <span class="token keyword">return</span> value<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>###2.  CGLib 动态代理实现 (没有接口)</p>
+<blockquote>
+<p>CGLib 的动态代理和静态代理中的继承方式类似<br />
+也需要让代理类继承一个委托类<br />
+创建代理类的时候，和 JDK 一样 也需要一个代理逻辑实现类<br />
+这个类实现一个 InvocationHandler 接口 (CGLib 包下，该接口 extend CallBack)</p>
+</blockquote>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre>依赖Jar包</pre></td></tr><tr><td data-num="2"></td><td><pre> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>cglib<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>cglib<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="5"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>3.2.12<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">InvocationHandler</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">extends</span> <span class="token class-name">Callback</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">/**</pre></td></tr><tr><td data-num="5"></td><td><pre>     * @see java.lang.reflect.InvocationHandler#invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object)</pre></td></tr><tr><td data-num="6"></td><td><pre>     */</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">invoke</span><span class="token punctuation">(</span><span class="token class-name">Object</span> proxy<span class="token punctuation">,</span> <span class="token class-name">Method</span> method<span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Throwable</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token annotation punctuation">@Test</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testEnhancer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token comment">// 被代理的委托类</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token class-name">CategoryService</span> cs <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CategoryService</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token comment">// 获取类加载器</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token class-name">ClassLoader</span> classLoader <span class="token operator">=</span> <span class="token class-name">ClassLoader</span><span class="token punctuation">.</span><span class="token function">getSystemClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        </pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token comment">// 实现 CGLib 代理的增强器</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token class-name">Enhancer</span> enhancer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Enhancer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>        enhancer<span class="token punctuation">.</span><span class="token function">setClassLoader</span><span class="token punctuation">(</span>classLoader<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token comment">// 指定增强类继承的父类</span></pre></td></tr><tr><td data-num="12"></td><td><pre>        enhancer<span class="token punctuation">.</span><span class="token function">setSuperclass</span><span class="token punctuation">(</span>cs<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token comment">// 设置要添加的代理逻辑</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        <span class="token class-name">Callback</span> invocationHandler <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LogInvocationHandler</span><span class="token punctuation">(</span>cs<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token comment">// 虽然都使用了 InvocationHandler 但是是 CGLib 包下的</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        enhancer<span class="token punctuation">.</span><span class="token function">setCallback</span><span class="token punctuation">(</span>invocationHandler<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        <span class="token comment">// 创建完整的代理类</span></pre></td></tr><tr><td data-num="19"></td><td><pre>        cs <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">CategoryService</span><span class="token punctuation">)</span> enhancer<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>        cs<span class="token punctuation">.</span><span class="token function">del</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>##AOP</p>
+<blockquote>
+<p>AOP 是 Spring 的核心技术 和 SpringMVC 无关<br />
+ AOP, 面向切面编程 本质上就是<br />
+　    对哪些方法执行的什么时候，做什么事情<br />
+ --&quot;对所有 Service 方法执行之前，打印日志&quot;;&quot;对所有的 Service 方法，执行异常的时候，回滚事务&quot;<br />
+AOP 的实现原理是动态代理，会根据实现方式的是接口还是继承<br />
+　来自主的选择 CGLib 或者 JDK 反射</p>
+</blockquote>
+<h3 id="aop的组成部分"><a class="anchor" href="#aop的组成部分">#</a> AOP 的组成部分</h3>
+<ul>
+<li><strong>切点 (PointCut)</strong> :<br />
+ 实际上是一个表达式 (也就是一个字符串), 用来表示对哪些方法进行增强<br />
+切点实际上描述的就是 &quot;哪些方法&quot;</li>
+<li><strong>通知 (Advice):</strong><br />
+ 实际上就是方法，表示如何进行增强<br />
+通知实际上描述的是 &quot;什么时候&quot; 和 &quot;做什么事情&quot;</li>
+<li>前置通知  在执行方法之前</li>
+<li>返回通知  正确执行，返回执行之前</li>
+<li>异常通知  抛出异常时执行</li>
+<li>后置通知  无论方法是否正常执行，都会被调用</li>
+<li>环绕通知  综合了上面的四种通知</li>
+<li><strong>接入点 (JoinPoint):</strong><br />
+ 实际上就是被增强的方法的一个描述</li>
+<li><strong>切面 (Aspect):</strong><br />
+ 把切点 &amp; 通知 &amp; 接入点封装起来的一个类</li>
+<li><strong>织入 (Weaver):</strong><br />
+ 把切面整合到原始对象的过程</li>
+<li><strong>增强 ( ):</strong><br />
+ 注:<br />
+Spring 利用了 AspectJ 的切面的配置方式 (注解设计), 具体实现没有使用它的，<br />
+ 而是使用了 JDK 中带的和 CGLib 框架中的动态代理</li>
+</ul>
+<p>### 配置</p>
+<blockquote>
+<p>具体配置有两种:<br />
+ 一个是在 xml 中进行配置；一个是使用注解<br />
+不管用哪种，配置项都是一样的，只不过具体的方式不一样.</p>
+</blockquote>
+<h4 id="xml配置"><a class="anchor" href="#xml配置">#</a> xml 配置</h4>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">&lt;!-- 将切面类注册成为 bean--></span></pre></td></tr><tr><td data-num="2"></td><td><pre>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.aspect.LogAspect<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>logAspect<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>  </pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token comment">&lt;!-- 配置 AOP 的信息 --></span></pre></td></tr><tr><td data-num="5"></td><td><pre>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">aop:</span>config</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">&lt;!-- .service.*.*(..): service 包下的所有类 / 所有方法 /(参数为各种形式)--></span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">&lt;!-- 配置切点信息 (对哪些方法进行增强)--></span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">aop:</span>pointcut</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>allService<span class="token punctuation">"</span></span> <span class="token attr-name">expression</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>execution(* com.lanou.service.*.*(..))<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">&lt;!-- 配置切面 (映射到具体的切面类)--></span></pre></td></tr><tr><td data-num="10"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">aop:</span>aspect</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>logAspect<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>         <span class="token comment">&lt;!-- 配置通知的信息 (切面类中的方法)--></span></pre></td></tr><tr><td data-num="12"></td><td><pre>         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">aop:</span>before</span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>logBefore<span class="token punctuation">"</span></span> <span class="token attr-name">pointcut-ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>allService<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="13"></td><td><pre>         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">aop:</span>after</span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>logAfter<span class="token punctuation">"</span></span> <span class="token attr-name">pointcut-ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>allService<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="14"></td><td><pre>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">aop:</span>aspect</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">aop:</span>config</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="16"></td><td><pre></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.service.BookServiceImpl<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bookService<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>com.lanou.service.CategoryService<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>categoryService<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></pre></td></tr></table></figure><p>#### 注解配置</p>
+<blockquote>
+<p>注解方式的配置只需要在 xml 中添加一个注解支持就行</p>
+</blockquote>
+<ul>
+<li>在 xml 中设置对注解的支持</li>
+</ul>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">&lt;!-- 开启注解切面的配置 --></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">aop:</span>aspectj-autoproxy</span><span class="token punctuation">/></span></span></pre></td></tr></table></figure><blockquote>
+<p>使用注解形式时，对切面类的配置内容与 xml 配置一样<br />
+只是部分内容不同:</p>
+<ol>
+<li>需要在切面类中添加一个无方法体的方法，添加 <strong>@PointCut(execution( ))</strong> 注解<br />
+　　-- 为了调用到注解内的切点表达式 (注解只能标注在类或者方法)<br />
+　　　　　<mark><strong>注意：方法的名称就是切面类 配置通知标注时的填入的值</strong></mark><br />
+　　　　　<mark><strong>常用切点表达式: * 包名。类. 方法.(参数)</strong></mark></li>
+<li>在类上添加 <strong>@Component  &amp; @Aspect</strong> 注解标识为切面类</li>
+<li>在切面类的通知方法上添加对应的通知类型注解，<br />
+ 注解内填入该通知生效的切点 (哪些方法被增强)<br />
+　各类型通知的注解 :<br />
+@Before (&quot;allService ()&quot;)   // 前置通知<br />
+ @After (&quot;allService ()&quot;)   // 后置通知<br />
+ @AfterThrowing (value = &quot;allService ()&quot;,throwing = &quot;ex&quot;)  异常通知<br />
+ @AfterReturning (value = &quot;allService ()&quot;,returning = &quot;value&quot;)   返回通知<br />
+ @Around (&quot;allService ()&quot;) 环绕通知</li>
+</ol>
+</blockquote>
+<hr />
+<blockquote>
+<p>切点表达式<br />
+ execution 的语法表达式如下：<br />
+execution (&lt;修饰符&gt; &lt; 返回类型 &gt; &lt; 类路径 &gt; &lt; 方法名 &gt;(&lt; 参数列表 &gt;) &lt; 异常模式 &gt; )</p>
+</blockquote>
+<ul>
+<li>切面类</li>
+</ul>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 将 bean 注册到 IOC 中；并声明为切面类</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token annotation punctuation">@Component</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token annotation punctuation">@Aspect</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LogAspect</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token comment">// 配置切点，通过切点表达式描述 (注解的配置方法)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token comment">// 这个方法本身没有意义，只是为了能够调用切点表达式</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token annotation punctuation">@Pointcut</span><span class="token punctuation">(</span><span class="token string">"execution(* com.lanou.service.*.*(..))"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">allService</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token comment">// 需要增强的功能是 在具体方法调用之前打印日志</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token annotation punctuation">@Before</span><span class="token punctuation">(</span><span class="token string">"allService()"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">logBefore</span><span class="token punctuation">(</span><span class="token class-name">JoinPoint</span> jp<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token comment">// 接入点对象，可以为我们提供被调用的方法的一些信息</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        <span class="token comment">// 前置 / 后置 / 返回 / 异常通知的方法参数中，都可以直接加一个接入点对象</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token comment">// 环绕通知比较特殊.</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        jp<span class="token punctuation">.</span><span class="token function">getTarget</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 可以获取到被代理的对象 (委托对象)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        jp<span class="token punctuation">.</span><span class="token function">getThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 获取被代理后的对象 (代理对象)</span></pre></td></tr><tr><td data-num="19"></td><td><pre>        jp<span class="token punctuation">.</span><span class="token function">getSignature</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 获取被调用的方法的信息</span></pre></td></tr><tr><td data-num="20"></td><td><pre>        <span class="token class-name">String</span> className <span class="token operator">=</span> jp<span class="token punctuation">.</span><span class="token function">getTarget</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>        <span class="token class-name">String</span> methodName <span class="token operator">=</span> jp<span class="token punctuation">.</span><span class="token function">getSignature</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>className<span class="token operator">+</span><span class="token string">"."</span><span class="token operator">+</span>methodName<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"方法调用之前"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="24"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="25"></td><td><pre></pre></td></tr><tr><td data-num="26"></td><td><pre>    <span class="token comment">// 后置通知</span></pre></td></tr><tr><td data-num="27"></td><td><pre>    <span class="token comment">// 在具体方法之后打印日志</span></pre></td></tr><tr><td data-num="28"></td><td><pre>    <span class="token comment">// 不管被代理的方法是否正常执行，该通知都会被调用 (finall)</span></pre></td></tr><tr><td data-num="29"></td><td><pre>    <span class="token annotation punctuation">@After</span><span class="token punctuation">(</span><span class="token string">"allService()"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">logAfter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"方法调用之后"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="33"></td><td><pre></pre></td></tr><tr><td data-num="34"></td><td><pre>    <span class="token comment">// 异常通知</span></pre></td></tr><tr><td data-num="35"></td><td><pre>    <span class="token comment">// 被代理的方法抛出异常的时候，该方法会执行 (catch)</span></pre></td></tr><tr><td data-num="36"></td><td><pre>    <span class="token comment">// 异常通知的方法中，除了接入点对象 额外还可以增加一个参数:</span></pre></td></tr><tr><td data-num="37"></td><td><pre>    <span class="token comment">// 被代理方法所抛出的异常对象</span></pre></td></tr><tr><td data-num="38"></td><td><pre>    <span class="token annotation punctuation">@AfterThrowing</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"allService()"</span><span class="token punctuation">,</span>throwing <span class="token operator">=</span> <span class="token string">"ex"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="39"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">afterThrowing</span><span class="token punctuation">(</span><span class="token class-name">Exception</span> ex<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="40"></td><td><pre></pre></td></tr><tr><td data-num="41"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="42"></td><td><pre></pre></td></tr><tr><td data-num="43"></td><td><pre>    <span class="token comment">// 返回通知</span></pre></td></tr><tr><td data-num="44"></td><td><pre>    <span class="token comment">// 只有被代理的方法正常执行的情况下，该通知才会执行 (try)</span></pre></td></tr><tr><td data-num="45"></td><td><pre>    <span class="token comment">// 返回通知也可以增加一个额外的参数：被代理方法的返回值</span></pre></td></tr><tr><td data-num="46"></td><td><pre>    <span class="token annotation punctuation">@AfterReturning</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"allService()"</span><span class="token punctuation">,</span>returning <span class="token operator">=</span> <span class="token string">"value"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="47"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">afterReturning</span><span class="token punctuation">(</span><span class="token class-name">Object</span> value<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="48"></td><td><pre></pre></td></tr><tr><td data-num="49"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="50"></td><td><pre></pre></td></tr><tr><td data-num="51"></td><td><pre>    <span class="token comment">// 环绕通知</span></pre></td></tr><tr><td data-num="52"></td><td><pre>    <span class="token comment">// 这个通知是必须有返回值和参数的，</span></pre></td></tr><tr><td data-num="53"></td><td><pre>    <span class="token comment">// 并且，参数接入点的类型为 ProceedingJoinPoint 是 JoinPoint 的子类</span></pre></td></tr><tr><td data-num="54"></td><td><pre>    <span class="token comment">// 需要结合几个通知来进行的情况下，采用环绕通知 (计算一个方法从执行到结束的时间)</span></pre></td></tr><tr><td data-num="55"></td><td><pre>    <span class="token comment">// 比如说计算执行时间 跨方法的时候，内部的成员变量在其他的方法中获取不到，如果声明成全局变量 会引起并发的问题 (切面类是单例的)</span></pre></td></tr><tr><td data-num="56"></td><td><pre>    <span class="token annotation punctuation">@Around</span><span class="token punctuation">(</span><span class="token string">"allService()"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="57"></td><td><pre>    <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">around</span><span class="token punctuation">(</span><span class="token class-name">ProceedingJoinPoint</span> jp<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="58"></td><td><pre>        <span class="token class-name">Object</span> value <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="59"></td><td><pre>        <span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="60"></td><td><pre>            <span class="token comment">// 真正执行委托类代码的方法</span></pre></td></tr><tr><td data-num="61"></td><td><pre>            <span class="token comment">// 在这行之前，添加的就相当于前置通知</span></pre></td></tr><tr><td data-num="62"></td><td><pre>            value <span class="token operator">=</span> jp<span class="token punctuation">.</span><span class="token function">proceed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="63"></td><td><pre>            <span class="token comment">// 添加的相当于返回通知</span></pre></td></tr><tr><td data-num="64"></td><td><pre>        <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Throwable</span> throwable<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="65"></td><td><pre>            <span class="token comment">// 添加的相当于异常通知</span></pre></td></tr><tr><td data-num="66"></td><td><pre>            throwable<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="67"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="68"></td><td><pre>        <span class="token comment">// 添加的相当于后置通知</span></pre></td></tr><tr><td data-num="69"></td><td><pre>        <span class="token keyword">return</span> value<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="70"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr></table></figure>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-08 19:32:57" itemprop="dateModified" datetime="2023-03-08T19:32:57+08:00">2023-03-08</time>
+  </span>
+  <span id="hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" class="item leancloud_visitors" data-flag-title="AOP & 静态代理 & 动态代理" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="别人都叫我老范 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="别人都叫我老范 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="别人都叫我老范 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>别人都叫我老范 <i class="ic i-at"><em>@</em></i>一位 Blog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://adamshang2333.github.io/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" title="AOP &amp; 静态代理 &amp; 动态代理">http://adamshang2333.github.io/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/hou-duan/spring/spring-yu-springmvc-de-guan-xi/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-0j6zdq.jpg" title="Spring&amp;&amp;SpringMVC">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Spring&&SpringMVC</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/hou-duan/java/java-mian-xiang-dui-xiang/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-m9d9x8.png" title="Java面向对象">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Java面向对象</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text"> 实现方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-jdk%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.</span> <span class="toc-text"> 1. JDK 动态代理实现 (接口实现)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#aop%E7%9A%84%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-number">3.</span> <span class="toc-text"> AOP 的组成部分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#xml%E9%85%8D%E7%BD%AE"><span class="toc-number">3.1.</span> <span class="toc-text"> xml 配置</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="别人都叫我老范"
+      data-src="/images/%E5%90%90%E8%88%8C.jpeg">
+  <p class="name" itemprop="name">别人都叫我老范</p>
+  <div class="description" itemprop="description"><div style='font-size: 0.8em;'> I.is (null); <br/>If (U.appear ()) <br/>I.turn (new World ('Fill With Love')) <br/>// 我的世界 <br/>// 直至遇见你 <br/>// 才熠熠生辉 </div> </div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">44</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">17</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL093bGNpdHkyMzMz" title="https:&#x2F;&#x2F;github.com&#x2F;Owlcity2333"><i class="ic i-github"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item weixin" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTI1MTg0NjMxMw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;251846313"><i class="ic i-weixin"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOjc1OTU0NzkxNkBxcS5jb20=" title="mailto:759547916@qq.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>文章</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/hou-duan/spring/spring-yu-springmvc-de-guan-xi/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/hou-duan/java/java-mian-xiang-dui-xiang/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/swagger-shi-yong-wen-dang/" title="swagger使用文档">swagger使用文档</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/angular/angular-ru-men/" title="Angular入门">Angular入门</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%85%B6%E4%BB%96/Markdown/" title="分类于 Markdown">Markdown</a>
+</div>
+
+    <span><a href="/qi-ta/markdown-yu-fa-zong-jie/" title="Markdown语法">Markdown语法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/ci-cd/maven/" title="Maven">Maven</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" title="css动态效果总结">css动态效果总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-xuan-ze-qi/" title="js选择器">js选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/redis/" title="redis基础">redis基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/spring/spring-jdbc/" title="Spring JDBC">Spring JDBC</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" title="分类于 mysql">mysql</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/hexo/" title="分类于 hexo">hexo</a>
+</div>
+
+    <span><a href="/shu-ju-ku/mysql-you-hua-shen-ru/" title="MySQL 深入优化总结">MySQL 深入优化总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/javaweb-ji-chu/" title="JavaWeb基础">JavaWeb基础</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">别人都叫我老范 @ bit Blog</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">295k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4:29</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/',
+    favicon: {
+      show: "(^_^) 呦吼~",
+      hide: "(´Д｀)哪去了?"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":180,"height":360,"position":"right","hOffset":-20,"vOffset":-15},"log":false,"tagMode":false});</script></body>
+</html>
