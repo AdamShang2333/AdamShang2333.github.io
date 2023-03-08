@@ -3152,7 +3152,7 @@ E(S^2)	&amp;amp;=E\left(\frac&amp;#123;1&amp;#125;&amp;#123;2n&amp;#125; \sum_&a
 graph ....&lt;br /&gt;
 .....&lt;br /&gt;
 ```&lt;/p&gt;
-&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678286086062&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
+&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678286193083&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
 &lt;h3 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h3&gt;
 &lt;p&gt;有些时候，需要在书写过程中留一些&lt;strong&gt;备忘&lt;/strong&gt;性质的文本，但是不希望最终结果中可见的，可以使用&lt;strong&gt;注释&lt;/strong&gt;语法，一般情况下是用不到的。&lt;br /&gt;
 // 我是一行注释，但最终会出现在最终的 HTML 源码中。&lt;br /&gt;
@@ -3277,63 +3277,147 @@ graph ....&lt;br /&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://adamshang2333.github.io/qi-ta/zhi-neng-jia-ju/</guid>
-            <title>智能家居</title>
-            <link>http://adamshang2333.github.io/qi-ta/zhi-neng-jia-ju/</link>
+            <guid isPermalink="true">http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/</guid>
+            <title>数据库函数</title>
+            <link>http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/</link>
             <pubDate>Thu, 22 Dec 2022 08:23:00 +0000</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;智能家居&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#智能家居&#34;&gt;#&lt;/a&gt; 智能家居&lt;/h1&gt;
-&lt;h2 id=&#34;网络&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#网络&#34;&gt;#&lt;/a&gt; 网络&lt;/h2&gt;
-&lt;p&gt;优先 AP 面板 / 有线 mesh&lt;/p&gt;
-&lt;p&gt;路由器&lt;/p&gt;
-&lt;p&gt;网线 六类，七类优先&lt;/p&gt;
-&lt;p&gt;NAS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;装载虚拟机，诱骗 homekit 认证 (home bridge; home assistant)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;网关 &amp;amp;&amp;amp; 控制协议&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;协议 蓝牙 mesh&lt;/li&gt;
-&lt;li&gt;zigbee
-&lt;ul&gt;
-&lt;li&gt;接入 wifi 并发射 Zigbee 协议信号&lt;/li&gt;
-&lt;li&gt;Aqara 网关 M1S&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;matter 协议&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/oldFun/picGitee/raw/master/img/image-20211103224618211.png&#34; alt=&#34;image-20211103224618211&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;灯光&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#灯光&#34;&gt;#&lt;/a&gt; 灯光&lt;/h2&gt;
-&lt;p&gt;智能开关&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;便宜
-&lt;ul&gt;
-&lt;li&gt;米家，aqara&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;智能灯&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;控制亮度和色温
-&lt;ul&gt;
-&lt;li&gt;yeelight&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作函数&#34;&gt;#&lt;/a&gt; 操作函数&lt;/h2&gt;
+&lt;h3 id=&#34;1字符串操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1字符串操作函数&#34;&gt;#&lt;/a&gt; 1. 字符串操作函数&lt;/h3&gt;
+&lt;h4 id=&#34;as-关键字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#as-关键字&#34;&gt;#&lt;/a&gt; as 关键字&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;通常情况下，二选一即可&lt;/p&gt;
+&lt;p&gt;给&lt;strong&gt;列&lt;/strong&gt;或者&lt;strong&gt;表&lt;/strong&gt;起别名，将过长的表名简化&lt;br /&gt;
+特别注意:&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt; 只在当前 SQL 语句内生效&lt;/strong&gt;，到下一个 SQL 语句就失效  ---&amp;gt; 不是全局 &amp;quot;改名&amp;quot;&lt;br /&gt;
+2. 在名字后直接加空格，不加 as 关键字也行&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;人体感应器&lt;/p&gt;
-&lt;h2 id=&#34;家电&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#家电&#34;&gt;#&lt;/a&gt; 家电&lt;/h2&gt;
-&lt;h3 id=&#34;空调&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空调&#34;&gt;#&lt;/a&gt; 空调&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;红外控制器&lt;/li&gt;
-&lt;li&gt;温度感应器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;窗帘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#窗帘&#34;&gt;#&lt;/a&gt; 窗帘&lt;/h3&gt;
-&lt;h3 id=&#34;遥控&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#遥控&#34;&gt;#&lt;/a&gt; 遥控&lt;/h3&gt;
-&lt;p&gt;平替：小爱万能遥控板&lt;/p&gt;
-&lt;p&gt;按键板控制&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select concat(&#39;张三&#39;, &#39;李四&#39;, &#39;ddd&#39;) as name;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;as 也可以不加 直接在名字后面加 &#39; &#39;(空格) 后接关键字&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// age sage :等价于 age as sage
+select s.name as sname, age sage, gender
+from student as s;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;insert-替换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#insert-替换&#34;&gt;#&lt;/a&gt; insert 替换&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;格式:  insert (stringA,m,n,stringB)&lt;/code&gt; &lt;br /&gt;
+ 将 A 从第 m 个字符开始，替换 n 个；这 n 个替换为 B  .&lt;br /&gt;
+&lt;strong&gt; 序号从 1 开始&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select insert(&#39;这是一个字符串&#39;, 5, 3, &#39;喵喵喵&#39;);
+// 输出结果: 这是一个喵喵喵
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;upperlower-大小写转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#upperlower-大小写转换&#34;&gt;#&lt;/a&gt; upper/lower 大小写转换&lt;/h4&gt;
+&lt;p&gt;类比 string 的方法&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select upper(&#39;aaa&#39;); // 结果:AAA
+select lower(&#39;HHH&#39;); // 结果: hhh
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;substring-截取子串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#substring-截取子串&#34;&gt;#&lt;/a&gt; substring 截取子串&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;select substring(&#39;这是一个字符串&#39;, 2);
+// --&amp;gt; 等价于:
+	select substring(&#39;这是一个字符串&#39; from 2);
+
+select substring(&#39;这是一个字符串&#39;, 2, 3);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;2时间操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2时间操作函数&#34;&gt;#&lt;/a&gt; 2. 时间操作函数&lt;/h3&gt;
+&lt;h4 id=&#34;curtime-获取当前时间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#curtime-获取当前时间&#34;&gt;#&lt;/a&gt; curtime () 获取当前时间&lt;/h4&gt;
+&lt;h4 id=&#34;curdate-获取当前日期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#curdate-获取当前日期&#34;&gt;#&lt;/a&gt; curdate () 获取当前日期&lt;/h4&gt;
+&lt;h4 id=&#34;now-获取当前时间和日期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#now-获取当前时间和日期&#34;&gt;#&lt;/a&gt; now () 获取当前时间和日期&lt;/h4&gt;
+&lt;h4 id=&#34;mysql的时间类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql的时间类型&#34;&gt;#&lt;/a&gt; mysql 的时间类型  :&lt;/h4&gt;
+&lt;p&gt;1.date ：只保存日期&lt;br /&gt;
+ 2.timestamp ：时间戳 能保存时间和日期，根据时区进行修正 (时区不一样 看到的时间也不同)&lt;br /&gt;
+　　　　　　(范围: 1970~2038 年  最大到 2038 年 1 月 19 日 3:14)&lt;br /&gt;
+ 3.datetime 能保存时间和日期，不会根据时区进行修正；(最大到 9999-12-31 23:59:59.9999999)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select year(now());
+select month(now());
+# 一年中的第几周
+select week(now());
+select hour(now());
+
+# 两个日期间相隔的天数 (昨天,今天 相隔1天)
+select datediff(now(), &#39;2019-1-1&#39;);
+# 计算xx天之后的日期
+select adddate(now(), 20);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;数学函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学函数&#34;&gt;#&lt;/a&gt; 数学函数&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;# 生成一个随机数
+select rand();
+# 向下取整 --&amp;gt; 7
+select floor(7.9);
+# 向上取整 --&amp;gt; 8
+select ceil(7.1);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;聚合函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数&#34;&gt;#&lt;/a&gt; 聚合函数&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对数据进行集中操作的函数 ---&amp;gt; 对&lt;strong&gt;整列数据&lt;/strong&gt;进行处理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意:&lt;br /&gt;
+1. 多个聚合函数可以一起写&lt;br /&gt;
+ 2. 聚合函数的返回不能和列名一起 会报错&lt;br /&gt;
+　(返回的都是一列的值 不能和某个条件查询的某行值一起返回)&lt;br /&gt;
+３. 如果使用了 group by 的列，可以和聚合函数写在一起&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;求和-sum&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求和-sum&#34;&gt;#&lt;/a&gt; 求和　 sum ()&lt;/h4&gt;
+&lt;h4 id=&#34;平均值-avg&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平均值-avg&#34;&gt;#&lt;/a&gt; 平均值 avg ()&lt;/h4&gt;
+&lt;h4 id=&#34;最大值-max&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最大值-max&#34;&gt;#&lt;/a&gt; 最大值 max ()&lt;/h4&gt;
+&lt;h4 id=&#34;最小值-min&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最小值-min&#34;&gt;#&lt;/a&gt; 最小值 min ()&lt;/h4&gt;
+&lt;h4 id=&#34;求数量-count&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求数量-count&#34;&gt;#&lt;/a&gt; 求数量 count (*)&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;em&gt;注意:　填 * 不会过滤空行；填分组名字会过滤掉空行 (空值)&lt;br /&gt;
+---&amp;gt; 计算数量最好使用&lt;/em&gt; 保留空行&lt;/em&gt; *&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;# 2. 查询每个学员的成绩在90以上的课程有多少门(成绩90以上, 每个学员有几门课程)
+# 填 * 不会过滤空行 填分组名字会过滤掉空行(空值)
+# 计算数量最好使用* 保留空行
+select count(*), sname
+from Score
+where grade &amp;gt;= 90
+group by sname;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;having-子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#having-子句&#34;&gt;#&lt;/a&gt; having 子句&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对&lt;strong&gt;分组的结果&lt;/strong&gt;进行过滤 (where 对每一个结果进行过滤)&lt;br /&gt;
+　１.&lt;strong&gt;having&lt;/strong&gt; 的条件一般都是&lt;strong&gt;对聚合函数的判断&lt;/strong&gt;！！&lt;br /&gt;
+　２.&lt;strong&gt;where&lt;/strong&gt; 的条件一般都是&lt;strong&gt;对列的判断&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;select avg(grade), sname
+from Score
+group by sname
+having sum(grade) &amp;gt; 300;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;on-where和-having-的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#on-where和-having-的使用&#34;&gt;#&lt;/a&gt; on , where 和 having 的使用:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;!!!on 最先执行，where 次之  having 最后执行&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; on:使用join联表的时候使用
+ 如果条件是针对表中的行,就用where  (对本身的各条数据有限制)
+ 如果条件是针对分组的,就用having
+ 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;[on where 和 having 的区别] [1]&lt;/strong&gt;&lt;br /&gt;
+[1]:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vUmVnbGUvcC82Mjg0MDM1Lmh0bWw=&#34;&gt;https://www.cnblogs.com/Regle/p/6284035.html&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;group-by-子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-子句&#34;&gt;#&lt;/a&gt; group by 子句&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;多见&amp;quot;每个,各个&amp;quot;这种词 使用分组&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该子句后面跟某一列的列名 表示按该列进行分组&lt;br /&gt;
+ --&amp;gt; 分组列中值一样的数据 放入一个 &amp;quot;小组&amp;quot; , 可以对其使用聚合函数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1. 当一列被标记为分组，那么该列可以写在查询结果中&lt;br /&gt;
+ 2. 只要进行分组，基本都和聚合函数有关系&lt;br /&gt;
+ 3. 可以有多层分组，以 &amp;quot;,&amp;quot; 分隔接在 group by 后面&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;distinct-关键字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#distinct-关键字&#34;&gt;#&lt;/a&gt; distinct 关键字&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;查询结果不重复&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;select distinct depart
+from Employee;
+&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
     </channel>
