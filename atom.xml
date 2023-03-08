@@ -8,7 +8,7 @@
     <author>
       <name>别人都叫我老范</name>
     </author>
-    <updated>2023-03-08T16:07:34.523Z</updated>
+    <updated>2023-03-08T16:13:56.881Z</updated>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/zhong-jian-jian/redis/</id>
         <title>redis基础</title>
@@ -147,7 +147,7 @@ zrevrange key start end&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <updated>2023-03-08T16:07:34.523Z</updated>
+        <updated>2023-03-08T16:13:56.881Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/</id>
@@ -600,7 +600,7 @@ password – 登录数据库的密码。&lt;/p&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight xml&#34;&gt;&lt;figcaption data-lang=&#34;XML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;update user &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;set&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 添加一条绝对成立的条件，保证 sql 的正确 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  id = #&amp;#123;id&amp;#125;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;if&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;pwd != null&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;pwd&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      pwd = #&amp;#123;pwd&amp;#125;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;if&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;email != null&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;email&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      email = #&amp;#123;email&amp;#125;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;set&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/blockquote&gt;
 </content>
-        <updated>2023-03-08T16:07:34.491Z</updated>
+        <updated>2023-03-08T16:13:56.865Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/</id>
@@ -626,7 +626,7 @@ password – 登录数据库的密码。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/**&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; * 一个简单的标记注解&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; * 只是标识一下哪个参数是要使用自定义的方法参数解析器来进行处理&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; * @author OldFun&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; * @date 2019-10-15 16:58&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token annotation punctuation&#34;&gt;@Target&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;ElementType&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;PARAMETER&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token annotation punctuation&#34;&gt;@Retention&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;RetentionPolicy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;RUNTIME&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token annotation punctuation&#34;&gt;@interface&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;CurrentUser&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt; &lt;code&gt;Step2 自定义方法参数解析的接口实现类&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;CurrentUserMethodArgumentResolver&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;implements&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;HandlerMethodArgumentResolver&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;/*  数据校验和方法参数解析器都是&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        @requestMapping 中的方法扩展&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        是 SpringMVC 中的技术&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;/**&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * 用来确定该解析器能处理什么规则的方法参数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * 这个规则需要我们自己进行定义&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token annotation punctuation&#34;&gt;@Override&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;boolean&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;supportsParameter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;MethodParameter&lt;/span&gt; methodParameter&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;// 规则:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;// 1. 必须有 @Current 注解&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;// 2. 方法的参数类型必须是 User 类型&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;// 两个条件必须同时满足 (使用短路机制，提高运行效率)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; methodParameter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;hasParameterAnnotation&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;CurrentUser&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; methodParameter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;getParameterType&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;/**&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * 表示如何为满足上面条件的对象赋值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * @param methodParameter&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * @param modelAndViewContainer&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * @param nativeWebRequest&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * @param webDataBinderFactory&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * @return 返回被赋值后的对象&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     * @throws Exception&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token annotation punctuation&#34;&gt;@Override&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Object&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;resolveArgument&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;MethodParameter&lt;/span&gt; methodParameter&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                                  &lt;span class=&#34;token class-name&#34;&gt;ModelAndViewContainer&lt;/span&gt; modelAndViewContainer&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                                  &lt;span class=&#34;token class-name&#34;&gt;NativeWebRequest&lt;/span&gt; nativeWebRequest&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                                  &lt;span class=&#34;token class-name&#34;&gt;WebDataBinderFactory&lt;/span&gt; webDataBinderFactory&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;throws&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Exception&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;// 从 session 中取出当前登录用户，并且返回即可&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;// 先获取到当前的请求对象&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;HttpServletRequest&lt;/span&gt; request &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; nativeWebRequest&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;getNativeRequest&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;HttpServletRequest&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;request &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;throw&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IllegalArgumentException&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;HttpSession&lt;/span&gt; session &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; request&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;getSession&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token class-name&#34;&gt;Object&lt;/span&gt; user &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; session&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;getAttribute&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;user&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token comment&#34;&gt;// 如果不登录&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;user &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;throw&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;IllegalArgumentException&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; user&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt; &lt;code&gt;Step3 在接口中,使用自定义注解标识使用自定义方法参数解析器的类&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token annotation punctuation&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;/book/add&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;JsonResoult&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Book&lt;/span&gt; book&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token annotation punctuation&#34;&gt;@CurrentUser&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;User&lt;/span&gt; user&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;HttpSession&lt;/span&gt; session&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;handleRequest&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;session&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;book&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;添加成功&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <updated>2023-03-08T16:07:34.331Z</updated>
+        <updated>2023-03-08T16:13:56.721Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/spring/spring-jdbc/</id>
@@ -654,7 +654,7 @@ password – 登录数据库的密码。&lt;/p&gt;
 &lt;p&gt;思路：将 result 对象中的对象 使用反射转换到 javaBean 中&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
-        <updated>2023-03-08T16:07:34.295Z</updated>
+        <updated>2023-03-08T16:13:56.685Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/java/java-de-nei-bu-lei/</id>
@@ -711,7 +711,7 @@ password – 登录数据库的密码。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;定义静态内部类:&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 外部类&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Outer&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt; name&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 普通成员变量&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt; outer&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;// 静态成员变量&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt; slogen&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 静态内部类&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;StaticInter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;String&lt;/span&gt; name&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;say&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;我是静态内部类&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getOuterFiled&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token class-name&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;out&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;Outer&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;slogen&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token comment&#34;&gt;// System.out.println(Outer.name);&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <updated>2023-03-08T16:07:34.143Z</updated>
+        <updated>2023-03-08T16:13:56.581Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/java/basics/java-ji-chu/</id>
@@ -721,7 +721,7 @@ password – 登录数据库的密码。&lt;/p&gt;
 </content>
         <category term="java" scheme="http://adamshang2333.github.io/categories/java/" />
         <category term="基础" scheme="http://adamshang2333.github.io/categories/java/basics/" />
-        <updated>2023-03-08T16:07:24.211Z</updated>
+        <updated>2023-03-08T16:13:47.269Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/</id>
@@ -979,7 +979,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
 &lt;p&gt;&lt;code&gt;生命周期&lt;/code&gt; &lt;br /&gt;
 项目启动到关闭，服务器重启时 会被销毁&lt;/p&gt;
 </content>
-        <updated>2023-03-08T16:07:23.347Z</updated>
+        <updated>2023-03-08T16:13:46.569Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/java/java-fan-she/</id>
@@ -1017,7 +1017,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
 &lt;h3 id=&#34;获取构造器构造方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取构造器构造方法&#34;&gt;#&lt;/a&gt; 获取构造器 (构造方法)&lt;/h3&gt;
 &lt;h3 id=&#34;实例化对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实例化对象&#34;&gt;#&lt;/a&gt; 实例化对象&lt;/h3&gt;
 </content>
-        <updated>2023-03-08T16:07:23.335Z</updated>
+        <updated>2023-03-08T16:13:46.557Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/java/java-collection/</id>
@@ -1226,7 +1226,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
         &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <updated>2023-03-08T16:07:23.315Z</updated>
+        <updated>2023-03-08T16:13:46.533Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/java/jdbc/</id>
@@ -1543,7 +1543,7 @@ SQL 语句的查询条件需要的&lt;strong&gt;传入参数 长度和类型都�
 &lt;/ol&gt;
 &lt;/section&gt;
 </content>
-        <updated>2023-03-08T16:07:23.303Z</updated>
+        <updated>2023-03-08T16:13:46.521Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/qian-duan/js-h5/ding-wei/</id>
@@ -1671,7 +1671,7 @@ margin-top:-自身高度的一半;
 &lt;li&gt;如果父元素已经比较过层级了（父元素 “都有” z-index 的时候，并且值不为 auto），那么子元素与子元素之间是不会再去比较的&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <updated>2023-03-08T16:07:22.843Z</updated>
+        <updated>2023-03-08T16:13:46.081Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/qian-duan/js-h5/js-ji-chu/</id>
@@ -1882,7 +1882,7 @@ var d = a &amp;gt; b &amp;amp;&amp;amp; a &amp;gt; 0 ? a + b : a - b;
 &lt;h3 id=&#34;offsetleft&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#offsetleft&#34;&gt;#&lt;/a&gt; offsetLeft&lt;/h3&gt;
 &lt;h3 id=&#34;offsettop&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#offsettop&#34;&gt;#&lt;/a&gt; offsetTop&lt;/h3&gt;
 </content>
-        <updated>2023-03-08T16:07:22.831Z</updated>
+        <updated>2023-03-08T16:13:46.069Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/qian-duan/js-h5/js-xuan-ze-qi/</id>
@@ -1995,7 +1995,7 @@ var d = a &amp;gt; b &amp;amp;&amp;amp; a &amp;gt; 0 ? a + b : a - b;
 			&amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <updated>2023-03-08T16:07:22.819Z</updated>
+        <updated>2023-03-08T16:13:46.057Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/</id>
@@ -2288,7 +2288,7 @@ header footer nav  main.....&lt;/p&gt;
 &lt;h3 id=&#34;锚点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#锚点&#34;&gt;#&lt;/a&gt; 锚点&lt;/h3&gt;
 &lt;h3 id=&#34;线性渐变-径向渐变&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性渐变-径向渐变&#34;&gt;#&lt;/a&gt; 线性渐变 径向渐变&lt;/h3&gt;
 </content>
-        <updated>2023-03-08T16:07:22.807Z</updated>
+        <updated>2023-03-08T16:13:46.045Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/qian-duan/js-h5/h5-xin-zeng/</id>
@@ -2439,7 +2439,7 @@ header footer nav  main.....&lt;/p&gt;
 			&amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <updated>2023-03-08T16:07:22.795Z</updated>
+        <updated>2023-03-08T16:13:46.033Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/qian-duan/js-h5/dom-cao-zuo/</id>
@@ -2559,7 +2559,7 @@ oAll.replaceChild(theA, oAll.children[0]);
 &lt;pre&gt;&lt;code&gt;theA.parentNode
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <updated>2023-03-08T16:07:22.783Z</updated>
+        <updated>2023-03-08T16:13:46.025Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/qian-duan/js-h5/css-dong-tai-xiao-guo/</id>
@@ -2631,7 +2631,7 @@ y 轴:top center bottom&lt;/p&gt;
 				perspective: 1000px;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <updated>2023-03-08T16:07:22.771Z</updated>
+        <updated>2023-03-08T16:13:46.013Z</updated>
     </entry>
     <entry>
         <id>http://adamshang2333.github.io/hou-duan/ci-cd/k8s/</id>
@@ -3145,7 +3145,7 @@ E(S^2)	&amp;amp;=E\left(\frac&amp;#123;1&amp;#125;&amp;#123;2n&amp;#125; \sum_&a
 graph ....&lt;br /&gt;
 .....&lt;br /&gt;
 ```&lt;/p&gt;
-&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678291673613&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
+&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678292058415&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
 &lt;h3 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h3&gt;
 &lt;p&gt;有些时候，需要在书写过程中留一些&lt;strong&gt;备忘&lt;/strong&gt;性质的文本，但是不希望最终结果中可见的，可以使用&lt;strong&gt;注释&lt;/strong&gt;语法，一般情况下是用不到的。&lt;br /&gt;
 // 我是一行注释，但最终会出现在最终的 HTML 源码中。&lt;br /&gt;
@@ -3274,62 +3274,146 @@ graph ....&lt;br /&gt;
         <updated>2022-12-23T06:09:00.000Z</updated>
     </entry>
     <entry>
-        <id>http://adamshang2333.github.io/qi-ta/zhi-neng-jia-ju/</id>
-        <title>智能家居</title>
-        <link rel="alternate" href="http://adamshang2333.github.io/qi-ta/zhi-neng-jia-ju/"/>
-        <content type="html">&lt;h1 id=&#34;智能家居&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#智能家居&#34;&gt;#&lt;/a&gt; 智能家居&lt;/h1&gt;
-&lt;h2 id=&#34;网络&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#网络&#34;&gt;#&lt;/a&gt; 网络&lt;/h2&gt;
-&lt;p&gt;优先 AP 面板 / 有线 mesh&lt;/p&gt;
-&lt;p&gt;路由器&lt;/p&gt;
-&lt;p&gt;网线 六类，七类优先&lt;/p&gt;
-&lt;p&gt;NAS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;装载虚拟机，诱骗 homekit 认证 (home bridge; home assistant)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;网关 &amp;amp;&amp;amp; 控制协议&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;协议 蓝牙 mesh&lt;/li&gt;
-&lt;li&gt;zigbee
-&lt;ul&gt;
-&lt;li&gt;接入 wifi 并发射 Zigbee 协议信号&lt;/li&gt;
-&lt;li&gt;Aqara 网关 M1S&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;matter 协议&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/oldFun/picGitee/raw/master/img/image-20211103224618211.png&#34; alt=&#34;image-20211103224618211&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;灯光&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#灯光&#34;&gt;#&lt;/a&gt; 灯光&lt;/h2&gt;
-&lt;p&gt;智能开关&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;便宜
-&lt;ul&gt;
-&lt;li&gt;米家，aqara&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;智能灯&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;控制亮度和色温
-&lt;ul&gt;
-&lt;li&gt;yeelight&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+        <id>http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/</id>
+        <title>数据库函数</title>
+        <link rel="alternate" href="http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/"/>
+        <content type="html">&lt;h2 id=&#34;操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作函数&#34;&gt;#&lt;/a&gt; 操作函数&lt;/h2&gt;
+&lt;h3 id=&#34;1字符串操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1字符串操作函数&#34;&gt;#&lt;/a&gt; 1. 字符串操作函数&lt;/h3&gt;
+&lt;h4 id=&#34;as-关键字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#as-关键字&#34;&gt;#&lt;/a&gt; as 关键字&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;通常情况下，二选一即可&lt;/p&gt;
+&lt;p&gt;给&lt;strong&gt;列&lt;/strong&gt;或者&lt;strong&gt;表&lt;/strong&gt;起别名，将过长的表名简化&lt;br /&gt;
+特别注意:&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt; 只在当前 SQL 语句内生效&lt;/strong&gt;，到下一个 SQL 语句就失效  ---&amp;gt; 不是全局 &amp;quot;改名&amp;quot;&lt;br /&gt;
+2. 在名字后直接加空格，不加 as 关键字也行&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;人体感应器&lt;/p&gt;
-&lt;h2 id=&#34;家电&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#家电&#34;&gt;#&lt;/a&gt; 家电&lt;/h2&gt;
-&lt;h3 id=&#34;空调&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空调&#34;&gt;#&lt;/a&gt; 空调&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;红外控制器&lt;/li&gt;
-&lt;li&gt;温度感应器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;窗帘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#窗帘&#34;&gt;#&lt;/a&gt; 窗帘&lt;/h3&gt;
-&lt;h3 id=&#34;遥控&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#遥控&#34;&gt;#&lt;/a&gt; 遥控&lt;/h3&gt;
-&lt;p&gt;平替：小爱万能遥控板&lt;/p&gt;
-&lt;p&gt;按键板控制&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select concat(&#39;张三&#39;, &#39;李四&#39;, &#39;ddd&#39;) as name;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;as 也可以不加 直接在名字后面加 &#39; &#39;(空格) 后接关键字&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// age sage :等价于 age as sage
+select s.name as sname, age sage, gender
+from student as s;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;insert-替换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#insert-替换&#34;&gt;#&lt;/a&gt; insert 替换&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;格式:  insert (stringA,m,n,stringB)&lt;/code&gt; &lt;br /&gt;
+ 将 A 从第 m 个字符开始，替换 n 个；这 n 个替换为 B  .&lt;br /&gt;
+&lt;strong&gt; 序号从 1 开始&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select insert(&#39;这是一个字符串&#39;, 5, 3, &#39;喵喵喵&#39;);
+// 输出结果: 这是一个喵喵喵
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;upperlower-大小写转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#upperlower-大小写转换&#34;&gt;#&lt;/a&gt; upper/lower 大小写转换&lt;/h4&gt;
+&lt;p&gt;类比 string 的方法&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select upper(&#39;aaa&#39;); // 结果:AAA
+select lower(&#39;HHH&#39;); // 结果: hhh
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;substring-截取子串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#substring-截取子串&#34;&gt;#&lt;/a&gt; substring 截取子串&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;select substring(&#39;这是一个字符串&#39;, 2);
+// --&amp;gt; 等价于:
+	select substring(&#39;这是一个字符串&#39; from 2);
+
+select substring(&#39;这是一个字符串&#39;, 2, 3);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;2时间操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2时间操作函数&#34;&gt;#&lt;/a&gt; 2. 时间操作函数&lt;/h3&gt;
+&lt;h4 id=&#34;curtime-获取当前时间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#curtime-获取当前时间&#34;&gt;#&lt;/a&gt; curtime () 获取当前时间&lt;/h4&gt;
+&lt;h4 id=&#34;curdate-获取当前日期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#curdate-获取当前日期&#34;&gt;#&lt;/a&gt; curdate () 获取当前日期&lt;/h4&gt;
+&lt;h4 id=&#34;now-获取当前时间和日期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#now-获取当前时间和日期&#34;&gt;#&lt;/a&gt; now () 获取当前时间和日期&lt;/h4&gt;
+&lt;h4 id=&#34;mysql的时间类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql的时间类型&#34;&gt;#&lt;/a&gt; mysql 的时间类型  :&lt;/h4&gt;
+&lt;p&gt;1.date ：只保存日期&lt;br /&gt;
+ 2.timestamp ：时间戳 能保存时间和日期，根据时区进行修正 (时区不一样 看到的时间也不同)&lt;br /&gt;
+　　　　　　(范围: 1970~2038 年  最大到 2038 年 1 月 19 日 3:14)&lt;br /&gt;
+ 3.datetime 能保存时间和日期，不会根据时区进行修正；(最大到 9999-12-31 23:59:59.9999999)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select year(now());
+select month(now());
+# 一年中的第几周
+select week(now());
+select hour(now());
+
+# 两个日期间相隔的天数 (昨天,今天 相隔1天)
+select datediff(now(), &#39;2019-1-1&#39;);
+# 计算xx天之后的日期
+select adddate(now(), 20);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;数学函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学函数&#34;&gt;#&lt;/a&gt; 数学函数&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;# 生成一个随机数
+select rand();
+# 向下取整 --&amp;gt; 7
+select floor(7.9);
+# 向上取整 --&amp;gt; 8
+select ceil(7.1);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;聚合函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数&#34;&gt;#&lt;/a&gt; 聚合函数&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对数据进行集中操作的函数 ---&amp;gt; 对&lt;strong&gt;整列数据&lt;/strong&gt;进行处理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意:&lt;br /&gt;
+1. 多个聚合函数可以一起写&lt;br /&gt;
+ 2. 聚合函数的返回不能和列名一起 会报错&lt;br /&gt;
+　(返回的都是一列的值 不能和某个条件查询的某行值一起返回)&lt;br /&gt;
+３. 如果使用了 group by 的列，可以和聚合函数写在一起&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;求和-sum&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求和-sum&#34;&gt;#&lt;/a&gt; 求和　 sum ()&lt;/h4&gt;
+&lt;h4 id=&#34;平均值-avg&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平均值-avg&#34;&gt;#&lt;/a&gt; 平均值 avg ()&lt;/h4&gt;
+&lt;h4 id=&#34;最大值-max&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最大值-max&#34;&gt;#&lt;/a&gt; 最大值 max ()&lt;/h4&gt;
+&lt;h4 id=&#34;最小值-min&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最小值-min&#34;&gt;#&lt;/a&gt; 最小值 min ()&lt;/h4&gt;
+&lt;h4 id=&#34;求数量-count&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求数量-count&#34;&gt;#&lt;/a&gt; 求数量 count (*)&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;em&gt;注意:　填 * 不会过滤空行；填分组名字会过滤掉空行 (空值)&lt;br /&gt;
+---&amp;gt; 计算数量最好使用&lt;/em&gt; 保留空行&lt;/em&gt; *&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;# 2. 查询每个学员的成绩在90以上的课程有多少门(成绩90以上, 每个学员有几门课程)
+# 填 * 不会过滤空行 填分组名字会过滤掉空行(空值)
+# 计算数量最好使用* 保留空行
+select count(*), sname
+from Score
+where grade &amp;gt;= 90
+group by sname;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;having-子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#having-子句&#34;&gt;#&lt;/a&gt; having 子句&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对&lt;strong&gt;分组的结果&lt;/strong&gt;进行过滤 (where 对每一个结果进行过滤)&lt;br /&gt;
+　１.&lt;strong&gt;having&lt;/strong&gt; 的条件一般都是&lt;strong&gt;对聚合函数的判断&lt;/strong&gt;！！&lt;br /&gt;
+　２.&lt;strong&gt;where&lt;/strong&gt; 的条件一般都是&lt;strong&gt;对列的判断&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;select avg(grade), sname
+from Score
+group by sname
+having sum(grade) &amp;gt; 300;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;on-where和-having-的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#on-where和-having-的使用&#34;&gt;#&lt;/a&gt; on , where 和 having 的使用:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;!!!on 最先执行，where 次之  having 最后执行&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; on:使用join联表的时候使用
+ 如果条件是针对表中的行,就用where  (对本身的各条数据有限制)
+ 如果条件是针对分组的,就用having
+ 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;[on where 和 having 的区别] [1]&lt;/strong&gt;&lt;br /&gt;
+[1]:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vUmVnbGUvcC82Mjg0MDM1Lmh0bWw=&#34;&gt;https://www.cnblogs.com/Regle/p/6284035.html&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;group-by-子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-子句&#34;&gt;#&lt;/a&gt; group by 子句&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;多见&amp;quot;每个,各个&amp;quot;这种词 使用分组&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该子句后面跟某一列的列名 表示按该列进行分组&lt;br /&gt;
+ --&amp;gt; 分组列中值一样的数据 放入一个 &amp;quot;小组&amp;quot; , 可以对其使用聚合函数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1. 当一列被标记为分组，那么该列可以写在查询结果中&lt;br /&gt;
+ 2. 只要进行分组，基本都和聚合函数有关系&lt;br /&gt;
+ 3. 可以有多层分组，以 &amp;quot;,&amp;quot; 分隔接在 group by 后面&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;distinct-关键字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#distinct-关键字&#34;&gt;#&lt;/a&gt; distinct 关键字&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;查询结果不重复&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;select distinct depart
+from Employee;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         <updated>2022-12-22T08:23:00.000Z</updated>
     </entry>
