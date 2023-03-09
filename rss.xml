@@ -10,13 +10,13 @@
         </author>
         <description>&lt;div style=&#39;font-size: 0.8em;&#39;&gt; I.is(null); &lt;br/&gt;If(U.appear()) &lt;br/&gt;I.turn(new World(&#39;Fill With Love&#39;)) &lt;br/&gt;// 我的世界 &lt;br/&gt;// 直至遇见你 &lt;br/&gt;// 才熠熠生辉 &lt;/div&gt; </description>
         <language>zh-CN</language>
-        <pubDate>Thu, 09 Mar 2023 06:35:21 +0000</pubDate>
-        <lastBuildDate>Thu, 09 Mar 2023 06:35:21 +0000</lastBuildDate>
+        <pubDate>Thu, 09 Mar 2023 10:42:22 +0000</pubDate>
+        <lastBuildDate>Thu, 09 Mar 2023 10:42:22 +0000</lastBuildDate>
         <item>
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/zhong-jian-jian/redis/</guid>
             <title>redis基础</title>
             <link>http://adamshang2333.github.io/hou-duan/zhong-jian-jian/redis/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:21 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:22 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;一-redis特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-redis特性&#34;&gt;#&lt;/a&gt; 一. Redis 特性&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -156,7 +156,7 @@ zrevrange key start end&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/</guid>
             <title>Mybatis</title>
             <link>http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:21 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:22 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;[toc]&lt;/p&gt;
 &lt;h2 id=&#34;重要组成部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重要组成部分&#34;&gt;#&lt;/a&gt; 重要组成部分&lt;/h2&gt;
 &lt;ul&gt;
@@ -609,7 +609,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/</guid>
             <title>SpringMVC 拦截器&amp;方法参数解析器</title>
             <link>http://adamshang2333.github.io/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:20 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:22 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;springmvc-拦截器方法参数解析器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#springmvc-拦截器方法参数解析器&#34;&gt;#&lt;/a&gt; SpringMVC 拦截器 &amp;amp; 方法参数解析器&lt;/h2&gt;
 &lt;h3 id=&#34;拦截器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拦截器&#34;&gt;#&lt;/a&gt; 拦截器&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -635,7 +635,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/spring/spring-jdbc/</guid>
             <title>Spring JDBC</title>
             <link>http://adamshang2333.github.io/hou-duan/spring/spring-jdbc/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:20 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:22 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概念&#34;&gt;#&lt;/a&gt; 概念&lt;/h2&gt;
 &lt;p&gt;是封装了 JDBC 操作的一个框架 必须依赖 Spring&lt;/p&gt;
 &lt;p&gt;SpringJDBC 本身就是基于模板模式进行开发，提供一个 JDBCTemplate 类&lt;/p&gt;
@@ -663,7 +663,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-de-nei-bu-lei/</guid>
             <title>java的内部类</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-de-nei-bu-lei/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:20 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:21 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;前言-类的成员&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言-类的成员&#34;&gt;#&lt;/a&gt; 前言 -- 类的成员&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个类的成员，包含如下内容:&lt;br /&gt;
@@ -722,7 +722,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <link>http://adamshang2333.github.io/hou-duan/java/basics/java-ji-chu/</link>
             <category term="java" scheme="http://adamshang2333.github.io/categories/java/" />
             <category term="基础" scheme="http://adamshang2333.github.io/categories/java/basics/" />
-            <pubDate>Thu, 09 Mar 2023 06:35:11 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:13 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;strong&gt;IO 概念&lt;/strong&gt;&lt;/p&gt;
  ]]></description>
         </item>
@@ -730,7 +730,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/</guid>
             <title>JavaWeb基础</title>
             <link>http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:10 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:12 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;应用组成结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#应用组成结构&#34;&gt;#&lt;/a&gt; 应用组成结构&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images0.cnblogs.com/i/289233/201405/172304056712920.png&#34; alt=&#34;组成&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注: !!! 在 JavaWeb 中，没有明显的主函数&lt;/strong&gt;&lt;/p&gt;
@@ -988,7 +988,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-fan-she/</guid>
             <title>Java反射</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-fan-she/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:10 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:12 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;反射&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反射&#34;&gt;#&lt;/a&gt; 反射&lt;/h1&gt;
 &lt;h2 id=&#34;反射机制的概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反射机制的概念&#34;&gt;#&lt;/a&gt; 反射机制的概念&lt;/h2&gt;
 &lt;p&gt;将类的各个组成部分，封装为其他对象&lt;/p&gt;
@@ -1026,7 +1026,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-collection/</guid>
             <title>Java collection</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-collection/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:10 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:12 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;collection容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#collection容器&#34;&gt;#&lt;/a&gt; Collection 容器&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;容器的特点:&lt;br /&gt;
@@ -1235,7 +1235,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/jdbc/</guid>
             <title>JDBC</title>
             <link>http://adamshang2333.github.io/hou-duan/java/jdbc/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:10 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:12 +0000</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;全称: Java DataBase Connectivity&lt;br /&gt;
  是 java 语言中，用来规范客户端程序如何来访问数据库的 API (应用程序接口)&lt;/p&gt;
@@ -1552,7 +1552,7 @@ SQL 语句的查询条件需要的&lt;strong&gt;传入参数 长度和类型都�
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/ding-wei/</guid>
             <title>CSS-定位</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/ding-wei/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:09 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:11 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;定位&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定位&#34;&gt;#&lt;/a&gt; 定位&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;定位的使用包含两个部分：&lt;/p&gt;
@@ -1680,7 +1680,7 @@ margin-top:-自身高度的一半;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/js-ji-chu/</guid>
             <title>JS总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/js-ji-chu/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:09 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:11 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;[toc]&lt;/p&gt;
 &lt;h2 id=&#34;js组成部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#js组成部分&#34;&gt;#&lt;/a&gt; jS 组成部分&lt;/h2&gt;
 &lt;p&gt;EMAScript: ES5  ES6  基础语法和标准&lt;br /&gt;
@@ -1891,7 +1891,7 @@ var d = a &amp;gt; b &amp;amp;&amp;amp; a &amp;gt; 0 ? a + b : a - b;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/js-xuan-ze-qi/</guid>
             <title>js选择器</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/js-xuan-ze-qi/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:09 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:11 +0000</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;基本选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本选择器&#34;&gt;#&lt;/a&gt; 基本选择器&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;id 选择器&lt;/li&gt;
@@ -2004,7 +2004,7 @@ var d = a &amp;gt; b &amp;amp;&amp;amp; a &amp;gt; 0 ? a + b : a - b;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/</guid>
             <title>HTML基础</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:09 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:11 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;html模板&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html模板&#34;&gt;#&lt;/a&gt; html 模板&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;!--申明一个HTML文档--&amp;gt;
 &amp;lt;!DOCTYPE html&amp;gt;
@@ -2297,7 +2297,7 @@ header footer nav  main.....&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/h5-xin-zeng/</guid>
             <title>H5新增内容总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/h5-xin-zeng/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:09 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:11 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;## 新增标签&lt;/p&gt;
 &lt;p&gt;### 音频标签 - audio&lt;/p&gt;
 &lt;p&gt;可以设置宽、高&lt;br /&gt;
@@ -2448,7 +2448,7 @@ header footer nav  main.....&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/dom-cao-zuo/</guid>
             <title>DOM操作</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/dom-cao-zuo/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:09 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:11 +0000</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;获取元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取元素&#34;&gt;#&lt;/a&gt; 获取元素&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;name&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;script&amp;gt;
@@ -2568,7 +2568,7 @@ oAll.replaceChild(theA, oAll.children[0]);
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/css-dong-tai-xiao-guo/</guid>
             <title>css动态效果总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/css-dong-tai-xiao-guo/</link>
-            <pubDate>Thu, 09 Mar 2023 06:35:09 +0000</pubDate>
+            <pubDate>Thu, 09 Mar 2023 10:42:11 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;##transition (过渡样式)&lt;br /&gt;
 ### 可设定过渡的时间 延时时间 速度曲线 指定某个过渡的元素&lt;br /&gt;
  #### 过渡时间  transition-duration: 1s;&lt;br /&gt;
@@ -2645,8 +2645,52 @@ y 轴:top center bottom&lt;/p&gt;
             <category term="容器化" scheme="http://adamshang2333.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/" />
             <pubDate>Tue, 07 Mar 2023 11:23:00 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h1&gt;
-&lt;h2 id=&#34;什么是k8s&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是k8s&#34;&gt;#&lt;/a&gt; 什么是 K8s&lt;/h2&gt;
+&lt;h2 id=&#34;了解k8s-容器化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#了解k8s-容器化&#34;&gt;#&lt;/a&gt; 了解 K8s &amp;amp; 容器化&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcv&#34;&gt;Kubernetes&lt;/span&gt; 也称为 K8s，是一个可移植、可扩展的开源平台，用于管理容器化的工作负载和服务，可促进声明式配置和自动化。 Kubernetes 拥有一个庞大且快速增长的生态，其服务、支持和工具的使用范围相当广泛。&lt;/p&gt;
+&lt;h3 id=&#34;什么是容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是容器&#34;&gt;#&lt;/a&gt; 什么是容器&lt;/h3&gt;
+&lt;p&gt;容器是一种&lt;strong&gt;沙盒技术&lt;/strong&gt;，主要目的是为了将应用运行在其中，与外界隔离；及方便这个沙盒可以被转移到其它宿主机器。本质上，它是一个特殊的进程。通过名称空间（Namespace）、控制组（Control groups）、切根（chroot）技术把资源、文件、设备、状态和配置划分到一个独立的空间。&lt;/p&gt;
+&lt;p&gt;通俗点的理解就是一个装应用软件的箱子，箱子里面有软件运行所需的依赖库和配置。开发人员可以把这个箱子搬到任何机器上，且不影响里面软件的运行。&lt;/p&gt;
+&lt;p&gt;此外，需要明确的一个概念是: &lt;strong&gt;容器技术并不等同于 docker&lt;/strong&gt;. 容器相关的技术实现，除了 Docker 以外 还有 &lt;code&gt;podman&lt;/code&gt; , &lt;code&gt;LXC&lt;/code&gt; , &lt;code&gt;  containerd&lt;/code&gt; , &lt;code&gt; Buildah&lt;/code&gt;  等，它们都能像 docker 一样构建镜像 运行容器.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2c2VThXN3AwNmRDTzk5ZlEzL2FydGljbGUvZGV0YWlscy8xMjcyOTMzODQ=&#34;&gt;参考：除 docker 外的其他容器化工具&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;容器标准&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#容器标准&#34;&gt;#&lt;/a&gt; 容器标准&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;容器世界里并不是只有 docker 一家。既然不是一家就很容易出现分歧。任何技术出现都需要一个标准来规范它，不然各搞各的很容易导致技术实现的碎片化，出现大量的冲突和冗余。因此，在 2015 年，由 Google，Docker、CoreOS、IBM、微软、红帽等厂商联合发起的 &lt;code&gt;OCI&lt;/code&gt; （Open Container  Initiative）组织成立了，并于 2016 年 4 月推出了第一个开放容器标准。标准主要包括 runtime 运行时标准和 image 镜像标准。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;容器运行时标准 （runtime spec）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;creating：使用 create 命令创建容器，这个过程称为创建中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;created：容器创建出来，但是还没有运行，表示镜像和配置没有错误，容器能够运行在当前平台&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;running：容器的运行状态，里面的进程处于 up 状态，正在执行用户设定的任务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;stopped：容器运行完成，或者运行出错，或者  stop 命令之后，容器处于暂停状态。这个状态，容器还有很多信息保存在平台中，并没有完全被删除&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;容器镜像标准（image spec）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文件系统：以 layer 保存的文件系统，每个 layer 保存了和上层之间变化的部分，layer  应该保存哪些文件，怎么表示增加、修改和删除的文件等；&lt;/li&gt;
+&lt;li&gt;config 文件：保存了文件系统的层级信息（每个层级的 hash  值，以及历史信息），以及容器运行时需要的一些信息（比如环境变量、工作目录、命令参数、mount  列表），指定了镜像在某个特定平台和系统的配置。比较接近我们使用 docker inspect &amp;lt;image_id&amp;gt; 看到的内容；&lt;/li&gt;
+&lt;li&gt;manifest 文件：镜像的 config 文件索引，有哪些 layer，额外的 annotation 信息，manifest  文件中保存了很多和当前平台有关的信息；&lt;/li&gt;
+&lt;li&gt;index 文件：可选的文件，指向不同平台的 manifest  文件，这个文件能保证一个镜像可以跨平台使用，每个平台拥有不同的 manifest 文件，使用 index 作为索引。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;关于k8s和docker的关系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于k8s和docker的关系&#34;&gt;#&lt;/a&gt; 关于 K8s 和 Docker 的关系&lt;/h3&gt;
+&lt;p&gt;K8s 和 docker 关系可以简单用下图实例:&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-3386b7a906cc4ae4bc2750273a4c69ec_1440w.webp&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;其工作流程简单来说是这样的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Docker，Kubernetes 等工具来运行一个容器时会调用容器运行时（CRI）比如 containerd，CRI-O&lt;/li&gt;
+&lt;li&gt;通过容器运行时来完成容器的创建、运行、销毁等实际工作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker 使用的是 containerd 作为其运行时；Kubernetes 支持 containerd，CRI-O 等多种容器运行时&lt;/li&gt;
+&lt;li&gt;这些容器运行时都遵循了 OCI 规范，并通过 runc 来实现与操作系统内核交互来完成容器的创建和运行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80OTA1ODU2ODM=&#34;&gt;参考: k8s 和 docker 关系&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;k8s的功能特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#k8s的功能特性&#34;&gt;#&lt;/a&gt; k8s 的功能特性&lt;/h2&gt;
 &lt;h4 id=&#34;自动化上线和回滚&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自动化上线和回滚&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQv&#34;&gt;自动化上线和回滚&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;Kubernetes 会分步骤地将针对应用或其配置的更改上线，同时监视应用程序运行状况以确保你不会同时终止所有实例。如果出现问题，Kubernetes 会为你回滚所作更改。你应该充分利用不断成长的部署方案生态系统。&lt;/p&gt;
@@ -2681,7 +2725,7 @@ y 轴:top center bottom&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Node 集群&lt;/strong&gt; (计算设备）
 &lt;ul&gt;
 &lt;li&gt;负责应用和工作负载的实际运行&lt;/li&gt;
-&lt;li&gt;每个 Node 节点都有自己的 Linux 环境，可以是物理机也可以是虚拟机。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;每个 Node 节点都有自己的 Linux 环境，可以是物理机也可以是虚拟机。&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;每个节点都运行由若干容器组成的容器集 (docker containers)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -2711,11 +2755,23 @@ y 轴:top center bottom&lt;/p&gt;
 &lt;p&gt;该组件负责公开了 Kubernetes API，负责处理接受请求的工作。 API 服务器是 Kubernetes 控制平面的前端。&lt;/p&gt;
 &lt;p&gt;Kubernetes API 服务器的主要实现是 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1hcGlzZXJ2ZXIv&#34;&gt;kube-apiserver&lt;/span&gt;。  &lt;code&gt;kube-apiserver&lt;/code&gt;  设计上考虑了水平扩缩，也就是说，它可通过部署多个实例来进行扩缩。 可以通过运行  &lt;code&gt;kube-apiserver&lt;/code&gt;  的多个实例，在这些实例之间平衡流量。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;apisever 可以理解为整个 k8s 集群中，Master 节点和 Nodes 通信的桥梁&lt;/p&gt;
+&lt;p&gt;apisever 可以理解为整个 k8s 集群中的统一入口，各组件协调者。是 Master 节点和 Nodes 通信的桥梁&lt;/p&gt;
+&lt;p&gt;除了集群内部通信会使用到 kube-apiserver, kubectl 和 K8s 的 UI 控制台 也会与 apiserver 通信.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;2-etcd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-etcd&#34;&gt;#&lt;/a&gt; 2. etcd&lt;/h4&gt;
-&lt;p&gt;一致且高可用的 &lt;code&gt;键值存储&lt;/code&gt; ，用作 &lt;strong&gt;Kubernetes 所有集群数据的后台数据库。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一致且高可用的 &lt;code&gt;分布式键值存储&lt;/code&gt; ，主要用途是共享配置和服务发现，保存集群状态数据，比如 Pod、Service 等对象信息。用作 &lt;strong&gt;Kubernetes 所有集群数据的后台数据库。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果你的 Kubernetes 集群使用 etcd 作为其后台数据库， 请确保你针对这些数据有一份 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvdGFza3MvYWRtaW5pc3Rlci1jbHVzdGVyL2NvbmZpZ3VyZS11cGdyYWRlLWV0Y2QvI2JhY2tpbmctdXAtYW4tZXRjZC1jbHVzdGVy&#34;&gt;备份&lt;/span&gt;计划。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;etcd 采用了 &lt;code&gt;RAFT&lt;/code&gt;  的共识算法 (最终一致算法) 来保证集群的高可用，通过投票选举来完成的节点切换&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;基于 etcd 的算法，Master 中的 etcd 集群的节点数量，只能是奇数&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 个节点 可以保证 1 次高可用；5 节点 2 次；7 节点 3 次...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每一个 Raft 集群都包含多个服务器，在任意时刻，每台服务器只可能处于 &lt;code&gt;Leader&lt;/code&gt; ,  &lt;code&gt;Follower&lt;/code&gt; ,  &lt;code&gt;Candidate(候选人)&lt;/code&gt;  三种状态；&lt;strong&gt;在处于正常的状态时，集群中只会存在一个 Leader, 其余的服务器都是 Follower&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NTU2NDE0L2FydGljbGUvZGV0YWlscy8xMjU1Njg3Mzk=&#34;&gt;图解 etcd 中的 Raft 算法&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-kube-scheduler&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-kube-scheduler&#34;&gt;#&lt;/a&gt; 3. kube-scheduler&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;kube-scheduler&lt;/code&gt;  是 K8s 的&lt;strong&gt;调度器，&lt;/strong&gt; 负责监视新创建的、未指定运行&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==&#34;&gt;节点（node）&lt;/span&gt;的 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv&#34;&gt;Pods&lt;/span&gt;， 并选择节点来让 Pod 在上面运行。&lt;/p&gt;
 &lt;p&gt;调度决策考虑的因素包括单个 Pod 及 Pods 集合的资源需求、软硬件及策略约束、 亲和性及反亲和性规范、数据位置、工作负载间的干扰及最后时限。&lt;/p&gt;
@@ -2748,6 +2804,9 @@ y 轴:top center bottom&lt;/p&gt;
 &lt;h4 id=&#34;1-kubelet&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-kubelet&#34;&gt;#&lt;/a&gt; 1. kubelet&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvY29tcG9uZW50cy8ja3ViZWxldA==&#34;&gt; &lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;kubelet&lt;/code&gt;  会在集群中每个&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==&#34;&gt;节点（node）&lt;/span&gt;上运行。 它保证&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvd2hhdC1pcy1rdWJlcm5ldGVzLyN3aHktY29udGFpbmVycw==&#34;&gt;容器（containers）&lt;/span&gt;都运行在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv&#34;&gt;Pod&lt;/span&gt; 中。&lt;/p&gt;
 &lt;p&gt;kubelet 接收一组通过各类机制提供给它的 PodSpecs， 确保这些 PodSpecs 中描述的容器处于运行状态且健康。 kubelet 不会管理不是由 Kubernetes 创建的容器。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;kubelet 会接收&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;2-kube-proxy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-kube-proxy&#34;&gt;#&lt;/a&gt; 2. kube-proxy&lt;/h4&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1wcm94eS8=&#34;&gt;kube-proxy&lt;/span&gt; 是集群中每个&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==&#34;&gt;节点（node）&lt;/span&gt;上所运行的网络代理， 实现 Kubernetes &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLw==&#34;&gt;服务（Service）&lt;/span&gt; 概念的一部分。&lt;/p&gt;
 &lt;p&gt;kube-proxy 维护节点上的一些网络规则， 这些网络规则会允许从集群内部或外部的网络会话与 Pod 进行网络通信。&lt;/p&gt;
@@ -3152,7 +3211,7 @@ E(S^2)	&amp;amp;=E\left(\frac&amp;#123;1&amp;#125;&amp;#123;2n&amp;#125; \sum_&a
 graph ....&lt;br /&gt;
 .....&lt;br /&gt;
 ```&lt;/p&gt;
-&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678343740277&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
+&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678358564181&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
 &lt;h3 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h3&gt;
 &lt;p&gt;有些时候，需要在书写过程中留一些&lt;strong&gt;备忘&lt;/strong&gt;性质的文本，但是不希望最终结果中可见的，可以使用&lt;strong&gt;注释&lt;/strong&gt;语法，一般情况下是用不到的。&lt;br /&gt;
 // 我是一行注释，但最终会出现在最终的 HTML 源码中。&lt;br /&gt;
@@ -3277,147 +3336,63 @@ graph ....&lt;br /&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/</guid>
-            <title>数据库函数</title>
-            <link>http://adamshang2333.github.io/shu-ju-ku/shu-ju-ku-han-shu/</link>
+            <guid isPermalink="true">http://adamshang2333.github.io/qi-ta/zhi-neng-jia-ju/</guid>
+            <title>智能家居</title>
+            <link>http://adamshang2333.github.io/qi-ta/zhi-neng-jia-ju/</link>
             <pubDate>Thu, 22 Dec 2022 08:23:00 +0000</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作函数&#34;&gt;#&lt;/a&gt; 操作函数&lt;/h2&gt;
-&lt;h3 id=&#34;1字符串操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1字符串操作函数&#34;&gt;#&lt;/a&gt; 1. 字符串操作函数&lt;/h3&gt;
-&lt;h4 id=&#34;as-关键字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#as-关键字&#34;&gt;#&lt;/a&gt; as 关键字&lt;/h4&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;智能家居&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#智能家居&#34;&gt;#&lt;/a&gt; 智能家居&lt;/h1&gt;
+&lt;h2 id=&#34;网络&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#网络&#34;&gt;#&lt;/a&gt; 网络&lt;/h2&gt;
+&lt;p&gt;优先 AP 面板 / 有线 mesh&lt;/p&gt;
+&lt;p&gt;路由器&lt;/p&gt;
+&lt;p&gt;网线 六类，七类优先&lt;/p&gt;
+&lt;p&gt;NAS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;装载虚拟机，诱骗 homekit 认证 (home bridge; home assistant)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;网关 &amp;amp;&amp;amp; 控制协议&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;协议 蓝牙 mesh&lt;/li&gt;
+&lt;li&gt;zigbee
+&lt;ul&gt;
+&lt;li&gt;接入 wifi 并发射 Zigbee 协议信号&lt;/li&gt;
+&lt;li&gt;Aqara 网关 M1S&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;matter 协议&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://gitee.com/oldFun/picGitee/raw/master/img/image-20211103224618211.png&#34; alt=&#34;image-20211103224618211&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;灯光&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#灯光&#34;&gt;#&lt;/a&gt; 灯光&lt;/h2&gt;
+&lt;p&gt;智能开关&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;便宜
+&lt;ul&gt;
+&lt;li&gt;米家，aqara&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;智能灯&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;控制亮度和色温
+&lt;ul&gt;
+&lt;li&gt;yeelight&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;给&lt;strong&gt;列&lt;/strong&gt;或者&lt;strong&gt;表&lt;/strong&gt;起别名，将过长的表名简化&lt;br /&gt;
-特别注意:&lt;/p&gt;
-&lt;p&gt;1.&lt;strong&gt; 只在当前 SQL 语句内生效&lt;/strong&gt;，到下一个 SQL 语句就失效  ---&amp;gt; 不是全局 &amp;quot;改名&amp;quot;&lt;br /&gt;
-2. 在名字后直接加空格，不加 as 关键字也行&lt;/p&gt;
+&lt;p&gt;通常情况下，二选一即可&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;select concat(&#39;张三&#39;, &#39;李四&#39;, &#39;ddd&#39;) as name;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;as 也可以不加 直接在名字后面加 &#39; &#39;(空格) 后接关键字&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;// age sage :等价于 age as sage
-select s.name as sname, age sage, gender
-from student as s;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;insert-替换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#insert-替换&#34;&gt;#&lt;/a&gt; insert 替换&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;格式:  insert (stringA,m,n,stringB)&lt;/code&gt; &lt;br /&gt;
- 将 A 从第 m 个字符开始，替换 n 个；这 n 个替换为 B  .&lt;br /&gt;
-&lt;strong&gt; 序号从 1 开始&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;select insert(&#39;这是一个字符串&#39;, 5, 3, &#39;喵喵喵&#39;);
-// 输出结果: 这是一个喵喵喵
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;upperlower-大小写转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#upperlower-大小写转换&#34;&gt;#&lt;/a&gt; upper/lower 大小写转换&lt;/h4&gt;
-&lt;p&gt;类比 string 的方法&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;select upper(&#39;aaa&#39;); // 结果:AAA
-select lower(&#39;HHH&#39;); // 结果: hhh
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;substring-截取子串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#substring-截取子串&#34;&gt;#&lt;/a&gt; substring 截取子串&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;select substring(&#39;这是一个字符串&#39;, 2);
-// --&amp;gt; 等价于:
-	select substring(&#39;这是一个字符串&#39; from 2);
-
-select substring(&#39;这是一个字符串&#39;, 2, 3);
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id=&#34;2时间操作函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2时间操作函数&#34;&gt;#&lt;/a&gt; 2. 时间操作函数&lt;/h3&gt;
-&lt;h4 id=&#34;curtime-获取当前时间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#curtime-获取当前时间&#34;&gt;#&lt;/a&gt; curtime () 获取当前时间&lt;/h4&gt;
-&lt;h4 id=&#34;curdate-获取当前日期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#curdate-获取当前日期&#34;&gt;#&lt;/a&gt; curdate () 获取当前日期&lt;/h4&gt;
-&lt;h4 id=&#34;now-获取当前时间和日期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#now-获取当前时间和日期&#34;&gt;#&lt;/a&gt; now () 获取当前时间和日期&lt;/h4&gt;
-&lt;h4 id=&#34;mysql的时间类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql的时间类型&#34;&gt;#&lt;/a&gt; mysql 的时间类型  :&lt;/h4&gt;
-&lt;p&gt;1.date ：只保存日期&lt;br /&gt;
- 2.timestamp ：时间戳 能保存时间和日期，根据时区进行修正 (时区不一样 看到的时间也不同)&lt;br /&gt;
-　　　　　　(范围: 1970~2038 年  最大到 2038 年 1 月 19 日 3:14)&lt;br /&gt;
- 3.datetime 能保存时间和日期，不会根据时区进行修正；(最大到 9999-12-31 23:59:59.9999999)&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;select year(now());
-select month(now());
-# 一年中的第几周
-select week(now());
-select hour(now());
-
-# 两个日期间相隔的天数 (昨天,今天 相隔1天)
-select datediff(now(), &#39;2019-1-1&#39;);
-# 计算xx天之后的日期
-select adddate(now(), 20);
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;数学函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学函数&#34;&gt;#&lt;/a&gt; 数学函数&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;# 生成一个随机数
-select rand();
-# 向下取整 --&amp;gt; 7
-select floor(7.9);
-# 向上取整 --&amp;gt; 8
-select ceil(7.1);
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;聚合函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚合函数&#34;&gt;#&lt;/a&gt; 聚合函数&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;对数据进行集中操作的函数 ---&amp;gt; 对&lt;strong&gt;整列数据&lt;/strong&gt;进行处理&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;注意:&lt;br /&gt;
-1. 多个聚合函数可以一起写&lt;br /&gt;
- 2. 聚合函数的返回不能和列名一起 会报错&lt;br /&gt;
-　(返回的都是一列的值 不能和某个条件查询的某行值一起返回)&lt;br /&gt;
-３. 如果使用了 group by 的列，可以和聚合函数写在一起&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;求和-sum&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求和-sum&#34;&gt;#&lt;/a&gt; 求和　 sum ()&lt;/h4&gt;
-&lt;h4 id=&#34;平均值-avg&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平均值-avg&#34;&gt;#&lt;/a&gt; 平均值 avg ()&lt;/h4&gt;
-&lt;h4 id=&#34;最大值-max&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最大值-max&#34;&gt;#&lt;/a&gt; 最大值 max ()&lt;/h4&gt;
-&lt;h4 id=&#34;最小值-min&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最小值-min&#34;&gt;#&lt;/a&gt; 最小值 min ()&lt;/h4&gt;
-&lt;h4 id=&#34;求数量-count&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求数量-count&#34;&gt;#&lt;/a&gt; 求数量 count (*)&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&lt;em&gt;注意:　填 * 不会过滤空行；填分组名字会过滤掉空行 (空值)&lt;br /&gt;
----&amp;gt; 计算数量最好使用&lt;/em&gt; 保留空行&lt;/em&gt; *&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;# 2. 查询每个学员的成绩在90以上的课程有多少门(成绩90以上, 每个学员有几门课程)
-# 填 * 不会过滤空行 填分组名字会过滤掉空行(空值)
-# 计算数量最好使用* 保留空行
-select count(*), sname
-from Score
-where grade &amp;gt;= 90
-group by sname;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id=&#34;having-子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#having-子句&#34;&gt;#&lt;/a&gt; having 子句&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;对&lt;strong&gt;分组的结果&lt;/strong&gt;进行过滤 (where 对每一个结果进行过滤)&lt;br /&gt;
-　１.&lt;strong&gt;having&lt;/strong&gt; 的条件一般都是&lt;strong&gt;对聚合函数的判断&lt;/strong&gt;！！&lt;br /&gt;
-　２.&lt;strong&gt;where&lt;/strong&gt; 的条件一般都是&lt;strong&gt;对列的判断&lt;/strong&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;select avg(grade), sname
-from Score
-group by sname
-having sum(grade) &amp;gt; 300;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;on-where和-having-的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#on-where和-having-的使用&#34;&gt;#&lt;/a&gt; on , where 和 having 的使用:&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;!!!on 最先执行，where 次之  having 最后执行&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; on:使用join联表的时候使用
- 如果条件是针对表中的行,就用where  (对本身的各条数据有限制)
- 如果条件是针对分组的,就用having
- 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;[on where 和 having 的区别] [1]&lt;/strong&gt;&lt;br /&gt;
-[1]:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vUmVnbGUvcC82Mjg0MDM1Lmh0bWw=&#34;&gt;https://www.cnblogs.com/Regle/p/6284035.html&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;group-by-子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by-子句&#34;&gt;#&lt;/a&gt; group by 子句&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;多见&amp;quot;每个,各个&amp;quot;这种词 使用分组&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;该子句后面跟某一列的列名 表示按该列进行分组&lt;br /&gt;
- --&amp;gt; 分组列中值一样的数据 放入一个 &amp;quot;小组&amp;quot; , 可以对其使用聚合函数&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1. 当一列被标记为分组，那么该列可以写在查询结果中&lt;br /&gt;
- 2. 只要进行分组，基本都和聚合函数有关系&lt;br /&gt;
- 3. 可以有多层分组，以 &amp;quot;,&amp;quot; 分隔接在 group by 后面&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;distinct-关键字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#distinct-关键字&#34;&gt;#&lt;/a&gt; distinct 关键字&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;查询结果不重复&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;select distinct depart
-from Employee;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;人体感应器&lt;/p&gt;
+&lt;h2 id=&#34;家电&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#家电&#34;&gt;#&lt;/a&gt; 家电&lt;/h2&gt;
+&lt;h3 id=&#34;空调&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空调&#34;&gt;#&lt;/a&gt; 空调&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;红外控制器&lt;/li&gt;
+&lt;li&gt;温度感应器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;窗帘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#窗帘&#34;&gt;#&lt;/a&gt; 窗帘&lt;/h3&gt;
+&lt;h3 id=&#34;遥控&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#遥控&#34;&gt;#&lt;/a&gt; 遥控&lt;/h3&gt;
+&lt;p&gt;平替：小爱万能遥控板&lt;/p&gt;
+&lt;p&gt;按键板控制&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

@@ -76,7 +76,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>3.3k</span>
+    <span>5.1k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -84,7 +84,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>3 分钟</span>
+    <span>5 分钟</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-pk35x9.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-57wq75.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9gwyp.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28eo16.jpg"></li>
           <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-q6wyer.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-p8rw79.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-0j6zdq.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-m9d9x8.png"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-72gje9.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-3z9p26.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm1qdo.jpg"></li>
         </ul>
       </div>
     </header>
@@ -169,8 +169,52 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
     
 
     <h1 id="简介"><a class="anchor" href="#简介">#</a> 简介</h1>
-<h2 id="什么是k8s"><a class="anchor" href="#什么是k8s">#</a> 什么是 K8s</h2>
+<h2 id="了解k8s-容器化"><a class="anchor" href="#了解k8s-容器化">#</a> 了解 K8s &amp; 容器化</h2>
 <p><span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcv">Kubernetes</span> 也称为 K8s，是一个可移植、可扩展的开源平台，用于管理容器化的工作负载和服务，可促进声明式配置和自动化。 Kubernetes 拥有一个庞大且快速增长的生态，其服务、支持和工具的使用范围相当广泛。</p>
+<h3 id="什么是容器"><a class="anchor" href="#什么是容器">#</a> 什么是容器</h3>
+<p>容器是一种<strong>沙盒技术</strong>，主要目的是为了将应用运行在其中，与外界隔离；及方便这个沙盒可以被转移到其它宿主机器。本质上，它是一个特殊的进程。通过名称空间（Namespace）、控制组（Control groups）、切根（chroot）技术把资源、文件、设备、状态和配置划分到一个独立的空间。</p>
+<p>通俗点的理解就是一个装应用软件的箱子，箱子里面有软件运行所需的依赖库和配置。开发人员可以把这个箱子搬到任何机器上，且不影响里面软件的运行。</p>
+<p>此外，需要明确的一个概念是: <strong>容器技术并不等同于 docker</strong>. 容器相关的技术实现，除了 Docker 以外 还有 <code>podman</code> , <code>LXC</code> , <code>  containerd</code> , <code> Buildah</code>  等，它们都能像 docker 一样构建镜像 运行容器.</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2c2VThXN3AwNmRDTzk5ZlEzL2FydGljbGUvZGV0YWlscy8xMjcyOTMzODQ=">参考：除 docker 外的其他容器化工具</span></p>
+<h3 id="容器标准"><a class="anchor" href="#容器标准">#</a> 容器标准</h3>
+<blockquote>
+<p>容器世界里并不是只有 docker 一家。既然不是一家就很容易出现分歧。任何技术出现都需要一个标准来规范它，不然各搞各的很容易导致技术实现的碎片化，出现大量的冲突和冗余。因此，在 2015 年，由 Google，Docker、CoreOS、IBM、微软、红帽等厂商联合发起的 <code>OCI</code> （Open Container  Initiative）组织成立了，并于 2016 年 4 月推出了第一个开放容器标准。标准主要包括 runtime 运行时标准和 image 镜像标准。</p>
+</blockquote>
+<p><strong>容器运行时标准 （runtime spec）</strong></p>
+<ul>
+<li>
+<p>creating：使用 create 命令创建容器，这个过程称为创建中</p>
+</li>
+<li>
+<p>created：容器创建出来，但是还没有运行，表示镜像和配置没有错误，容器能够运行在当前平台</p>
+</li>
+<li>
+<p>running：容器的运行状态，里面的进程处于 up 状态，正在执行用户设定的任务</p>
+</li>
+<li>
+<p>stopped：容器运行完成，或者运行出错，或者  stop 命令之后，容器处于暂停状态。这个状态，容器还有很多信息保存在平台中，并没有完全被删除</p>
+</li>
+</ul>
+<p><strong>容器镜像标准（image spec）</strong></p>
+<ul>
+<li>文件系统：以 layer 保存的文件系统，每个 layer 保存了和上层之间变化的部分，layer  应该保存哪些文件，怎么表示增加、修改和删除的文件等；</li>
+<li>config 文件：保存了文件系统的层级信息（每个层级的 hash  值，以及历史信息），以及容器运行时需要的一些信息（比如环境变量、工作目录、命令参数、mount  列表），指定了镜像在某个特定平台和系统的配置。比较接近我们使用 docker inspect &lt;image_id&gt; 看到的内容；</li>
+<li>manifest 文件：镜像的 config 文件索引，有哪些 layer，额外的 annotation 信息，manifest  文件中保存了很多和当前平台有关的信息；</li>
+<li>index 文件：可选的文件，指向不同平台的 manifest  文件，这个文件能保证一个镜像可以跨平台使用，每个平台拥有不同的 manifest 文件，使用 index 作为索引。</li>
+</ul>
+<h3 id="关于k8s和docker的关系"><a class="anchor" href="#关于k8s和docker的关系">#</a> 关于 K8s 和 Docker 的关系</h3>
+<p>K8s 和 docker 关系可以简单用下图实例:</p>
+<p><img data-src="https://pic1.zhimg.com/80/v2-3386b7a906cc4ae4bc2750273a4c69ec_1440w.webp" alt="" /></p>
+<p>其工作流程简单来说是这样的：</p>
+<ol>
+<li>Docker，Kubernetes 等工具来运行一个容器时会调用容器运行时（CRI）比如 containerd，CRI-O</li>
+<li>通过容器运行时来完成容器的创建、运行、销毁等实际工作</li>
+</ol>
+<ul>
+<li>Docker 使用的是 containerd 作为其运行时；Kubernetes 支持 containerd，CRI-O 等多种容器运行时</li>
+<li>这些容器运行时都遵循了 OCI 规范，并通过 runc 来实现与操作系统内核交互来完成容器的创建和运行</li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80OTA1ODU2ODM=">参考: k8s 和 docker 关系</span></p>
 <h2 id="k8s的功能特性"><a class="anchor" href="#k8s的功能特性">#</a> k8s 的功能特性</h2>
 <h4 id="自动化上线和回滚"><a class="anchor" href="#自动化上线和回滚">#</a> <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQv">自动化上线和回滚</span></h4>
 <p>Kubernetes 会分步骤地将针对应用或其配置的更改上线，同时监视应用程序运行状况以确保你不会同时终止所有实例。如果出现问题，Kubernetes 会为你回滚所作更改。你应该充分利用不断成长的部署方案生态系统。</p>
@@ -205,7 +249,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <li><strong>Node 集群</strong> (计算设备）
 <ul>
 <li>负责应用和工作负载的实际运行</li>
-<li>每个 Node 节点都有自己的 Linux 环境，可以是物理机也可以是虚拟机。</li>
+<li><strong>每个 Node 节点都有自己的 Linux 环境，可以是物理机也可以是虚拟机。</strong></li>
 <li>每个节点都运行由若干容器组成的容器集 (docker containers)</li>
 </ul>
 </li>
@@ -235,11 +279,23 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <p>该组件负责公开了 Kubernetes API，负责处理接受请求的工作。 API 服务器是 Kubernetes 控制平面的前端。</p>
 <p>Kubernetes API 服务器的主要实现是 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1hcGlzZXJ2ZXIv">kube-apiserver</span>。  <code>kube-apiserver</code>  设计上考虑了水平扩缩，也就是说，它可通过部署多个实例来进行扩缩。 可以通过运行  <code>kube-apiserver</code>  的多个实例，在这些实例之间平衡流量。</p>
 <blockquote>
-<p>apisever 可以理解为整个 k8s 集群中，Master 节点和 Nodes 通信的桥梁</p>
+<p>apisever 可以理解为整个 k8s 集群中的统一入口，各组件协调者。是 Master 节点和 Nodes 通信的桥梁</p>
+<p>除了集群内部通信会使用到 kube-apiserver, kubectl 和 K8s 的 UI 控制台 也会与 apiserver 通信.</p>
 </blockquote>
 <h4 id="2-etcd"><a class="anchor" href="#2-etcd">#</a> 2. etcd</h4>
-<p>一致且高可用的 <code>键值存储</code> ，用作 <strong>Kubernetes 所有集群数据的后台数据库。</strong></p>
+<p>一致且高可用的 <code>分布式键值存储</code> ，主要用途是共享配置和服务发现，保存集群状态数据，比如 Pod、Service 等对象信息。用作 <strong>Kubernetes 所有集群数据的后台数据库。</strong></p>
 <p>如果你的 Kubernetes 集群使用 etcd 作为其后台数据库， 请确保你针对这些数据有一份 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvdGFza3MvYWRtaW5pc3Rlci1jbHVzdGVyL2NvbmZpZ3VyZS11cGdyYWRlLWV0Y2QvI2JhY2tpbmctdXAtYW4tZXRjZC1jbHVzdGVy">备份</span>计划。</p>
+<blockquote>
+<p>etcd 采用了 <code>RAFT</code>  的共识算法 (最终一致算法) 来保证集群的高可用，通过投票选举来完成的节点切换</p>
+<p><strong>基于 etcd 的算法，Master 中的 etcd 集群的节点数量，只能是奇数</strong></p>
+<ul>
+<li>3 个节点 可以保证 1 次高可用；5 节点 2 次；7 节点 3 次...</li>
+</ul>
+<blockquote>
+<p>每一个 Raft 集群都包含多个服务器，在任意时刻，每台服务器只可能处于 <code>Leader</code> ,  <code>Follower</code> ,  <code>Candidate(候选人)</code>  三种状态；<strong>在处于正常的状态时，集群中只会存在一个 Leader, 其余的服务器都是 Follower</strong></p>
+</blockquote>
+</blockquote>
+<p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NTU2NDE0L2FydGljbGUvZGV0YWlscy8xMjU1Njg3Mzk=">图解 etcd 中的 Raft 算法</span></p>
 <h4 id="3-kube-scheduler"><a class="anchor" href="#3-kube-scheduler">#</a> 3. kube-scheduler</h4>
 <p><code>kube-scheduler</code>  是 K8s 的<strong>调度器，</strong> 负责监视新创建的、未指定运行<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==">节点（node）</span>的 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv">Pods</span>， 并选择节点来让 Pod 在上面运行。</p>
 <p>调度决策考虑的因素包括单个 Pod 及 Pods 集合的资源需求、软硬件及策略约束、 亲和性及反亲和性规范、数据位置、工作负载间的干扰及最后时限。</p>
@@ -272,6 +328,9 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <h4 id="1-kubelet"><a class="anchor" href="#1-kubelet">#</a> 1. kubelet<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvY29tcG9uZW50cy8ja3ViZWxldA=="> </span></h4>
 <p><code>kubelet</code>  会在集群中每个<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==">节点（node）</span>上运行。 它保证<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvd2hhdC1pcy1rdWJlcm5ldGVzLyN3aHktY29udGFpbmVycw==">容器（containers）</span>都运行在 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv">Pod</span> 中。</p>
 <p>kubelet 接收一组通过各类机制提供给它的 PodSpecs， 确保这些 PodSpecs 中描述的容器处于运行状态且健康。 kubelet 不会管理不是由 Kubernetes 创建的容器。</p>
+<blockquote>
+<p>kubelet 会接收</p>
+</blockquote>
 <h4 id="2-kube-proxy"><a class="anchor" href="#2-kube-proxy">#</a> 2. kube-proxy</h4>
 <p><span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1wcm94eS8=">kube-proxy</span> 是集群中每个<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==">节点（node）</span>上所运行的网络代理， 实现 Kubernetes <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLw==">服务（Service）</span> 概念的一部分。</p>
 <p>kube-proxy 维护节点上的一些网络规则， 这些网络规则会允许从集群内部或外部的网络会话与 Pod 进行网络通信。</p>
@@ -295,7 +354,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-03-09 14:35:09" itemprop="dateModified" datetime="2023-03-09T14:35:09+08:00">2023-03-09</time>
+    <time title="修改时间：2023-03-09 18:42:11" itemprop="dateModified" datetime="2023-03-09T18:42:11+08:00">2023-03-09</time>
   </span>
   <span id="hou-duan/ci-cd/k8s/" class="item leancloud_visitors" data-flag-title="Kubernetes" title="阅读次数">
       <span class="icon">
@@ -358,7 +417,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
     <div class="item left">
       
 
-  <a href="/qi-ta/markdown-yu-fa-zong-jie/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-j575jw.jpg" title="Markdown语法">
+  <a href="/qi-ta/markdown-yu-fa-zong-jie/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-v9gvz5.jpg" title="Markdown语法">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Markdown</span>
   <h3>Markdown语法</h3>
@@ -368,7 +427,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
     <div class="item right">
       
 
-  <a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-5ww5g9.jpg" title="css动态效果总结">
+  <a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-xlx9pl.jpg" title="css动态效果总结">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>css动态效果总结</h3>
@@ -390,7 +449,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFk8s"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是 K8s</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#k8s%E7%9A%84%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text"> k8s 的功能特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8A%E7%BA%BF%E5%92%8C%E5%9B%9E%E6%BB%9A"><span class="toc-number">1.2.0.1.</span> <span class="toc-text"> 自动化上线和回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0%E4%B8%8E%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">1.2.0.2.</span> <span class="toc-text"> 服务发现与负载均衡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E6%88%91%E4%BF%AE%E5%A4%8D"><span class="toc-number">1.2.0.3.</span> <span class="toc-text"> 自我修复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%BC%96%E6%8E%92"><span class="toc-number">1.2.0.4.</span> <span class="toc-text"> 存储编排</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#secret-%E5%92%8C%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86"><span class="toc-number">1.2.0.5.</span> <span class="toc-text"> Secret 和配置管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1"><span class="toc-number">1.2.0.6.</span> <span class="toc-text"> 自动装箱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E6%89%A7%E8%A1%8C"><span class="toc-number">1.2.0.7.</span> <span class="toc-text"> 批量执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ipv4ipv6-%E5%8F%8C%E5%8D%8F%E8%AE%AE%E6%A0%88"><span class="toc-number">1.2.0.8.</span> <span class="toc-text"> IPv4&#x2F;IPv6 双协议栈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E6%89%A9%E7%BC%A9"><span class="toc-number">1.2.0.9.</span> <span class="toc-text"> 水平扩缩</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E6%89%A9%E5%B1%95%E6%80%A7%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.0.10.</span> <span class="toc-text"> 为扩展性设计</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#k8s%E7%9A%84%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84%E5%92%8C%E7%BB%84%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> K8s 的集群架构和组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84"><span class="toc-number">2.1.</span> <span class="toc-text"> 集群架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text"> 集群组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#master%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text"> Master 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-api-kube-apiserver"><span class="toc-number">2.2.1.1.</span> <span class="toc-text"> 1. api (kube-apiserver)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-etcd"><span class="toc-number">2.2.1.2.</span> <span class="toc-text"> 2. etcd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-kube-scheduler"><span class="toc-number">2.2.1.3.</span> <span class="toc-text"> 3. kube-scheduler</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-c-m-kube-controller-manager"><span class="toc-number">2.2.1.4.</span> <span class="toc-text"> 4. c-m (kube-controller-manager)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-c-c-m-cloud-controller-manager"><span class="toc-number">2.2.1.5.</span> <span class="toc-text"> 5. c-c-m (cloud-controller-manager)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.2.</span> <span class="toc-text"> Node 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-kubelet"><span class="toc-number">2.2.2.1.</span> <span class="toc-text"> 1. kubelet </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-kube-proxy"><span class="toc-number">2.2.2.2.</span> <span class="toc-text"> 2. kube-proxy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C%E6%97%B6container-runtime"><span class="toc-number">2.2.2.3.</span> <span class="toc-text"> 3. 容器运行时（Container Runtime）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6addons"><span class="toc-number">2.3.</span> <span class="toc-text"> 插件（Addons）</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3k8s-%E5%AE%B9%E5%99%A8%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text"> 了解 K8s &amp; 容器化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%B9%E5%99%A8"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 什么是容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E6%A0%87%E5%87%86"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 容器标准</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ek8s%E5%92%8Cdocker%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 关于 K8s 和 Docker 的关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#k8s%E7%9A%84%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text"> k8s 的功能特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8A%E7%BA%BF%E5%92%8C%E5%9B%9E%E6%BB%9A"><span class="toc-number">1.2.0.1.</span> <span class="toc-text"> 自动化上线和回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0%E4%B8%8E%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">1.2.0.2.</span> <span class="toc-text"> 服务发现与负载均衡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E6%88%91%E4%BF%AE%E5%A4%8D"><span class="toc-number">1.2.0.3.</span> <span class="toc-text"> 自我修复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%BC%96%E6%8E%92"><span class="toc-number">1.2.0.4.</span> <span class="toc-text"> 存储编排</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#secret-%E5%92%8C%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86"><span class="toc-number">1.2.0.5.</span> <span class="toc-text"> Secret 和配置管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1"><span class="toc-number">1.2.0.6.</span> <span class="toc-text"> 自动装箱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E6%89%A7%E8%A1%8C"><span class="toc-number">1.2.0.7.</span> <span class="toc-text"> 批量执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ipv4ipv6-%E5%8F%8C%E5%8D%8F%E8%AE%AE%E6%A0%88"><span class="toc-number">1.2.0.8.</span> <span class="toc-text"> IPv4&#x2F;IPv6 双协议栈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E6%89%A9%E7%BC%A9"><span class="toc-number">1.2.0.9.</span> <span class="toc-text"> 水平扩缩</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E6%89%A9%E5%B1%95%E6%80%A7%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.0.10.</span> <span class="toc-text"> 为扩展性设计</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#k8s%E7%9A%84%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84%E5%92%8C%E7%BB%84%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> K8s 的集群架构和组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84"><span class="toc-number">2.1.</span> <span class="toc-text"> 集群架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text"> 集群组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#master%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text"> Master 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-api-kube-apiserver"><span class="toc-number">2.2.1.1.</span> <span class="toc-text"> 1. api (kube-apiserver)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-etcd"><span class="toc-number">2.2.1.2.</span> <span class="toc-text"> 2. etcd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-kube-scheduler"><span class="toc-number">2.2.1.3.</span> <span class="toc-text"> 3. kube-scheduler</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-c-m-kube-controller-manager"><span class="toc-number">2.2.1.4.</span> <span class="toc-text"> 4. c-m (kube-controller-manager)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-c-c-m-cloud-controller-manager"><span class="toc-number">2.2.1.5.</span> <span class="toc-text"> 5. c-c-m (cloud-controller-manager)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.2.</span> <span class="toc-text"> Node 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-kubelet"><span class="toc-number">2.2.2.1.</span> <span class="toc-text"> 1. kubelet </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-kube-proxy"><span class="toc-number">2.2.2.2.</span> <span class="toc-text"> 2. kube-proxy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C%E6%97%B6container-runtime"><span class="toc-number">2.2.2.3.</span> <span class="toc-text"> 3. 容器运行时（Container Runtime）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6addons"><span class="toc-number">2.3.</span> <span class="toc-text"> 插件（Addons）</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -515,7 +574,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/qian-duan/angular/angular-ru-men/" title="Angular入门">Angular入门</a></span>
+    <span><a href="/qian-duan/js-h5/html-ji-chu/" title="HTML基础">HTML基础</a></span>
   </li>
 
       
@@ -524,7 +583,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/hou-duan/java/java-de-nei-bu-lei/" title="java的内部类">java的内部类</a></span>
+    <span><a href="/hou-duan/zhong-jian-jian/redis/" title="redis基础">redis基础</a></span>
   </li>
 
       
@@ -533,31 +592,56 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/hou-duan/java/java-collection/" title="Java collection">Java collection</a></span>
+    <span><a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" title="SpringMVC 拦截器&amp;方法参数解析器">SpringMVC 拦截器&方法参数解析器</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/CI-CD-K8s/" title="分类于 CI/CD - K8s">CI/CD - K8s</a>
+<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
 </div>
 
-    <span><a href="/hou-duan/ci-cd/k8s/" title="Kubernetes">Kubernetes</a></span>
+    <span><a href="/hou-duan/ci-cd/ci-cd-jenkins/" title="CI_CD&amp;&amp;Jenkins">CI_CD&&Jenkins</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/ZooKeeper/" title="分类于 ZooKeeper">ZooKeeper</a>
+</div>
+
+    <span><a href="/hou-duan/java/java-mian-xiang-dui-xiang/" title="Java面向对象">Java面向对象</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/java/java-fan-she/" title="Java反射">Java反射</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/mybatis/" title="Mybatis">Mybatis</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/spring/" title="分类于 spring">spring</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/ZooKeeper/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
+<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
 </div>
 
-    <span><a href="/hou-duan/zhong-jian-jian/zookeeper-ru-men/" title="ZooKeeper入门">ZooKeeper入门</a></span>
+    <span><a href="/hou-duan/spring/springmvc-yuan-ma-qian-xi/" title="SpringMvc 源码浅析">SpringMvc 源码浅析</a></span>
   </li>
 
       
@@ -566,37 +650,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/hou-duan/java/jdbc/" title="JDBC">JDBC</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/qian-duan/js-h5/h5-xin-zeng/" title="H5新增内容总结">H5新增内容总结</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/qian-duan/js-h5/ding-wei/" title="CSS-定位">CSS-定位</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/java/" title="分类于 java">java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/java/spring/" title="分类于 spring">spring</a>
-</div>
-
-    <span><a href="/cai-keng-hui-zong/springaop-cai-keng/" title="Spring AOP踩坑">Spring AOP踩坑</a></span>
+    <span><a href="/qian-duan/js-h5/js-ji-chu/" title="JS总结">JS总结</a></span>
   </li>
 
   </ul>
@@ -621,13 +675,13 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">295k 字</span>
+    <span title="站点总字数">297k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">4:29</span>
+    <span title="站点阅读时长">4:30</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
