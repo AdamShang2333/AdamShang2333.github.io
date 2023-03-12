@@ -32,7 +32,7 @@
 
 
   <title>
-Kubernetes - CI/CD - K8s |
+Kubernetes - CI/CD |
 bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title>
 <meta name="generator" content="Hexo 5.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -84,7 +84,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>17 分钟</span>
+    <span>18 分钟</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28g879.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-k7wor1.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-4lmre2.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-83yp2j.jpg"></li>
           <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-wqqqdp.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-3z9p26.png"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-k7wor1.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-0j6zdq.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-4lmre2.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-p8rw79.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-5d32r9.png"></li>
         </ul>
       </div>
     </header>
@@ -148,7 +148,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
 <span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/CI-CD-K8s/" itemprop="item" rel="index" title="分类于 CI/CD - K8s"><span itemprop="name">CI/CD - K8s</span></a>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/CI-CD/" itemprop="item" rel="index" title="分类于 CI/CD"><span itemprop="name">CI/CD</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
@@ -168,7 +168,8 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="简介"><a class="anchor" href="#简介">#</a> 简介</h1>
+    <p>[toc]</p>
+<h1 id="简介"><a class="anchor" href="#简介">#</a> 简介</h1>
 <h2 id="了解k8s-容器化"><a class="anchor" href="#了解k8s-容器化">#</a> 了解 K8s &amp; 容器化</h2>
 <p><span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcv">Kubernetes</span> 也称为 K8s，是一个可移植、可扩展的开源平台，用于管理容器化的工作负载和服务，可促进声明式配置和自动化。 Kubernetes 拥有一个庞大且快速增长的生态，其服务、支持和工具的使用范围相当广泛。</p>
 <h3 id="什么是容器"><a class="anchor" href="#什么是容器">#</a> 什么是容器</h3>
@@ -744,27 +745,50 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <p>水平扩缩：对增加的负载的响应是部署更多的 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv">Pod</span>。</p>
 <p>垂直扩缩：将更多资源（例如：内存或 CPU）分配给已经为工作负载运行的 Pod。</p>
 <h2 id="service"><a class="anchor" href="#service">#</a> Service</h2>
-<p>Service 是应用服务的抽象，通过 labels 为应用提供负载均衡和服务发现。匹配 labels 的 Pod IP 和端口列表组成 endpoints，由 kube-proxy 负责将服务 IP 负载均衡到这些 endpoints 上。</p>
+<h3 id="功能"><a class="anchor" href="#功能">#</a> 功能</h3>
+<p>Service 是应用服务的抽象，通过 labels 为应用提供负载均衡和服务发现。匹配 labels 的 Pod IP 和端口列表组成 <code>endpoints</code>  (被选中的 Pod 叫做 Service 的 endPoints)，由 kube-proxy 负责将服务 IP 负载均衡到这些 endpoints 上。</p>
 <p>每个 Service 都会自动分配一个 cluster IP（<strong>仅在集群内部可访问的虚拟地址</strong>）和 DNS 名，其他容器可以通过该地址或 DNS 来访问服务，而不需要了解后端容器的运行。</p>
 <p><img data-src="https://static.sitestack.cn/projects/feiskyer-kubernetes-handbook-202005/introduction/media/14731220608865.png" alt="Kubernetes 基本概念 - 图3" /></p>
-<pre><code>apiVersion: v1kind: Servicemetadata:  name: nginxspec:  ports:  - port: 8078 # the port that this service should serve on    name: http    # the container on each pod to connect to, can be a name    # (e.g. 'www') or a number (e.g. 80)    targetPort: 80    protocol: TCP  selector:    app: nginx
-</code></pre>
-<h3 id="service公开方式"><a class="anchor" href="#service公开方式">#</a> service 公开方式</h3>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">kind</span><span class="token punctuation">:</span> Service</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token key atrule">metadata</span><span class="token punctuation">:</span>  </pre></td></tr><tr><td data-num="4"></td><td><pre>	<span class="token key atrule">name</span><span class="token punctuation">:</span> nginx</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token key atrule">spec</span><span class="token punctuation">:</span>  </pre></td></tr><tr><td data-num="6"></td><td><pre>	<span class="token key atrule">selector</span><span class="token punctuation">:</span>    </pre></td></tr><tr><td data-num="7"></td><td><pre>		<span class="token key atrule">app</span><span class="token punctuation">:</span> nginx</pre></td></tr><tr><td data-num="8"></td><td><pre>	<span class="token key atrule">ports</span><span class="token punctuation">:</span>  </pre></td></tr><tr><td data-num="9"></td><td><pre>	<span class="token punctuation">-</span> <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">8078</span> <span class="token comment"># The port that will be exposed by this service.    </span></pre></td></tr><tr><td data-num="10"></td><td><pre>		<span class="token key atrule">name</span><span class="token punctuation">:</span> http    <span class="token comment"># The name of this port within the service. This must be a DNS_LABEL.</span></pre></td></tr><tr><td data-num="11"></td><td><pre>		<span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">80</span>  <span class="token comment"># Number or name of the port to access on the pods targeted by the service   </span></pre></td></tr><tr><td data-num="12"></td><td><pre>		<span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP  <span class="token comment">#The IP protocol for this port. Supports "TCP", "UDP", and "SCTP". Default is TCP.</span></pre></td></tr></table></figure><h3 id="service的公开方式"><a class="anchor" href="#service的公开方式">#</a> service 的公开方式</h3>
 <p>Kubernetes Service 在 <code>spec.type</code>  允许指定一个需要的类型的 Service，默认是 ClusterIP 类型。</p>
 <p>Type 的取值以及行为如下：</p>
 <ul>
-<li>ClusterIP：通过集群的内部 IP 暴露服务，选择该值，服务只能够在集群内部可以访问，这也是<strong>默认的 ServiceType</strong>。</li>
-<li>NodePort：通过每个 Node 上的 IP  和静态端口（NodePort）暴露服务。NodePort 服务会路由到 ClusterIP 服务，这个 ClusterIP 服务会自动创建。通过请求 &lt;NodeIP&gt;:&lt;NodePort&gt;，可以从集群的外部访问一个 NodePort 服务。</li>
-<li>LoadBalancer：使用云提供商的负载局衡器，可以向外部暴露服务。外部的负载均衡器可以路由到 NodePort 服务和 ClusterIP 服务。</li>
-<li>ExternalName：通过返回 CNAME 和它的值，可以将服务映射到 externalName 字段的内容（例如， <span class="exturl" data-url="aHR0cDovL2Zvby5iYXIuZXhhbXBsZS5jb20=">foo.bar.example.com</span>）。 没有任何类型代理被创建，这只有 Kubernetes 1.7 或更高版本的 kube-dns 才支持。</li>
+<li>
+<p><strong>ClusterIP</strong>：通过集群的内部 IP 暴露服务，选择该值，服务只能够在集群内部使用 <code>&lt;ClusterIP&gt;:&lt;port&gt;</code>  方式访问，这也是<strong>默认的 ServiceType</strong>。</p>
+<p><img data-src="https://upload-images.jianshu.io/upload_images/28070583-c19ad5d2a121b491.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+</li>
+<li>
+<p><strong>NodePort</strong>：通过每个 Node 上的 IP  和静态端口（NodePort）暴露服务。NodePort 服务会路由到 ClusterIP 服务，这个 ClusterIP 服务会自动创建。通过请求  <code>&lt;NodeIP&gt;:&lt;NodePort&gt;</code> ，可以从集群的外部访问一个 NodePort 服务。</p>
+<p><img data-src="https://upload-images.jianshu.io/upload_images/28070583-8853bc4191d13dd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<blockquote>
+<p>NodePort 类型的 Service 是向集群外暴露服务的最原始方式，也是最好让人理解的。优点是简单，好理解，通过 IP + 端口的方式就能访问，不过它的缺点也很明显。</p>
+<ul>
+<li>每向外暴露一个服务都要占用所有 Node 的一个端口，如果多了难以管理。</li>
+<li>NodePort 的端口区间固定，只能使用 30000–32767 间的端口。</li>
+<li>如果 Node 的 IP 发生改变，负载均衡代理需要跟着改后端端点 IP 才行。</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p><strong>LoadBalancer</strong>：使用云提供商的负载局衡器，可以向外部暴露服务。外部的负载均衡器可以路由到 NodePort 服务和 ClusterIP 服务。</p>
+</li>
+<li>
+<p><strong>ExternalName</strong>：通过返回 CNAME 和它的值，可以将服务映射到 externalName 字段的内容（例如， <span class="exturl" data-url="aHR0cDovL2Zvby5iYXIuZXhhbXBsZS5jb20=">foo.bar.example.com</span>）。 没有任何类型代理被创建，这只有 Kubernetes 1.7 或更高版本的 kube-dns 才支持。</p>
+</li>
 </ul>
 <h2 id="ingress"><a class="anchor" href="#ingress">#</a> ingress</h2>
 <p>Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型的访问方式是 HTTP。可以提供负载均衡、SSL 终结和基于名称的虚拟托管。</p>
 <p><span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL2RvY3MvcmVmZXJlbmNlL2dlbmVyYXRlZC9rdWJlcm5ldGVzLWFwaS92MS4yNi8jaW5ncmVzcy12MS1uZXR3b3JraW5nLWs4cy1pbw==">Ingress</span> 公开从集群外部到集群内<span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLw==">服务</span>的 HTTP 和 HTTPS 路由。 流量路由由 Ingress 资源上定义的规则控制。</p>
-<p>下面是一个将所有流量都发送到同一 Service 的简单 Ingress 示例：</p>
-<p><img data-src="https://d33wubrfki0l68.cloudfront.net/4f01eaec32889ff16ee255e97822b6d165b633f0/a54b4/zh-cn/docs/images/ingress.svg" alt="ingress-diagram" /></p>
+<blockquote>
+<p>Ingress 在 K8s 集群里的角色是给 Service 充当反向代理。它可以位于多个 Service 的前端，给这些 Service 充当 “智能路由” 或者集群的入口点。</p>
+</blockquote>
+<p>下面是一个将流量根据路由规则发送不同 Service 的 Ingress 示例：</p>
+<p><img data-src="https://upload-images.jianshu.io/upload_images/28070583-807a96bcc98ffe0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ingress-diagram" /></p>
 <p>Ingress 可为 Service 提供外部可访问的 URL、负载均衡流量、终止 SSL/TLS，以及基于名称的虚拟托管。 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9pbmdyZXNzLWNvbnRyb2xsZXJz">Ingress 控制器</span> 通常负责通过负载均衡器来实现 Ingress，尽管它也可以配置边缘路由器或其他前端来帮助处理流量。</p>
 <p>Ingress 不会公开任意端口或协议。 将 HTTP 和 HTTPS 以外的服务公开到 Internet 时，通常使用 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLyN0eXBlLW5vZGVwb3J0">Service.Type=NodePort</span> 或 <span class="exturl" data-url="aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLyNsb2FkYmFsYW5jZXI=">Service.Type=LoadBalancer</span> 类型的 Service。</p>
+<blockquote>
+<p>使用 Ingress 对象前需要先安装 Ingress-Controller, 像阿里云、亚马逊 AWS 他们的 K8s 企业服务都会提供自己的 Controller ，对于自己搭建的集群，通常使用 nginx-ingress 作为控制器，它使用 NGINX 服务器作为反向代理，访问 Ingress 的流量按规则路由给集群内部的 Service。</p>
+</blockquote>
 
       <div class="tags">
           <a href="/tags/K8s/" rel="tag"><i class="ic i-tag"></i> K8s</a>
@@ -780,7 +804,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-03-12 18:52:05" itemprop="dateModified" datetime="2023-03-12T18:52:05+08:00">2023-03-12</time>
+    <time title="修改时间：2023-03-12 19:13:29" itemprop="dateModified" datetime="2023-03-12T19:13:29+08:00">2023-03-12</time>
   </span>
   <span id="hou-duan/ci-cd/k8s/" class="item leancloud_visitors" data-flag-title="Kubernetes" title="阅读次数">
       <span class="icon">
@@ -843,7 +867,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
     <div class="item left">
       
 
-  <a href="/qi-ta/markdown-yu-fa-zong-jie/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-mdmz51.jpg" title="Markdown语法">
+  <a href="/qi-ta/markdown-yu-fa-zong-jie/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-ym1jpg.jpg" title="Markdown语法">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Markdown</span>
   <h3>Markdown语法</h3>
@@ -853,7 +877,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
     <div class="item right">
       
 
-  <a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-y88q3g.jpg" title="css动态效果总结">
+  <a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;oldFun&#x2F;picGitee&#x2F;raw&#x2F;master&#x2F;img&#x2F;wallhaven-p8rw79.jpg" title="css动态效果总结">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>css动态效果总结</h3>
@@ -875,11 +899,11 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3k8s-%E5%AE%B9%E5%99%A8%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text"> 了解 K8s &amp; 容器化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%B9%E5%99%A8"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 什么是容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E6%A0%87%E5%87%86"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 容器标准</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ek8s%E5%92%8Cdocker%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 关于 K8s 和 Docker 的关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#k8s%E7%9A%84%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text"> k8s 的功能特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8A%E7%BA%BF%E5%92%8C%E5%9B%9E%E6%BB%9A"><span class="toc-number">1.2.0.1.</span> <span class="toc-text"> 自动化上线和回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0%E4%B8%8E%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">1.2.0.2.</span> <span class="toc-text"> 服务发现与负载均衡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E6%88%91%E4%BF%AE%E5%A4%8D"><span class="toc-number">1.2.0.3.</span> <span class="toc-text"> 自我修复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%BC%96%E6%8E%92"><span class="toc-number">1.2.0.4.</span> <span class="toc-text"> 存储编排</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#secret-%E5%92%8C%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86"><span class="toc-number">1.2.0.5.</span> <span class="toc-text"> Secret 和配置管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1"><span class="toc-number">1.2.0.6.</span> <span class="toc-text"> 自动装箱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E6%89%A7%E8%A1%8C"><span class="toc-number">1.2.0.7.</span> <span class="toc-text"> 批量执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ipv4ipv6-%E5%8F%8C%E5%8D%8F%E8%AE%AE%E6%A0%88"><span class="toc-number">1.2.0.8.</span> <span class="toc-text"> IPv4&#x2F;IPv6 双协议栈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E6%89%A9%E7%BC%A9"><span class="toc-number">1.2.0.9.</span> <span class="toc-text"> 水平扩缩</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E6%89%A9%E5%B1%95%E6%80%A7%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.0.10.</span> <span class="toc-text"> 为扩展性设计</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#k8s%E7%9A%84%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84%E5%92%8C%E7%BB%84%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> K8s 的集群架构和组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84"><span class="toc-number">2.1.</span> <span class="toc-text"> 集群架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text"> 集群组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#master%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text"> Master 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-api-kube-apiserver"><span class="toc-number">2.2.1.1.</span> <span class="toc-text"> 1. api (kube-apiserver)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-etcd"><span class="toc-number">2.2.1.2.</span> <span class="toc-text"> 2. etcd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-kube-scheduler"><span class="toc-number">2.2.1.3.</span> <span class="toc-text"> 3. kube-scheduler</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-c-m-kube-controller-manager"><span class="toc-number">2.2.1.4.</span> <span class="toc-text"> 4. c-m (kube-controller-manager)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-c-c-m-cloud-controller-manager"><span class="toc-number">2.2.1.5.</span> <span class="toc-text"> 5. c-c-m (cloud-controller-manager)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.2.</span> <span class="toc-text"> Node 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-kubelet"><span class="toc-number">2.2.2.1.</span> <span class="toc-text"> 1. kubelet </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-kube-proxy"><span class="toc-number">2.2.2.2.</span> <span class="toc-text"> 2. kube-proxy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C%E6%97%B6container-runtime"><span class="toc-number">2.2.2.3.</span> <span class="toc-text"> 3. 容器运行时（Container Runtime）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6addons"><span class="toc-number">2.3.</span> <span class="toc-text"> 插件（Addons）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6"><span class="toc-number">2.3.1.</span> <span class="toc-text"> 常用的插件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#coredns"><span class="toc-number">2.3.1.1.</span> <span class="toc-text"> CoreDNS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ingresscontroller"><span class="toc-number">2.3.1.2.</span> <span class="toc-text"> ingressController</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prometheus"><span class="toc-number">2.3.1.3.</span> <span class="toc-text"> Prometheus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dashboard%E4%BB%AA%E8%A1%A8%E7%9B%98"><span class="toc-number">2.3.1.4.</span> <span class="toc-text"> Dashboard（仪表盘） </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E8%B5%84%E6%BA%90%E7%9B%91%E6%8E%A7"><span class="toc-number">2.3.1.5.</span> <span class="toc-text"> 容器资源监控</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E5%B1%82%E9%9D%A2%E6%97%A5%E5%BF%97"><span class="toc-number">2.3.1.6.</span> <span class="toc-text"> 集群层面日志</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rancher"><span class="toc-number">2.3.2.</span> <span class="toc-text"> Rancher</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#federation"><span class="toc-number">2.3.3.</span> <span class="toc-text"> Federation</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#k8s%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">3.</span> <span class="toc-text"> k8s 核心概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#k8s%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.</span> <span class="toc-text"> K8S 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 什么是对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%8F%8F%E8%BF%B0k8s%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.2.</span> <span class="toc-text"> 如何描述 k8s 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%AF%B9%E8%B1%A1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-number">3.1.2.1.</span> <span class="toc-text"> 查询对象配置文件结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%97%E6%AE%B5"><span class="toc-number">3.1.2.2.</span> <span class="toc-text"> 常用的对象字段</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BAk8s%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.3.</span> <span class="toc-text"> 如何创建 k8s 对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pod"><span class="toc-number">3.2.</span> <span class="toc-text"> Pod</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-2"><span class="toc-number">3.2.1.</span> <span class="toc-text"> 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pod%E7%9A%84%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B"><span class="toc-number">3.2.2.</span> <span class="toc-text"> pod 的创建流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pause%E5%AE%B9%E5%99%A8"><span class="toc-number">3.2.3.</span> <span class="toc-text"> pause 容器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node"><span class="toc-number">3.3.</span> <span class="toc-text"> Node</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8A%82%E7%82%B9%E5%90%8D%E7%A7%B0%E5%94%AF%E4%B8%80%E6%80%A7"><span class="toc-number">3.3.1.</span> <span class="toc-text"> 节点名称唯一性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#namespace"><span class="toc-number">3.4.</span> <span class="toc-text"> Namespace</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#label"><span class="toc-number">3.5.</span> <span class="toc-text"> Label</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#annotations"><span class="toc-number">3.6.</span> <span class="toc-text"> Annotations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#controller"><span class="toc-number">3.7.</span> <span class="toc-text"> controller</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFcontroller"><span class="toc-number">3.7.1.</span> <span class="toc-text"> 什么是 controller</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%99%A8%E7%A7%8D%E7%B1%BB"><span class="toc-number">3.7.2.</span> <span class="toc-text"> 控制器种类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%99%A8%E5%88%86%E7%B1%BB"><span class="toc-number">3.7.3.</span> <span class="toc-text"> 控制器分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A0%E7%8A%B6%E6%80%81%E5%BA%94%E7%94%A8"><span class="toc-number">3.7.3.1.</span> <span class="toc-text"> 无状态应用</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%9A%E7%94%A8%E5%9E%8B"><span class="toc-number">3.7.3.1.1.</span> <span class="toc-text"> 通用型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%9C%BA%E6%99%AF"><span class="toc-number">3.7.3.1.2.</span> <span class="toc-text"> 特殊场景</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E7%8A%B6%E6%80%81%E5%BA%94%E7%94%A8"><span class="toc-number">3.7.3.2.</span> <span class="toc-text"> 有状态应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="toc-number">3.7.3.3.</span> <span class="toc-text"> 自定义控制器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E5%9F%BA%E4%BA%8E%E9%9B%86%E5%90%88%E9%9C%80%E6%B1%82%E7%9A%84%E8%B5%84%E6%BA%90"><span class="toc-number">3.7.3.4.</span> <span class="toc-text"> 支持基于集合需求的资源</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rc-rs"><span class="toc-number">3.7.4.</span> <span class="toc-text"> RC &#x2F; RS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployment"><span class="toc-number">3.7.5.</span> <span class="toc-text"> Deployment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#statefulset"><span class="toc-number">3.7.6.</span> <span class="toc-text"> StatefulSet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#daemonset"><span class="toc-number">3.7.7.</span> <span class="toc-text"> DaemonSet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#job"><span class="toc-number">3.7.8.</span> <span class="toc-text"> Job</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cronjob"><span class="toc-number">3.7.9.</span> <span class="toc-text"> CronJob</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hpa"><span class="toc-number">3.7.10.</span> <span class="toc-text"> HPA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#k8s%E4%B8%AD%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%89%A9%E7%BC%A9%E5%92%8C%E5%9E%82%E7%9B%B4%E6%89%A9%E7%BC%A9"><span class="toc-number">3.7.11.</span> <span class="toc-text"> K8s 中的水平扩缩和垂直扩缩</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#service"><span class="toc-number">3.8.</span> <span class="toc-text"> Service</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#service%E5%85%AC%E5%BC%80%E6%96%B9%E5%BC%8F"><span class="toc-number">3.8.1.</span> <span class="toc-text"> service 公开方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ingress"><span class="toc-number">3.9.</span> <span class="toc-text"> ingress</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3k8s-%E5%AE%B9%E5%99%A8%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text"> 了解 K8s &amp; 容器化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%B9%E5%99%A8"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 什么是容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E6%A0%87%E5%87%86"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 容器标准</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ek8s%E5%92%8Cdocker%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 关于 K8s 和 Docker 的关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#k8s%E7%9A%84%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text"> k8s 的功能特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8A%E7%BA%BF%E5%92%8C%E5%9B%9E%E6%BB%9A"><span class="toc-number">1.2.0.1.</span> <span class="toc-text"> 自动化上线和回滚</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0%E4%B8%8E%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">1.2.0.2.</span> <span class="toc-text"> 服务发现与负载均衡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E6%88%91%E4%BF%AE%E5%A4%8D"><span class="toc-number">1.2.0.3.</span> <span class="toc-text"> 自我修复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%BC%96%E6%8E%92"><span class="toc-number">1.2.0.4.</span> <span class="toc-text"> 存储编排</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#secret-%E5%92%8C%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86"><span class="toc-number">1.2.0.5.</span> <span class="toc-text"> Secret 和配置管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E8%A3%85%E7%AE%B1"><span class="toc-number">1.2.0.6.</span> <span class="toc-text"> 自动装箱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E6%89%A7%E8%A1%8C"><span class="toc-number">1.2.0.7.</span> <span class="toc-text"> 批量执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ipv4ipv6-%E5%8F%8C%E5%8D%8F%E8%AE%AE%E6%A0%88"><span class="toc-number">1.2.0.8.</span> <span class="toc-text"> IPv4&#x2F;IPv6 双协议栈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E6%89%A9%E7%BC%A9"><span class="toc-number">1.2.0.9.</span> <span class="toc-text"> 水平扩缩</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E6%89%A9%E5%B1%95%E6%80%A7%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.0.10.</span> <span class="toc-text"> 为扩展性设计</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#k8s%E7%9A%84%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84%E5%92%8C%E7%BB%84%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> K8s 的集群架构和组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E6%9E%B6%E6%9E%84"><span class="toc-number">2.1.</span> <span class="toc-text"> 集群架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text"> 集群组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#master%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text"> Master 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-api-kube-apiserver"><span class="toc-number">2.2.1.1.</span> <span class="toc-text"> 1. api (kube-apiserver)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-etcd"><span class="toc-number">2.2.1.2.</span> <span class="toc-text"> 2. etcd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-kube-scheduler"><span class="toc-number">2.2.1.3.</span> <span class="toc-text"> 3. kube-scheduler</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-c-m-kube-controller-manager"><span class="toc-number">2.2.1.4.</span> <span class="toc-text"> 4. c-m (kube-controller-manager)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-c-c-m-cloud-controller-manager"><span class="toc-number">2.2.1.5.</span> <span class="toc-text"> 5. c-c-m (cloud-controller-manager)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node%E7%BB%84%E4%BB%B6"><span class="toc-number">2.2.2.</span> <span class="toc-text"> Node 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-kubelet"><span class="toc-number">2.2.2.1.</span> <span class="toc-text"> 1. kubelet </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-kube-proxy"><span class="toc-number">2.2.2.2.</span> <span class="toc-text"> 2. kube-proxy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C%E6%97%B6container-runtime"><span class="toc-number">2.2.2.3.</span> <span class="toc-text"> 3. 容器运行时（Container Runtime）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6addons"><span class="toc-number">2.3.</span> <span class="toc-text"> 插件（Addons）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6"><span class="toc-number">2.3.1.</span> <span class="toc-text"> 常用的插件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#coredns"><span class="toc-number">2.3.1.1.</span> <span class="toc-text"> CoreDNS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ingresscontroller"><span class="toc-number">2.3.1.2.</span> <span class="toc-text"> ingressController</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prometheus"><span class="toc-number">2.3.1.3.</span> <span class="toc-text"> Prometheus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dashboard%E4%BB%AA%E8%A1%A8%E7%9B%98"><span class="toc-number">2.3.1.4.</span> <span class="toc-text"> Dashboard（仪表盘） </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E8%B5%84%E6%BA%90%E7%9B%91%E6%8E%A7"><span class="toc-number">2.3.1.5.</span> <span class="toc-text"> 容器资源监控</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E5%B1%82%E9%9D%A2%E6%97%A5%E5%BF%97"><span class="toc-number">2.3.1.6.</span> <span class="toc-text"> 集群层面日志</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rancher"><span class="toc-number">2.3.2.</span> <span class="toc-text"> Rancher</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#federation"><span class="toc-number">2.3.3.</span> <span class="toc-text"> Federation</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#k8s%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">3.</span> <span class="toc-text"> k8s 核心概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#k8s%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.</span> <span class="toc-text"> K8S 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 什么是对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%8F%8F%E8%BF%B0k8s%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.2.</span> <span class="toc-text"> 如何描述 k8s 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%AF%B9%E8%B1%A1%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-number">3.1.2.1.</span> <span class="toc-text"> 查询对象配置文件结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%97%E6%AE%B5"><span class="toc-number">3.1.2.2.</span> <span class="toc-text"> 常用的对象字段</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BAk8s%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.3.</span> <span class="toc-text"> 如何创建 k8s 对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pod"><span class="toc-number">3.2.</span> <span class="toc-text"> Pod</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-2"><span class="toc-number">3.2.1.</span> <span class="toc-text"> 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pod%E7%9A%84%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B"><span class="toc-number">3.2.2.</span> <span class="toc-text"> pod 的创建流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pause%E5%AE%B9%E5%99%A8"><span class="toc-number">3.2.3.</span> <span class="toc-text"> pause 容器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node"><span class="toc-number">3.3.</span> <span class="toc-text"> Node</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8A%82%E7%82%B9%E5%90%8D%E7%A7%B0%E5%94%AF%E4%B8%80%E6%80%A7"><span class="toc-number">3.3.1.</span> <span class="toc-text"> 节点名称唯一性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#namespace"><span class="toc-number">3.4.</span> <span class="toc-text"> Namespace</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#label"><span class="toc-number">3.5.</span> <span class="toc-text"> Label</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#annotations"><span class="toc-number">3.6.</span> <span class="toc-text"> Annotations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#controller"><span class="toc-number">3.7.</span> <span class="toc-text"> controller</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFcontroller"><span class="toc-number">3.7.1.</span> <span class="toc-text"> 什么是 controller</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%99%A8%E7%A7%8D%E7%B1%BB"><span class="toc-number">3.7.2.</span> <span class="toc-text"> 控制器种类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%99%A8%E5%88%86%E7%B1%BB"><span class="toc-number">3.7.3.</span> <span class="toc-text"> 控制器分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A0%E7%8A%B6%E6%80%81%E5%BA%94%E7%94%A8"><span class="toc-number">3.7.3.1.</span> <span class="toc-text"> 无状态应用</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%9A%E7%94%A8%E5%9E%8B"><span class="toc-number">3.7.3.1.1.</span> <span class="toc-text"> 通用型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%9C%BA%E6%99%AF"><span class="toc-number">3.7.3.1.2.</span> <span class="toc-text"> 特殊场景</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E7%8A%B6%E6%80%81%E5%BA%94%E7%94%A8"><span class="toc-number">3.7.3.2.</span> <span class="toc-text"> 有状态应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="toc-number">3.7.3.3.</span> <span class="toc-text"> 自定义控制器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E5%9F%BA%E4%BA%8E%E9%9B%86%E5%90%88%E9%9C%80%E6%B1%82%E7%9A%84%E8%B5%84%E6%BA%90"><span class="toc-number">3.7.3.4.</span> <span class="toc-text"> 支持基于集合需求的资源</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rc-rs"><span class="toc-number">3.7.4.</span> <span class="toc-text"> RC &#x2F; RS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployment"><span class="toc-number">3.7.5.</span> <span class="toc-text"> Deployment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#statefulset"><span class="toc-number">3.7.6.</span> <span class="toc-text"> StatefulSet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#daemonset"><span class="toc-number">3.7.7.</span> <span class="toc-text"> DaemonSet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#job"><span class="toc-number">3.7.8.</span> <span class="toc-text"> Job</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cronjob"><span class="toc-number">3.7.9.</span> <span class="toc-text"> CronJob</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hpa"><span class="toc-number">3.7.10.</span> <span class="toc-text"> HPA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#k8s%E4%B8%AD%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%89%A9%E7%BC%A9%E5%92%8C%E5%9E%82%E7%9B%B4%E6%89%A9%E7%BC%A9"><span class="toc-number">3.7.11.</span> <span class="toc-text"> K8s 中的水平扩缩和垂直扩缩</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#service"><span class="toc-number">3.8.</span> <span class="toc-text"> Service</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-number">3.8.1.</span> <span class="toc-text"> 功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#service%E7%9A%84%E5%85%AC%E5%BC%80%E6%96%B9%E5%BC%8F"><span class="toc-number">3.8.2.</span> <span class="toc-text"> service 的公开方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ingress"><span class="toc-number">3.9.</span> <span class="toc-text"> ingress</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li class="active"><a href="/hou-duan/ci-cd/k8s/" rel="bookmark" title="Kubernetes">Kubernetes</a></li>
+          <li><a href="/hou-duan/ci-cd/ci-cd-jenkins/" rel="bookmark" title="CI_CD&&Jenkins">CI_CD&&Jenkins</a></li><li><a href="/hou-duan/ci-cd/ce-shi-jenkins/" rel="bookmark" title="测试Jenkins">测试Jenkins</a></li><li class="active"><a href="/hou-duan/ci-cd/k8s/" rel="bookmark" title="Kubernetes">Kubernetes</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -899,7 +923,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">17</span>
+        <span class="count">16</span>
         <span class="name">分类</span>
       </a>
     </div>
@@ -988,37 +1012,6 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/hou-duan/java/java-io/" title="IO相关">IO相关</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/CI-CD/" title="分类于 CI/CD">CI/CD</a>
-</div>
-
-    <span><a href="/hou-duan/ci-cd/ce-shi-jenkins/" title="测试Jenkins">测试Jenkins</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%85%B6%E4%BB%96/Markdown/" title="分类于 Markdown">Markdown</a>
-</div>
-
-    <span><a href="/qi-ta/markdown-yu-fa-zong-jie/" title="Markdown语法">Markdown语法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/spring/" title="分类于 spring">spring</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
@@ -1033,7 +1026,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/qian-duan/angular/angular-ru-men/" title="Angular入门">Angular入门</a></span>
+    <span><a href="/hou-duan/java/javaweb-ji-chu/" title="JavaWeb基础">JavaWeb基础</a></span>
   </li>
 
       
@@ -1042,25 +1035,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" title="AOP&amp;静态代理&amp;动态代理">AOP&静态代理&动态代理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/qian-duan/js-h5/html-ji-chu/" title="HTML基础">HTML基础</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/shu-ju-ku/shu-ju-ku-han-shu/" title="数据库函数">数据库函数</a></span>
+    <span><a href="/qian-duan/js-h5/css-yang-shi-ji-chu/" title="css基础样式">css基础样式</a></span>
   </li>
 
       
@@ -1079,14 +1054,54 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/MQ/" title="分类于 MQ">MQ</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/MQ/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
 </div>
 
-    <span><a href="/hou-duan/zhong-jian-jian/rocketmq-ru-men/" title="RocketMQ">RocketMQ</a></span>
+    <span><a href="/qian-duan/js-h5/css-dong-tai-xiao-guo/" title="css动态效果总结">css动态效果总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/redis/" title="redis基础">redis基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/shu-ju-ku/shu-ju-ku-ji-chu/" title="数据库基础">数据库基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/js-xuan-ze-qi/" title="js选择器">js选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/ding-wei/" title="CSS-定位">CSS-定位</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/swagger-shi-yong-wen-dang/" title="swagger使用文档">swagger使用文档</a></span>
   </li>
 
   </ul>
@@ -1111,7 +1126,7 @@ bit Blog = 一位 Blog = bit =>byte KB MB GB TB ... 积跬步而行千里</title
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">311k 字</span>
+    <span title="站点总字数">312k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">

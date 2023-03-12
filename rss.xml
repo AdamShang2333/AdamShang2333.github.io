@@ -10,13 +10,13 @@
         </author>
         <description>&lt;div style=&#39;font-size: 0.8em;&#39;&gt; I.is(null); &lt;br/&gt;If(U.appear()) &lt;br/&gt;I.turn(new World(&#39;Fill With Love&#39;)) &lt;br/&gt;// 我的世界 &lt;br/&gt;// 直至遇见你 &lt;br/&gt;// 才熠熠生辉 &lt;/div&gt; </description>
         <language>zh-CN</language>
-        <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
-        <lastBuildDate>Sun, 12 Mar 2023 10:52:15 +0000</lastBuildDate>
+        <pubDate>Sun, 12 Mar 2023 11:13:40 +0000</pubDate>
+        <lastBuildDate>Sun, 12 Mar 2023 11:13:40 +0000</lastBuildDate>
         <item>
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/zhong-jian-jian/redis/</guid>
             <title>redis基础</title>
             <link>http://adamshang2333.github.io/hou-duan/zhong-jian-jian/redis/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:40 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;一-redis特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-redis特性&#34;&gt;#&lt;/a&gt; 一. Redis 特性&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -156,7 +156,7 @@ zrevrange key start end&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/</guid>
             <title>Mybatis</title>
             <link>http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:40 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;[toc]&lt;/p&gt;
 &lt;h2 id=&#34;重要组成部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重要组成部分&#34;&gt;#&lt;/a&gt; 重要组成部分&lt;/h2&gt;
 &lt;ul&gt;
@@ -609,7 +609,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/</guid>
             <title>SpringMVC 拦截器&amp;方法参数解析器</title>
             <link>http://adamshang2333.github.io/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:39 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;springmvc-拦截器方法参数解析器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#springmvc-拦截器方法参数解析器&#34;&gt;#&lt;/a&gt; SpringMVC 拦截器 &amp;amp; 方法参数解析器&lt;/h2&gt;
 &lt;h3 id=&#34;拦截器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拦截器&#34;&gt;#&lt;/a&gt; 拦截器&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -635,7 +635,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/spring/spring-jdbc/</guid>
             <title>Spring JDBC</title>
             <link>http://adamshang2333.github.io/hou-duan/spring/spring-jdbc/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:39 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概念&#34;&gt;#&lt;/a&gt; 概念&lt;/h2&gt;
 &lt;p&gt;是封装了 JDBC 操作的一个框架 必须依赖 Spring&lt;/p&gt;
 &lt;p&gt;SpringJDBC 本身就是基于模板模式进行开发，提供一个 JDBCTemplate 类&lt;/p&gt;
@@ -663,7 +663,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-de-nei-bu-lei/</guid>
             <title>java的内部类</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-de-nei-bu-lei/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:39 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;前言-类的成员&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言-类的成员&#34;&gt;#&lt;/a&gt; 前言 -- 类的成员&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个类的成员，包含如下内容:&lt;br /&gt;
@@ -722,7 +722,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <link>http://adamshang2333.github.io/hou-duan/java/basics/java-ji-chu/</link>
             <category term="java" scheme="http://adamshang2333.github.io/categories/java/" />
             <category term="基础" scheme="http://adamshang2333.github.io/categories/java/basics/" />
-            <pubDate>Sun, 12 Mar 2023 10:52:06 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:30 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;strong&gt;IO 概念&lt;/strong&gt;&lt;/p&gt;
  ]]></description>
         </item>
@@ -730,7 +730,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/</guid>
             <title>JavaWeb基础</title>
             <link>http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:05 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;应用组成结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#应用组成结构&#34;&gt;#&lt;/a&gt; 应用组成结构&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images0.cnblogs.com/i/289233/201405/172304056712920.png&#34; alt=&#34;组成&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注: !!! 在 JavaWeb 中，没有明显的主函数&lt;/strong&gt;&lt;/p&gt;
@@ -988,7 +988,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-fan-she/</guid>
             <title>Java反射</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-fan-she/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:05 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;反射&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反射&#34;&gt;#&lt;/a&gt; 反射&lt;/h1&gt;
 &lt;h2 id=&#34;反射机制的概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反射机制的概念&#34;&gt;#&lt;/a&gt; 反射机制的概念&lt;/h2&gt;
 &lt;p&gt;将类的各个组成部分，封装为其他对象&lt;/p&gt;
@@ -1026,7 +1026,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-collection/</guid>
             <title>Java collection</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-collection/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:05 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;collection容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#collection容器&#34;&gt;#&lt;/a&gt; Collection 容器&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;容器的特点:&lt;br /&gt;
@@ -1235,7 +1235,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/jdbc/</guid>
             <title>JDBC</title>
             <link>http://adamshang2333.github.io/hou-duan/java/jdbc/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:05 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;全称: Java DataBase Connectivity&lt;br /&gt;
  是 java 语言中，用来规范客户端程序如何来访问数据库的 API (应用程序接口)&lt;/p&gt;
@@ -1552,7 +1552,7 @@ SQL 语句的查询条件需要的&lt;strong&gt;传入参数 长度和类型都�
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/ding-wei/</guid>
             <title>CSS-定位</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/ding-wei/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;定位&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定位&#34;&gt;#&lt;/a&gt; 定位&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;定位的使用包含两个部分：&lt;/p&gt;
@@ -1680,7 +1680,7 @@ margin-top:-自身高度的一半;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/js-ji-chu/</guid>
             <title>JS总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/js-ji-chu/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;[toc]&lt;/p&gt;
 &lt;h2 id=&#34;js组成部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#js组成部分&#34;&gt;#&lt;/a&gt; jS 组成部分&lt;/h2&gt;
 &lt;p&gt;EMAScript: ES5  ES6  基础语法和标准&lt;br /&gt;
@@ -1891,7 +1891,7 @@ var d = a &amp;gt; b &amp;amp;&amp;amp; a &amp;gt; 0 ? a + b : a - b;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/js-xuan-ze-qi/</guid>
             <title>js选择器</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/js-xuan-ze-qi/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;基本选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本选择器&#34;&gt;#&lt;/a&gt; 基本选择器&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;id 选择器&lt;/li&gt;
@@ -2004,7 +2004,7 @@ var d = a &amp;gt; b &amp;amp;&amp;amp; a &amp;gt; 0 ? a + b : a - b;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/</guid>
             <title>HTML基础</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;html模板&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html模板&#34;&gt;#&lt;/a&gt; html 模板&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;!--申明一个HTML文档--&amp;gt;
 &amp;lt;!DOCTYPE html&amp;gt;
@@ -2297,7 +2297,7 @@ header footer nav  main.....&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/h5-xin-zeng/</guid>
             <title>H5新增内容总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/h5-xin-zeng/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;## 新增标签&lt;/p&gt;
 &lt;p&gt;### 音频标签 - audio&lt;/p&gt;
 &lt;p&gt;可以设置宽、高&lt;br /&gt;
@@ -2448,7 +2448,7 @@ header footer nav  main.....&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/dom-cao-zuo/</guid>
             <title>DOM操作</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/dom-cao-zuo/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;获取元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取元素&#34;&gt;#&lt;/a&gt; 获取元素&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;name&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;script&amp;gt;
@@ -2568,7 +2568,7 @@ oAll.replaceChild(theA, oAll.children[0]);
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/css-dong-tai-xiao-guo/</guid>
             <title>css动态效果总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/css-dong-tai-xiao-guo/</link>
-            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 11:13:29 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;##transition (过渡样式)&lt;br /&gt;
 ### 可设定过渡的时间 延时时间 速度曲线 指定某个过渡的元素&lt;br /&gt;
  #### 过渡时间  transition-duration: 1s;&lt;br /&gt;
@@ -2640,11 +2640,12 @@ y 轴:top center bottom&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/ci-cd/k8s/</guid>
             <title>Kubernetes</title>
             <link>http://adamshang2333.github.io/hou-duan/ci-cd/k8s/</link>
-            <category term="CI/CD - K8s" scheme="http://adamshang2333.github.io/categories/CI-CD-K8s/" />
+            <category term="CI/CD" scheme="http://adamshang2333.github.io/categories/CI-CD/" />
             <category term="K8s" scheme="http://adamshang2333.github.io/tags/K8s/" />
             <category term="容器化" scheme="http://adamshang2333.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/" />
             <pubDate>Tue, 07 Mar 2023 11:23:00 +0000</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h1&gt;
+            <description><![CDATA[ &lt;p&gt;[toc]&lt;/p&gt;
+&lt;h1 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h1&gt;
 &lt;h2 id=&#34;了解k8s-容器化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#了解k8s-容器化&#34;&gt;#&lt;/a&gt; 了解 K8s &amp;amp; 容器化&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcv&#34;&gt;Kubernetes&lt;/span&gt; 也称为 K8s，是一个可移植、可扩展的开源平台，用于管理容器化的工作负载和服务，可促进声明式配置和自动化。 Kubernetes 拥有一个庞大且快速增长的生态，其服务、支持和工具的使用范围相当广泛。&lt;/p&gt;
 &lt;h3 id=&#34;什么是容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是容器&#34;&gt;#&lt;/a&gt; 什么是容器&lt;/h3&gt;
@@ -3220,27 +3221,50 @@ y 轴:top center bottom&lt;/p&gt;
 &lt;p&gt;水平扩缩：对增加的负载的响应是部署更多的 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv&#34;&gt;Pod&lt;/span&gt;。&lt;/p&gt;
 &lt;p&gt;垂直扩缩：将更多资源（例如：内存或 CPU）分配给已经为工作负载运行的 Pod。&lt;/p&gt;
 &lt;h2 id=&#34;service&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#service&#34;&gt;#&lt;/a&gt; Service&lt;/h2&gt;
-&lt;p&gt;Service 是应用服务的抽象，通过 labels 为应用提供负载均衡和服务发现。匹配 labels 的 Pod IP 和端口列表组成 endpoints，由 kube-proxy 负责将服务 IP 负载均衡到这些 endpoints 上。&lt;/p&gt;
+&lt;h3 id=&#34;功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#功能&#34;&gt;#&lt;/a&gt; 功能&lt;/h3&gt;
+&lt;p&gt;Service 是应用服务的抽象，通过 labels 为应用提供负载均衡和服务发现。匹配 labels 的 Pod IP 和端口列表组成 &lt;code&gt;endpoints&lt;/code&gt;  (被选中的 Pod 叫做 Service 的 endPoints)，由 kube-proxy 负责将服务 IP 负载均衡到这些 endpoints 上。&lt;/p&gt;
 &lt;p&gt;每个 Service 都会自动分配一个 cluster IP（&lt;strong&gt;仅在集群内部可访问的虚拟地址&lt;/strong&gt;）和 DNS 名，其他容器可以通过该地址或 DNS 来访问服务，而不需要了解后端容器的运行。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://static.sitestack.cn/projects/feiskyer-kubernetes-handbook-202005/introduction/media/14731220608865.png&#34; alt=&#34;Kubernetes 基本概念 - 图3&#34; /&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;apiVersion: v1kind: Servicemetadata:  name: nginxspec:  ports:  - port: 8078 # the port that this service should serve on    name: http    # the container on each pod to connect to, can be a name    # (e.g. &#39;www&#39;) or a number (e.g. 80)    targetPort: 80    protocol: TCP  selector:    app: nginx
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;service公开方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#service公开方式&#34;&gt;#&lt;/a&gt; service 公开方式&lt;/h3&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;apiVersion&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; v1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;kind&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;metadata&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;spec&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token key atrule&#34;&gt;selector&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;    &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token key atrule&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token key atrule&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;8078&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# The port that will be exposed by this service.    &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; http    &lt;span class=&#34;token comment&#34;&gt;# The name of this port within the service. This must be a DNS_LABEL.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token key atrule&#34;&gt;targetPort&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# Number or name of the port to access on the pods targeted by the service   &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token key atrule&#34;&gt;protocol&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; TCP  &lt;span class=&#34;token comment&#34;&gt;#The IP protocol for this port. Supports &#34;TCP&#34;, &#34;UDP&#34;, and &#34;SCTP&#34;. Default is TCP.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;service的公开方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#service的公开方式&#34;&gt;#&lt;/a&gt; service 的公开方式&lt;/h3&gt;
 &lt;p&gt;Kubernetes Service 在 &lt;code&gt;spec.type&lt;/code&gt;  允许指定一个需要的类型的 Service，默认是 ClusterIP 类型。&lt;/p&gt;
 &lt;p&gt;Type 的取值以及行为如下：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;ClusterIP：通过集群的内部 IP 暴露服务，选择该值，服务只能够在集群内部可以访问，这也是&lt;strong&gt;默认的 ServiceType&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;NodePort：通过每个 Node 上的 IP  和静态端口（NodePort）暴露服务。NodePort 服务会路由到 ClusterIP 服务，这个 ClusterIP 服务会自动创建。通过请求 &amp;lt;NodeIP&amp;gt;:&amp;lt;NodePort&amp;gt;，可以从集群的外部访问一个 NodePort 服务。&lt;/li&gt;
-&lt;li&gt;LoadBalancer：使用云提供商的负载局衡器，可以向外部暴露服务。外部的负载均衡器可以路由到 NodePort 服务和 ClusterIP 服务。&lt;/li&gt;
-&lt;li&gt;ExternalName：通过返回 CNAME 和它的值，可以将服务映射到 externalName 字段的内容（例如， &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Zvby5iYXIuZXhhbXBsZS5jb20=&#34;&gt;foo.bar.example.com&lt;/span&gt;）。 没有任何类型代理被创建，这只有 Kubernetes 1.7 或更高版本的 kube-dns 才支持。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ClusterIP&lt;/strong&gt;：通过集群的内部 IP 暴露服务，选择该值，服务只能够在集群内部使用 &lt;code&gt;&amp;lt;ClusterIP&amp;gt;:&amp;lt;port&amp;gt;&lt;/code&gt;  方式访问，这也是&lt;strong&gt;默认的 ServiceType&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://upload-images.jianshu.io/upload_images/28070583-c19ad5d2a121b491.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;NodePort&lt;/strong&gt;：通过每个 Node 上的 IP  和静态端口（NodePort）暴露服务。NodePort 服务会路由到 ClusterIP 服务，这个 ClusterIP 服务会自动创建。通过请求  &lt;code&gt;&amp;lt;NodeIP&amp;gt;:&amp;lt;NodePort&amp;gt;&lt;/code&gt; ，可以从集群的外部访问一个 NodePort 服务。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://upload-images.jianshu.io/upload_images/28070583-8853bc4191d13dd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NodePort 类型的 Service 是向集群外暴露服务的最原始方式，也是最好让人理解的。优点是简单，好理解，通过 IP + 端口的方式就能访问，不过它的缺点也很明显。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每向外暴露一个服务都要占用所有 Node 的一个端口，如果多了难以管理。&lt;/li&gt;
+&lt;li&gt;NodePort 的端口区间固定，只能使用 30000–32767 间的端口。&lt;/li&gt;
+&lt;li&gt;如果 Node 的 IP 发生改变，负载均衡代理需要跟着改后端端点 IP 才行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LoadBalancer&lt;/strong&gt;：使用云提供商的负载局衡器，可以向外部暴露服务。外部的负载均衡器可以路由到 NodePort 服务和 ClusterIP 服务。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ExternalName&lt;/strong&gt;：通过返回 CNAME 和它的值，可以将服务映射到 externalName 字段的内容（例如， &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Zvby5iYXIuZXhhbXBsZS5jb20=&#34;&gt;foo.bar.example.com&lt;/span&gt;）。 没有任何类型代理被创建，这只有 Kubernetes 1.7 或更高版本的 kube-dns 才支持。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;ingress&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ingress&#34;&gt;#&lt;/a&gt; ingress&lt;/h2&gt;
 &lt;p&gt;Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型的访问方式是 HTTP。可以提供负载均衡、SSL 终结和基于名称的虚拟托管。&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL2RvY3MvcmVmZXJlbmNlL2dlbmVyYXRlZC9rdWJlcm5ldGVzLWFwaS92MS4yNi8jaW5ncmVzcy12MS1uZXR3b3JraW5nLWs4cy1pbw==&#34;&gt;Ingress&lt;/span&gt; 公开从集群外部到集群内&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLw==&#34;&gt;服务&lt;/span&gt;的 HTTP 和 HTTPS 路由。 流量路由由 Ingress 资源上定义的规则控制。&lt;/p&gt;
-&lt;p&gt;下面是一个将所有流量都发送到同一 Service 的简单 Ingress 示例：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://d33wubrfki0l68.cloudfront.net/4f01eaec32889ff16ee255e97822b6d165b633f0/a54b4/zh-cn/docs/images/ingress.svg&#34; alt=&#34;ingress-diagram&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ingress 在 K8s 集群里的角色是给 Service 充当反向代理。它可以位于多个 Service 的前端，给这些 Service 充当 “智能路由” 或者集群的入口点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;下面是一个将流量根据路由规则发送不同 Service 的 Ingress 示例：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://upload-images.jianshu.io/upload_images/28070583-807a96bcc98ffe0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;ingress-diagram&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Ingress 可为 Service 提供外部可访问的 URL、负载均衡流量、终止 SSL/TLS，以及基于名称的虚拟托管。 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9pbmdyZXNzLWNvbnRyb2xsZXJz&#34;&gt;Ingress 控制器&lt;/span&gt; 通常负责通过负载均衡器来实现 Ingress，尽管它也可以配置边缘路由器或其他前端来帮助处理流量。&lt;/p&gt;
 &lt;p&gt;Ingress 不会公开任意端口或协议。 将 HTTP 和 HTTPS 以外的服务公开到 Internet 时，通常使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLyN0eXBlLW5vZGVwb3J0&#34;&gt;Service.Type=NodePort&lt;/span&gt; 或 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLyNsb2FkYmFsYW5jZXI=&#34;&gt;Service.Type=LoadBalancer&lt;/span&gt; 类型的 Service。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 Ingress 对象前需要先安装 Ingress-Controller, 像阿里云、亚马逊 AWS 他们的 K8s 企业服务都会提供自己的 Controller ，对于自己搭建的集群，通常使用 nginx-ingress 作为控制器，它使用 NGINX 服务器作为反向代理，访问 Ingress 的流量按规则路由给集群内部的 Service。&lt;/p&gt;
+&lt;/blockquote&gt;
  ]]></description>
         </item>
         <item>
@@ -3637,7 +3661,7 @@ E(S^2)	&amp;amp;=E\left(\frac&amp;#123;1&amp;#125;&amp;#123;2n&amp;#125; \sum_&a
 graph ....&lt;br /&gt;
 .....&lt;br /&gt;
 ```&lt;/p&gt;
-&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678618382169&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
+&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678619637870&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
 &lt;h3 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h3&gt;
 &lt;p&gt;有些时候，需要在书写过程中留一些&lt;strong&gt;备忘&lt;/strong&gt;性质的文本，但是不希望最终结果中可见的，可以使用&lt;strong&gt;注释&lt;/strong&gt;语法，一般情况下是用不到的。&lt;br /&gt;
 // 我是一行注释，但最终会出现在最终的 HTML 源码中。&lt;br /&gt;
