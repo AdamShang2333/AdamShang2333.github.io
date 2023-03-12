@@ -10,13 +10,13 @@
         </author>
         <description>&lt;div style=&#39;font-size: 0.8em;&#39;&gt; I.is(null); &lt;br/&gt;If(U.appear()) &lt;br/&gt;I.turn(new World(&#39;Fill With Love&#39;)) &lt;br/&gt;// 我的世界 &lt;br/&gt;// 直至遇见你 &lt;br/&gt;// 才熠熠生辉 &lt;/div&gt; </description>
         <language>zh-CN</language>
-        <pubDate>Thu, 09 Mar 2023 13:56:59 +0000</pubDate>
-        <lastBuildDate>Thu, 09 Mar 2023 13:56:59 +0000</lastBuildDate>
+        <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
+        <lastBuildDate>Sun, 12 Mar 2023 10:52:15 +0000</lastBuildDate>
         <item>
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/zhong-jian-jian/redis/</guid>
             <title>redis基础</title>
             <link>http://adamshang2333.github.io/hou-duan/zhong-jian-jian/redis/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:59 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;一-redis特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-redis特性&#34;&gt;#&lt;/a&gt; 一. Redis 特性&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -156,7 +156,7 @@ zrevrange key start end&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/</guid>
             <title>Mybatis</title>
             <link>http://adamshang2333.github.io/hou-duan/zhong-jian-jian/mybatis/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:59 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;[toc]&lt;/p&gt;
 &lt;h2 id=&#34;重要组成部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重要组成部分&#34;&gt;#&lt;/a&gt; 重要组成部分&lt;/h2&gt;
 &lt;ul&gt;
@@ -609,7 +609,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/</guid>
             <title>SpringMVC 拦截器&amp;方法参数解析器</title>
             <link>http://adamshang2333.github.io/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:58 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;springmvc-拦截器方法参数解析器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#springmvc-拦截器方法参数解析器&#34;&gt;#&lt;/a&gt; SpringMVC 拦截器 &amp;amp; 方法参数解析器&lt;/h2&gt;
 &lt;h3 id=&#34;拦截器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拦截器&#34;&gt;#&lt;/a&gt; 拦截器&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -635,7 +635,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/spring/spring-jdbc/</guid>
             <title>Spring JDBC</title>
             <link>http://adamshang2333.github.io/hou-duan/spring/spring-jdbc/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:58 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概念&#34;&gt;#&lt;/a&gt; 概念&lt;/h2&gt;
 &lt;p&gt;是封装了 JDBC 操作的一个框架 必须依赖 Spring&lt;/p&gt;
 &lt;p&gt;SpringJDBC 本身就是基于模板模式进行开发，提供一个 JDBCTemplate 类&lt;/p&gt;
@@ -663,7 +663,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-de-nei-bu-lei/</guid>
             <title>java的内部类</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-de-nei-bu-lei/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:58 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:15 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;前言-类的成员&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言-类的成员&#34;&gt;#&lt;/a&gt; 前言 -- 类的成员&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个类的成员，包含如下内容:&lt;br /&gt;
@@ -722,7 +722,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <link>http://adamshang2333.github.io/hou-duan/java/basics/java-ji-chu/</link>
             <category term="java" scheme="http://adamshang2333.github.io/categories/java/" />
             <category term="基础" scheme="http://adamshang2333.github.io/categories/java/basics/" />
-            <pubDate>Thu, 09 Mar 2023 13:56:49 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:06 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;strong&gt;IO 概念&lt;/strong&gt;&lt;/p&gt;
  ]]></description>
         </item>
@@ -730,7 +730,7 @@ password – 登录数据库的密码。&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/</guid>
             <title>JavaWeb基础</title>
             <link>http://adamshang2333.github.io/hou-duan/java/javaweb-ji-chu/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:05 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;应用组成结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#应用组成结构&#34;&gt;#&lt;/a&gt; 应用组成结构&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://images0.cnblogs.com/i/289233/201405/172304056712920.png&#34; alt=&#34;组成&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注: !!! 在 JavaWeb 中，没有明显的主函数&lt;/strong&gt;&lt;/p&gt;
@@ -988,7 +988,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-fan-she/</guid>
             <title>Java反射</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-fan-she/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:05 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;反射&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反射&#34;&gt;#&lt;/a&gt; 反射&lt;/h1&gt;
 &lt;h2 id=&#34;反射机制的概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反射机制的概念&#34;&gt;#&lt;/a&gt; 反射机制的概念&lt;/h2&gt;
 &lt;p&gt;将类的各个组成部分，封装为其他对象&lt;/p&gt;
@@ -1026,7 +1026,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/java-collection/</guid>
             <title>Java collection</title>
             <link>http://adamshang2333.github.io/hou-duan/java/java-collection/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:05 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;collection容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#collection容器&#34;&gt;#&lt;/a&gt; Collection 容器&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;容器的特点:&lt;br /&gt;
@@ -1235,7 +1235,7 @@ public class IntroServlet  extends HttpServlet &amp;#123;
             <guid isPermalink="true">http://adamshang2333.github.io/hou-duan/java/jdbc/</guid>
             <title>JDBC</title>
             <link>http://adamshang2333.github.io/hou-duan/java/jdbc/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:05 +0000</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;全称: Java DataBase Connectivity&lt;br /&gt;
  是 java 语言中，用来规范客户端程序如何来访问数据库的 API (应用程序接口)&lt;/p&gt;
@@ -1552,7 +1552,7 @@ SQL 语句的查询条件需要的&lt;strong&gt;传入参数 长度和类型都�
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/ding-wei/</guid>
             <title>CSS-定位</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/ding-wei/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;定位&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定位&#34;&gt;#&lt;/a&gt; 定位&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;定位的使用包含两个部分：&lt;/p&gt;
@@ -1680,7 +1680,7 @@ margin-top:-自身高度的一半;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/js-ji-chu/</guid>
             <title>JS总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/js-ji-chu/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;[toc]&lt;/p&gt;
 &lt;h2 id=&#34;js组成部分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#js组成部分&#34;&gt;#&lt;/a&gt; jS 组成部分&lt;/h2&gt;
 &lt;p&gt;EMAScript: ES5  ES6  基础语法和标准&lt;br /&gt;
@@ -1891,7 +1891,7 @@ var d = a &amp;gt; b &amp;amp;&amp;amp; a &amp;gt; 0 ? a + b : a - b;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/js-xuan-ze-qi/</guid>
             <title>js选择器</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/js-xuan-ze-qi/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;基本选择器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本选择器&#34;&gt;#&lt;/a&gt; 基本选择器&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;id 选择器&lt;/li&gt;
@@ -2004,7 +2004,7 @@ var d = a &amp;gt; b &amp;amp;&amp;amp; a &amp;gt; 0 ? a + b : a - b;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/</guid>
             <title>HTML基础</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/html-ji-chu/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;html模板&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html模板&#34;&gt;#&lt;/a&gt; html 模板&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;!--申明一个HTML文档--&amp;gt;
 &amp;lt;!DOCTYPE html&amp;gt;
@@ -2297,7 +2297,7 @@ header footer nav  main.....&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/h5-xin-zeng/</guid>
             <title>H5新增内容总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/h5-xin-zeng/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;## 新增标签&lt;/p&gt;
 &lt;p&gt;### 音频标签 - audio&lt;/p&gt;
 &lt;p&gt;可以设置宽、高&lt;br /&gt;
@@ -2448,7 +2448,7 @@ header footer nav  main.....&lt;/p&gt;
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/dom-cao-zuo/</guid>
             <title>DOM操作</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/dom-cao-zuo/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;获取元素&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取元素&#34;&gt;#&lt;/a&gt; 获取元素&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;name&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;script&amp;gt;
@@ -2568,7 +2568,7 @@ oAll.replaceChild(theA, oAll.children[0]);
             <guid isPermalink="true">http://adamshang2333.github.io/qian-duan/js-h5/css-dong-tai-xiao-guo/</guid>
             <title>css动态效果总结</title>
             <link>http://adamshang2333.github.io/qian-duan/js-h5/css-dong-tai-xiao-guo/</link>
-            <pubDate>Thu, 09 Mar 2023 13:56:48 +0000</pubDate>
+            <pubDate>Sun, 12 Mar 2023 10:52:04 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;##transition (过渡样式)&lt;br /&gt;
 ### 可设定过渡的时间 延时时间 速度曲线 指定某个过渡的元素&lt;br /&gt;
  #### 过渡时间  transition-duration: 1s;&lt;br /&gt;
@@ -2680,7 +2680,7 @@ y 轴:top center bottom&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;关于k8s和docker的关系&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于k8s和docker的关系&#34;&gt;#&lt;/a&gt; 关于 K8s 和 Docker 的关系&lt;/h3&gt;
 &lt;p&gt;K8s 和 docker 关系可以简单用下图实例:&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-3386b7a906cc4ae4bc2750273a4c69ec_1440w.webp&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-3386b7a906cc4ae4bc2750273a4c69ec_1440w.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;其工作流程简单来说是这样的：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Docker，Kubernetes 等工具来运行一个容器时会调用容器运行时（CRI）比如 containerd，CRI-O&lt;/li&gt;
@@ -2739,7 +2739,7 @@ y 轴:top center bottom&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;更详细的架构图如下:&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://img2018.cnblogs.com/blog/856154/201910/856154-20191023003358108-1816205812.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/AdamShang2333/picGo/img/856154-20191023003358108-1816205812.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;不难发现，Node 节点中是包含了多个 Pod 的，每一个 Pod 单独运行一个 docker 的 container 组&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2805,7 +2805,8 @@ y 轴:top center bottom&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;kubelet&lt;/code&gt;  会在集群中每个&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==&#34;&gt;节点（node）&lt;/span&gt;上运行。 它保证&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvd2hhdC1pcy1rdWJlcm5ldGVzLyN3aHktY29udGFpbmVycw==&#34;&gt;容器（containers）&lt;/span&gt;都运行在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv&#34;&gt;Pod&lt;/span&gt; 中。&lt;/p&gt;
 &lt;p&gt;kubelet 接收一组通过各类机制提供给它的 PodSpecs， 确保这些 PodSpecs 中描述的容器处于运行状态且健康。 kubelet 不会管理不是由 Kubernetes 创建的容器。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;kubelet 会接收&lt;/p&gt;
+&lt;p&gt;kubelet 会监听 &lt;code&gt;api-server&lt;/code&gt;  的通知，将 api 指令转换为 OCI 标准 来实现 pod 中 docker 容器的创建；&lt;/p&gt;
+&lt;p&gt;PodSpec 是描述一个 Pod 的 YAML 或 JSON 对象。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;2-kube-proxy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-kube-proxy&#34;&gt;#&lt;/a&gt; 2. kube-proxy&lt;/h4&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2NvbW1hbmQtbGluZS10b29scy1yZWZlcmVuY2Uva3ViZS1wcm94eS8=&#34;&gt;kube-proxy&lt;/span&gt; 是集群中每个&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvYXJjaGl0ZWN0dXJlL25vZGVzLw==&#34;&gt;节点（node）&lt;/span&gt;上所运行的网络代理， 实现 Kubernetes &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLw==&#34;&gt;服务（Service）&lt;/span&gt; 概念的一部分。&lt;/p&gt;
@@ -2815,6 +2816,431 @@ y 轴:top center bottom&lt;/p&gt;
 &lt;p&gt;容器运行环境是负责运行容器的软件。&lt;/p&gt;
 &lt;p&gt;Kubernetes 支持许多容器运行环境，例如 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb250YWluZXJkLmlvL2RvY3Mv&#34;&gt;containerd&lt;/span&gt;、 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jcmktby5pby8jd2hhdC1pcy1jcmktbw==&#34;&gt;CRI-O&lt;/span&gt; 以及 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2t1YmVybmV0ZXMvY29tbXVuaXR5L2Jsb2IvbWFzdGVyL2NvbnRyaWJ1dG9ycy9kZXZlbC9zaWctbm9kZS9jb250YWluZXItcnVudGltZS1pbnRlcmZhY2UubWQ=&#34;&gt;Kubernetes CRI (容器运行环境接口)&lt;/span&gt; 的其他任何实现。&lt;/p&gt;
 &lt;h2 id=&#34;插件addons&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#插件addons&#34;&gt;#&lt;/a&gt; 插件（Addons）&lt;/h2&gt;
+&lt;p&gt;插件使用 Kubernetes 资源（&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RhZW1vbnNldC8=&#34;&gt;DaemonSet&lt;/span&gt;、 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQv&#34;&gt;Deployment&lt;/span&gt; 等）实现集群功能。 因为这些插件提供集群级别的功能，插件中命名空间域的资源属于  &lt;code&gt;kube-system&lt;/code&gt;  命名空间。&lt;/p&gt;
+&lt;p&gt;有关可用插件的完整列表，请参见 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvY2x1c3Rlci1hZG1pbmlzdHJhdGlvbi9hZGRvbnMv&#34;&gt;插件（Addons）&lt;/span&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;常用的插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用的插件&#34;&gt;#&lt;/a&gt; 常用的插件&lt;/h3&gt;
+&lt;h4 id=&#34;coredns&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#coredns&#34;&gt;#&lt;/a&gt; CoreDNS&lt;/h4&gt;
+&lt;p&gt;为整个集群提供 DNS 服务。&lt;/p&gt;
+&lt;p&gt;尽管其他插件都并非严格意义上的必需组件，但几乎所有 Kubernetes 集群都应该有&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9kbnMtcG9kLXNlcnZpY2Uv&#34;&gt;集群 DNS&lt;/span&gt;， 因为很多示例都需要 DNS 服务。&lt;/p&gt;
+&lt;p&gt;集群 DNS 是一个 DNS 服务器，和环境中的其他 DNS 服务器一起工作，它为 Kubernetes 服务提供 DNS 记录。&lt;/p&gt;
+&lt;p&gt;Kubernetes 启动的容器自动将此 DNS 服务器包含在其 DNS 搜索列表中。&lt;/p&gt;
+&lt;h4 id=&#34;ingresscontroller&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ingresscontroller&#34;&gt;#&lt;/a&gt; ingressController&lt;/h4&gt;
+&lt;p&gt;为 k8s 中的服务提供外网入口，实现七层网络调度&lt;/p&gt;
+&lt;h4 id=&#34;prometheus&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#prometheus&#34;&gt;#&lt;/a&gt; Prometheus&lt;/h4&gt;
+&lt;p&gt;为整个集群提供资源监控能力，其本质是一个时序数据库&lt;/p&gt;
+&lt;h4 id=&#34;dashboard仪表盘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dashboard仪表盘&#34;&gt;#&lt;/a&gt; Dashboard（仪表盘）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvY29tcG9uZW50cy8jd2ViLXVpLWRhc2hib2FyZA==&#34;&gt; &lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvdGFza3MvYWNjZXNzLWFwcGxpY2F0aW9uLWNsdXN0ZXIvd2ViLXVpLWRhc2hib2FyZC8=&#34;&gt;Dashboard&lt;/span&gt; 是 Kubernetes 集群的通用的、基于 Web 的用户界面。 它使用户可以管理集群中运行的应用程序以及集群本身， 并进行故障排除。&lt;/p&gt;
+&lt;h4 id=&#34;容器资源监控&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#容器资源监控&#34;&gt;#&lt;/a&gt; 容器资源监控&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvdGFza3MvZGVidWcvZGVidWctY2x1c3Rlci9yZXNvdXJjZS11c2FnZS1tb25pdG9yaW5nLw==&#34;&gt;容器资源监控&lt;/span&gt; 将关于容器的一些常见的时间序列度量值保存到一个集中的数据库中， 并提供浏览这些数据的界面。&lt;/p&gt;
+&lt;h4 id=&#34;集群层面日志&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#集群层面日志&#34;&gt;#&lt;/a&gt; 集群层面日志&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvY2x1c3Rlci1hZG1pbmlzdHJhdGlvbi9sb2dnaW5nLw==&#34;&gt;集群层面日志&lt;/span&gt;机制负责将容器的日志数据保存到一个集中的日志存储中， 这种集中日志存储提供搜索和浏览接口。&lt;/p&gt;
+&lt;h3 id=&#34;rancher&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rancher&#34;&gt;#&lt;/a&gt; Rancher&lt;/h3&gt;
+&lt;p&gt;可以理解为一个 k8s 的超集，Rancher 是一个 Kubernetes 管理工具，让你能在任何地方和任何提供商上部署和运行集群。&lt;/p&gt;
+&lt;p&gt;Rancher 可以创建来自 Kubernetes 托管服务提供商的集群，创建节点并安装 Kubernetes，或者导入在任何地方运行的现有 Kubernetes 集群。&lt;/p&gt;
+&lt;p&gt;此外，Rancher 可以为集群和资源提供更精细的监控和告警，将日志发送到外部提供商，并通过应用商店（Application  Catalog）直接集成 Helm。如果你拥有外部 CI/CD 系统，你可以将其与 Rancher 对接。没有的话，你也可以使用 Rancher 提供的 Fleet 自动部署和升级工作负载。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYW5jaGVybWFuYWdlci5kb2NzLnJhbmNoZXIuY29tL3poLw==&#34;&gt;注:rancher 官方文档&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;federation&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#federation&#34;&gt;#&lt;/a&gt; Federation&lt;/h3&gt;
+&lt;p&gt;提供跨可用区的集群，提供不同数据中心的 k8s 集群管理能力&lt;/p&gt;
+&lt;h1 id=&#34;k8s核心概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#k8s核心概念&#34;&gt;#&lt;/a&gt; k8s 核心概念&lt;/h1&gt;
+&lt;h2 id=&#34;k8s对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#k8s对象&#34;&gt;#&lt;/a&gt; K8S 对象&lt;/h2&gt;
+&lt;h3 id=&#34;什么是对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是对象&#34;&gt;#&lt;/a&gt; 什么是对象&lt;/h3&gt;
+&lt;p&gt;在 Kubernetes 系统中，&lt;strong&gt;Kubernetes 对象&lt;/strong&gt; 是持久化的实体。 Kubernetes 使用这些实体去表示集群中各种资源，以及跟踪他们在集群中的状态。 比较特别地是，它们描述了如下信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;哪些容器化应用正在运行（以及在哪些节点上运行）&lt;/li&gt;
+&lt;li&gt;可以被应用使用的资源&lt;/li&gt;
+&lt;li&gt;关于应用运行时表现的策略，比如重启策略、升级策略以及容错策略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kubernetes 对象是 “&lt;strong&gt;目标性记录&lt;/strong&gt;” —— 一旦创建该对象，Kubernetes 系统将不断工作以确保该对象存在。 &lt;strong&gt;通过创建对象，你就是在告知 Kubernetes 系统，你想要的集群工作负载状态看起来应是什么样子的&lt;/strong&gt;， 这就是 Kubernetes 集群所谓的 &lt;strong&gt;期望状态（Desired State）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;使用命令 &lt;code&gt;kubectl api-resources&lt;/code&gt; , 可以列出当前集群中所有的资源定义。&lt;/p&gt;
+&lt;h3 id=&#34;如何描述k8s对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何描述k8s对象&#34;&gt;#&lt;/a&gt; 如何描述 k8s 对象&lt;/h3&gt;
+&lt;p&gt;k8s 可以通过 &lt;code&gt;json&lt;/code&gt;  和 &lt;code&gt;yaml&lt;/code&gt;  两种格式来描述一个对象资源，但为了可读性和可维护性，通常会使用 yaml 格式。&lt;/p&gt;
+&lt;p&gt;在常用的 yaml 格式文件中，会通过各种对象字段，来描述对对象的期望状态.&lt;/p&gt;
+&lt;p&gt;下面是一个 pod 的最简单例子:&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# simple-pod.yaml&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;apiVersion&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; v1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;kind&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Pod&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;metadata&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;spec&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;containers&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;1.14.2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;containerPort&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;可以看到 Pod 的一级字段，主要分成 5 个部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;apiVersion&lt;/code&gt; ：api 版本，可以通过 kubectl api-resources 查询，或者直接看 explain 的结果&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kind&lt;/code&gt; ：资源类型，可以通过 kubectl api-resources 查询，或者直接看 explain 的结果&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;metadata&lt;/code&gt; ：元信息，比如 name, namespace， label 和 annotation 等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;spec&lt;/code&gt; ：资源的具体配置，比如磁盘、网络、镜像等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;status&lt;/code&gt; ：存储一些正在运行的对象的一些状态信息&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;查询对象配置文件结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查询对象配置文件结构&#34;&gt;#&lt;/a&gt; 查询对象配置文件结构&lt;/h4&gt;
+&lt;p&gt;kubectl 提供给我们一个命令 &lt;code&gt;kubectl explain&lt;/code&gt;  ，可以输出资源对应的属性字段及定义，它在定义资源配置文件时候非常有用。&lt;/p&gt;
+&lt;p&gt;这个指令支持查询二级或者更多层级下的字段及定义:&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;~   master ●✚  kubectl explain pod&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;KIND:     Pod&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;VERSION:  v1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;DESCRIPTION:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Pod is a collection of containers that can run on a host. This resource is&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     created by clients and scheduled onto hosts.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;FIELDS:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   apiVersion	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;string&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     APIVersion defines the versioned schema of this representation of an&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     object. Servers should convert recognized schemas to the latest internal&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     value, and may reject unrecognized values. More info:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md&lt;span class=&#34;token comment&#34;&gt;#resources&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   kind	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;string&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Kind is a string value representing the REST resource this object&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     represents. Servers may infer this from the endpoint the client submits&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     requests to. Cannot be updated. In CamelCase. More info:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md&lt;span class=&#34;token comment&#34;&gt;#types-kinds&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   metadata	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;Object&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Standard object&#39;s metadata. More info:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md&lt;span class=&#34;token comment&#34;&gt;#metadata&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   spec	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;Object&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Specification of the desired behavior of the pod. More info:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md&lt;span class=&#34;token comment&#34;&gt;#spec-and-status&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   status	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;Object&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Most recently observed status of the pod. This data may not be up to date.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Populated by the system. Read-only. More info:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md&lt;span class=&#34;token comment&#34;&gt;#spec-and-status&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;kubectl explain pod.spec&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;KIND:     Pod&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;VERSION:  v1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;RESOURCE: spec &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;Object&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;DESCRIPTION:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Specification of the desired behavior of the pod. More info:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md&lt;span class=&#34;token comment&#34;&gt;#spec-and-status&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     PodSpec is a description of a pod.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;FIELDS:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   hostNetwork	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;boolean&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Host networking requested &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; this pod. Use the &lt;span class=&#34;token function&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;s network namespace.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     If this option is set, the ports that will be used must be specified.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Default to false.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   hostPID	&amp;lt;boolean&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Use the host&#39;&lt;/span&gt;s pid namespace. Optional: Default to false.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token function&#34;&gt;hostname&lt;/span&gt;	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;string&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Specifies the &lt;span class=&#34;token function&#34;&gt;hostname&lt;/span&gt; of the Pod If not specified, the pod&#39;s &lt;span class=&#34;token function&#34;&gt;hostname&lt;/span&gt; will&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     be &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; to a system-defined value.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# -required-, 表明 pod 对象的 yaml 中必须指定 containers 字段&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   containers	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;Object&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; -required-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     List of containers belonging to the pod. Containers cannot currently be&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     added or removed. There must be at least one container &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; a Pod. Cannot be&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     updated.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   dnsConfig	&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;Object&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     Specifies the DNS parameters of a pod. Parameters specified here will be&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     merged to the generated DNS configuration based on DNSPolicy.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;略&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;常用的对象字段&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用的对象字段&#34;&gt;#&lt;/a&gt; 常用的对象字段&lt;/h4&gt;
+&lt;p&gt;k8s 中，对象一级字段常见的有五个:&lt;strong&gt;apiVersion&lt;/strong&gt;; &lt;strong&gt;kind&lt;/strong&gt;; &lt;strong&gt;metadata&lt;/strong&gt;; &lt;strong&gt;spec&lt;/strong&gt;; &lt;strong&gt;status&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以 Deployment 为例:&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;apiVersion&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; apps/v1beta1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;kind&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; Deployment&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;metadata&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt;deployment&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;spec&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;replicas&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;template&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;metadata&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token key atrule&#34;&gt;labels&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;spec&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token key atrule&#34;&gt;containers&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; nginx&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;1.7.9&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token key atrule&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;containerPort&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;apiVersion  api 版本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kind  资源类型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;metadata 元信息&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;name
+&lt;ul&gt;
+&lt;li&gt;创建资源时的必需项&lt;/li&gt;
+&lt;li&gt;创建后无法更改 name 字段值&lt;/li&gt;
+&lt;li&gt;Name 字段必须在同一 namespace 内是唯一的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;namespace
+&lt;ul&gt;
+&lt;li&gt;不填时默认值为 &amp;quot;default&amp;quot;&lt;/li&gt;
+&lt;li&gt;命名空间的值必须唯一&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;labels
+&lt;ul&gt;
+&lt;li&gt;可用于组织和分类（确定范围和选择）对象的字符串键和值的映射。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;annotations
+&lt;ul&gt;
+&lt;li&gt;非结构化的 kv map, 功能与 java 注解类似，向 pod 中的工作负载提供可以自定义元数据的能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2t1YmVybmV0ZXMtYXBpL2NvbW1vbi1kZWZpbml0aW9ucy9vYmplY3QtbWV0YS8=&#34;&gt;注：官网参考&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;spec 资源具体配置&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于具有  &lt;code&gt;spec&lt;/code&gt;  的对象，你必须在创建对象时设置其内容，描述你希望对象所具有的特征： &lt;strong&gt;期望状态（Desired State）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;spec 的字段值，根据使用的对象不同，在规约上各有不同的要求.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pod&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;containers&lt;/strong&gt; (&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2t1YmVybmV0ZXMtYXBpL3dvcmtsb2FkLXJlc291cmNlcy9wb2QtdjEvI0NvbnRhaW5lcg==&#34;&gt;Container[]&lt;/span&gt;)，必需&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;name&lt;/strong&gt; (string)，必需&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;image&lt;/strong&gt; (string)&lt;/p&gt;
+&lt;p&gt;镜像名称，此字段是可选的，以允许更高层的配置管理进行默认设置或覆盖工作负载控制器（如 Deployment 和 StatefulSets） 中的容器镜像。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;imagePullPolicy&lt;/strong&gt; (string)&lt;/p&gt;
+&lt;p&gt;镜像拉取策略。 &lt;code&gt;&amp;quot;Always&amp;quot;&lt;/code&gt; 、 &lt;code&gt;&amp;quot;Never&amp;quot;&lt;/code&gt; 、 &lt;code&gt;&amp;quot;IfNotPresent&amp;quot;&lt;/code&gt;  之一。如果指定了  &lt;code&gt;:latest&lt;/code&gt;  标签，则默认为  &lt;code&gt;&amp;quot;Always&amp;quot;&lt;/code&gt; ， 否则默认为  &lt;code&gt;&amp;quot;IfNotPresent&amp;quot;&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2t1YmVybmV0ZXMtYXBpL3dvcmtsb2FkLXJlc291cmNlcy9wb2QtdjEv&#34;&gt;参考: k8s Api - 工作负载 - pod&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Deployment&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;selector&lt;/strong&gt; (&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2t1YmVybmV0ZXMtYXBpL2NvbW1vbi1kZWZpbml0aW9ucy9sYWJlbC1zZWxlY3Rvci8jTGFiZWxTZWxlY3Rvcg==&#34;&gt;LabelSelector&lt;/span&gt;)，必需&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;供 Pod 所用的标签选择算符。通过此字段选择现有 ReplicaSet 的 Pod 集合， 被选中的 ReplicaSet 将受到这个 Deployment 的影响。此字段必须与 Pod 模板的标签匹配。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;template&lt;/strong&gt; (&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2t1YmVybmV0ZXMtYXBpL3dvcmtsb2FkLXJlc291cmNlcy9wb2QtdGVtcGxhdGUtdjEvI1BvZFRlbXBsYXRlU3BlYw==&#34;&gt;PodTemplateSpec&lt;/span&gt;)，必需&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;template 描述将要创建的 Pod。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;replicas&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;预期 Pod 的数量。这是一个指针，用于辨别显式零和未指定的值。默认为 1。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2t1YmVybmV0ZXMtYXBpL3dvcmtsb2FkLXJlc291cmNlcy9kZXBsb3ltZW50LXYxLw==&#34;&gt;参考: k8s Api - 工作负载 - deployment&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;status 对象状态&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;status&lt;/code&gt;  描述了正在运行的对象的&lt;strong&gt;当前状态（Current State）&lt;/strong&gt;，它是由 Kubernetes 系统和组件设置并更新的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2t1YmVybmV0ZXMtYXBpL3dvcmtsb2FkLXJlc291cmNlcy8=&#34;&gt;注：工作负载的字段参考&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2t1YmVybmV0ZXMtYXBpL3NlcnZpY2UtcmVzb3VyY2VzLw==&#34;&gt;注:service 资源的字段参考&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;如何创建k8s对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何创建k8s对象&#34;&gt;#&lt;/a&gt; 如何创建 k8s 对象&lt;/h3&gt;
+&lt;p&gt;创建一个资源对象的方式有好多种，从调用方式上可以分为两种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;调用 HTTP 接口：用于上层业务的开发&lt;/li&gt;
+&lt;li&gt;调用 client 命令：即 kubectl 命令行工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目前对于刚学习的新手来说，kubectl 是熟悉各种资源对象最好的工具.&lt;/p&gt;
+&lt;p&gt;使用了 kubectl，创建资源对象，又可以分为两种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;kubectl apply&lt;/code&gt;  (推荐)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kubectl create&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这两种有什么区别呢？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;kubectl create 是命令式 API&lt;/strong&gt;，体现的是我要怎么样（创建）？&lt;/p&gt;
+&lt;p&gt;对于同一个 pod.yaml create 多次是会报错的，原因是 &lt;strong&gt;k8s 中资源名称必须是唯一的&lt;/strong&gt;，而该名称的 pod 资源已经创建过了。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://image.iswbm.com/image-20220117224832316.png&#34; alt=&#34;http://image.iswbm.com/image-20220117224832316.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;kubectl apply 是声明式 API&lt;/strong&gt;，体现的是我要什么样？&lt;/p&gt;
+&lt;p&gt;对于同一个 pod.yaml apply 完全没有任何问题，若第二次 apply 之前，修改了 pod 中的一些内容，也会更新上去。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://image.iswbm.com/image-20220117225254152.png&#34; alt=&#34;http://image.iswbm.com/image-20220117225254152.png&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pod&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pod&#34;&gt;#&lt;/a&gt; Pod&lt;/h2&gt;
+&lt;h3 id=&#34;简介-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介-2&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Pod&lt;/strong&gt; 是在 Kubernetes 中可以创建和管理的、&lt;strong&gt;最小的可部署的计算单元&lt;/strong&gt;。Pod 所建模的是特定于应用的 “&lt;strong&gt;逻辑主机&lt;/strong&gt;”，其中包含一个或多个应用容器， 这些容器相对紧密地耦合在一起。(&lt;em&gt;如果它们紧耦合并且需要共享磁盘等资源，这些容器应在一个 Pod 中编排。&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://d33wubrfki0l68.cloudfront.net/fe03f68d8ede9815184852ca2a4fd30325e5d15a/98064/docs/tutorials/kubernetes-basics/public/images/module_03_pods.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pod --&amp;gt; 逻辑主机&lt;/p&gt;
+&lt;p&gt;Nod --&amp;gt; 物理主机 (虚拟机或服务器)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 Kubernetes 中，无论你的负载是由单个组件还是由多个一同工作的组件构成， 你都可以在一组 &lt;a href=&#34;https://kubernetes.io/zh-cn/docs/concepts/workloads/pods&#34;&gt;&lt;strong&gt;Pod&lt;/strong&gt;&lt;/a&gt; 中运行它。 在 Kubernetes 中，Pod 类似于&lt;mark&gt;共享网络资源，namespace 并共享文件系统卷的一组容器&lt;/mark&gt;，由一个或多个 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zby5jc2RuLm5ldC9zby9zZWFyY2g/cT1jb250YWluZXImYW1wO3NwbT0xMDAxLjIxMDEuMzAwMS43MDIw&#34;&gt;container&lt;/span&gt; 组成，代表的是集群上处于运行状态的一组 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvd2hhdC1pcy1rdWJlcm5ldGVzLyN3aHktY29udGFpbmVycw==&#34;&gt;容器&lt;/span&gt; 的集合。&lt;strong&gt;(pod 中的一组 container, 并不局限于同一种镜像 可以是多种镜像的组合)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pod 的共享上下文包括一组 Linux 名字空间、控制组（cgroup）和可能一些其他的隔离方面， 即用来隔离&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvd2hhdC1pcy1rdWJlcm5ldGVzLyN3aHktY29udGFpbmVycw==&#34;&gt;容器&lt;/span&gt;的技术。 在 Pod 的上下文中，每个独立的应用可能会进一步实施隔离。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 k8s 中，一切资源对象的调度都是为了用来支撑或扩展 pod 对象的，比如控制器对象是用来管控 Pod 对象的，Service 或者 Ingress 资源对象是用来暴露 Pod 引用对象的，PersistentVolume 资源对象是用来为 Pod 提供存储等等，k8s 不会直接处理容器，而是 Pod&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;pod的创建流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pod的创建流程&#34;&gt;#&lt;/a&gt; pod 的创建流程&lt;/h3&gt;
+&lt;p&gt;示意图:&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/20210130203934468.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2E3NzIzMDQ0MTk=,size_16,color_FFFFFF,t_70&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;pause容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pause容器&#34;&gt;#&lt;/a&gt; pause 容器&lt;/h3&gt;
+&lt;p&gt;api-server 将创建 pod 的指令下发给 kubelet 时，kubelet 会先创建一个容器 &lt;code&gt;pause&lt;/code&gt; ,  无论 pod 想创建的目标容器是什么.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pod 中，pause 容器是第一个被创建出来的&lt;/strong&gt;，它的作用是:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;挂载网络卷&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果 pod 中的容器间需要共享数据，那么就需要依赖于 pause 完成 volume 的挂载和共享&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;初始化网络栈&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建 veth&lt;/li&gt;
+&lt;li&gt;veth 连接至网桥&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;pause 容器的网络共享示意:&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://image.iswbm.com/image-20220129125243265.png&#34; alt=&#34;pause网络共享&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/AdamShang2333/picGo/img/20230310123818.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;没有 pause 容器，那么 A 和 B 要共享网络，要不就是 A 加入 B 的 network namespace，要嘛就是 B 加入 A 的 network namespace， 而无论是谁加入谁，只要 network 的 owner 退出了，该 Pod 里的所有其他容器网络都会立马异常，这显然是不合理的。&lt;/p&gt;
+&lt;p&gt;反过来，由于 pause 里只有是挂起一个容器，里面没有任何复杂的逻辑，只要不主动杀掉 Pod，pause 都会一直存活，这样一来就能保证在 Pod 运行期间同一 Pod 里的容器网络的稳定。&lt;/p&gt;
+&lt;p&gt;我们在同一 Pod 里所有容器里看到的网络视图，都是完全一样的，包括网络设备、IP 地址、Mac 地址等等，因为他们其实全是同一份，而这一份都来自于 Pod 第一次创建的这个 Infra container。&lt;/p&gt;
+&lt;p&gt;由于所有的应用容器都要依赖于 pause 容器，因此在 Pod 启动时，它总是创建的第一个容器，可以说 Pod 的生命周期就是 pause 容器的生命周期。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rOHMuaXN3Ym0uY29tL2MwMi9wMDJfbGVhcm4ta3ViZXJuZXRlcy1wb2QtdmlhLXBhdXNlLWNvbnRhaW5lci5odG1s&#34;&gt;参考：从 Pause 容器理解 Pod 的本质&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;node&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#node&#34;&gt;#&lt;/a&gt; Node&lt;/h2&gt;
+&lt;p&gt;Node 是 Pod 真正运行的主机，可以是物理机，也可以是虚拟机。为了管理 Pod，每个 Node 节点上至少要运行 container runtime（比如 docker 或者 rkt）、 &lt;code&gt;kubelet&lt;/code&gt;  和  &lt;code&gt;kube-proxy&lt;/code&gt;  服务。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://static.sitestack.cn/projects/feiskyer-kubernetes-handbook-202005/introduction/media/node.png&#34; alt=&#34;node&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;节点名称唯一性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#节点名称唯一性&#34;&gt;#&lt;/a&gt; 节点名称唯一性&lt;/h3&gt;
+&lt;p&gt;节点的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvd29ya2luZy13aXRoLW9iamVjdHMvbmFtZXMjbmFtZXM=&#34;&gt;名称&lt;/span&gt;用来标识 Node 对象。 没有两个 Node 可以同时使用相同的名称。 Kubernetes 还假定名字相同的资源是同一个对象。 就 Node 而言，隐式假定使用相同名称的实例会具有相同的状态（例如网络配置、根磁盘内容） 和类似节点标签这类属性。这可能在节点被更改但其名称未变时导致系统状态不一致。 如果某个 Node 需要被替换或者大量变更，需要从 API 服务器移除现有的 Node 对象， 之后再在更新之后重新将其加入。&lt;/p&gt;
+&lt;h2 id=&#34;namespace&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#namespace&#34;&gt;#&lt;/a&gt; Namespace&lt;/h2&gt;
+&lt;p&gt;Namespace  是对一组资源和对象的抽象集合，比如可以用来将系统内部的对象划分为不同的项目组或用户组。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;通俗一点理解，Namespace 可以支持 K8s 创建多个虚拟集群&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;常见的 pods, services,  replication controllers 和 deployments 等都是属于某一个 namespace 的（默认是  default），而 node, persistentVolumes 等则不属于任何 namespace。&lt;/p&gt;
+&lt;h2 id=&#34;label&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#label&#34;&gt;#&lt;/a&gt; Label&lt;/h2&gt;
+&lt;p&gt;Label 是识别 Kubernetes 对象的标签，以 key/value 的方式附加到对象上（key 最长不能超过 63 字节，value 可以为空，也可以是不超过 253 字节的字符串）。&lt;/p&gt;
+&lt;p&gt;Label 不提供唯一性，并且实际上经常是很多对象（如 Pods）都使用相同的 label 来标志具体的应用。&lt;/p&gt;
+&lt;p&gt;Label 定义好后其他对象可以使用 Label Selector 来选择一组相同 label 的对象（比如 ReplicaSet 和 Service 用 label 来选择一组 Pod）。Label Selector 支持以下几种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;等式，如  &lt;code&gt;app=nginx&lt;/code&gt;  和  &lt;code&gt;env!=production&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;集合，如  &lt;code&gt;env in (production, qa)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;多个 label（它们之间是 AND 关系），如  &lt;code&gt;app=nginx,env=test&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;annotations&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#annotations&#34;&gt;#&lt;/a&gt; Annotations&lt;/h2&gt;
+&lt;p&gt;Annotations 是 key/value 形式附加于对象的注解。不同于 Labels 用于标志和选择对象，Annotations  则是用来记录一些附加信息，用来辅助应用部署、安全策略以及调度策略等。比如 deployment 使用 annotations 来记录  rolling update 的状态。&lt;/p&gt;
+&lt;h2 id=&#34;controller&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#controller&#34;&gt;#&lt;/a&gt; controller&lt;/h2&gt;
+&lt;h3 id=&#34;什么是controller&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是controller&#34;&gt;#&lt;/a&gt; 什么是 controller&lt;/h3&gt;
+&lt;p&gt;Kubernetes 中 conroller (控制器) 通过监控&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvcmVmZXJlbmNlL2dsb3NzYXJ5Lz9hbGw9dHJ1ZSN0ZXJtLWNsdXN0ZXI=&#34;&gt;集群&lt;/span&gt; 的公共状态，并&lt;strong&gt;致力于将当前状态转变为期望的状态&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;K8s 内建了很多 controller（资源控制器），这些相当于一个状态机，用来控制 Pod 的具体状态和行为&lt;/p&gt;
+&lt;h3 id=&#34;控制器种类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#控制器种类&#34;&gt;#&lt;/a&gt; 控制器种类&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ReplicationController (RC) 和 ReplicaSet (RS)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deployment&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DaemonSet&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;StateFulSet&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Job/CronJob&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Horizontal Pod Autoscaling&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;控制器分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#控制器分类&#34;&gt;#&lt;/a&gt; 控制器分类&lt;/h3&gt;
+&lt;p&gt;根据控制器的使用场景，可以分类如下:&lt;/p&gt;
+&lt;h4 id=&#34;无状态应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#无状态应用&#34;&gt;#&lt;/a&gt; 无状态应用&lt;/h4&gt;
+&lt;h5 id=&#34;通用型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#通用型&#34;&gt;#&lt;/a&gt; 通用型&lt;/h5&gt;
+&lt;p&gt;​	RC: 副本数量与期望值之间的管理&lt;/p&gt;
+&lt;p&gt;​	RS: 功能类似 RC, 多了集合式的标签选择器&lt;/p&gt;
+&lt;p&gt;​	Deployment: 支持滚动更新以及回滚&lt;/p&gt;
+&lt;h5 id=&#34;特殊场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特殊场景&#34;&gt;#&lt;/a&gt; 特殊场景&lt;/h5&gt;
+&lt;p&gt;批处理任务 (目标数成功退出)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Job: 保障任务一次或多次的成功&lt;/li&gt;
+&lt;li&gt;CornJob: 在轮询计划下定期执行 Job 实现批处理任务的运行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;每个节点有且只有一个 pod&lt;/p&gt;
+&lt;p&gt;​	DaemonSet&lt;/p&gt;
+&lt;p&gt;自动水平扩缩容&lt;/p&gt;
+&lt;p&gt;​	HPA (依赖于 RC/RS/Deployment)&lt;/p&gt;
+&lt;h4 id=&#34;有状态应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有状态应用&#34;&gt;#&lt;/a&gt; 有状态应用&lt;/h4&gt;
+&lt;p&gt;​	StatefulSet&lt;/p&gt;
+&lt;h4 id=&#34;自定义控制器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自定义控制器&#34;&gt;#&lt;/a&gt; 自定义控制器&lt;/h4&gt;
+&lt;h4 id=&#34;支持基于集合需求的资源&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#支持基于集合需求的资源&#34;&gt;#&lt;/a&gt; 支持基于集合需求的资源&lt;/h4&gt;
+&lt;p&gt;比较新的资源，例如 &lt;a href=&#34;https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/job/&#34;&gt; &lt;code&gt;Job&lt;/code&gt; &lt;/a&gt;、 &lt;a href=&#34;https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/deployment/&#34;&gt; &lt;code&gt;Deployment&lt;/code&gt; &lt;/a&gt;、 &lt;a href=&#34;https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/replicaset/&#34;&gt; &lt;code&gt;ReplicaSet&lt;/code&gt; &lt;/a&gt; 和 &lt;a href=&#34;https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/daemonset/&#34;&gt; &lt;code&gt;DaemonSet&lt;/code&gt; &lt;/a&gt;， 也支持&lt;strong&gt;基于集合的&lt;/strong&gt;需求。&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;selector&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;matchLabels&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;component&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; redis&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;matchExpressions&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; tier&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;operator&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; In&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;cache&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; environment&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;operator&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; NotIn&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;dev&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;matchLabels&lt;/code&gt;  是由  &lt;code&gt;&amp;#123;key,value&amp;#125;&lt;/code&gt;  对组成的映射。  &lt;code&gt;matchLabels&lt;/code&gt;  映射中的单个  &lt;code&gt;&amp;#123;key,value&amp;#125;&lt;/code&gt;  等同于  &lt;code&gt;matchExpressions&lt;/code&gt;  的元素， 其  &lt;code&gt;key&lt;/code&gt;  字段为 &amp;quot;key&amp;quot;， &lt;code&gt;operator&lt;/code&gt;  为 &amp;quot;In&amp;quot;，而  &lt;code&gt;values&lt;/code&gt;  数组仅包含 &amp;quot;value&amp;quot;。  &lt;code&gt;matchExpressions&lt;/code&gt;  是 Pod 选择算符需求的列表。 有效的运算符包括  &lt;code&gt;In&lt;/code&gt; 、 &lt;code&gt;NotIn&lt;/code&gt; 、 &lt;code&gt;Exists&lt;/code&gt;  和  &lt;code&gt;DoesNotExist&lt;/code&gt; 。 在  &lt;code&gt;In&lt;/code&gt;  和  &lt;code&gt;NotIn&lt;/code&gt;  的情况下，设置的值必须是非空的。 来自  &lt;code&gt;matchLabels&lt;/code&gt;  和  &lt;code&gt;matchExpressions&lt;/code&gt;  的所有要求都按逻辑与的关系组合到一起 -- 它们必须都满足才能匹配。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvb3ZlcnZpZXcvd29ya2luZy13aXRoLW9iamVjdHMvbGFiZWxzLyNtb3RpdmF0aW9u&#34;&gt;参考:k8s 的标签 &amp;amp; 选择符&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;rc-rs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rc-rs&#34;&gt;#&lt;/a&gt; RC / RS&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;RC&lt;/strong&gt; (ReplicationController) 用来确保容器应用的副本数始终保持在用户定义的副本数，即如果有容器异常退出，会自动创建新的 Pod 来替代；而如果异常多出来的容器也会自动回收；&lt;/p&gt;
+&lt;p&gt;** 在新版本的 Kubernetes 中建议使用 RC (ReplicaSet) 来取代 RC **。ReplicaSet 跟 ReplicationController 没有本质的不同，只是名字不一样，并且&lt;mark&gt; ReplicaSet 支持集合式的 selector&lt;/mark&gt;；&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;RS 特性:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一个 ReplicaSet 中可以包含异质的 Pod 集合&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL3JlcGxpY2FzZXQvI25vbi10ZW1wbGF0ZS1wb2QtYWNxdWlzaXRpb25z&#34;&gt;注：RS 的异质 pod&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL3JlcGxpY2FzZXQvI25vbi10ZW1wbGF0ZS1wb2QtYWNxdWlzaXRpb25z&#34;&gt;注：RS 的异质 pod&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;RS 虽然可独立使用，但是现在一般还是建议使用 Deployment 来自动管理 RS&lt;/p&gt;
+&lt;p&gt;----&amp;gt; &lt;strong&gt;RS 不支持滚动更新和回滚机制&lt;/strong&gt;，但 Deployment 支持&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;deployment&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deployment&#34;&gt;#&lt;/a&gt; Deployment&lt;/h3&gt;
+&lt;p&gt;Deployment 为&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RvY3Mua3ViZXJuZXRlcy5vcmcuY24vMzEyLmh0bWw=&#34;&gt; Pod&lt;/span&gt; 和&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RvY3Mua3ViZXJuZXRlcy5vcmcuY24vMzE0Lmh0bWw=&#34;&gt; Replica Set&lt;/span&gt;（升级版的 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RvY3Mua3ViZXJuZXRlcy5vcmcuY24vNDM3Lmh0bWw=&#34;&gt;Replication Controller&lt;/span&gt;）提供声明式更新。&lt;/p&gt;
+&lt;p&gt;你只需要在 Deployment 中描述您想要的目标状态是什么，Deployment controller 就会帮您将 Pod  和 ReplicaSet 的实际状态改变到您的目标状态。您可以定义一个全新的 Deployment 来创建 ReplicaSet 或者删除已有的  Deployment 并创建一个新的来替换。&lt;/p&gt;
+&lt;p&gt;以下是 Deployments 的典型用例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQvI2NyZWF0aW5nLWEtZGVwbG95bWVudA==&#34;&gt;创建 Deployment 以将 ReplicaSet 上线&lt;/span&gt;。ReplicaSet 在后台创建 Pod。 检查 ReplicaSet 的上线状态，查看其是否成功。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过更新 Deployment 的 PodTemplateSpec，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQvI3VwZGF0aW5nLWEtZGVwbG95bWVudA==&#34;&gt;声明 Pod 的新状态&lt;/span&gt; 。 新的 ReplicaSet 会被创建，Deployment 以受控速率将 Pod 从旧 ReplicaSet 迁移到新 ReplicaSet。 每个新的 ReplicaSet 都会更新 Deployment 的修订版本。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果 Deployment 的当前状态不稳定，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQvI3JvbGxpbmctYmFjay1hLWRlcGxveW1lbnQ=&#34;&gt;回滚到较早的 Deployment 版本&lt;/span&gt;。 每次回滚都会更新 Deployment 的修订版本。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQvI3NjYWxpbmctYS1kZXBsb3ltZW50&#34;&gt;扩大 Deployment 规模以承担更多负载&lt;/span&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQvI3BhdXNpbmctYW5kLXJlc3VtaW5nLWEtZGVwbG95bWVudA==&#34;&gt;暂停 Deployment 的上线&lt;/span&gt; 以应用对 PodTemplateSpec 所作的多项修改， 然后恢复其执行以启动新的上线版本。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQvI2RlcGxveW1lbnQtc3RhdHVz&#34;&gt;使用 Deployment 状态&lt;/span&gt;来判定上线过程是否出现停滞。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL2NvbnRyb2xsZXJzL2RlcGxveW1lbnQvI2NsZWFuLXVwLXBvbGljeQ==&#34;&gt;清理较旧的不再需要的 ReplicaSet&lt;/span&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Deployment 如何实现滚动更新和回滚:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Deployment 会自动创建出来 RS 资源，根据 pod 的 &lt;code&gt;template&lt;/code&gt; , &lt;code&gt;replicas&lt;/code&gt;  等 逐个创建出符合预期的 pod 资源.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;需要滚动更新时，Deployment 会创建新的 RS, 并根据 pod 的 &lt;code&gt;template&lt;/code&gt;  描述 逐个创建新版本的 pod, 并逐个删除旧版本 RS 中的 pod, 来实现滚动更新&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;需要滚动回滚时，与上述类似 Deployment 中旧版本的 RS 会逐步创建旧版本 pod; 新版本的 RS 逐步删除新版本的 pod, 最终实现滚动回滚&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;statefulset&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#statefulset&#34;&gt;#&lt;/a&gt; &lt;strong&gt;StatefulSet&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;StatefulSet 作为 Controller 为 Pod 提供唯一的标识。它可以保证部署和 scale 的顺序&lt;/p&gt;
+&lt;p&gt;StatefulSet 是为了解决有状态服务的问题（对应 Deployments 和 ReplicaSets 是为无状态服务而设计），其应用场景包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;稳定的持久化存储，即 Pod 重新调度后还是能访问到相同的持久化数据，基于 PVC 来实现&lt;/li&gt;
+&lt;li&gt;稳定的网络标志，即 Pod 重新调度后其 PodName 和 HostName 不变，基于 Headless Service（即没有 Cluster IP 的 Service）来实现&lt;/li&gt;
+&lt;li&gt;有序部署，有序扩展，即 Pod 是有顺序的，在部署或者扩展的时候要依据定义的顺序依次依次进行（即从 0 到 N-1，在下一个 Pod 运行之前所有之前的 Pod 必须都是 Running 和 Ready 状态），基于 init containers 来实现&lt;/li&gt;
+&lt;li&gt;有序收缩，有序删除（即从 N-1 到 0）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;daemonset&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#daemonset&#34;&gt;#&lt;/a&gt; DaemonSet&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;DaemonSet&lt;/em&gt; 确保全部（或者一些）Node 上&lt;strong&gt;运行一个 Pod 的副本&lt;/strong&gt;。当有 Node 加入集群时，也会为他们新增一个 Pod 。当有 Node 从集群移除时，这些 Pod 也会被回收。删除 DaemonSet 将会删除它创建的所有 Pod&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;简单来说，DaemonSet 就是为了保证 &amp;quot;&lt;strong&gt; 每个 Node 上，有且只有一个 pod&lt;/strong&gt;&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;使用 DaemonSet 的一些典型用法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;运行集群存储 daemon，例如在每个 Node 上运行  &lt;code&gt;glusterd&lt;/code&gt; 、 &lt;code&gt;ceph&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在每个 Node 上运行日志收集 daemon，例如 &lt;code&gt;ELK&lt;/code&gt; 、 &lt;code&gt;fluentd&lt;/code&gt; 、 &lt;code&gt;logstash&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在每个 Node 上运行监控 daemon，例如 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3Byb21ldGhldXMvbm9kZV9leHBvcnRlcg==&#34;&gt;Prometheus Node Exporter&lt;/span&gt;、 &lt;code&gt;collectd&lt;/code&gt; 、Datadog 代理、New Relic 代理，或 Ganglia  &lt;code&gt;gmond&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;job&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#job&#34;&gt;#&lt;/a&gt; Job&lt;/h3&gt;
+&lt;p&gt;Job 负责批处理任务，即仅执行一次的任务，它保证批处理任务的一个或多个 Pod 成功结束&lt;/p&gt;
+&lt;p&gt;Job 会创建一个或者多个 Pod，并将继续重试 Pod 的执行，直到指定数量的 Pod 成功终止。 随着 Pod 成功结束，Job 跟踪记录成功完成的 Pod 个数。 当数量达到指定的成功个数阈值时，任务（即 Job）结束。 删除 Job 的操作会清除所创建的全部 Pod。 挂起 Job 的操作会删除 Job 的所有活跃 Pod，直到 Job 被再次恢复执行。&lt;/p&gt;
+&lt;p&gt;适合以 Job 形式来运行的任务主要有三种：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;非并行 Job：
+&lt;ul&gt;
+&lt;li&gt;通常只启动一个 Pod，除非该 Pod 失败。&lt;/li&gt;
+&lt;li&gt;当 Pod 成功终止时，立即视 Job 为完成状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;具有&lt;strong&gt;确定完成计数&lt;/strong&gt;的并行 Job：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.spec.completions&lt;/code&gt;  字段设置为非 0 的正数值。&lt;/li&gt;
+&lt;li&gt;Job 用来代表整个任务，当成功的 Pod 个数达到  &lt;code&gt;.spec.completions&lt;/code&gt;  时，Job 被视为完成。&lt;/li&gt;
+&lt;li&gt;当使用  &lt;code&gt;.spec.completionMode=&amp;quot;Indexed&amp;quot;&lt;/code&gt;  时，每个 Pod 都会获得一个不同的 索引值，介于 0 和  &lt;code&gt;.spec.completions-1&lt;/code&gt;  之间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;带&lt;strong&gt;工作队列&lt;/strong&gt;的并行 Job：
+&lt;ul&gt;
+&lt;li&gt;不设置  &lt;code&gt;spec.completions&lt;/code&gt; ，默认值为  &lt;code&gt;.spec.parallelism&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;多个 Pod 之间必须相互协调，或者借助外部服务确定每个 Pod 要处理哪个工作条目。 例如，任一 Pod 都可以从工作队列中取走最多 N 个工作条目。&lt;/li&gt;
+&lt;li&gt;每个 Pod 都可以独立确定是否其它 Pod 都已完成，进而确定 Job 是否完成。&lt;/li&gt;
+&lt;li&gt;当 Job 中&lt;strong&gt;任何&lt;/strong&gt; Pod 成功终止，不再创建新 Pod。&lt;/li&gt;
+&lt;li&gt;一旦至少 1 个 Pod 成功完成，并且所有 Pod 都已终止，即可宣告 Job 成功完成。&lt;/li&gt;
+&lt;li&gt;一旦任何 Pod 成功退出，任何其它 Pod 都不应再对此任务执行任何操作或生成任何输出。 所有 Pod 都应启动退出过程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;cronjob&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cronjob&#34;&gt;#&lt;/a&gt; &lt;strong&gt;CronJob&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Cron Job&lt;/em&gt; 管理基于时间间隔重复调度的 Job，即：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在给定时间点只运行一次&lt;/li&gt;
+&lt;li&gt;周期性地在给定时间点运行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用前提条件：当前使用的 Kubernetes 集群，版本 &amp;gt;= 1.8（对 CronJob）。对于先前版本的集群，版本 &amp;lt; 1.8，启动 API Server 时，通过传递选项  &lt;code&gt;--runtime-config=batch/v2alpha1=true&lt;/code&gt;  可以开启 batch/v2alpha1 API&lt;/p&gt;
+&lt;p&gt;典型的用法如下所示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在给定的时间点调度 Job 运行&lt;/li&gt;
+&lt;li&gt;创建周期性运行的 Job，例如：数据库备份、发送邮件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hpa&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hpa&#34;&gt;#&lt;/a&gt; &lt;strong&gt;HPA&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;应用的资源使用率通常都有高峰和低谷的时候，如何削峰填谷，提高集群的整体资源利用率，让 service 中的 Pod 个数自动调整呢？这就有赖于 HPA （Horizontal Pod Autoscaling）了，顾名思义，&lt;strong&gt;使 Pod 水平自动缩放&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;HPA 会根据 Pod 资源的使用情况，来自动调整副本数量，它依赖于 RC/RS/Deployment 之上.&lt;/p&gt;
+&lt;p&gt;====&amp;gt; 需要明确的一点是: &lt;strong&gt;HPA 本身没有创建 销毁 pod 的能力&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HPA 需要设置监控指标阈值，和扩缩的限定值&lt;/p&gt;
+&lt;p&gt;例如: cpu 使用率 80%; 最小 pod 数: 2 ; 最大 pod 数: 20&lt;/p&gt;
+&lt;p&gt;那么 :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当 pod 的 cpu 使用率超过 80% 时  HPA 会自动增加 pod 数量 (最大不超过 20 个 pod), 来应对负载上升；&lt;/li&gt;
+&lt;li&gt;当负载减少，并且 Pod 的数量高于配置的最小值时，HPA 会指示工作负载资源（Deployment、StatefulSet 或其他类似资源）缩减&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvdGFza3MvcnVuLWFwcGxpY2F0aW9uL2hvcml6b250YWwtcG9kLWF1dG9zY2FsZS8=&#34;&gt;参考:k8s 文档 - HPA&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;k8s中的水平扩缩和垂直扩缩&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#k8s中的水平扩缩和垂直扩缩&#34;&gt;#&lt;/a&gt; K8s 中的水平扩缩和垂直扩缩&lt;/h3&gt;
+&lt;p&gt;水平扩缩：对增加的负载的响应是部署更多的 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvd29ya2xvYWRzL3BvZHMv&#34;&gt;Pod&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;垂直扩缩：将更多资源（例如：内存或 CPU）分配给已经为工作负载运行的 Pod。&lt;/p&gt;
+&lt;h2 id=&#34;service&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#service&#34;&gt;#&lt;/a&gt; Service&lt;/h2&gt;
+&lt;p&gt;Service 是应用服务的抽象，通过 labels 为应用提供负载均衡和服务发现。匹配 labels 的 Pod IP 和端口列表组成 endpoints，由 kube-proxy 负责将服务 IP 负载均衡到这些 endpoints 上。&lt;/p&gt;
+&lt;p&gt;每个 Service 都会自动分配一个 cluster IP（&lt;strong&gt;仅在集群内部可访问的虚拟地址&lt;/strong&gt;）和 DNS 名，其他容器可以通过该地址或 DNS 来访问服务，而不需要了解后端容器的运行。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://static.sitestack.cn/projects/feiskyer-kubernetes-handbook-202005/introduction/media/14731220608865.png&#34; alt=&#34;Kubernetes 基本概念 - 图3&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apiVersion: v1kind: Servicemetadata:  name: nginxspec:  ports:  - port: 8078 # the port that this service should serve on    name: http    # the container on each pod to connect to, can be a name    # (e.g. &#39;www&#39;) or a number (e.g. 80)    targetPort: 80    protocol: TCP  selector:    app: nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;service公开方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#service公开方式&#34;&gt;#&lt;/a&gt; service 公开方式&lt;/h3&gt;
+&lt;p&gt;Kubernetes Service 在 &lt;code&gt;spec.type&lt;/code&gt;  允许指定一个需要的类型的 Service，默认是 ClusterIP 类型。&lt;/p&gt;
+&lt;p&gt;Type 的取值以及行为如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ClusterIP：通过集群的内部 IP 暴露服务，选择该值，服务只能够在集群内部可以访问，这也是&lt;strong&gt;默认的 ServiceType&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;NodePort：通过每个 Node 上的 IP  和静态端口（NodePort）暴露服务。NodePort 服务会路由到 ClusterIP 服务，这个 ClusterIP 服务会自动创建。通过请求 &amp;lt;NodeIP&amp;gt;:&amp;lt;NodePort&amp;gt;，可以从集群的外部访问一个 NodePort 服务。&lt;/li&gt;
+&lt;li&gt;LoadBalancer：使用云提供商的负载局衡器，可以向外部暴露服务。外部的负载均衡器可以路由到 NodePort 服务和 ClusterIP 服务。&lt;/li&gt;
+&lt;li&gt;ExternalName：通过返回 CNAME 和它的值，可以将服务映射到 externalName 字段的内容（例如， &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Zvby5iYXIuZXhhbXBsZS5jb20=&#34;&gt;foo.bar.example.com&lt;/span&gt;）。 没有任何类型代理被创建，这只有 Kubernetes 1.7 或更高版本的 kube-dns 才支持。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ingress&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ingress&#34;&gt;#&lt;/a&gt; ingress&lt;/h2&gt;
+&lt;p&gt;Ingress 是对集群中服务的外部访问进行管理的 API 对象，典型的访问方式是 HTTP。可以提供负载均衡、SSL 终结和基于名称的虚拟托管。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL2RvY3MvcmVmZXJlbmNlL2dlbmVyYXRlZC9rdWJlcm5ldGVzLWFwaS92MS4yNi8jaW5ncmVzcy12MS1uZXR3b3JraW5nLWs4cy1pbw==&#34;&gt;Ingress&lt;/span&gt; 公开从集群外部到集群内&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLw==&#34;&gt;服务&lt;/span&gt;的 HTTP 和 HTTPS 路由。 流量路由由 Ingress 资源上定义的规则控制。&lt;/p&gt;
+&lt;p&gt;下面是一个将所有流量都发送到同一 Service 的简单 Ingress 示例：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://d33wubrfki0l68.cloudfront.net/4f01eaec32889ff16ee255e97822b6d165b633f0/a54b4/zh-cn/docs/images/ingress.svg&#34; alt=&#34;ingress-diagram&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Ingress 可为 Service 提供外部可访问的 URL、负载均衡流量、终止 SSL/TLS，以及基于名称的虚拟托管。 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9pbmdyZXNzLWNvbnRyb2xsZXJz&#34;&gt;Ingress 控制器&lt;/span&gt; 通常负责通过负载均衡器来实现 Ingress，尽管它也可以配置边缘路由器或其他前端来帮助处理流量。&lt;/p&gt;
+&lt;p&gt;Ingress 不会公开任意端口或协议。 将 HTTP 和 HTTPS 以外的服务公开到 Internet 时，通常使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLyN0eXBlLW5vZGVwb3J0&#34;&gt;Service.Type=NodePort&lt;/span&gt; 或 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9rdWJlcm5ldGVzLmlvL3poLWNuL2RvY3MvY29uY2VwdHMvc2VydmljZXMtbmV0d29ya2luZy9zZXJ2aWNlLyNsb2FkYmFsYW5jZXI=&#34;&gt;Service.Type=LoadBalancer&lt;/span&gt; 类型的 Service。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -3211,7 +3637,7 @@ E(S^2)	&amp;amp;=E\left(\frac&amp;#123;1&amp;#125;&amp;#123;2n&amp;#125; \sum_&a
 graph ....&lt;br /&gt;
 .....&lt;br /&gt;
 ```&lt;/p&gt;
-&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678370240301&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
+&lt;pre class=&#34;mermaid graph&#34;&gt;&lt;svg id=&#34;mermaid-1678618382169&#34; width=&#34;100%&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; height=&#34;341&#34; style=&#34;max-width: 219px;&#34; viewBox=&#34;0 0 219 341&#34;&gt;&lt;g&gt;&lt;g class=&#34;output&#34;&gt;&lt;g class=&#34;clusters&#34;&gt;&lt;/g&gt;&lt;g class=&#34;edgePaths&#34;&gt;&lt;g class=&#34;edgePath LS-A LE-B&#34; id=&#34;L-A-B&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,47L105.25,72L105.25,97&#34; marker-end=&#34;url(#arrowhead20)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead20&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-B LE-C&#34; id=&#34;L-B-C&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M105.25,136L105.25,161L105.25,186&#34; marker-end=&#34;url(#arrowhead21)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead21&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-D&#34; id=&#34;L-C-D&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M82.40972222222223,225L42,259.5L42,294&#34; marker-end=&#34;url(#arrowhead22)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead22&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;g class=&#34;edgePath LS-C LE-E&#34; id=&#34;L-C-E&#34; style=&#34;opacity: 1;&#34;&gt;&lt;path class=&#34;path&#34; d=&#34;M128.09027777777777,225L168.5,259.5L168.5,294&#34; marker-end=&#34;url(#arrowhead23)&#34; style=&#34;fill:none&#34;&gt;&lt;/path&gt;&lt;defs&gt;&lt;marker id=&#34;arrowhead23&#34; viewBox=&#34;0 0 10 10&#34; refX=&#34;9&#34; refY=&#34;5&#34; markerUnits=&#34;strokeWidth&#34; markerWidth=&#34;8&#34; markerHeight=&#34;6&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M 0 0 L 10 5 L 0 10 z&#34; class=&#34;arrowheadPath&#34; style=&#34;stroke-width: 1; stroke-dasharray: 1, 0;&#34;&gt;&lt;/path&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabels&#34;&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(0,0)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;0&#34; height=&#34;0&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(42,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;48&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;没找到&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;edgeLabel&#34; transform=&#34;translate(168.5,259.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;g transform=&#34;translate(-24.5,-9.5)&#34; class=&#34;label&#34;&gt;&lt;rect rx=&#34;0&#34; ry=&#34;0&#34; width=&#34;49&#34; height=&#34;19&#34;&gt;&lt;/rect&gt;&lt;text&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;找到了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;nodes&#34;&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-A-6&#34; transform=&#34;translate(105.25,27.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-26&#34; y=&#34;-19.5&#34; width=&#34;52&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-16,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;开始&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-B-7&#34; transform=&#34;translate(105.25,116.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-C-8&#34; transform=&#34;translate(105.25,205.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42&#34; y=&#34;-19.5&#34; width=&#34;84&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;拿遥控器&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-D-9&#34; transform=&#34;translate(42,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-34&#34; y=&#34;-19.5&#34; width=&#34;68&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-24,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;不看了&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;g class=&#34;node default&#34; id=&#34;flowchart-E-11&#34; transform=&#34;translate(168.5,313.5)&#34; style=&#34;opacity: 1;&#34;&gt;&lt;rect rx=&#34;5&#34; ry=&#34;5&#34; x=&#34;-42.5&#34; y=&#34;-19.5&#34; width=&#34;85&#34; height=&#34;39&#34; class=&#34;label-container&#34;&gt;&lt;/rect&gt;&lt;g class=&#34;label&#34; transform=&#34;translate(0,0)&#34;&gt;&lt;g transform=&#34;translate(-32.5,-9.5)&#34;&gt;&lt;text style=&#34;&#34;&gt;&lt;tspan xml:space=&#34;preserve&#34; dy=&#34;1em&#34; x=&#34;1&#34;&gt;打开电视&lt;/tspan&gt;&lt;/text&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-metion的扩展语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-metion的扩展语法&#34;&gt;#&lt;/a&gt; 3. Metion 的扩展语法&lt;/h2&gt;
 &lt;h3 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h3&gt;
 &lt;p&gt;有些时候，需要在书写过程中留一些&lt;strong&gt;备忘&lt;/strong&gt;性质的文本，但是不希望最终结果中可见的，可以使用&lt;strong&gt;注释&lt;/strong&gt;语法，一般情况下是用不到的。&lt;br /&gt;
 // 我是一行注释，但最终会出现在最终的 HTML 源码中。&lt;br /&gt;

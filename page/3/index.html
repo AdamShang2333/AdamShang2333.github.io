@@ -89,12 +89,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm26jw.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9gvz5.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-3z9vq3.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-z8gydv.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-lmejvq.jpg"></li>
-          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-q6wyer.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-vg7vk8.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-j575jw.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-57wq75.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9gke5.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm16gj.jpg"></li>
+          <li class="item" data-background-image="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-g7z2eq.jpg"></li>
         </ul>
       </div>
     </header>
@@ -120,7 +120,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/shu-ju-ku/shu-ju-ku-ji-chu/" itemprop="url" title="数据库基础"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-nm1l1m.jpg"></a>
+    <a href="/shu-ju-ku/shu-ju-ku-han-shu/" itemprop="url" title="数据库函数"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-4lmre2.jpg"></a>
   </div>
   <div class="info">
     
@@ -135,7 +135,7 @@
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>2.7k</span>
+    <span>2k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -146,43 +146,31 @@
   </span>
 </div>
 
-    <h3><a href="/shu-ju-ku/shu-ju-ku-ji-chu/" itemprop="url" title="数据库基础">数据库基础</a></h3>
+    <h3><a href="/shu-ju-ku/shu-ju-ku-han-shu/" itemprop="url" title="数据库函数">数据库函数</a></h3>
     <div class="excerpt">
-        # 数据语句的分类
-# DDL -- 数据定义语句
+        # 操作函数
+# 1. 字符串操作函数
+# as 关键字
 
-create, drop, alter
+给列或者表起别名，将过长的表名简化
+特别注意:
+1. 只在当前 SQL 语句内生效，到下一个 SQL 语句就失效 ---&amp;gt; 不是全局 &amp;quot;改名&amp;quot;
+2. 在名字后直接加空格，不加 as 关键字也行
 
-# DML -- 数据操作语句
+select concat(&#39;张三&#39;, &#39;李四&#39;, &#39;ddd&#39;) as name;
 
-insert, update, delete
-
-# DQL -- 数据查询语句
-
-select
-
-# DCL -- 数据控制语句
-
-commit, rollback (回滚), savepoint (存档)
-
-# create table (创建表)
-
-创建表的时候要注意约束的设定
-一列可以有多个约束条件
-
-// 防止创建重复表单
-create table if not exists 表名(
-列名 列数据类型 [约束1 约束2][索引][注释],
-列名 列数据类型...
+as 也可以不加 直接在名字后面加 &#39; &#39;(空格) 后接关键字
+// age sage :等价于 age as sage
+select...
     </div>
-    <a href="/shu-ju-ku/shu-ju-ku-ji-chu/" itemprop="url" title="数据库基础" class="btn">more...</a>
+    <a href="/shu-ju-ku/shu-ju-ku-han-shu/" itemprop="url" title="数据库函数" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" itemprop="url" title="数据库多表查询"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm1lwy.png"></a>
+    <a href="/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" itemprop="url" title="数据库多表查询"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-g8kjm3.jpg"></a>
   </div>
   <div class="info">
     
@@ -232,7 +220,7 @@ create table if not exists 表名(
         
 <article class="item">
   <div class="cover">
-    <a href="/qian-duan/js-h5/css-yang-shi-ji-chu/" itemprop="url" title="css基础样式"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-k79lqq.jpg"></a>
+    <a href="/qian-duan/js-h5/css-yang-shi-ji-chu/" itemprop="url" title="css基础样式"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-5womy5.png"></a>
   </div>
   <div class="info">
     
@@ -275,7 +263,7 @@ font-style 设置字体的风格(样式)取值：​	normal 默认...
         
 <article class="item">
   <div class="cover">
-    <a href="/hou-duan/ci-cd/maven/" itemprop="url" title="Maven"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-lmejvq.jpg"></a>
+    <a href="/hou-duan/ci-cd/maven/" itemprop="url" title="Maven"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-g8oepq.jpg"></a>
   </div>
   <div class="info">
     
@@ -340,7 +328,7 @@ clean
         
 <article class="item">
   <div class="cover">
-    <a href="/hou-duan/java/java-io/" itemprop="url" title="IO相关"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-y88q3g.jpg"></a>
+    <a href="/hou-duan/java/java-io/" itemprop="url" title="IO相关"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-lmejvq.jpg"></a>
   </div>
   <div class="info">
     
@@ -396,7 +384,7 @@ clean
         
 <article class="item">
   <div class="cover">
-    <a href="/hou-duan/java/java-mian-xiang-dui-xiang/" itemprop="url" title="Java面向对象"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-g8oepq.jpg"></a>
+    <a href="/hou-duan/java/java-mian-xiang-dui-xiang/" itemprop="url" title="Java面向对象"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm1qdo.jpg"></a>
   </div>
   <div class="info">
     
@@ -463,7 +451,7 @@ final...
         
 <article class="item">
   <div class="cover">
-    <a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" itemprop="url" title="AOP&amp;静态代理&amp;动态代理"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-83yp2j.jpg"></a>
+    <a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" itemprop="url" title="AOP&amp;静态代理&amp;动态代理"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-395d2y.png"></a>
   </div>
   <div class="info">
     
@@ -506,7 +494,7 @@ final...
         
 <article class="item">
   <div class="cover">
-    <a href="/hou-duan/spring/spring-yu-springmvc-de-guan-xi/" itemprop="url" title="Spring&amp;&amp;SpringMVC"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-28er9y.jpg"></a>
+    <a href="/hou-duan/spring/spring-yu-springmvc-de-guan-xi/" itemprop="url" title="Spring&amp;&amp;SpringMVC"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-zm16gj.jpg"></a>
   </div>
   <div class="info">
     
@@ -556,7 +544,7 @@ SpringMVC 是对 Servlet 进行的封装，是 Spring 中的一个功能模块
         
 <article class="item">
   <div class="cover">
-    <a href="/hou-duan/zhong-jian-jian/rocketmq-ru-men/" itemprop="url" title="RocketMQ"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-pk35x9.png"></a>
+    <a href="/hou-duan/zhong-jian-jian/rocketmq-ru-men/" itemprop="url" title="RocketMQ"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-j575jw.jpg"></a>
   </div>
   <div class="info">
     
@@ -613,7 +601,7 @@ Topic 与消费者关系：
         
 <article class="item">
   <div class="cover">
-    <a href="/hou-duan/zhong-jian-jian/swagger-shi-yong-wen-dang/" itemprop="url" title="swagger使用文档"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-4lmre2.jpg"></a>
+    <a href="/hou-duan/zhong-jian-jian/swagger-shi-yong-wen-dang/" itemprop="url" title="swagger使用文档"><img data-src="https://gitee.com/oldFun/picGitee/raw/master/img/wallhaven-v9gvz5.jpg"></a>
   </div>
   <div class="info">
     
@@ -785,39 +773,26 @@ Topic 与消费者关系：
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/qian-duan/js-h5/css-yang-shi-ji-chu/" title="css基础样式">css基础样式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/qian-duan/js-h5/ding-wei/" title="CSS-定位">CSS-定位</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/hou-duan/spring/springmvc-lan-jie-qi-fang-fa-can-shu-jie-xi-qi/" title="SpringMVC 拦截器&amp;方法参数解析器">SpringMVC 拦截器&方法参数解析器</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/spring/" title="分类于 spring">spring</a>
+<a href="/categories/java/" title="分类于 java">java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/spring/%E6%80%BB%E7%BB%93/" title="分类于 总结">总结</a>
+<a href="/categories/java/basics/" title="分类于 基础">基础</a>
 </div>
 
-    <span><a href="/hou-duan/spring/springboot-zhu-jie/" title="Spring Boot注解总结">Spring Boot注解总结</a></span>
+    <span><a href="/hou-duan/java/basics/java-ji-chu/" title="IO基础">IO基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ZooKeeper/" title="分类于 ZooKeeper">ZooKeeper</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/ZooKeeper/%E5%88%86%E5%B8%83%E5%BC%8F/" title="分类于 分布式">分布式</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="分类于 微服务">微服务</a>
+</div>
+
+    <span><a href="/hou-duan/zhong-jian-jian/zookeeper-ru-men/" title="ZooKeeper入门">ZooKeeper入门</a></span>
   </li>
 
       
@@ -826,7 +801,16 @@ Topic 与消费者关系：
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/shu-ju-ku/shu-ju-ku-duo-biao-cha-xun/" title="数据库多表查询">数据库多表查询</a></span>
+    <span><a href="/hou-duan/zhong-jian-jian/redis/" title="redis基础">redis基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/qian-duan/js-h5/h5-xin-zeng/" title="H5新增内容总结">H5新增内容总结</a></span>
   </li>
 
       
@@ -844,7 +828,19 @@ Topic 与消费者关系：
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/hou-duan/java/java-mian-xiang-dui-xiang/" title="Java面向对象">Java面向对象</a></span>
+    <span><a href="/hou-duan/spring/aop-jing-tai-dai-li-dong-tai-dai-li/" title="AOP&amp;静态代理&amp;动态代理">AOP&静态代理&动态代理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%85%B6%E4%BB%96/" title="分类于 其他">其他</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%85%B6%E4%BB%96/Markdown/" title="分类于 Markdown">Markdown</a>
+</div>
+
+    <span><a href="/qi-ta/markdown-yu-fa-zong-jie/" title="Markdown语法">Markdown语法</a></span>
   </li>
 
       
@@ -853,7 +849,7 @@ Topic 与消费者关系：
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/hou-duan/java/jdbc/" title="JDBC">JDBC</a></span>
+    <span><a href="/hou-duan/java/java-fan-she/" title="Java反射">Java反射</a></span>
   </li>
 
       
@@ -862,19 +858,24 @@ Topic 与消费者关系：
 <div class="breadcrumb">
 <a href="/categories/java/" title="分类于 java">java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/java/basics/" title="分类于 基础">基础</a>
+<a href="/categories/java/spring/" title="分类于 spring">spring</a>
 </div>
 
-    <span><a href="/hou-duan/java/basics/java-ji-chu/" title="IO基础">IO基础</a></span>
+    <span><a href="/cai-keng-hui-zong/springaop-cai-keng/" title="Spring AOP踩坑">Spring AOP踩坑</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="分类于 数据库">数据库</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/mysql/" title="分类于 mysql">mysql</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/hexo/" title="分类于 hexo">hexo</a>
 </div>
 
-    <span><a href="/qian-duan/js-h5/h5-xin-zeng/" title="H5新增内容总结">H5新增内容总结</a></span>
+    <span><a href="/shu-ju-ku/mysql-you-hua-shen-ru/" title="MySQL 深入优化总结">MySQL 深入优化总结</a></span>
   </li>
 
   </ul>
@@ -899,13 +900,13 @@ Topic 与消费者关系：
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">297k 字</span>
+    <span title="站点总字数">311k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">4:30</span>
+    <span title="站点阅读时长">4:43</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
